@@ -58,3 +58,7 @@ cat3 = Cat("Bugger", 44, 234, 'cough..cough', 'black-purple-pink','ribeye steak'
 print(cat2.toString())
 print(cat3.toString())
 cat3.multiple_sounds(999, 3)
+
+cat4 = Cat("MOFO", 144, 34, 'suck..suck..suck..', 'rainbow color','short ribs','8115 23th ave')
+print(cat4.toString())
+cat4.multiple_sounds(999, 3)
