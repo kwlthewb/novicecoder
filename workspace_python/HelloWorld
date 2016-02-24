@@ -1,0 +1,81 @@
+import os
+import sys
+import numpy
+import pandas as pd
+import random
+import pickle
+import pprint
+
+print ("Hello World Python !!");
+
+# numbers, strings, lists, tuples, dictionaries
+# + - * ./ % **(exponential) //(forward division)
+
+number = 59 % 7
+print(number, " test")
+
+quote = "\" always add quote"
+
+print(quote)
+
+multi_line = ''' just another line
+plus another line
+and another \"\"\"
+'''
+print(multi_line)
+
+print("%s %s %s" %('i like this',quote,multi_line))
+
+grocery_list = ['juice','oranges','cheese','pasta','chicken','steak','tea',1,2,4,5]
+laundry_list = ['briefs','underwears','fleece','shirts','socks','ties',5,6,7,8,999]
+print(grocery_list)
+grocery_list.append('wings')
+
+print(grocery_list[1])
+
+print(grocery_list[1:])
+grocery_list.reverse()
+print('Grocery list: ',grocery_list)
+print('Laundry list: ',laundry_list)
+
+todo_list = [grocery_list, laundry_list]
+print(todo_list,"\n",todo_list[0][1],"\n",todo_list[1][3])
+grocery_list.remove("wings")
+print(todo_list,"\n",todo_list[0][1],"\n",todo_list[1][3])
+print(grocery_list)
+
+print('Grocery list: ',grocery_list)
+print('Laundry list: ',laundry_list)
+
+sys.exit()
+
+if os.path.isfile('data.pkl'):
+    print("data.pkl exists")
+    pkl_file = open('data.pkl', 'rb')
+
+    data1 = pickle.load(pkl_file)
+    pprint.pprint(data1)
+
+    data2 = pickle.load(pkl_file)
+    pprint.pprint(data2)
+
+    pkl_file.close()
+    sys.exit()
+
+
+data1 = {'a': [1, 2.0, 3, 4+6j],
+         'b': ('string', u'Unicode string'),
+         'c': None}
+
+selfref_list = [1, 2, 3]
+selfref_list.append(selfref_list)
+
+output = open('data.pkl', 'wb')
+
+# Pickle dictionary using protocol 0.
+pickle.dump(data1, output)
+
+# Pickle the list using the highest protocol available.
+pickle.dump(selfref_list, output, -1)
+
+output.close()

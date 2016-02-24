@@ -1,0 +1,46 @@
+4. Function Parameters
+
+As a young child, you probably heard Happy Birthday sung to a couple of people, and then you could sing to a new person, say Maria, without needing to hear the whole special version with Maria’s name in it word for word. You had the power of abstraction. With examples like the versions for Emily and Andre, you could figure out what change to make it so the song could be sung to Maria!
+
+Unfortunately, Python is not that smart. It needs explicit rules. If you needed to explain explicitly to someone how Happy Birthday worked in general, rather than just by example, you might say something like this:
+
+First you have to be given a person’s name. Then you sing the song with the person’s name inserted at the end of the third line.
+
+Python works something like that, but with its own syntax. The term “person’s name” serves as a stand-in for the actual data that will be used, “Emily”, “Andre”, or “Maria”. This is just like the association with a variable name in Python. “person’s name” is not a legal Python identifier, so we will use just person as this stand-in.
+
+The function definition indicates that the variable name person will be used inside the function by inserting it between the parentheses of the definition. Then in the body of the definition of the function, person is used in place of the real data for any specific person’s name. Read and then run example program birthday6.py:
+
+
+
+ 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+ 
+'''Function with parameter.'''
+
+def happyBirthday(person):
+    print("Happy Birthday to you!")
+    print("Happy Birthday to you!")
+    print("Happy Birthday, dear " + person + ".")
+    print("Happy Birthday to you!")
+
+happyBirthday('Emily')
+happyBirthday('Andre')
+
+ 
+
+In the definition heading for happyBirthday, person is referred to as a formal parameter. This variable name is a placeholder for the real name of the person being sung to.
+
+The last two lines of the program, again, are the only ones outside of definitions, so they are the only ones executed directly. There is now an actual name between the parentheses in the function calls. The value between the parentheses here in the function call is referred to as an argument or actual parameter of the function call. The argument supplies the actual data to be used in the function execution. When the call is made, Python does this by associating the formal parameter name person with the actual parameter data, as in an assignment statement. In the first call, this actual data is 'Emily'. We say the actual parameter value is passed to the function. [1]
+
+The execution in greater detail:
+
+1.Lines 3-7: Definition remembered
+

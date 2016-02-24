@@ -1,0 +1,18 @@
+
+public class TierTwoClass extends TierOneClass {
+	private int t21, t22;
+	private double d21, d22;
+	private TierOneClass toc;
+	public TierTwoClass(int i1, int i2, double d1, double d2) {
+		
+	}
+	public void TierOneFunc1() {
+		System.out.println("TierTwoFunc1 called...");
+	}
+	public void TierOneFunc2() {
+		System.out.println("TierTwoFunc2 called...");
+	}
+	public void prinVars() {
+		System.out.println("TierTwoClass: " + ti1 + "," + ti2 + "," + td1 + "," + td2);
+	}
+}

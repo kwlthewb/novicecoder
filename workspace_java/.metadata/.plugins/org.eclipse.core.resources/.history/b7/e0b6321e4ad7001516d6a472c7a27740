@@ -1,0 +1,15 @@
+
+public class TierThreeClass {
+	private int t31, t32;
+	private double d31, d32;
+	public TierThreeClass() {
+		t31 = 300;
+		t32 = -300;
+		d31 = 999.99;
+		d32 = -999.99;
+	}
+	public void DoSomething(TierOneClass t1c) {
+		System.out.println("TierThreeClass.DoSomething called...");
+		t1c.prinVars();
+	}
+}

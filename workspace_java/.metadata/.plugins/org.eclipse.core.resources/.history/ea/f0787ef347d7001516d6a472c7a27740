@@ -1,0 +1,25 @@
+
+public class TierOneClass {
+	private int ti1, ti2;
+	private double td1, td2;
+	
+	public void TierOneClass() {
+		ti1 = 0;
+		ti2 = 0;
+		td1 = 0.0;
+		td2 = 0.0;
+	}
+	public void TierOneFunc1() {
+		System.out.println("TierOneFunc1 called...");
+	}
+	public void TierOneFunc2() {
+		System.out.println("TierOneFunc2 called...");
+	}
+	
+	public void TierOneFunc3() {
+		System.out.println("TierOneFunc3 called...");
+	}
+	public void TierOneFunc4() {
+		System.out.println("TierOneFunc4 called...");
+	}
+}

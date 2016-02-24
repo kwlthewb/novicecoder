@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="processing.core.PApplet"/>
+<fullyQualifiedTypeName name="package1.SampleClass"/>
+<fullyQualifiedTypeName name="package1.OtherClass1"/>
+<fullyQualifiedTypeName name="package1.SubClass1"/>
+<fullyQualifiedTypeName name="de.fhpotsdam.unfolding.data.ShapeFeature"/>
+<fullyQualifiedTypeName name="de.fhpotsdam.unfolding.data.MarkerFactory"/>
+<fullyQualifiedTypeName name="de.fhpotsdam.unfolding.marker.SimplePolygonMarker"/>
+<fullyQualifiedTypeName name="de.fhpotsdam.unfolding.marker.SimplePointMarker"/>
+<fullyQualifiedTypeName name="module4.EarthquakeMarker"/>
+<fullyQualifiedTypeName name="module4.OceanQuakeMarker"/>
+</qualifiedTypeNameHistroy>

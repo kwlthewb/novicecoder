@@ -1,0 +1,941 @@
+04:49:06 **** Build of configuration Debug for project DoSomething ****
+make all 
+Building file: ../Timer.cpp
+Invoking: Cygwin C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Timer.d" -MT"Timer.o" -o "Timer.o" "../Timer.cpp"
+Finished building: ../Timer.cpp
+ 
+Building target: DoSomething.exe
+Invoking: Cygwin C++ Linker
+g++  -o "DoSomething.exe"  ./Timer.o   
+Finished building target: DoSomething.exe
+ 
+04:49:20 **** Incremental Build of configuration Debug for project DoSomething ****
+make all 
+make: Nothing to be done for 'all'.
+04:49:23 **** Incremental Build of configuration Debug for project DoSomething ****
+make all 
+make: Nothing to be done for 'all'.
+04:49:27 **** Incremental Build of configuration Debug for project DoSomething ****
+make all 
+make: Nothing to be done for 'all'.
+04:49:37 **** Incremental Build of configuration Debug for project DoSomething ****
+make all 
+make: Nothing to be done for 'all'.
+04:49:38 **** Incremental Build of configuration Debug for project DoSomething ****
+make all 
+make: Nothing to be done for 'all'.
+04:49:39 **** Incremental Build of configuration Debug for project DoSomething ****
+make all 
+make: Nothing to be done for 'all'.
+04:50:04 **** Clean-only build of configuration Debug for project DoSomething ****
+make clean 
+rm -rf  ./Timer.o  ./Timer.d  DoSomething.exe
+ 
+04:50:07 **** Build of configuration Debug for project DoSomething ****
+make all 
+Building file: ../Timer.cpp
+Invoking: Cygwin C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Timer.d" -MT"Timer.o" -o "Timer.o" "../Timer.cpp"
+Finished building: ../Timer.cpp
+ 
+Building target: DoSomething.exe
+Invoking: Cygwin C++ Linker
+g++  -o "DoSomething.exe"  ./Timer.o   
+Finished building target: DoSomething.exe
+ 
+04:50:25 **** Incremental Build of configuration Debug for project DoSomething ****
+make all 
+make: Nothing to be done for 'all'.
+04:50:47 **** Incremental Build of configuration Debug for project DoSomething ****
+make all 
+make: Nothing to be done for 'all'.
+04:52:57 **** Clean-only build of configuration Debug for project DoSomething ****
+make clean 
+rm -rf  ./Timer.o  ./Timer.d  DoSomething.exe
+ 
+04:53:02 **** Build of configuration Debug for project DoSomething ****
+make all 
+Building file: ../Timer.cpp
+Invoking: Cygwin C++ Compiler
+g++ -I"D:\cygwin64\usr\include" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Timer.d" -MT"Timer.o" -o "Timer.o" "../Timer.cpp"
+Finished building: ../Timer.cpp
+ 
+Building target: DoSomething.exe
+Invoking: Cygwin C++ Linker
+g++ -L"D:\cygwin64\lib" -o "DoSomething.exe"  ./Timer.o   
+Finished building target: DoSomething.exe
+ 
+04:53:09 **** Incremental Build of configuration Debug for project DoSomething ****
+make all 
+make: Nothing to be done for 'all'.
+04:53:37 **** Incremental Build of configuration Debug for project DoSomething ****
+make all 
+Building file: ../Timer.cpp
+Invoking: Cygwin C++ Compiler
+g++ -I"D:\cygwin64\usr\include" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Timer.d" -MT"Timer.o" -o "Timer.o" "../Timer.cpp"
+../Timer.cpp: In function 'int main(int, char**)':
+../Timer.cpp:22:12: error: no match for 'operator>>' (operand types are 'std::ostream {aka std::basic_ostream<char>}' and 'int')
+  std::cout >> something;
+            ^
+../Timer.cpp:22:12: note: candidates are:
+In file included from /usr/lib/gcc/x86_64-pc-cygwin/4.9.3/include/c++/iostream:40:0,
+                 from ../Timer.h:13,
+                 from ../Timer.cpp:8:
+/usr/lib/gcc/x86_64-pc-cygwin/4.9.3/include/c++/istream:779:5: note: template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, signed char*)
+     operator>>(basic_istream<char, _Traits>& __in, signed char* __s)
+     ^
+/usr/lib/gcc/x86_64-pc-cygwin/4.9.3/include/c++/istream:779:5: note:   template argument deduction/substitution failed:
+../Timer.cpp:22:15: note:   'std::ostream {aka std::basic_ostream<char>}' is not derived from 'std::basic_istream<char, _Traits>'
+  std::cout >> something;
+               ^
+In file included from /usr/lib/gcc/x86_64-pc-cygwin/4.9.3/include/c++/iostream:40:0,
+                 from ../Timer.h:13,
+                 from ../Timer.cpp:8:
+/usr/lib/gcc/x86_64-pc-cygwin/4.9.3/include/c++/istream:774:5: note: template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, unsigned char*)
+     operator>>(basic_istream<char, _Traits>& __in, unsigned char* __s)
+     ^
+/usr/lib/gcc/x86_64-pc-cygwin/4.9.3/include/c++/istream:774:5: note:   template argument deduction/substitution failed:
+../Timer.cpp:22:15: note:   'std::ostream {aka std::basic_ostream<char>}' is not derived from 'std::basic_istream<char, _Traits>'
+  std::cout >> something;
+               ^
+In file included from /usr/lib/gcc/x86_64-pc-cygwin/4.9.3/include/c++/iostream:40:0,
+                 from ../Timer.h:13,
+                 from ../Timer.cpp:8:
+/usr/lib/gcc/x86_64-pc-cygwin/4.9.3/include/c++/istream:732:5: note: template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, signed char&)
+     operator>>(basic_istream<char, _Traits>& __in, signed char& __c)
+     ^
+/usr/lib/gcc/x86_64-pc-cygwin/4.9.3/include/c++/istream:732:5: note:   template argument deduction/substitution failed:
+../Timer.cpp:22:15: note:   'std::ostream {aka std::basic_ostream<char>}' is not derived from 'std::basic_istream<char, _Traits>'
+  std::cout >> something;
+               ^
+In file included from /usr/lib/gcc/x86_64-pc-cygwin/4.9.3/include/c++/iostream:40:0,
+                 from ../Timer.h:13,
+                 from ../Timer.cpp:8:
+/usr/lib/gcc/x86_64-pc-cygwin/4.9.3/include/c++/istream:727:5: note: template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, unsigned char&)
+     operator>>(basic_istream<char, _Traits>& __in, unsigned char& __c)
+     ^
+/usr/lib/gcc/x86_64-pc-cygwin/4.9.3/include/c++/istream:727:5: note:   template argument deduction/substitution failed:
+../Timer.cpp:22:15: note:   'std::ostream {aka std::basic_ostream<char>}' is not derived from 'std::basic_istream<char, _Traits>'
+  std::cout >> something;
+               ^
+In file included from /usr/lib/gcc/x86_64-pc-cygwin/4.9.3/include/c++/istream:882:0,
+                 from /usr/lib/gcc/x86_64-pc-cygwin/4.9.3/include/c++/iostream:40,
+                 from ../Timer.h:13,
+                 from ../Timer.cpp:8:
+/usr/lib/gcc/x86_64-pc-cygwin/4.9.3/include/c++/bits/istream.tcc:923:5: note: template<class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, _CharT&)
+     operator>>(basic_istream<_CharT, _Traits>& __in, _CharT& __c)
+     ^
+/usr/lib/gcc/x86_64-pc-cygwin/4.9.3/include/c++/bits/istream.tcc:923:5: note:   template argument deduction/substitution failed:
+../Timer.cpp:22:15: note:   'std::ostream {aka std::basic_ostream<char>}' is not derived from 'std::basic_istream<_CharT, _Traits>'
+  std::cout >> something;
+               ^
+In file included from /usr/lib/gcc/x86_64-pc-cygwin/4.9.3/include/c++/istream:882:0,
+                 from /usr/lib/gcc/x86_64-pc-cygwin/4.9.3/include/c++/iostream:40,
+                 from ../Timer.h:13,
+                 from ../Timer.cpp:8:
+/usr/lib/gcc/x86_64-pc-cygwin/4.9.3/include/c++/bits/istream.tcc:955:5: note: template<class _CharT2, class _Traits2> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, _CharT2*)
+     operator>>(basic_istream<_CharT, _Traits>& __in, _CharT* __s)
+     ^
+/usr/lib/gcc/x86_64-pc-cygwin/4.9.3/include/c++/bits/istream.tcc:955:5: note:   template argument deduction/substitution failed:
+../Timer.cpp:22:15: note:   'std::ostream {aka std::basic_ostream<char>}' is not derived from 'std::basic_istream<_CharT, _Traits>'
+  std::cout >> something;
+               ^
+In file included from /usr/lib/gcc/x86_64-pc-cygwin/4.9.3/include/c++/string:53:0,
+                 from /usr/lib/gcc/x86_64-pc-cygwin/4.9.3/include/c++/bits/locale_classes.h:40,
+                 from /usr/lib/gcc/x86_64-pc-cygwin/4.9.3/include/c++/bits/ios_base.h:41,
+                 from /usr/lib/gcc/x86_64-pc-cygwin/4.9.3/include/c++/ios:42,
+                 from /usr/lib/gcc/x86_64-pc-cygwin/4.9.3/include/c++/ostream:38,
+                 from /usr/lib/gcc/x86_64-pc-cygwin/4.9.3/include/c++/iostream:39,
+                 from ../Timer.h:13,
+                 from ../Timer.cpp:8:
+/usr/lib/gcc/x86_64-pc-cygwin/4.9.3/include/c++/bits/basic_string.tcc:996:5: note: template<class _CharT, class _Traits, class _Alloc> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::basic_string<_CharT, _Traits, _Alloc>&)
+     operator>>(basic_istream<_CharT, _Traits>& __in,
+     ^
+/usr/lib/gcc/x86_64-pc-cygwin/4.9.3/include/c++/bits/basic_string.tcc:996:5: note:   template argument deduction/substitution failed:
+../Timer.cpp:22:15: note:   'std::ostream {aka std::basic_ostream<char>}' is not derived from 'std::basic_istream<_CharT, _Traits>'
+  std::cout >> something;
+               ^
+subdir.mk:18: recipe for target 'Timer.o' failed
+make: *** [Timer.o] Error 1
+04:55:02 **** Clean-only build of configuration Debug for project DoSomething ****
+make clean 
+rm -rf  ./Timer.o  ./Timer.d  DoSomething.exe
+ 
+04:55:05 **** Build of configuration Debug for project DoSomething ****
+make all 
+Building file: ../Timer.cpp
+Invoking: Cygwin C++ Compiler
+g++ -I"D:\cygwin64\usr\include" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Timer.d" -MT"Timer.o" -o "Timer.o" "../Timer.cpp"
+Finished building: ../Timer.cpp
+ 
+Building target: DoSomething.exe
+Invoking: Cygwin C++ Linker
+g++ -L"D:\cygwin64\lib" -o "DoSomething.exe"  ./Timer.o   
+Finished building target: DoSomething.exe
+ 
+04:56:07 **** Incremental Build of configuration Debug for project DoSomething ****
+make all 
+make: Nothing to be done for 'all'.
+04:56:09 **** Incremental Build of configuration Debug for project DoSomething ****
+make all 
+make: Nothing to be done for 'all'.
+04:56:10 **** Incremental Build of configuration Debug for project DoSomething ****
+make all 
+make: Nothing to be done for 'all'.
+04:56:11 **** Incremental Build of configuration Debug for project DoSomething ****
+make all 
+make: Nothing to be done for 'all'.
+04:56:14 **** Incremental Build of configuration Debug for project DoSomething ****
+make all 
+make: Nothing to be done for 'all'.
+05:05:15 **** Incremental Build of configuration Debug for project DoSomething ****
+make all 
+make: Nothing to be done for 'all'.
+21:38:39 **** Incremental Build of configuration Debug for project DoSomething ****
+make all 
+Building file: ../Timer.cpp
+Invoking: Cygwin C++ Compiler
+g++ -I"D:\cygwin64\usr\include" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Timer.d" -MT"Timer.o" -o "Timer.o" "../Timer.cpp"
+../Timer.cpp: In constructor 'Timer::Timer(int, double)':
+../Timer.cpp:20:39: warning: delegating constructors only available with -std=c++11 or -std=gnu++11
+ Timer::Timer(int i, double j) : Timer() {
+                                       ^
+Finished building: ../Timer.cpp
+ 
+Building target: DoSomething.exe
+Invoking: Cygwin C++ Linker
+g++ -L"D:\cygwin64\lib" -o "DoSomething.exe"  ./Timer.o   
+Finished building target: DoSomething.exe
+ 
+21:42:40 **** Clean-only build of configuration Debug for project DoSomething ****
+make clean 
+rm -rf  ./Timer.o  ./Timer.d  DoSomething.exe
+ 
+21:42:43 **** Build of configuration Debug for project DoSomething ****
+make all 
+Building file: ../Timer.cpp
+Invoking: Cygwin C++ Compiler
+g++ -I"D:\cygwin64\usr\include" -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"Timer.d" -MT"Timer.o" -o "Timer.o" "../Timer.cpp"
+Finished building: ../Timer.cpp
+ 
+Building target: DoSomething.exe
+Invoking: Cygwin C++ Linker
+g++ -L"D:\cygwin64\lib" -o "DoSomething.exe"  ./Timer.o   
+Finished building target: DoSomething.exe
+ 
+21:42:48 **** Incremental Build of configuration Debug for project DoSomething ****
+make all 
+make: Nothing to be done for 'all'.
+21:42:52 **** Incremental Build of configuration Debug for project DoSomething ****
+make all 
+make: Nothing to be done for 'all'.
+21:43:13 **** Incremental Build of configuration Debug for project DoSomething ****
+make all 
+make: Nothing to be done for 'all'.
+21:43:57 **** Incremental Build of configuration Debug for project DoSomething ****
+make all 
+Building file: ../Timer.cpp
+Invoking: Cygwin C++ Compiler
+g++ -I"D:\cygwin64\usr\include" -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"Timer.d" -MT"Timer.o" -o "Timer.o" "../Timer.cpp"
+Finished building: ../Timer.cpp
+ 
+Building target: DoSomething.exe
+Invoking: Cygwin C++ Linker
+g++ -L"D:\cygwin64\lib" -o "DoSomething.exe"  ./Timer.o   
+Finished building target: DoSomething.exe
+ 
+21:44:16 **** Clean-only build of configuration Debug for project DoSomething ****
+make clean 
+rm -rf  ./Timer.o  ./Timer.d  DoSomething.exe
+ 
+21:44:18 **** Build of configuration Debug for project DoSomething ****
+make all 
+Building file: ../Timer.cpp
+Invoking: Cygwin C++ Compiler
+g++ -I"D:\cygwin64\usr\include" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Timer.d" -MT"Timer.o" -o "Timer.o" "../Timer.cpp"
+../Timer.cpp: In constructor 'Timer::Timer(int, double)':
+../Timer.cpp:20:39: warning: delegating constructors only available with -std=c++11 or -std=gnu++11
+ Timer::Timer(int i, double j) : Timer() {
+                                       ^
+Finished building: ../Timer.cpp
+ 
+Building target: DoSomething.exe
+Invoking: Cygwin C++ Linker
+g++ -L"D:\cygwin64\lib" -o "DoSomething.exe"  ./Timer.o   
+Finished building target: DoSomething.exe
+ 
+21:44:22 **** Incremental Build of configuration Debug for project DoSomething ****
+make all 
+make: Nothing to be done for 'all'.
+21:48:08 **** Incremental Build of configuration Debug for project DoSomething ****
+make all 
+Building file: ../Timer.cpp
+Invoking: Cygwin C++ Compiler
+g++ -I"D:\cygwin64\usr\include" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Timer.d" -MT"Timer.o" -o "Timer.o" "../Timer.cpp"
+../Timer.cpp: In constructor 'Timer::Timer(int, double)':
+../Timer.cpp:20:39: warning: delegating constructors only available with -std=c++11 or -std=gnu++11
+ Timer::Timer(int i, double j) : Timer() {
+                                       ^
+Finished building: ../Timer.cpp
+ 
+Building target: DoSomething.exe
+Invoking: Cygwin C++ Linker
+g++ -L"D:\cygwin64\lib" -o "DoSomething.exe"  ./Timer.o   
+Finished building target: DoSomething.exe
+ 
+21:48:35 **** Clean-only build of configuration Debug for project DoSomething ****
+make clean 
+rm -rf  ./Timer.o  ./Timer.d  DoSomething.exe
+ 
+21:48:37 **** Build of configuration Debug for project DoSomething ****
+make all 
+Building file: ../Timer.cpp
+Invoking: Cygwin C++ Compiler
+g++ -I"D:\cygwin64\usr\include" -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"Timer.d" -MT"Timer.o" -o "Timer.o" "../Timer.cpp"
+Finished building: ../Timer.cpp
+ 
+Building target: DoSomething.exe
+Invoking: Cygwin C++ Linker
+g++ -L"D:\cygwin64\lib" -o "DoSomething.exe"  ./Timer.o   
+Finished building target: DoSomething.exe
+ 
+15:15:10 **** Incremental Build of configuration Debug for project DoSomething ****
+make all 
+Building file: ../Timer.cpp
+Invoking: Cygwin C++ Compiler
+g++ -I"D:\cygwin64\usr\include" -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"Timer.d" -MT"Timer.o" -o "Timer.o" "../Timer.cpp"
+../Timer.cpp: In function 'int main()':
+../Timer.cpp:76:27: warning: variable 'e' set but not used [-Wunused-but-set-variable]
+     const A c(a), &d = c, e = b;
+                           ^
+Finished building: ../Timer.cpp
+ 
+Building target: DoSomething.exe
+Invoking: Cygwin C++ Linker
+g++ -L"D:\cygwin64\lib" -o "DoSomething.exe"  ./Timer.o   
+Finished building target: DoSomething.exe
+ 
+15:21:09 **** Incremental Build of configuration Debug for project DoSomething ****
+make all 
+Building file: ../Timer.cpp
+Invoking: Cygwin C++ Compiler
+g++ -I"D:\cygwin64\usr\include" -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"Timer.d" -MT"Timer.o" -o "Timer.o" "../Timer.cpp"
+../Timer.cpp: In function 'int main()':
+../Timer.cpp:77:27: warning: variable 'e' set but not used [-Wunused-but-set-variable]
+     const A c(a), &d = c, e = b; //c
+                           ^
+Finished building: ../Timer.cpp
+ 
+Building target: DoSomething.exe
+Invoking: Cygwin C++ Linker
+g++ -L"D:\cygwin64\lib" -o "DoSomething.exe"  ./Timer.o   
+Finished building target: DoSomething.exe
+ 
+15:21:55 **** Incremental Build of configuration Debug for project DoSomething ****
+make all 
+Building file: ../Timer.cpp
+Invoking: Cygwin C++ Compiler
+g++ -I"D:\cygwin64\usr\include" -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"Timer.d" -MT"Timer.o" -o "Timer.o" "../Timer.cpp"
+../Timer.cpp: In function 'int main()':
+../Timer.cpp:77:27: warning: variable 'e' set but not used [-Wunused-but-set-variable]
+     const A c(a), &d = c, e = b; //c
+                           ^
+Finished building: ../Timer.cpp
+ 
+Building target: DoSomething.exe
+Invoking: Cygwin C++ Linker
+g++ -L"D:\cygwin64\lib" -o "DoSomething.exe"  ./Timer.o   
+Finished building target: DoSomething.exe
+ 
+15:29:40 **** Incremental Build of configuration Debug for project DoSomething ****
+make all 
+Building file: ../Timer.cpp
+Invoking: Cygwin C++ Compiler
+g++ -I"D:\cygwin64\usr\include" -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"Timer.d" -MT"Timer.o" -o "Timer.o" "../Timer.cpp"
+../Timer.cpp:56:29: warning: multi-character character constant [-Wmultichar]
+         std::cout << m_n << ',d';
+                             ^
+../Timer.cpp:62:29: warning: multi-character character constant [-Wmultichar]
+         std::cout << m_n << ',c';
+                             ^
+../Timer.cpp: In function 'int main()':
+../Timer.cpp:77:27: warning: variable 'e' set but not used [-Wunused-but-set-variable]
+     const A c(a), &d = c, e = b; //c
+                           ^
+Finished building: ../Timer.cpp
+ 
+Building target: DoSomething.exe
+Invoking: Cygwin C++ Linker
+g++ -L"D:\cygwin64\lib" -o "DoSomething.exe"  ./Timer.o   
+Finished building target: DoSomething.exe
+ 
+15:30:48 **** Incremental Build of configuration Debug for project DoSomething ****
+make all 
+Building file: ../Timer.cpp
+Invoking: Cygwin C++ Compiler
+g++ -I"D:\cygwin64\usr\include" -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"Timer.d" -MT"Timer.o" -o "Timer.o" "../Timer.cpp"
+../Timer.cpp:56:29: warning: multi-character character constant [-Wmultichar]
+         std::cout << m_n << ',d';
+                             ^
+../Timer.cpp:62:29: warning: multi-character character constant [-Wmultichar]
+         std::cout << m_n << ',c';
+                             ^
+../Timer.cpp: In function 'int main()':
+../Timer.cpp:77:27: warning: variable 'e' set but not used [-Wunused-but-set-variable]
+     const A c(a), &d = c, e = b; //c
+                           ^
+Finished building: ../Timer.cpp
+ 
+Building target: DoSomething.exe
+Invoking: Cygwin C++ Linker
+g++ -L"D:\cygwin64\lib" -o "DoSomething.exe"  ./Timer.o   
+Finished building target: DoSomething.exe
+ 
+15:31:03 **** Incremental Build of configuration Debug for project DoSomething ****
+make all 
+Building file: ../Timer.cpp
+Invoking: Cygwin C++ Compiler
+g++ -I"D:\cygwin64\usr\include" -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"Timer.d" -MT"Timer.o" -o "Timer.o" "../Timer.cpp"
+../Timer.cpp:56:22: warning: multi-character character constant [-Wmultichar]
+         std::cout << ',d';
+                      ^
+../Timer.cpp:62:22: warning: multi-character character constant [-Wmultichar]
+         std::cout << ',c';
+                      ^
+../Timer.cpp: In function 'int main()':
+../Timer.cpp:77:27: warning: variable 'e' set but not used [-Wunused-but-set-variable]
+     const A c(a), &d = c, e = b; //c
+                           ^
+Finished building: ../Timer.cpp
+ 
+Building target: DoSomething.exe
+Invoking: Cygwin C++ Linker
+g++ -L"D:\cygwin64\lib" -o "DoSomething.exe"  ./Timer.o   
+Finished building target: DoSomething.exe
+ 
+15:43:06 **** Incremental Build of configuration Debug for project DoSomething ****
+make all 
+Building file: ../Timer.cpp
+Invoking: Cygwin C++ Compiler
+g++ -I"D:\cygwin64\usr\include" -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"Timer.d" -MT"Timer.o" -o "Timer.o" "../Timer.cpp"
+../Timer.cpp:56:22: warning: multi-character character constant [-Wmultichar]
+         std::cout << ',d';
+                      ^
+../Timer.cpp:62:22: warning: multi-character character constant [-Wmultichar]
+         std::cout << ',c';
+                      ^
+../Timer.cpp:76:31: warning: multi-character character constant [-Wmultichar]
+     std::cout << std::endl << '1:' << std::endl;
+                               ^
+../Timer.cpp:78:31: warning: multi-character character constant [-Wmultichar]
+     std::cout << std::endl << '2:' << std::endl;
+                               ^
+../Timer.cpp:80:31: warning: multi-character character constant [-Wmultichar]
+     std::cout << std::endl << '3:' << std::endl;
+                               ^
+../Timer.cpp:82:31: warning: multi-character character constant [-Wmultichar]
+     std::cout << std::endl << '4:' << std::endl;
+                               ^
+../Timer.cpp:84:31: warning: multi-character character constant [-Wmultichar]
+     std::cout << std::endl << '5:' << std::endl;
+                               ^
+../Timer.cpp:86:31: warning: multi-character character constant [-Wmultichar]
+     std::cout << std::endl << '6:' << std::endl;
+                               ^
+../Timer.cpp:88:31: warning: multi-character character constant [-Wmultichar]
+     std::cout << std::endl << '7:' << std::endl;
+                               ^
+../Timer.cpp: In function 'int main()':
+../Timer.cpp:77:27: warning: variable 'e' set but not used [-Wunused-but-set-variable]
+     const A c(a), &d = c, e = b; //c
+                           ^
+Finished building: ../Timer.cpp
+ 
+Building target: DoSomething.exe
+Invoking: Cygwin C++ Linker
+g++ -L"D:\cygwin64\lib" -o "DoSomething.exe"  ./Timer.o   
+Finished building target: DoSomething.exe
+ 
+15:43:49 **** Incremental Build of configuration Debug for project DoSomething ****
+make all 
+Building file: ../Timer.cpp
+Invoking: Cygwin C++ Compiler
+g++ -I"D:\cygwin64\usr\include" -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"Timer.d" -MT"Timer.o" -o "Timer.o" "../Timer.cpp"
+../Timer.cpp:56:22: warning: multi-character character constant [-Wmultichar]
+         std::cout << ',d';
+                      ^
+../Timer.cpp:62:22: warning: multi-character character constant [-Wmultichar]
+         std::cout << ',c';
+                      ^
+../Timer.cpp: In function 'int main()':
+../Timer.cpp:77:27: warning: variable 'e' set but not used [-Wunused-but-set-variable]
+     const A c(a), &d = c, e = b; //c
+                           ^
+Finished building: ../Timer.cpp
+ 
+Building target: DoSomething.exe
+Invoking: Cygwin C++ Linker
+g++ -L"D:\cygwin64\lib" -o "DoSomething.exe"  ./Timer.o   
+Finished building target: DoSomething.exe
+ 
+15:44:49 **** Incremental Build of configuration Debug for project DoSomething ****
+make all 
+Building file: ../Timer.cpp
+Invoking: Cygwin C++ Compiler
+g++ -I"D:\cygwin64\usr\include" -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"Timer.d" -MT"Timer.o" -o "Timer.o" "../Timer.cpp"
+../Timer.cpp: In function 'int main()':
+../Timer.cpp:75:27: warning: variable 'e' set but not used [-Wunused-but-set-variable]
+     const A c(a), &d = c, e = b;
+                           ^
+Finished building: ../Timer.cpp
+ 
+Building target: DoSomething.exe
+Invoking: Cygwin C++ Linker
+g++ -L"D:\cygwin64\lib" -o "DoSomething.exe"  ./Timer.o   
+Finished building target: DoSomething.exe
+ 
+15:45:48 **** Incremental Build of configuration Debug for project DoSomething ****
+make all 
+Building file: ../Timer.cpp
+Invoking: Cygwin C++ Compiler
+g++ -I"D:\cygwin64\usr\include" -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"Timer.d" -MT"Timer.o" -o "Timer.o" "../Timer.cpp"
+../Timer.cpp: In function 'int main()':
+../Timer.cpp:81:13: warning: variable 'e' set but not used [-Wunused-but-set-variable]
+     const A e = b;
+             ^
+Finished building: ../Timer.cpp
+ 
+Building target: DoSomething.exe
+Invoking: Cygwin C++ Linker
+g++ -L"D:\cygwin64\lib" -o "DoSomething.exe"  ./Timer.o   
+Finished building target: DoSomething.exe
+ 
+15:46:53 **** Incremental Build of configuration Debug for project DoSomething ****
+make all 
+Building file: ../Timer.cpp
+Invoking: Cygwin C++ Compiler
+g++ -I"D:\cygwin64\usr\include" -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"Timer.d" -MT"Timer.o" -o "Timer.o" "../Timer.cpp"
+../Timer.cpp: In function 'int main()':
+../Timer.cpp:81:7: warning: variable 'e' set but not used [-Wunused-but-set-variable]
+     A e = b;
+       ^
+Finished building: ../Timer.cpp
+ 
+Building target: DoSomething.exe
+Invoking: Cygwin C++ Linker
+g++ -L"D:\cygwin64\lib" -o "DoSomething.exe"  ./Timer.o   
+Finished building target: DoSomething.exe
+ 
+15:47:21 **** Incremental Build of configuration Debug for project DoSomething ****
+make all 
+Building file: ../Timer.cpp
+Invoking: Cygwin C++ Compiler
+g++ -I"D:\cygwin64\usr\include" -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"Timer.d" -MT"Timer.o" -o "Timer.o" "../Timer.cpp"
+../Timer.cpp: In function 'int main()':
+../Timer.cpp:81:13: warning: variable 'e' set but not used [-Wunused-but-set-variable]
+     const A e = b;
+             ^
+Finished building: ../Timer.cpp
+ 
+Building target: DoSomething.exe
+Invoking: Cygwin C++ Linker
+g++ -L"D:\cygwin64\lib" -o "DoSomething.exe"  ./Timer.o   
+Finished building target: DoSomething.exe
+ 
+08:24:10 **** Incremental Build of configuration Debug for project DoSomething ****
+make all 
+Building file: ../Timer.cpp
+Invoking: Cygwin C++ Compiler
+g++ -I"D:\cygwin64\usr\include" -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"Timer.d" -MT"Timer.o" -o "Timer.o" "../Timer.cpp"
+../Timer.cpp: In function 'int main()':
+../Timer.cpp:83:13: warning: variable 'e' set but not used [-Wunused-but-set-variable]
+     const A e = b;
+             ^
+Finished building: ../Timer.cpp
+ 
+Building target: DoSomething.exe
+Invoking: Cygwin C++ Linker
+g++ -L"D:\cygwin64\lib" -o "DoSomething.exe"  ./Timer.o   
+Finished building target: DoSomething.exe
+ 
+08:59:54 **** Incremental Build of configuration Debug for project DoSomething ****
+make all 
+Building file: ../Timer.cpp
+Invoking: Cygwin C++ Compiler
+g++ -I"D:\cygwin64\usr\include" -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"Timer.d" -MT"Timer.o" -o "Timer.o" "../Timer.cpp"
+../Timer.cpp:75:37: error: call of overloaded 'A()' is ambiguous
+ void f(const A &a1, const A &a2 = A())
+                                     ^
+../Timer.cpp:75:37: note: candidates are:
+../Timer.cpp:57:2: note: A::A(int)
+  A(int n = 0)
+  ^
+../Timer.cpp:51:2: note: A::A()
+  A()
+  ^
+../Timer.cpp: In function 'int main()':
+../Timer.cpp:83:7: error: call of overloaded 'A()' is ambiguous
+     A b; // d
+       ^
+../Timer.cpp:83:7: note: candidates are:
+../Timer.cpp:57:2: note: A::A(int)
+  A(int n = 0)
+  ^
+../Timer.cpp:51:2: note: A::A()
+  A()
+  ^
+make: *** [Timer.o] Error 1
+subdir.mk:18: recipe for target 'Timer.o' failed
+09:00:44 **** Incremental Build of configuration Debug for project DoSomething ****
+make all 
+Building file: ../Timer.cpp
+Invoking: Cygwin C++ Compiler
+g++ -I"D:\cygwin64\usr\include" -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"Timer.d" -MT"Timer.o" -o "Timer.o" "../Timer.cpp"
+../Timer.cpp:75:37: error: call of overloaded 'A()' is ambiguous
+ void f(const A &a1, const A &a2 = A())
+                                     ^
+../Timer.cpp:75:37: note: candidates are:
+../Timer.cpp:57:2: note: A::A(int)
+  A(int n = 0)
+  ^
+../Timer.cpp:51:2: note: A::A()
+  A()
+  ^
+../Timer.cpp: In function 'int main()':
+../Timer.cpp:89:17: error: invalid conversion from 'A (*)()' to 'int' [-fpermissive]
+     const A e = b; // c
+                 ^
+../Timer.cpp:57:2: note: initializing argument 1 of 'A::A(int)'
+  A(int n = 0)
+  ^
+../Timer.cpp:91:7: error: assignment of function 'A b()'
+     b = d; // nothing
+       ^
+../Timer.cpp:91:7: error: cannot convert 'const A' to 'A()' in assignment
+subdir.mk:18: recipe for target 'Timer.o' failed
+make: *** [Timer.o] Error 1
+09:02:09 **** Incremental Build of configuration Debug for project DoSomething ****
+make all 
+Building file: ../Timer.cpp
+Invoking: Cygwin C++ Compiler
+g++ -I"D:\cygwin64\usr\include" -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"Timer.d" -MT"Timer.o" -o "Timer.o" "../Timer.cpp"
+../Timer.cpp:75:37: error: call of overloaded 'A()' is ambiguous
+ void f(const A &a1, const A &a2 = A())
+                                     ^
+../Timer.cpp:75:37: note: candidates are:
+../Timer.cpp:57:2: note: A::A(int)
+  A(int n = 0)
+  ^
+../Timer.cpp:51:2: note: A::A()
+  A()
+  ^
+../Timer.cpp: In function 'int main()':
+../Timer.cpp:89:15: warning: declaration of 'const A e()' has 'extern' and is initialized
+     const A e() = b; // c
+               ^
+../Timer.cpp:89:20: error: invalid pure specifier (only '= 0' is allowed) before ';' token
+     const A e() = b; // c
+                    ^
+../Timer.cpp:89:20: error: function 'const A e()' is initialized like a variable
+../Timer.cpp:91:7: error: assignment of function 'A b()'
+     b = d; // nothing
+       ^
+../Timer.cpp:91:7: error: cannot convert 'const A' to 'A()' in assignment
+subdir.mk:18: recipe for target 'Timer.o' failed
+make: *** [Timer.o] Error 1
+09:05:02 **** Incremental Build of configuration Debug for project DoSomething ****
+make all 
+Building file: ../Timer.cpp
+Invoking: Cygwin C++ Compiler
+g++ -I"D:\cygwin64\usr\include" -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"Timer.d" -MT"Timer.o" -o "Timer.o" "../Timer.cpp"
+../Timer.cpp:75:24: error: call of overloaded 'A()' is ambiguous
+ void f(const A &a1 = A(), const A &a2 = A())
+                        ^
+../Timer.cpp:75:24: note: candidates are:
+../Timer.cpp:57:2: note: A::A(int)
+  A(int n = 0)
+  ^
+../Timer.cpp:51:2: note: A::A()
+  A()
+  ^
+../Timer.cpp:75:43: error: call of overloaded 'A()' is ambiguous
+ void f(const A &a1 = A(), const A &a2 = A())
+                                           ^
+../Timer.cpp:75:43: note: candidates are:
+../Timer.cpp:57:2: note: A::A(int)
+  A(int n = 0)
+  ^
+../Timer.cpp:51:2: note: A::A()
+  A()
+  ^
+../Timer.cpp: In function 'int main()':
+../Timer.cpp:89:18: error: invalid conversion from 'A (*)()' to 'int' [-fpermissive]
+     const A e = &b; // c
+                  ^
+../Timer.cpp:57:2: note: initializing argument 1 of 'A::A(int)'
+  A(int n = 0)
+  ^
+../Timer.cpp:91:7: error: assignment of function 'A b()'
+     b = d; // nothing
+       ^
+../Timer.cpp:91:7: error: cannot convert 'const A' to 'A()' in assignment
+subdir.mk:18: recipe for target 'Timer.o' failed
+make: *** [Timer.o] Error 1
+09:05:46 **** Incremental Build of configuration Debug for project DoSomething ****
+make all 
+Building file: ../Timer.cpp
+Invoking: Cygwin C++ Compiler
+g++ -I"D:\cygwin64\usr\include" -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"Timer.d" -MT"Timer.o" -o "Timer.o" "../Timer.cpp"
+../Timer.cpp: In function 'int main()':
+../Timer.cpp:83:18: error: invalid conversion from 'A (*)()' to 'int' [-fpermissive]
+     const A e = &b; // c
+                  ^
+../Timer.cpp:51:2: note: initializing argument 1 of 'A::A(int)'
+  A(int n = 0)
+  ^
+../Timer.cpp:85:7: error: assignment of function 'A b()'
+     b = d; // nothing
+       ^
+../Timer.cpp:85:7: error: cannot convert 'const A' to 'A()' in assignment
+subdir.mk:18: recipe for target 'Timer.o' failed
+make: *** [Timer.o] Error 1
+09:05:54 **** Incremental Build of configuration Debug for project DoSomething ****
+make all 
+Building file: ../Timer.cpp
+Invoking: Cygwin C++ Compiler
+g++ -I"D:\cygwin64\usr\include" -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"Timer.d" -MT"Timer.o" -o "Timer.o" "../Timer.cpp"
+../Timer.cpp: In function 'int main()':
+../Timer.cpp:83:17: error: invalid conversion from 'A (*)()' to 'int' [-fpermissive]
+     const A e = b; // c
+                 ^
+../Timer.cpp:51:2: note: initializing argument 1 of 'A::A(int)'
+  A(int n = 0)
+  ^
+../Timer.cpp:85:7: error: assignment of function 'A b()'
+     b = d; // nothing
+       ^
+../Timer.cpp:85:7: error: cannot convert 'const A' to 'A()' in assignment
+subdir.mk:18: recipe for target 'Timer.o' failed
+make: *** [Timer.o] Error 1
+09:14:09 **** Incremental Build of configuration Debug for project DoSomething ****
+make all 
+Building file: ../Timer.cpp
+Invoking: Cygwin C++ Compiler
+g++ -I"D:\cygwin64\usr\include" -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"Timer.d" -MT"Timer.o" -o "Timer.o" "../Timer.cpp"
+../Timer.cpp: In function 'int main()':
+../Timer.cpp:76:27: warning: variable 'e' set but not used [-Wunused-but-set-variable]
+     const A c(a), &d = c, e = b; //cd
+                           ^
+Finished building: ../Timer.cpp
+ 
+Building target: DoSomething.exe
+Invoking: Cygwin C++ Linker
+g++ -L"D:\cygwin64\lib" -o "DoSomething.exe"  ./Timer.o   
+Finished building target: DoSomething.exe
+ 
+09:15:10 **** Incremental Build of configuration Debug for project DoSomething ****
+make all 
+Building file: ../Timer.cpp
+Invoking: Cygwin C++ Compiler
+g++ -I"D:\cygwin64\usr\include" -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"Timer.d" -MT"Timer.o" -o "Timer.o" "../Timer.cpp"
+../Timer.cpp: In function 'int main()':
+../Timer.cpp:77:27: warning: variable 'e' set but not used [-Wunused-but-set-variable]
+     const A c(a), &d = c, e = b; //cc
+                           ^
+Finished building: ../Timer.cpp
+ 
+Building target: DoSomething.exe
+Invoking: Cygwin C++ Linker
+g++ -L"D:\cygwin64\lib" -o "DoSomething.exe"  ./Timer.o   
+Finished building target: DoSomething.exe
+ 
+09:47:55 **** Incremental Build of configuration Debug for project DoSomething ****
+make all 
+Building file: ../Timer.cpp
+Invoking: Cygwin C++ Compiler
+g++ -I"D:\cygwin64\usr\include" -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"Timer.d" -MT"Timer.o" -o "Timer.o" "../Timer.cpp"
+../Timer.cpp: In function 'int main()':
+../Timer.cpp:81:13: warning: variable 'e' set but not used [-Wunused-but-set-variable]
+     const A e = b; //c
+             ^
+Finished building: ../Timer.cpp
+ 
+Building target: DoSomething.exe
+Invoking: Cygwin C++ Linker
+g++ -L"D:\cygwin64\lib" -o "DoSomething.exe"  ./Timer.o   
+Finished building target: DoSomething.exe
+ 
+09:50:18 **** Incremental Build of configuration Debug for project DoSomething ****
+make all 
+Building file: ../Timer.cpp
+Invoking: Cygwin C++ Compiler
+g++ -I"D:\cygwin64\usr\include" -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"Timer.d" -MT"Timer.o" -o "Timer.o" "../Timer.cpp"
+../Timer.cpp: In function 'int main()':
+../Timer.cpp:83:19: error: passing 'const A' as 'this' argument of 'void A::doSomething()' discards qualifiers [-fpermissive]
+     c.doSomething();
+                   ^
+subdir.mk:18: recipe for target 'Timer.o' failed
+make: *** [Timer.o] Error 1
+09:51:46 **** Incremental Build of configuration Debug for project DoSomething ****
+make all 
+Building file: ../Timer.cpp
+Invoking: Cygwin C++ Compiler
+g++ -I"D:\cygwin64\usr\include" -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"Timer.d" -MT"Timer.o" -o "Timer.o" "../Timer.cpp"
+../Timer.cpp: In function 'int main()':
+../Timer.cpp:86:13: warning: variable 'e' set but not used [-Wunused-but-set-variable]
+     const A e = b; //c
+             ^
+Finished building: ../Timer.cpp
+ 
+Building target: DoSomething.exe
+Invoking: Cygwin C++ Linker
+g++ -L"D:\cygwin64\lib" -o "DoSomething.exe"  ./Timer.o   
+Finished building target: DoSomething.exe
+ 
+09:52:23 **** Incremental Build of configuration Debug for project DoSomething ****
+make all 
+Building file: ../Timer.cpp
+Invoking: Cygwin C++ Compiler
+g++ -I"D:\cygwin64\usr\include" -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"Timer.d" -MT"Timer.o" -o "Timer.o" "../Timer.cpp"
+../Timer.cpp: In function 'int main()':
+../Timer.cpp:90:13: warning: variable 'e' set but not used [-Wunused-but-set-variable]
+     const A e = b; //c
+             ^
+Finished building: ../Timer.cpp
+ 
+Building target: DoSomething.exe
+Invoking: Cygwin C++ Linker
+g++ -L"D:\cygwin64\lib" -o "DoSomething.exe"  ./Timer.o   
+Finished building target: DoSomething.exe
+ 
+09:53:31 **** Incremental Build of configuration Debug for project DoSomething ****
+make all 
+Building file: ../Timer.cpp
+Invoking: Cygwin C++ Compiler
+g++ -I"D:\cygwin64\usr\include" -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"Timer.d" -MT"Timer.o" -o "Timer.o" "../Timer.cpp"
+../Timer.cpp: In function 'int main()':
+../Timer.cpp:95:13: warning: variable 'e' set but not used [-Wunused-but-set-variable]
+     const A e = b; //c
+             ^
+Finished building: ../Timer.cpp
+ 
+Building target: DoSomething.exe
+Invoking: Cygwin C++ Linker
+g++ -L"D:\cygwin64\lib" -o "DoSomething.exe"  ./Timer.o   
+Finished building target: DoSomething.exe
+ 
+09:53:50 **** Incremental Build of configuration Debug for project DoSomething ****
+make all 
+Building file: ../Timer.cpp
+Invoking: Cygwin C++ Compiler
+g++ -I"D:\cygwin64\usr\include" -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"Timer.d" -MT"Timer.o" -o "Timer.o" "../Timer.cpp"
+../Timer.cpp: In function 'int main()':
+../Timer.cpp:95:13: warning: variable 'e' set but not used [-Wunused-but-set-variable]
+     const A e = b; //c
+             ^
+Finished building: ../Timer.cpp
+ 
+Building target: DoSomething.exe
+Invoking: Cygwin C++ Linker
+g++ -L"D:\cygwin64\lib" -o "DoSomething.exe"  ./Timer.o   
+Finished building target: DoSomething.exe
+ 
+09:55:04 **** Incremental Build of configuration Debug for project DoSomething ****
+make all 
+Building file: ../Timer.cpp
+Invoking: Cygwin C++ Compiler
+g++ -I"D:\cygwin64\usr\include" -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"Timer.d" -MT"Timer.o" -o "Timer.o" "../Timer.cpp"
+../Timer.cpp: In function 'int main()':
+../Timer.cpp:87:18: error: cannot convert 'A' to 'const A*' in initialization
+     const A *d = a; // nothing
+                  ^
+../Timer.cpp:97:7: error: invalid user-defined conversion from 'const A*' to 'const A&' [-fpermissive]
+     b = d;
+       ^
+../Timer.cpp:53:5: note: candidate is: A::A(int) <near match>
+     A(int n = 0)
+     ^
+../Timer.cpp:53:5: note:   no known conversion for argument 1 from 'const A*' to 'int'
+../Timer.cpp:97:7: error: invalid conversion from 'const A*' to 'int' [-fpermissive]
+     b = d;
+       ^
+../Timer.cpp:53:5: note: initializing argument 1 of 'A::A(int)'
+     A(int n = 0)
+     ^
+subdir.mk:18: recipe for target 'Timer.o' failed
+make: *** [Timer.o] Error 1
+09:55:23 **** Incremental Build of configuration Debug for project DoSomething ****
+make all 
+Building file: ../Timer.cpp
+Invoking: Cygwin C++ Compiler
+g++ -I"D:\cygwin64\usr\include" -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"Timer.d" -MT"Timer.o" -o "Timer.o" "../Timer.cpp"
+../Timer.cpp: In function 'int main()':
+../Timer.cpp:95:13: warning: variable 'e' set but not used [-Wunused-but-set-variable]
+     const A e = b; //c
+             ^
+Finished building: ../Timer.cpp
+ 
+Building target: DoSomething.exe
+Invoking: Cygwin C++ Linker
+g++ -L"D:\cygwin64\lib" -o "DoSomething.exe"  ./Timer.o   
+Finished building target: DoSomething.exe
+ 
+09:56:16 **** Incremental Build of configuration Debug for project DoSomething ****
+make all 
+Building file: ../Timer.cpp
+Invoking: Cygwin C++ Compiler
+g++ -I"D:\cygwin64\usr\include" -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"Timer.d" -MT"Timer.o" -o "Timer.o" "../Timer.cpp"
+../Timer.cpp: In function 'int main()':
+../Timer.cpp:95:13: warning: variable 'e' set but not used [-Wunused-but-set-variable]
+     const A e = b; //c
+             ^
+Finished building: ../Timer.cpp
+ 
+Building target: DoSomething.exe
+Invoking: Cygwin C++ Linker
+g++ -L"D:\cygwin64\lib" -o "DoSomething.exe"  ./Timer.o   
+Finished building target: DoSomething.exe
+ 
+09:56:40 **** Incremental Build of configuration Debug for project DoSomething ****
+make all 
+Building file: ../Timer.cpp
+Invoking: Cygwin C++ Compiler
+g++ -I"D:\cygwin64\usr\include" -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"Timer.d" -MT"Timer.o" -o "Timer.o" "../Timer.cpp"
+../Timer.cpp: In function 'int main()':
+../Timer.cpp:95:13: warning: variable 'e' set but not used [-Wunused-but-set-variable]
+     const A e = b; //c
+             ^
+Finished building: ../Timer.cpp
+ 
+Building target: DoSomething.exe
+Invoking: Cygwin C++ Linker
+g++ -L"D:\cygwin64\lib" -o "DoSomething.exe"  ./Timer.o   
+Finished building target: DoSomething.exe
+ 
+11:27:53 **** Clean-only build of configuration Debug for project DoSomething ****
+make clean 
+rm -rf  ./Timer.o  ./Timer.d  DoSomething.exe
+ 
+11:27:57 **** Build of configuration Debug for project DoSomething ****
+make all 
+Building file: ../Timer.cpp
+Invoking: Cygwin C++ Compiler
+g++ -I"D:\cygwin64\usr\include" -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"Timer.d" -MT"Timer.o" -o "Timer.o" "../Timer.cpp"
+../Timer.cpp: In function 'int main()':
+../Timer.cpp:95:13: warning: variable 'e' set but not used [-Wunused-but-set-variable]
+     const A e = b; //c
+             ^
+Finished building: ../Timer.cpp
+ 
+Building target: DoSomething.exe
+Invoking: Cygwin C++ Linker
+g++ -L"D:\cygwin64\lib" -o "DoSomething.exe"  ./Timer.o   
+Finished building target: DoSomething.exe
+ 
+12:29:37 **** Incremental Build of configuration Debug for project DoSomething ****
+make all 
+make: Nothing to be done for 'all'.
+12:33:24 **** Incremental Build of configuration Debug for project DoSomething ****
+make all 
+make: Nothing to be done for 'all'.

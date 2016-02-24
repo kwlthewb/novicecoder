@@ -1,0 +1,6 @@
+eclipse.preferences.version=1
+environment/project/cdt.managedbuild.config.gnu.cygwin.exe.debug.224695287/PATH/delimiter=;
+environment/project/cdt.managedbuild.config.gnu.cygwin.exe.debug.224695287/PATH/operation=replace
+environment/project/cdt.managedbuild.config.gnu.cygwin.exe.debug.224695287/PATH/value=d\:\\cygwin64\\bin;D\:/jre/bin/server;D\:/jre/bin;D\:/jre/lib/amd64;C\:\\ProgramData\\Oracle\\Java\\javapath;C\:\\Windows\\system32;C\:\\Windows;C\:\\Windows\\System32\\Wbem;C\:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D\:\\eclipse_c++
+environment/project/cdt.managedbuild.config.gnu.cygwin.exe.debug.224695287/append=true
+environment/project/cdt.managedbuild.config.gnu.cygwin.exe.debug.224695287/appendContributed=true
