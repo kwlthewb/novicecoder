@@ -50,6 +50,15 @@ class Cat(Animal):
             print(self.get_sound() * how_many)
         print(how_loud)
 
+def changeSomething(someAnimal):
+    print('in changeSomething')
+    print(someAnimal.toString())
+    #someAnimal = Cat("changSomething new MOFO", 2344, 2234, 'crap...crap...', 'no rainbow color','short ribs','8115 23th ave')
+    someAnimal.set_name(someAnimal.get_name() + ' blah blah')
+    print(someAnimal.toString())
+    print('done changeSomething')
+    #return someAnimal
+
 cat = Animal("Whisker", 30, 13, 'meow')
 cat2 = Cat("WhiskerII", 30, 13, 'meow meow', 'white','tuna','1361 83rd street')
 print(cat.toString())
@@ -61,4 +70,7 @@ cat3.multiple_sounds(999, 3)
 
 cat4 = Cat("MOFO", 144, 34, 'suck..suck..suck..', 'rainbow color','short ribs','8115 23th ave')
 print(cat4.toString())
-cat4.multiple_sounds(999, 3)
+cat4.multiple_sounds(999.99, 3)
+
+changeSomething(cat4)
+print(cat4.toString())

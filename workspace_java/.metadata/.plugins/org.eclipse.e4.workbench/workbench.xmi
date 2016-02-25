@@ -175,7 +175,7 @@
                 <children xsi:type="advanced:Placeholder" xmi:id="_6Nu6CtMbEeWtPq0CFJrOQg" elementId="org.eclipse.egit.ui.RepositoriesView" toBeRendered="false" ref="_6Ntr4dMbEeWtPq0CFJrOQg"/>
               </children>
             </children>
-            <children xsi:type="basic:PartSashContainer" xmi:id="_6Nu6DNMbEeWtPq0CFJrOQg" containerData="9000" selectedElement="_6Nu6DdMbEeWtPq0CFJrOQg" horizontal="true">
+            <children xsi:type="basic:PartSashContainer" xmi:id="_6Nu6DNMbEeWtPq0CFJrOQg" containerData="9000" selectedElement="_6Nu6D9MbEeWtPq0CFJrOQg" horizontal="true">
               <children xsi:type="advanced:Placeholder" xmi:id="_6Nu6DdMbEeWtPq0CFJrOQg" elementId="org.eclipse.ui.editorss" containerData="6646" ref="_0phqkNMbEeWtPq0CFJrOQg"/>
               <children xsi:type="basic:PartStack" xmi:id="_6Nu6D9MbEeWtPq0CFJrOQg" elementId="org.eclipse.mylyn.tasks.ui.views.tasksMStack" containerData="3354" selectedElement="_6Nu6GtMbEeWtPq0CFJrOQg">
                 <children xsi:type="advanced:Placeholder" xmi:id="_6Nu6ENMbEeWtPq0CFJrOQg" elementId="org.eclipse.mylyn.tasks.ui.views.tasks" ref="_0r96ltMbEeWtPq0CFJrOQg"/>
@@ -230,7 +230,7 @@
           <tags>removeOnHide</tags>
         </children>
         <children xsi:type="basic:Part" xmi:id="_XhPOANl3EeW-teM_F_QsgQ" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="EarthquakeCityMap.java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/jcu_obj.png" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;EarthquakeCityMap.java&quot; partName=&quot;EarthquakeCityMap.java&quot; title=&quot;EarthquakeCityMap.java&quot; tooltip=&quot;UCSDUnfoldingMaps/src/module4/EarthquakeCityMap.java&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/UCSDUnfoldingMaps/src/module4/EarthquakeCityMap.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;2305&quot; selectionTopPixel=&quot;204&quot;/>&#xD;&#xA;&lt;/editor>"/>
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;EarthquakeCityMap.java&quot; partName=&quot;EarthquakeCityMap.java&quot; title=&quot;EarthquakeCityMap.java&quot; tooltip=&quot;UCSDUnfoldingMaps/src/module4/EarthquakeCityMap.java&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/UCSDUnfoldingMaps/src/module4/EarthquakeCityMap.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;2055&quot; selectionTopPixel=&quot;204&quot;/>&#xD;&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>org.eclipse.jdt.ui.CompilationUnitEditor</tags>
           <tags>removeOnHide</tags>
@@ -423,7 +423,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_0eA-ItMbEeWtPq0CFJrOQg" elementId="org.eclipse.ui.workbench.file">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_PqAswNscEeWn5OAIfm9O3w" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_0FGIOdMbEeWtPq0CFJrOQg"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_2VvgcNtNEeWfO565Z0PNqA" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_0FGIOdMbEeWtPq0CFJrOQg"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_0eA-I9MbEeWtPq0CFJrOQg" elementId="additions" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -456,7 +456,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_0eA-J9MbEeWtPq0CFJrOQg" elementId="org.eclipse.ui.workbench.navigate">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_PqKdwNscEeWn5OAIfm9O3w" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_0FGH4NMbEeWtPq0CFJrOQg"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_2VyjwNtNEeWfO565Z0PNqA" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_0FGH4NMbEeWtPq0CFJrOQg"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_0eA-KNMbEeWtPq0CFJrOQg" elementId="group.editor" toBeRendered="false">
         <tags>toolbarSeparator</tags>

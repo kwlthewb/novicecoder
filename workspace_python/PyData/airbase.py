@@ -46,3 +46,7 @@ def load_data():
     data = pd.concat(data, axis=1)
 
     return data
+
+print(os.getcwd())
+dd = load_data()
+print(dd)

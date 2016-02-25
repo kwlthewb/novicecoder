@@ -60,4 +60,24 @@ test_file = open("SampleText.txt")
 for line in test_file:
     print(line, end="")
 
+print("DoSomething")
+
+def doSomething(a,b,c):
+    a = 34
+    print(a)
+    print(b)
+    b = 999.99
+    print(b)
+    c.insert(1,3333)
+
+c = [1,2,4,5,6,5,8]
+a = 12
+b = -123.2
+print(a)
+print(b)
+print(c)
+doSomething(a,b,c)
+print(a)
+print(b)
+print(c)
 
