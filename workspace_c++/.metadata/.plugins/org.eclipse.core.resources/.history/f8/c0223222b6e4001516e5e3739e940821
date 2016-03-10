@@ -1,0 +1,17 @@
+/*
+ * dog.h
+ *
+ *  Created on: Mar 7, 2016
+ *      Author: bill
+ */
+
+#ifndef DOG_H_
+#define DOG_H_
+
+class dog {
+public:
+	dog();
+	virtual ~dog();
+};
+
+#endif /* DOG_H_ */

@@ -1,0 +1,17 @@
+/*
+ * NotAllowed.h
+ *
+ *  Created on: Mar 5, 2016
+ *      Author: bill
+ */
+
+#ifndef NOTALLOWED_H_
+#define NOTALLOWED_H_
+
+class NotAllowed {
+public:
+	NotAllowed();
+	virtual ~NotAllowed();
+};
+
+#endif /* NOTALLOWED_H_ */

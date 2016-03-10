@@ -1,0 +1,21 @@
+/*
+ * Singleton.h
+ *
+ *  Created on: Mar 7, 2016
+ *      Author: bill
+ */
+
+#ifndef SINGLETON_H_
+#define SINGLETON_H_
+#include "Incls.h"
+#include "cat.h"
+#include "dog.h"
+
+
+class Singleton {
+public:
+	Singleton();
+	virtual ~Singleton();
+};
+
+#endif /* SINGLETON_H_ */

@@ -76,7 +76,7 @@ void f(const A &a1, const A &a2 = A())
 {
 }
 
-int main()
+int main_func2()
 {
     A a(2), b; // dd
     std::cout << ';' << std::endl;

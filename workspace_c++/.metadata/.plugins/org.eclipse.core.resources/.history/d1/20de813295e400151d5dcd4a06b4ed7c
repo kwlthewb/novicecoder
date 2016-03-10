@@ -1,0 +1,44 @@
+/*
+ * ExceptTest.cpp
+ *
+ *  Created on: Mar 7, 2016
+ *      Author: bill
+ */
+
+#include "ExceptTest.h"
+#include "Incls.h"
+
+ExceptTest::ExceptTest() {
+	// TODO Auto-generated constructor stub
+
+}
+
+ExceptTest::~ExceptTest() {
+	// TODO Auto-generated destructor stub
+}
+
+//class dog {
+//	std::string m_name;
+//public:
+//	dog(std::string name) { m_name = name; std::cout << name << " is born." << std::endl; }
+//	~dog() { std::cout << m_name << " is destroyed." << std::endl; }
+//	void bark() { std::cout << m_name << " bark bark bark..." << std::endl; }
+//	void prepareToDestr() {
+//		std::cout << m_name << " prepareToDestr called." << std::endl;
+//		throw 20;
+//	}
+//};
+
+//int main() {
+//	try {
+//		dog dog1("Henry");
+//		dog dog2("Bob");
+//		//throw 20;
+//		dog1.bark();
+//		dog2.bark();
+//		dog1.prepareToDestr();
+//		dog2.prepareToDestr();
+//	} catch(int e) {
+//		std::cout << e << " is caught" << std::endl;
+//	}
+//}

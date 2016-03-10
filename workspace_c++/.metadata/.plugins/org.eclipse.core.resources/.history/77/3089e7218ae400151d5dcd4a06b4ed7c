@@ -1,0 +1,18 @@
+/*
+ * VirtualTest.cpp
+ *
+ *  Created on: Mar 7, 2016
+ *      Author: bill
+ */
+
+#include "VirtualTest.h"
+
+VirtualTest::VirtualTest() {
+	// TODO Auto-generated constructor stub
+
+}
+
+VirtualTest::~VirtualTest() {
+	// TODO Auto-generated destructor stub
+}
+

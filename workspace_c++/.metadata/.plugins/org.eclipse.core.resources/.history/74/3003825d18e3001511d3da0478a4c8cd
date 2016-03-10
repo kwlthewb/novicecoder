@@ -1,0 +1,32 @@
+/*
+ * NotAllowed.cpp
+ *
+ *  Created on: Mar 5, 2016
+ *      Author: bill
+ */
+
+#include "NotAllowed.h"
+
+NotAllowed::NotAllowed() {
+	// TODO Auto-generated constructor stub
+
+}
+
+NotAllowed::~NotAllowed() {
+	// TODO Auto-generated destructor stub
+}
+
+class OpenFile {
+	std::string fname;
+public:
+	OpenFile(std::string filename) { fname = filename; std::cout << filename << std::endl; }
+	//g(OpenFile& f) { OpenFile f2(f); }
+private:
+	~OpenFile() { std::cout << "OpenFile is destroyed." << std::endl; }
+};
+
+int main() {
+	OpenFile f("/some path/some file/some file2");
+
+	return 0;
+}

@@ -1,0 +1,18 @@
+/*
+ * Singleton.cpp
+ *
+ *  Created on: Mar 7, 2016
+ *      Author: bill
+ */
+
+#include "Singleton.h"
+
+Singleton::Singleton() {
+	// TODO Auto-generated constructor stub
+
+}
+
+Singleton::~Singleton() {
+	// TODO Auto-generated destructor stub
+}
+

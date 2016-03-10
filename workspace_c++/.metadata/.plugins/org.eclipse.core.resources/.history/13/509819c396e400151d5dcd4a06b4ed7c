@@ -1,0 +1,20 @@
+/*
+ * cat.cpp
+ *
+ *  Created on: Mar 7, 2016
+ *      Author: bill
+ */
+
+
+class cat {
+	std::string _name;
+public:
+	cat(char* name) {
+		_name = name;
+		std::cout << _name << " cat is born." << std::endl;
+	}
+	void meow() {
+		std::cout << "Cat name is " << _name << std::endl;
+	}
+};
+

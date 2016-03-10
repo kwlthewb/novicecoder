@@ -1,0 +1,19 @@
+/*
+ * dog.cpp
+ *
+ *  Created on: Mar 7, 2016
+ *      Author: bill
+ */
+
+#include "dog.h"
+
+dog::dog(char* name) {
+	_count += 1;
+	_name = name;
+	std::cout << _name << " dog is born." << std::endl;
+}
+dog::~dog() {
+	std::cout << _name << " is destroyed" << std::endl;
+}
+void dog::bark() { std::cout << "Dog name is " << _name << std::endl; };
+int dog::getCount() { return _count; }

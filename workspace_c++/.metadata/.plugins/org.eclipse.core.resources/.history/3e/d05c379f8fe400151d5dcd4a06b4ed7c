@@ -1,0 +1,26 @@
+/*
+ * RAII.cpp
+ *
+ *  Created on: Mar 7, 2016
+ *      Author: bill
+ */
+
+#include "RAII.h"
+#include "Incls.h"
+
+RAII::RAII() {
+	// TODO Auto-generated constructor stub
+
+}
+
+RAII::~RAII() {
+	// TODO Auto-generated destructor stub
+}
+
+Mutex_t mu = MUTEX_INITIALIZER;
+
+void functionA() {
+	Mutex_lock(&mu);
+	std::cout << "Do something..." << std::endl;
+	Mutex_unlock(&mu);
+}

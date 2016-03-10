@@ -62,8 +62,11 @@ public class EarthquakeCityMap extends PApplet {
 	private List<Marker> cityMarkers;
 	// Markers for each earthquake
 	private List<Marker> quakeMarkers;
-
+	
 	// A List of country markers
+//	A List of country markers
+//	A List of country markers
+//	A List of country markers
 	private List<Marker> countryMarkers;
 	
 	public void setup() {		

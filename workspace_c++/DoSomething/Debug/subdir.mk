@@ -4,13 +4,34 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 CPP_SRCS += \
-../Timer.cpp 
+../ConstTest.cpp \
+../DogFactory.cpp \
+../ExceptTest.cpp \
+../NotAllowed.cpp \
+../RAII.cpp \
+../Singleton.cpp \
+../Timer.cpp \
+../VirtualTest.cpp 
 
 OBJS += \
-./Timer.o 
+./ConstTest.o \
+./DogFactory.o \
+./ExceptTest.o \
+./NotAllowed.o \
+./RAII.o \
+./Singleton.o \
+./Timer.o \
+./VirtualTest.o 
 
 CPP_DEPS += \
-./Timer.d 
+./ConstTest.d \
+./DogFactory.d \
+./ExceptTest.d \
+./NotAllowed.d \
+./RAII.d \
+./Singleton.d \
+./Timer.d \
+./VirtualTest.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes

@@ -1,0 +1,44 @@
+/*
+ * VirtualTest.cpp
+ *
+ *  Created on: Mar 7, 2016
+ *      Author: bill
+ */
+
+#include "VirtualTest.h"
+#include "Incls.h"
+
+VirtualTest::VirtualTest() {
+	// TODO Auto-generated constructor stub
+
+}
+
+VirtualTest::~VirtualTest() {
+	// TODO Auto-generated destructor stub
+}
+
+class collar;
+
+class DDog {
+public:
+	collar* pCollar;
+	DDog() { std::cout << "Dog born." << std::endl; bark(); }
+	~DDog() { std::cout << "Dog destroyed." << std::endl; }
+	virtual void bark() { std::cout << "I am just a dog." << std::endl; }
+	void seeCat() { bark(); }
+};
+
+class YDog : public DDog {
+public:
+	YDog() { std::cout << "Yellow dog is born." << std::endl; }
+	~YDog() { std::cout << "Yellow dog is destroyed." << std::endl; }
+	void bark() { std::cout << "I am a yellow dog." << std::endl; }
+};
+
+int main() {
+	YDog d;
+	d.seeCat();
+	return 0;
+}
+
+

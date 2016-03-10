@@ -1,0 +1,18 @@
+/*
+ * Singleton.cpp
+ *
+ *  Created on: Mar 7, 2016
+ *      Author: bill
+ */
+
+#include "Singleton.h"
+
+dog* Singleton::pd = 0;
+cat* Singleton::pc = 0;
+
+Dog* Singleton::getDog() {
+	if(!pd)
+		pd = new Dog("Gunner");
+	return pd;
+}
+
