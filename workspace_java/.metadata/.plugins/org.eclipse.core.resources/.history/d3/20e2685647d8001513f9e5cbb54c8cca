@@ -1,5 +1,0 @@
-
-public class Faculty {
-	private String id;
-	public String getID() { return id; }
-}

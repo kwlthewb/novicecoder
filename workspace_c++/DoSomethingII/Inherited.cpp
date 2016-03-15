@@ -4,7 +4,7 @@
  *  Created on: Mar 8, 2016
  *      Author: bill
  */
-
+#include "Inherited.h"
 //#include <iostream>
 //#include <stdio.h>
 //#include <stdlib.h>
@@ -62,14 +62,26 @@
 //#include <stdio.h>
 //#include <stdlib.h>
 //#include <string.h>
+//#include <iostream>
+//
 //void foo(int& aInt)
 //{
 //    aInt=5;
 //}
 //
-//std::string& bar()
+//char* bar()
 //{
-//    //char* bb="This is my output!";
+////    char aa[]="This is my output!";
+////    *(aa+5) = 'X';
+////    char *bb="This is my output!";
+////    //*(bb+5) = 'X'; // error
+////    std::cout << strlen(aa) << "," << strlen(bb) << std::endl;
+////    std::cout << aa << "," << bb << std::endl;
+////    printf("%s |\n",aa);
+////    printf("%s |\n",bb);
+//    //char *bb="This is my output!";
+//    char bb[]="This is my output!";
+//
 //    return bb;
 //}
 //
@@ -129,7 +141,9 @@
 //	return true;
 //}
 //
-//int main() {
+int main() {
+	Inherited::C c;
+	c.doSomething();
 //	std::string s1 ("There are two needles in this haystack with needles.");
 //	std::string s2 ("needle");
 //
@@ -167,16 +181,16 @@
 //	bv2.push(0.006);
 //	bv2.push(0.008);
 //	bv2.print();
-//	Inherited::Ninja n;
-//	Inherited::Monster m;
-//	Inherited::Enemy *e1 = &n;
-//	Inherited::Enemy *e2 = &m;
-//	e1->attack();
-//	e2->attack();
+	Inherited::Ninja n;
+	Inherited::Monster m;
+	Inherited::Enemy *e1 = &n;
+	Inherited::Enemy *e2 = &m;
+	e1->attack();
+	e2->attack();
 //	e1->something();
 //	e2->something();
-//	return 0;
-//
+	return 0;
+
 //	std::string str("asdj lajsdf aldsj");
 //	printStr(const_cast<char*>(str.c_str()));
 //
@@ -239,10 +253,10 @@
 //
 //	InheritedII::IOFile f("some file");
 //
-//
-//
-//	return 0;
-//}
+
+
+	return 0;
+}
 //
 //
 //

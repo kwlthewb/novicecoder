@@ -1,7 +1,0 @@
-package package1;
-
-public class SubClass1 extends SampleClass {
-	SubClass1() {
-		System.out.println("W: " + this.w + " X: " + this.x + " Y: " + this.y);
-	}
-}

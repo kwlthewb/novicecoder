@@ -11,6 +11,7 @@ import de.fhpotsdam.unfolding.geo.Location;
 import de.fhpotsdam.unfolding.marker.AbstractShapeMarker;
 import de.fhpotsdam.unfolding.marker.Marker;
 import de.fhpotsdam.unfolding.marker.MultiMarker;
+import de.fhpotsdam.unfolding.marker.SimplePointMarker;
 import de.fhpotsdam.unfolding.providers.Google;
 import de.fhpotsdam.unfolding.providers.MBTilesMapProvider;
 import de.fhpotsdam.unfolding.utils.MapUtils;
@@ -133,7 +134,6 @@ public class EarthquakeCityMap extends PApplet {
 		if (lastSelected != null) {
 			lastSelected.setSelected(false);
 			lastSelected = null;
-		
 		}
 		selectMarkerIfHover(quakeMarkers);
 		selectMarkerIfHover(cityMarkers);
@@ -146,6 +146,14 @@ public class EarthquakeCityMap extends PApplet {
 	private void selectMarkerIfHover(List<Marker> markers)
 	{
 		// TODO: Implement this method
+		for(Marker m : markers) {
+			if(m.isInside(map, this.mouseX, this.mouseY)) {
+//				System.out.println("Mouse Loc: " + this.mouseX + "," + this.mouseY +
+//						m.getProperties());
+				lastSelected = (CommonMarker) m;
+				lastSelected.setSelected(true);
+			}
+		}
 	}
 	
 	/** The event handler for mouse clicks
@@ -159,17 +167,86 @@ public class EarthquakeCityMap extends PApplet {
 		// TODO: Implement this method
 		// Hint: You probably want a helper method or two to keep this code
 		// from getting too long/disorganized
+		if(lastClicked != null) {
+			System.out.println("Mouse clicked: " + this.mouseX + "," + this.mouseY + "," + lastClicked.toString());
+		} else {
+			System.out.println("Mouse clicked: " + this.mouseX + "," + this.mouseY + ",no lastClicked.");
+		}
+		if(lastClicked != null) {
+			lastClicked.setClicked(false);
+			lastClicked = null;
+			unhideMarkers();
+		}
+		selectClicked(quakeMarkers);
+		selectClicked(cityMarkers);
 	}
 	
+	private void selectClicked(List<Marker> markers) {
+		for(Marker m : markers) {
+			if(m.isInside(map, this.mouseX, this.mouseY)) {
+				System.out.println("Mouse clicked inside marker: " + this.mouseX + "," + this.mouseY +
+						m.getProperties());
+				lastClicked = (CommonMarker)m;
+				lastClicked.setClicked(true);
+				// hide all other markers except for this one
+				hideMarkers();
+				m.setHidden(false);
+				if(m instanceof EarthquakeMarker) {
+					findCityProximates((EarthquakeMarker)m);
+				} else if(m.getClass() == CityMarker.class) {
+					findQuakeProximates(m);
+				}
+			}
+		}
+	}
+	
+	// function to find cities within threatzone of an earthquake
+	private void findCityProximates(EarthquakeMarker m) {
+		System.out.println("FindCityProximates called...");
+		System.out.println("Earthquake: " + m.getProperties().toString() + "," + m.getLocation().toString() + ","
+				+ m.getRadius() + "," + m.threatCircle());
+		double threat = m.threatCircle();
+		for(Marker city : cityMarkers) {
+			if(city.getDistanceTo(m.getLocation()) < threat) {
+				System.out.println("Proximate City: " + city.getProperties() + " distanceFrom: " + 
+						city.getDistanceTo(m.getLocation()));
+				city.setHidden(false);
+			}
+		}
+		
+	}
+	// function to find quakes close to the city based on the quake(s) threat zone(s)
+	private void findQuakeProximates(Marker m) {
+		System.out.println("FindQuakeProximates called...");
+		System.out.println("City: " + m.getProperties().toString() + "," + m.getLocation().toString());
+		for(Marker quake : quakeMarkers) {
+			if(m.getDistanceTo(quake.getLocation()) < ((EarthquakeMarker)quake).threatCircle()) {
+				System.out.println("Proximate Quake: " + quake.getProperties() + " threatradius: " +
+						((EarthquakeMarker)quake).threatCircle() + " distanceTo: " +
+						m.getDistanceTo(quake.getLocation()));
+				quake.setHidden(false);
+			}
+		}
+	}	
 	
 	// loop over and unhide all markers
 	private void unhideMarkers() {
+		System.out.println("UnhideMarkers called");
 		for(Marker marker : quakeMarkers) {
 			marker.setHidden(false);
 		}
-			
 		for(Marker marker : cityMarkers) {
 			marker.setHidden(false);
+		}
+	}
+	
+	private void hideMarkers() {
+		System.out.println("HideMarkers called");
+		for(Marker marker : quakeMarkers) {
+			marker.setHidden(true);
+		}
+		for(Marker marker : cityMarkers) {
+			marker.setHidden(true);
 		}
 	}
 	

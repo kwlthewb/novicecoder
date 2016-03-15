@@ -7,7 +7,11 @@
 <fullyQualifiedTypeName name="de.fhpotsdam.unfolding.data.ShapeFeature"/>
 <fullyQualifiedTypeName name="de.fhpotsdam.unfolding.data.MarkerFactory"/>
 <fullyQualifiedTypeName name="de.fhpotsdam.unfolding.marker.SimplePolygonMarker"/>
-<fullyQualifiedTypeName name="de.fhpotsdam.unfolding.marker.SimplePointMarker"/>
 <fullyQualifiedTypeName name="module4.EarthquakeMarker"/>
 <fullyQualifiedTypeName name="module4.OceanQuakeMarker"/>
+<fullyQualifiedTypeName name="module5.CommonMarker"/>
+<fullyQualifiedTypeName name="de.fhpotsdam.unfolding.marker.SimplePointMarker"/>
+<fullyQualifiedTypeName name="module5.EarthquakeMarker"/>
+<fullyQualifiedTypeName name="de.fhpotsdam.unfolding.utils.ScreenPosition"/>
+<fullyQualifiedTypeName name="java.util.Random"/>
 </qualifiedTypeNameHistroy>

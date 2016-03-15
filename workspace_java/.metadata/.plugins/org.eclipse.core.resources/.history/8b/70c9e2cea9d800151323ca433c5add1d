@@ -1,6 +1,0 @@
-import package1.SampleClass;
-public class SubClass2 extends package1.SampleClass {
-	public SubClass2() {
-		System.out.println("From SubClass1 - public_var: " + this.public_var + " protected_var: " + this.protected_var + " package_var: " + this.package_var);
-	}
-}

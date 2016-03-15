@@ -117,11 +117,11 @@ class IOFile: public InputFile, public OutputFile {
 
 class Enemy {
 public:
-//	virtual void attack() {
-//		std::cout << "I am the enemy class" << std::endl;
-//	};
-	virtual void attack()=0;
-	virtual void something() {
+	void attack() {
+		std::cout << "Enemy class attack" << std::endl;
+	};
+	//virtual void attack()=0;
+	void something() {
 		std::cout << "something from Enemy class" << std::endl;
 	}
 };
@@ -141,6 +141,24 @@ public:
 	void attack() {
 		std::cout << "Monster attack!" << std::endl;
 	}
+};
+
+class A1 {
+public:
+	virtual void doSomething() {
+		std::cout << "A1 does something..." << std::endl;
+	}
+};
+
+class A2 {
+public:
+	void doSomething() {
+		std::cout << "A2 does something..." << std::endl;
+	}
+};
+
+class C : public A1, public A2 {
+
 };
 
 } /* namespace Inherited */

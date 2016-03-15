@@ -1,19 +1,7 @@
-10:47:11 **** Incremental Build of configuration Debug for project DoSomethingII ****
-make all 
-Building file: ../Inherited.cpp
-Invoking: Cygwin C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"Inherited.d" -MT"Inherited.o" -o "Inherited.o" "../Inherited.cpp"
-../Inherited.cpp: In function 'char* bar()':
-../Inherited.cpp:18:14: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
-     char* bb="This is my output!";
-              ^
-Finished building: ../Inherited.cpp
- 
-Building target: DoSomethingII.exe
-Invoking: Cygwin C++ Linker
-g++  -o "DoSomethingII.exe"  ./Casting.o ./Inherited.o ./Singleton.o ./VirtConst.o ./cat.o ./dog.o   
-Finished building target: DoSomethingII.exe
+18:18:51 **** Clean-only build of configuration Debug for project DoSomethingII ****
+make clean 
+rm -rf  ./Casting.o ./Inherited.o ./Singleton.o ./VirtConst.o ./cat.o ./dog.o  ./Casting.d ./Inherited.d ./Singleton.d ./VirtConst.d ./cat.d ./dog.d  DoSomethingII.exe
  
 
-10:47:12 Build Finished (took 797ms)
+18:18:51 Build Finished (took 120ms)
 

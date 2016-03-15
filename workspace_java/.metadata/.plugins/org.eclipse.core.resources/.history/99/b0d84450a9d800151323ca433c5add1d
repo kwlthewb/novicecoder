@@ -1,9 +1,0 @@
-package package1;
-
-public class OtherClass1 {
-	OtherClass1() {
-		SampleClass sc = new SampleClass();
-		System.out.println("From OtherClass1 - SampleClass protected_var: " + sc.protected_var + " SampleClass package_var: " + sc.package_var);
-	}
-
-}
