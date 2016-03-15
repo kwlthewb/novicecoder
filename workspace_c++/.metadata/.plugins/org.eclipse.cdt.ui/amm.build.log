@@ -1,0 +1,7 @@
+20:44:00 **** Clean-only build of configuration Default for project amm ****
+make clean 
+Makefile:9: Makefile.incl/DESKTOP-7FL9SS9: No such file or directory
+make: *** No rule to make target 'Makefile.incl/DESKTOP-7FL9SS9'.  Stop.
+
+20:44:00 Build Finished (took 677ms)
+

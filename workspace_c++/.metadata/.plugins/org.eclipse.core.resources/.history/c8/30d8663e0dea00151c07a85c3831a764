@@ -1,0 +1,18 @@
+/*
+ * Semaphores.cpp
+ *
+ *  Created on: Mar 14, 2016
+ *      Author: bill
+ */
+
+#include "Semaphores.h"
+
+Semaphores::Semaphores() {
+	// TODO Auto-generated constructor stub
+
+}
+
+Semaphores::~Semaphores() {
+	// TODO Auto-generated destructor stub
+}
+

@@ -1,0 +1,19 @@
+20:59:38 **** Incremental Build of configuration Debug for project Concurrency ****
+make all 
+Building file: ../Semaphores.cpp
+Invoking: Cygwin C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -DWINDOWS -MMD -MP -MF"Semaphores.d" -MT"Semaphores.o" -o "Semaphores.o" "../Semaphores.cpp"
+../Semaphores.cpp: In function 'void* myfunc1(void*)':
+../Semaphores.cpp:20:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+Finished building: ../Semaphores.cpp
+ 
+Building target: Concurrency.exe
+Invoking: Cygwin C++ Linker
+g++  -o "Concurrency.exe"  ./Semaphores.o   -lboost_system -lboost_thread
+Finished building target: Concurrency.exe
+ 
+
+20:59:45 Build Finished (took 7s.258ms)
+
