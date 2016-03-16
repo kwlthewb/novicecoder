@@ -1,0 +1,18 @@
+/*
+ * pointers.cpp
+ *
+ *  Created on: Mar 14, 2016
+ *      Author: bill
+ */
+
+#include "pointers.h"
+
+pointers::pointers() {
+	// TODO Auto-generated constructor stub
+
+}
+
+pointers::~pointers() {
+	// TODO Auto-generated destructor stub
+}
+

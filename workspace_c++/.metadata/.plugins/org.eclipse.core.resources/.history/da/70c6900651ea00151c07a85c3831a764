@@ -1,0 +1,29 @@
+/*
+ * pointers.cpp
+ *
+ *  Created on: Mar 14, 2016
+ *      Author: bill
+ */
+
+#include "pointers.h"
+
+struct A {
+	A() : int_ptr_(new int) {}
+	~A() {
+		std::cout << "Delete pointer" << std::endl;
+		delete int_ptr_;
+	}
+private:
+	int* int_ptr_;
+};
+
+int main() {
+	int* int_ptr = new int;
+	int i = 456;
+	int_ptr = &i;
+	std::cout << *int_ptr << std::endl;
+	i = 999;
+	std::cout << *int_ptr << std::endl;
+	delete int_ptr;
+	return 0;
+}
