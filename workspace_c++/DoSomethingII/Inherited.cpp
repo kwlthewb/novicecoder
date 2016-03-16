@@ -52,11 +52,17 @@ void revStr(char* src) {
     }
 }
 
-int main() {
+int main_func5() {
     std::string str("  this is good   ");
     std::cout << str << "||" << std::endl;
     revStr(const_cast<char*>(str.c_str()));
     std::cout << str << "||" << std::endl;
+    std::chrono::high_resolution_clock::time_point begin = std::chrono::high_resolution_clock::now();
+    std::cout << "Start time = " << currentDateTime() << std::endl;;
+    Sleep(10000);
+    std::chrono::high_resolution_clock::time_point end = std::chrono::high_resolution_clock::now();
+    std::chrono::duration<double> diff = end - begin;
+    std::cout << "End   time = " << currentDateTime() << " || "	<< diff.count() << "s\n";
 }
 
 //#include <stdio.h>
