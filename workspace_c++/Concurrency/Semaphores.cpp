@@ -9,25 +9,31 @@
 
 sem_t s;
 
-void *myfunc1(void *ptr) {
+enum TType {
+	eINT,
+	eFLOAT,
+	eDOUBLE,
+	eCSTRING
+};
+
+void * myfunc1(void *ptr) {
 	char *msg = (char *) ptr;
 	int count = 0;
-	while(count < 100) {
+	while(count < 3) {
 		printf("%d %s sleeping...\n",count,msg);
 		sleepcp(2000);
 		count++;
 	}
 }
 
-void *myfunc2(void *ptr) {
+void * myfunc2(void *ptr) {
 	char *msg = (char *) ptr;
 	int count = 0;
-	while(count < 100) {
+	while(count < 3) {
 		printf("%d %s sleeping...\n",count,msg);
 		sleepcp(2000);
 		count++;
 	}
-	pthread_exit(0);
 }
 
 void func1(int tid, int ss) {
@@ -63,24 +69,53 @@ void workerFunc(const char* msg, size_t delay) {
 	std::cout << msg << " done.\n";
 }
 
+void enumTest(void *ptr, TType type) {
+	switch(type) {
+	case eINT:
+		std::cout << *static_cast<int*>(ptr) << std::endl;
+		break;
+	case eFLOAT:
+		std::cout << *static_cast<float*>(ptr) << std::endl;
+		break;
+	case eDOUBLE:
+		std::cout << *static_cast<double*>(ptr) << std::endl;
+		break;
+	case eCSTRING:
+		std::cout << static_cast<char*>(ptr) << std::endl;
+		break;
+
+
+	}
+}
+
 int main() {
 	setvbuf (stdout, NULL, _IONBF, BUFSIZ);
 	sem_init(&s, 0, 5); // max 2 thread can work
-//	pthread_t t1,t2;
-//	char *msg1 = "Thread 1";
-//	char *msg2 = "Thread 2";
-//	pthread_create(&t1, NULL, myfunc1,(void *)msg1);
-//	pthread_create(&t2, NULL, myfunc2,(void *)msg2);
-//
-//	pthread_join(t1,NULL);
-//	pthread_join(t2,NULL);
+	pthread_t t1,t2;
+	char *msg1 = "Thread 1";
+	char *msg2 = "Thread 2";
+	pthread_create(&t1, NULL, myfunc1,(void *)msg1);
+	pthread_create(&t2, NULL, myfunc2,(void *)msg2);
+
+	pthread_join(t1,NULL);
+	pthread_join(t2,NULL);
+	int nv1 = 567;
+	float nv2 = 12.3498;
+	double nv3 = 99.99;
+	char* nv4 = "this is bullshit";
+	enumTest(&nv1,eINT);
+	enumTest(&nv2,eFLOAT);
+	enumTest(&nv3,eDOUBLE);
+	enumTest(nv4,eCSTRING);
+
+	return 0;
 #ifdef LINUX
 	std::cout << "LINUX defined" << std::endl;
 #endif
 #ifdef WINDOWS
 	std::cout << "WINDOWS defined" << std::endl;
 #endif
-	int n = 20;
+	int n = 5;
 	std::thread myThreads[n];
 	std::ostringstream ss;
 	for(int i = 0; i < n; i++) {

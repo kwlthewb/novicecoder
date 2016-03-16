@@ -1259,3 +1259,2793 @@ Invoking: Cygwin C++ Linker
 g++  -o "Concurrency.exe"  ./Semaphores.o   -lboost_system -lboost_thread
 Finished building target: Concurrency.exe
  
+21:54:27 **** Incremental Build of configuration Debug for project Concurrency ****
+make all 
+Building file: ../Semaphores.cpp
+Invoking: Cygwin C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -DWINDOWS -MMD -MP -MF"Semaphores.d" -MT"Semaphores.o" -o "Semaphores.o" "../Semaphores.cpp"
+../Semaphores.cpp: In function 'void* myfunc1(void*)':
+../Semaphores.cpp:20:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+Finished building: ../Semaphores.cpp
+ 
+Building file: ../pointers.cpp
+Invoking: Cygwin C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -DWINDOWS -MMD -MP -MF"pointers.d" -MT"pointers.o" -o "pointers.o" "../pointers.cpp"
+../pointers.cpp: In destructor 'A::~A()':
+../pointers.cpp:15:2: error: expected ';' before '}' token
+  }
+  ^
+../pointers.cpp: In function 'int main()':
+../pointers.cpp:28:1: error: expected ';' before '}' token
+ }
+ ^
+In file included from ../pointers.h:11:0,
+                 from ../pointers.cpp:8:
+../Incls.h: At global scope:
+../Incls.h:38:26: warning: 'const string currentDateTime()' defined but not used [-Wunused-function]
+ static const std::string currentDateTime() {
+                          ^
+../Incls.h:50:13: warning: 'void sleepcp(int)' defined but not used [-Wunused-function]
+ static void sleepcp(int milliseconds) // cross-platform sleep function
+             ^
+subdir.mk:21: recipe for target 'pointers.o' failed
+make: *** [pointers.o] Error 1
+21:54:44 **** Incremental Build of configuration Debug for project Concurrency ****
+make all 
+Building file: ../pointers.cpp
+Invoking: Cygwin C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -DWINDOWS -MMD -MP -MF"pointers.d" -MT"pointers.o" -o "pointers.o" "../pointers.cpp"
+../pointers.cpp: In function 'int main()':
+../pointers.cpp:28:1: error: expected ';' before '}' token
+ }
+ ^
+In file included from ../pointers.h:11:0,
+                 from ../pointers.cpp:8:
+../Incls.h: At global scope:
+../Incls.h:38:26: warning: 'const string currentDateTime()' defined but not used [-Wunused-function]
+ static const std::string currentDateTime() {
+                          ^
+../Incls.h:50:13: warning: 'void sleepcp(int)' defined but not used [-Wunused-function]
+ static void sleepcp(int milliseconds) // cross-platform sleep function
+             ^
+subdir.mk:21: recipe for target 'pointers.o' failed
+make: *** [pointers.o] Error 1
+21:54:57 **** Incremental Build of configuration Debug for project Concurrency ****
+make all 
+Building file: ../pointers.cpp
+Invoking: Cygwin C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -DWINDOWS -MMD -MP -MF"pointers.d" -MT"pointers.o" -o "pointers.o" "../pointers.cpp"
+In file included from ../pointers.h:11:0,
+                 from ../pointers.cpp:8:
+../Incls.h:38:26: warning: 'const string currentDateTime()' defined but not used [-Wunused-function]
+ static const std::string currentDateTime() {
+                          ^
+../Incls.h:50:13: warning: 'void sleepcp(int)' defined but not used [-Wunused-function]
+ static void sleepcp(int milliseconds) // cross-platform sleep function
+             ^
+Finished building: ../pointers.cpp
+ 
+Building target: Concurrency.exe
+Invoking: Cygwin C++ Linker
+g++  -o "Concurrency.exe"  ./Semaphores.o ./pointers.o   -lboost_system -lboost_thread
+Finished building target: Concurrency.exe
+ 
+21:55:31 **** Incremental Build of configuration Debug for project Concurrency ****
+make all 
+Building file: ../pointers.cpp
+Invoking: Cygwin C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -DWINDOWS -MMD -MP -MF"pointers.d" -MT"pointers.o" -o "pointers.o" "../pointers.cpp"
+In file included from ../pointers.h:11:0,
+                 from ../pointers.cpp:8:
+../Incls.h:38:26: warning: 'const string currentDateTime()' defined but not used [-Wunused-function]
+ static const std::string currentDateTime() {
+                          ^
+../Incls.h:50:13: warning: 'void sleepcp(int)' defined but not used [-Wunused-function]
+ static void sleepcp(int milliseconds) // cross-platform sleep function
+             ^
+Finished building: ../pointers.cpp
+ 
+Building target: Concurrency.exe
+Invoking: Cygwin C++ Linker
+g++  -o "Concurrency.exe"  ./Semaphores.o ./pointers.o   -lboost_system -lboost_thread
+Finished building target: Concurrency.exe
+ 
+21:55:44 **** Incremental Build of configuration Debug for project Concurrency ****
+make all 
+Building file: ../pointers.cpp
+Invoking: Cygwin C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -DWINDOWS -MMD -MP -MF"pointers.d" -MT"pointers.o" -o "pointers.o" "../pointers.cpp"
+In file included from ../pointers.h:11:0,
+                 from ../pointers.cpp:8:
+../Incls.h:38:26: warning: 'const string currentDateTime()' defined but not used [-Wunused-function]
+ static const std::string currentDateTime() {
+                          ^
+../Incls.h:50:13: warning: 'void sleepcp(int)' defined but not used [-Wunused-function]
+ static void sleepcp(int milliseconds) // cross-platform sleep function
+             ^
+Finished building: ../pointers.cpp
+ 
+Building target: Concurrency.exe
+Invoking: Cygwin C++ Linker
+g++  -o "Concurrency.exe"  ./Semaphores.o ./pointers.o   -lboost_system -lboost_thread
+Finished building target: Concurrency.exe
+ 
+21:56:26 **** Incremental Build of configuration Debug for project Concurrency ****
+make all 
+Building file: ../pointers.cpp
+Invoking: Cygwin C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -DWINDOWS -MMD -MP -MF"pointers.d" -MT"pointers.o" -o "pointers.o" "../pointers.cpp"
+In file included from ../pointers.h:11:0,
+                 from ../pointers.cpp:8:
+../Incls.h:38:26: warning: 'const string currentDateTime()' defined but not used [-Wunused-function]
+ static const std::string currentDateTime() {
+                          ^
+../Incls.h:50:13: warning: 'void sleepcp(int)' defined but not used [-Wunused-function]
+ static void sleepcp(int milliseconds) // cross-platform sleep function
+             ^
+Finished building: ../pointers.cpp
+ 
+Building target: Concurrency.exe
+Invoking: Cygwin C++ Linker
+g++  -o "Concurrency.exe"  ./Semaphores.o ./pointers.o   -lboost_system -lboost_thread
+Finished building target: Concurrency.exe
+ 
+21:56:38 **** Incremental Build of configuration Debug for project Concurrency ****
+make all 
+Building file: ../pointers.cpp
+Invoking: Cygwin C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -DWINDOWS -MMD -MP -MF"pointers.d" -MT"pointers.o" -o "pointers.o" "../pointers.cpp"
+../pointers.cpp: In function 'int main()':
+../pointers.cpp:21:7: warning: unused variable 'int_ptr2' [-Wunused-variable]
+  int* int_ptr2 = new int;
+       ^
+In file included from ../pointers.h:11:0,
+                 from ../pointers.cpp:8:
+../Incls.h: At global scope:
+../Incls.h:38:26: warning: 'const string currentDateTime()' defined but not used [-Wunused-function]
+ static const std::string currentDateTime() {
+                          ^
+../Incls.h:50:13: warning: 'void sleepcp(int)' defined but not used [-Wunused-function]
+ static void sleepcp(int milliseconds) // cross-platform sleep function
+             ^
+Finished building: ../pointers.cpp
+ 
+Building target: Concurrency.exe
+Invoking: Cygwin C++ Linker
+g++  -o "Concurrency.exe"  ./Semaphores.o ./pointers.o   -lboost_system -lboost_thread
+Finished building target: Concurrency.exe
+ 
+21:57:15 **** Incremental Build of configuration Debug for project Concurrency ****
+make all 
+Building file: ../pointers.cpp
+Invoking: Cygwin C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -DWINDOWS -MMD -MP -MF"pointers.d" -MT"pointers.o" -o "pointers.o" "../pointers.cpp"
+../pointers.cpp: In function 'int main()':
+../pointers.cpp:22:7: warning: variable 'int_ptr' set but not used [-Wunused-but-set-variable]
+  int* int_ptr;
+       ^
+In file included from ../pointers.h:11:0,
+                 from ../pointers.cpp:8:
+../Incls.h: At global scope:
+../Incls.h:38:26: warning: 'const string currentDateTime()' defined but not used [-Wunused-function]
+ static const std::string currentDateTime() {
+                          ^
+../Incls.h:50:13: warning: 'void sleepcp(int)' defined but not used [-Wunused-function]
+ static void sleepcp(int milliseconds) // cross-platform sleep function
+             ^
+Finished building: ../pointers.cpp
+ 
+Building target: Concurrency.exe
+Invoking: Cygwin C++ Linker
+g++  -o "Concurrency.exe"  ./Semaphores.o ./pointers.o   -lboost_system -lboost_thread
+Finished building target: Concurrency.exe
+ 
+21:59:08 **** Incremental Build of configuration Debug for project Concurrency ****
+make all 
+Building file: ../Semaphores.cpp
+Invoking: Cygwin C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -DWINDOWS -MMD -MP -MF"Semaphores.d" -MT"Semaphores.o" -o "Semaphores.o" "../Semaphores.cpp"
+../Semaphores.cpp: In function 'void* myfunc1(void*)':
+../Semaphores.cpp:20:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+Finished building: ../Semaphores.cpp
+ 
+Building file: ../pointers.cpp
+Invoking: Cygwin C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -DWINDOWS -MMD -MP -MF"pointers.d" -MT"pointers.o" -o "pointers.o" "../pointers.cpp"
+../pointers.cpp: In function 'int main()':
+../pointers.cpp:23:7: warning: variable 'int_ptr' set but not used [-Wunused-but-set-variable]
+  int* int_ptr;
+       ^
+In file included from ../pointers.h:11:0,
+                 from ../pointers.cpp:8:
+../Incls.h: At global scope:
+../Incls.h:39:26: warning: 'const string currentDateTime()' defined but not used [-Wunused-function]
+ static const std::string currentDateTime() {
+                          ^
+../Incls.h:51:13: warning: 'void sleepcp(int)' defined but not used [-Wunused-function]
+ static void sleepcp(int milliseconds) // cross-platform sleep function
+             ^
+Finished building: ../pointers.cpp
+ 
+Building target: Concurrency.exe
+Invoking: Cygwin C++ Linker
+g++  -o "Concurrency.exe"  ./Semaphores.o ./pointers.o   -lboost_system -lboost_thread
+Finished building target: Concurrency.exe
+ 
+21:59:32 **** Incremental Build of configuration Debug for project Concurrency ****
+make all 
+Building file: ../pointers.cpp
+Invoking: Cygwin C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -DWINDOWS -MMD -MP -MF"pointers.d" -MT"pointers.o" -o "pointers.o" "../pointers.cpp"
+In file included from ../pointers.h:11:0,
+                 from ../pointers.cpp:8:
+../Incls.h:39:26: warning: 'const string currentDateTime()' defined but not used [-Wunused-function]
+ static const std::string currentDateTime() {
+                          ^
+../Incls.h:51:13: warning: 'void sleepcp(int)' defined but not used [-Wunused-function]
+ static void sleepcp(int milliseconds) // cross-platform sleep function
+             ^
+Finished building: ../pointers.cpp
+ 
+Building target: Concurrency.exe
+Invoking: Cygwin C++ Linker
+g++  -o "Concurrency.exe"  ./Semaphores.o ./pointers.o   -lboost_system -lboost_thread
+Finished building target: Concurrency.exe
+ 
+21:59:51 **** Incremental Build of configuration Debug for project Concurrency ****
+make all 
+Building file: ../pointers.cpp
+Invoking: Cygwin C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -DWINDOWS -MMD -MP -MF"pointers.d" -MT"pointers.o" -o "pointers.o" "../pointers.cpp"
+../pointers.cpp: In function 'int main()':
+../pointers.cpp:23:7: warning: variable 'int_ptr' set but not used [-Wunused-but-set-variable]
+  int* int_ptr;
+       ^
+In file included from ../pointers.h:11:0,
+                 from ../pointers.cpp:8:
+../Incls.h: At global scope:
+../Incls.h:39:26: warning: 'const string currentDateTime()' defined but not used [-Wunused-function]
+ static const std::string currentDateTime() {
+                          ^
+../Incls.h:51:13: warning: 'void sleepcp(int)' defined but not used [-Wunused-function]
+ static void sleepcp(int milliseconds) // cross-platform sleep function
+             ^
+Finished building: ../pointers.cpp
+ 
+Building target: Concurrency.exe
+Invoking: Cygwin C++ Linker
+g++  -o "Concurrency.exe"  ./Semaphores.o ./pointers.o   -lboost_system -lboost_thread
+Finished building target: Concurrency.exe
+ 
+22:00:57 **** Incremental Build of configuration Debug for project Concurrency ****
+make all 
+Building file: ../Semaphores.cpp
+Invoking: Cygwin C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -DWINDOWS -MMD -MP -MF"Semaphores.d" -MT"Semaphores.o" -o "Semaphores.o" "../Semaphores.cpp"
+../Semaphores.cpp: In function 'void* myfunc1(void*)':
+../Semaphores.cpp:20:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+Finished building: ../Semaphores.cpp
+ 
+Building target: Concurrency.exe
+Invoking: Cygwin C++ Linker
+g++  -o "Concurrency.exe"  ./Semaphores.o ./pointers.o   -lboost_system -lboost_thread
+Finished building target: Concurrency.exe
+ 
+22:01:10 **** Incremental Build of configuration Debug for project Concurrency ****
+make all 
+Building file: ../Semaphores.cpp
+Invoking: Cygwin C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -DWINDOWS -MMD -MP -MF"Semaphores.d" -MT"Semaphores.o" -o "Semaphores.o" "../Semaphores.cpp"
+../Semaphores.cpp: In function 'void* myfunc1(void*)':
+../Semaphores.cpp:20:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+../Semaphores.cpp: In function 'int main_func()':
+../Semaphores.cpp:70:15: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+  char *msg1 = "Thread 1";
+               ^
+../Semaphores.cpp:71:15: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+  char *msg2 = "Thread 2";
+               ^
+Finished building: ../Semaphores.cpp
+ 
+Building target: Concurrency.exe
+Invoking: Cygwin C++ Linker
+g++  -o "Concurrency.exe"  ./Semaphores.o ./pointers.o   -lboost_system -lboost_thread
+Finished building target: Concurrency.exe
+ 
+22:02:39 **** Incremental Build of configuration Debug for project Concurrency ****
+make all 
+Building file: ../Semaphores.cpp
+Invoking: Cygwin C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -DWINDOWS -MMD -MP -MF"Semaphores.d" -MT"Semaphores.o" -o "Semaphores.o" "../Semaphores.cpp"
+../Semaphores.cpp: In function 'void* myfunc1(void*)':
+../Semaphores.cpp:20:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+../Semaphores.cpp: In function 'void* myfunc2(void*)':
+../Semaphores.cpp:30:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+../Semaphores.cpp: In function 'int main_func()':
+../Semaphores.cpp:69:15: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+  char *msg1 = "Thread 1";
+               ^
+../Semaphores.cpp:70:15: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+  char *msg2 = "Thread 2";
+               ^
+Finished building: ../Semaphores.cpp
+ 
+Building file: ../pointers.cpp
+Invoking: Cygwin C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -DWINDOWS -MMD -MP -MF"pointers.d" -MT"pointers.o" -o "pointers.o" "../pointers.cpp"
+../pointers.cpp: In function 'int main_func()':
+../pointers.cpp:23:7: warning: variable 'int_ptr' set but not used [-Wunused-but-set-variable]
+  int* int_ptr;
+       ^
+In file included from ../pointers.h:11:0,
+                 from ../pointers.cpp:8:
+../Incls.h: At global scope:
+../Incls.h:39:26: warning: 'const string currentDateTime()' defined but not used [-Wunused-function]
+ static const std::string currentDateTime() {
+                          ^
+../Incls.h:51:13: warning: 'void sleepcp(int)' defined but not used [-Wunused-function]
+ static void sleepcp(int milliseconds) // cross-platform sleep function
+             ^
+Finished building: ../pointers.cpp
+ 
+Building target: Concurrency.exe
+Invoking: Cygwin C++ Linker
+g++  -o "Concurrency.exe"  ./Semaphores.o ./pointers.o   -lboost_system -lboost_thread
+./pointers.o: In function `main_func()':
+/cygdrive/d/novicecoder/workspace_c++/Concurrency/Debug/../pointers.cpp:21: multiple definition of `main_func()'
+./Semaphores.o:/cygdrive/d/novicecoder/workspace_c++/Concurrency/Debug/../Semaphores.cpp:65: first defined here
+/usr/lib/gcc/x86_64-pc-cygwin/4.9.3/../../../../lib/libcygwin.a(libcmain.o): In function `main':
+/usr/src/debug/cygwin-2.4.1-1/winsup/cygwin/lib/libcmain.c:39: undefined reference to `WinMain'
+/usr/src/debug/cygwin-2.4.1-1/winsup/cygwin/lib/libcmain.c:39:(.text.startup+0x7f): relocation truncated to fit: R_X86_64_PC32 against undefined symbol `WinMain'
+collect2: error: ld returned 1 exit status
+makefile:44: recipe for target 'Concurrency.exe' failed
+make: *** [Concurrency.exe] Error 1
+22:02:55 **** Incremental Build of configuration Debug for project Concurrency ****
+make all 
+Building file: ../Semaphores.cpp
+Invoking: Cygwin C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -DWINDOWS -MMD -MP -MF"Semaphores.d" -MT"Semaphores.o" -o "Semaphores.o" "../Semaphores.cpp"
+../Semaphores.cpp: In function 'void* myfunc1(void*)':
+../Semaphores.cpp:20:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+../Semaphores.cpp: In function 'void* myfunc2(void*)':
+../Semaphores.cpp:30:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+../Semaphores.cpp: In function 'int main()':
+../Semaphores.cpp:69:15: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+  char *msg1 = "Thread 1";
+               ^
+../Semaphores.cpp:70:15: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+  char *msg2 = "Thread 2";
+               ^
+Finished building: ../Semaphores.cpp
+ 
+Building target: Concurrency.exe
+Invoking: Cygwin C++ Linker
+g++  -o "Concurrency.exe"  ./Semaphores.o ./pointers.o   -lboost_system -lboost_thread
+Finished building target: Concurrency.exe
+ 
+22:03:18 **** Incremental Build of configuration Debug for project Concurrency ****
+make all 
+Building file: ../Semaphores.cpp
+Invoking: Cygwin C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -DWINDOWS -MMD -MP -MF"Semaphores.d" -MT"Semaphores.o" -o "Semaphores.o" "../Semaphores.cpp"
+../Semaphores.cpp: In function 'void* myfunc1(void*)':
+../Semaphores.cpp:20:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+../Semaphores.cpp: In function 'void* myfunc2(void*)':
+../Semaphores.cpp:30:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+../Semaphores.cpp: In function 'int main()':
+../Semaphores.cpp:69:15: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+  char *msg1 = "Thread 1";
+               ^
+../Semaphores.cpp:70:15: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+  char *msg2 = "Thread 2";
+               ^
+Finished building: ../Semaphores.cpp
+ 
+Building target: Concurrency.exe
+Invoking: Cygwin C++ Linker
+g++  -o "Concurrency.exe"  ./Semaphores.o ./pointers.o   -lboost_system -lboost_thread
+Finished building target: Concurrency.exe
+ 
+22:03:41 **** Incremental Build of configuration Debug for project Concurrency ****
+make all 
+Building file: ../Semaphores.cpp
+Invoking: Cygwin C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -DWINDOWS -MMD -MP -MF"Semaphores.d" -MT"Semaphores.o" -o "Semaphores.o" "../Semaphores.cpp"
+../Semaphores.cpp: In function 'void* myfunc1(void*)':
+../Semaphores.cpp:20:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+../Semaphores.cpp: In function 'void* myfunc2(void*)':
+../Semaphores.cpp:30:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+../Semaphores.cpp: In function 'int main()':
+../Semaphores.cpp:69:15: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+  char *msg1 = "Thread 1";
+               ^
+../Semaphores.cpp:70:15: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+  char *msg2 = "Thread 2";
+               ^
+../Semaphores.cpp:71:56: error: invalid conversion from 'void*' to 'void* (*)(void*)' [-fpermissive]
+  pthread_create(&t1, NULL, (void *)myfunc1,(void *)msg1);
+                                                        ^
+In file included from /usr/lib/gcc/x86_64-pc-cygwin/4.9.3/include/c++/x86_64-pc-cygwin/bits/gthr-default.h:35:0,
+                 from /usr/lib/gcc/x86_64-pc-cygwin/4.9.3/include/c++/x86_64-pc-cygwin/bits/gthr.h:148,
+                 from /usr/lib/gcc/x86_64-pc-cygwin/4.9.3/include/c++/ext/atomicity.h:35,
+                 from /usr/lib/gcc/x86_64-pc-cygwin/4.9.3/include/c++/bits/ios_base.h:39,
+                 from /usr/lib/gcc/x86_64-pc-cygwin/4.9.3/include/c++/ios:42,
+                 from /usr/lib/gcc/x86_64-pc-cygwin/4.9.3/include/c++/ostream:38,
+                 from /usr/lib/gcc/x86_64-pc-cygwin/4.9.3/include/c++/iostream:39,
+                 from ../Incls.h:13,
+                 from ../Semaphores.h:10,
+                 from ../Semaphores.cpp:8:
+/usr/include/pthread.h:136:5: note: initializing argument 3 of 'int pthread_create(__pthread_t**, __pthread_attr_t* const*, void* (*)(void*), void*)'
+ int pthread_create (pthread_t *, const pthread_attr_t *,
+     ^
+../Semaphores.cpp:72:56: error: invalid conversion from 'void*' to 'void* (*)(void*)' [-fpermissive]
+  pthread_create(&t2, NULL, (void *)myfunc2,(void *)msg2);
+                                                        ^
+In file included from /usr/lib/gcc/x86_64-pc-cygwin/4.9.3/include/c++/x86_64-pc-cygwin/bits/gthr-default.h:35:0,
+                 from /usr/lib/gcc/x86_64-pc-cygwin/4.9.3/include/c++/x86_64-pc-cygwin/bits/gthr.h:148,
+                 from /usr/lib/gcc/x86_64-pc-cygwin/4.9.3/include/c++/ext/atomicity.h:35,
+                 from /usr/lib/gcc/x86_64-pc-cygwin/4.9.3/include/c++/bits/ios_base.h:39,
+                 from /usr/lib/gcc/x86_64-pc-cygwin/4.9.3/include/c++/ios:42,
+                 from /usr/lib/gcc/x86_64-pc-cygwin/4.9.3/include/c++/ostream:38,
+                 from /usr/lib/gcc/x86_64-pc-cygwin/4.9.3/include/c++/iostream:39,
+                 from ../Incls.h:13,
+                 from ../Semaphores.h:10,
+                 from ../Semaphores.cpp:8:
+/usr/include/pthread.h:136:5: note: initializing argument 3 of 'int pthread_create(__pthread_t**, __pthread_attr_t* const*, void* (*)(void*), void*)'
+ int pthread_create (pthread_t *, const pthread_attr_t *,
+     ^
+subdir.mk:21: recipe for target 'Semaphores.o' failed
+make: *** [Semaphores.o] Error 1
+22:03:54 **** Incremental Build of configuration Debug for project Concurrency ****
+make all 
+Building file: ../Semaphores.cpp
+Invoking: Cygwin C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -DWINDOWS -MMD -MP -MF"Semaphores.d" -MT"Semaphores.o" -o "Semaphores.o" "../Semaphores.cpp"
+../Semaphores.cpp: In function 'void* myfunc1(void*)':
+../Semaphores.cpp:20:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+../Semaphores.cpp: In function 'void* myfunc2(void*)':
+../Semaphores.cpp:30:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+../Semaphores.cpp: In function 'int main()':
+../Semaphores.cpp:69:15: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+  char *msg1 = "Thread 1";
+               ^
+../Semaphores.cpp:70:15: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+  char *msg2 = "Thread 2";
+               ^
+Finished building: ../Semaphores.cpp
+ 
+Building target: Concurrency.exe
+Invoking: Cygwin C++ Linker
+g++  -o "Concurrency.exe"  ./Semaphores.o ./pointers.o   -lboost_system -lboost_thread
+Finished building target: Concurrency.exe
+ 
+22:04:10 **** Incremental Build of configuration Debug for project Concurrency ****
+make all 
+Building file: ../Semaphores.cpp
+Invoking: Cygwin C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -DWINDOWS -MMD -MP -MF"Semaphores.d" -MT"Semaphores.o" -o "Semaphores.o" "../Semaphores.cpp"
+../Semaphores.cpp: In function 'void* myfunc1(void*)':
+../Semaphores.cpp:20:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+../Semaphores.cpp: In function 'void* myfunc2(void*)':
+../Semaphores.cpp:30:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+../Semaphores.cpp: In function 'int main()':
+../Semaphores.cpp:69:15: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+  char *msg1 = "Thread 1";
+               ^
+../Semaphores.cpp:70:15: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+  char *msg2 = "Thread 2";
+               ^
+Finished building: ../Semaphores.cpp
+ 
+Building target: Concurrency.exe
+Invoking: Cygwin C++ Linker
+g++  -o "Concurrency.exe"  ./Semaphores.o ./pointers.o   -lboost_system -lboost_thread
+Finished building target: Concurrency.exe
+ 
+22:04:27 **** Incremental Build of configuration Debug for project Concurrency ****
+make all 
+Building file: ../Semaphores.cpp
+Invoking: Cygwin C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -DWINDOWS -MMD -MP -MF"Semaphores.d" -MT"Semaphores.o" -o "Semaphores.o" "../Semaphores.cpp"
+../Semaphores.cpp: In function 'void* myfunc1(void*)':
+../Semaphores.cpp:20:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+../Semaphores.cpp: In function 'void* myfunc2(void*)':
+../Semaphores.cpp:30:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+../Semaphores.cpp: In function 'int main()':
+../Semaphores.cpp:69:15: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+  char *msg1 = "Thread 1";
+               ^
+../Semaphores.cpp:70:15: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+  char *msg2 = "Thread 2";
+               ^
+Finished building: ../Semaphores.cpp
+ 
+Building target: Concurrency.exe
+Invoking: Cygwin C++ Linker
+g++  -o "Concurrency.exe"  ./Semaphores.o ./pointers.o   -lboost_system -lboost_thread
+Finished building target: Concurrency.exe
+ 
+22:14:32 **** Incremental Build of configuration Debug for project Concurrency ****
+make all 
+Building file: ../Semaphores.cpp
+Invoking: Cygwin C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -DWINDOWS -MMD -MP -MF"Semaphores.d" -MT"Semaphores.o" -o "Semaphores.o" "../Semaphores.cpp"
+../Semaphores.cpp:13:2: error: 'INT' redeclared as different kind of symbol
+  INT,
+  ^
+In file included from /usr/include/w32api/minwindef.h:163:0,
+                 from /usr/include/w32api/windef.h:8,
+                 from /usr/include/w32api/windows.h:69,
+                 from ../Incls.h:33,
+                 from ../Semaphores.h:10,
+                 from ../Semaphores.cpp:8:
+/usr/include/w32api/winnt.h:282:15: note: previous declaration 'typedef int INT'
+   typedef int INT;
+               ^
+../Semaphores.cpp:14:2: error: 'FLOAT' redeclared as different kind of symbol
+  FLOAT,
+  ^
+In file included from /usr/include/w32api/windef.h:8:0,
+                 from /usr/include/w32api/windows.h:69,
+                 from ../Incls.h:33,
+                 from ../Semaphores.h:10,
+                 from ../Semaphores.cpp:8:
+/usr/include/w32api/minwindef.h:142:17: note: previous declaration 'typedef float FLOAT'
+   typedef float FLOAT;
+                 ^
+../Semaphores.cpp:15:2: error: 'DOUBLE' redeclared as different kind of symbol
+  DOUBLE,
+  ^
+In file included from /usr/include/w32api/combaseapi.h:153:0,
+                 from /usr/include/w32api/objbase.h:14,
+                 from /usr/include/w32api/ole2.h:17,
+                 from /usr/include/w32api/wtypes.h:12,
+                 from /usr/include/w32api/winscard.h:10,
+                 from /usr/include/w32api/windows.h:97,
+                 from ../Incls.h:33,
+                 from ../Semaphores.h:10,
+                 from ../Semaphores.cpp:8:
+/usr/include/w32api/wtypesbase.h:93:16: note: previous declaration 'typedef double DOUBLE'
+ typedef double DOUBLE;
+                ^
+../Semaphores.cpp: In function 'void* myfunc1(void*)':
+../Semaphores.cpp:27:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+../Semaphores.cpp: In function 'void* myfunc2(void*)':
+../Semaphores.cpp:37:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+../Semaphores.cpp: In function 'void enumTest(void*, TType)':
+../Semaphores.cpp:74:10: error: expected primary-expression before ':' token
+  case INT:
+          ^
+../Semaphores.cpp:75:33: error: expected '(' before 'ptr'
+   std::cout << static_cast<int*>ptr << std::endl;
+                                 ^
+../Semaphores.cpp:75:45: error: invalid operands of types 'void*' and '<unresolved overloaded function type>' to binary 'operator<<'
+   std::cout << static_cast<int*>ptr << std::endl;
+                                             ^
+../Semaphores.cpp:75:49: error: expected ')' before ';' token
+   std::cout << static_cast<int*>ptr << std::endl;
+                                                 ^
+../Semaphores.cpp:77:12: error: expected primary-expression before ':' token
+  case FLOAT:
+            ^
+../Semaphores.cpp:78:35: error: expected '(' before 'ptr'
+   std::cout << static_cast<float*>ptr << std::endl;
+                                   ^
+../Semaphores.cpp:78:47: error: invalid operands of types 'void*' and '<unresolved overloaded function type>' to binary 'operator<<'
+   std::cout << static_cast<float*>ptr << std::endl;
+                                               ^
+../Semaphores.cpp:78:51: error: expected ')' before ';' token
+   std::cout << static_cast<float*>ptr << std::endl;
+                                                   ^
+../Semaphores.cpp:80:13: error: expected primary-expression before ':' token
+  case DOUBLE:
+             ^
+../Semaphores.cpp:81:36: error: expected '(' before 'ptr'
+   std::cout << static_cast<double*>ptr << std::endl;
+                                    ^
+../Semaphores.cpp:81:48: error: invalid operands of types 'void*' and '<unresolved overloaded function type>' to binary 'operator<<'
+   std::cout << static_cast<double*>ptr << std::endl;
+                                                ^
+../Semaphores.cpp:81:52: error: expected ')' before ';' token
+   std::cout << static_cast<double*>ptr << std::endl;
+                                                    ^
+../Semaphores.cpp:84:34: error: expected '(' before 'ptr'
+   std::cout << static_cast<char*>ptr << std::endl;
+                                  ^
+../Semaphores.cpp:84:46: error: invalid operands of types 'void*' and '<unresolved overloaded function type>' to binary 'operator<<'
+   std::cout << static_cast<char*>ptr << std::endl;
+                                              ^
+../Semaphores.cpp:84:50: error: expected ')' before ';' token
+   std::cout << static_cast<char*>ptr << std::endl;
+                                                  ^
+../Semaphores.cpp:73:8: warning: enumeration value 'INT' not handled in switch [-Wswitch]
+  switch(type) {
+        ^
+../Semaphores.cpp:73:8: warning: enumeration value 'FLOAT' not handled in switch [-Wswitch]
+../Semaphores.cpp:73:8: warning: enumeration value 'DOUBLE' not handled in switch [-Wswitch]
+../Semaphores.cpp: In function 'int main()':
+../Semaphores.cpp:95:15: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+  char *msg1 = "Thread 1";
+               ^
+../Semaphores.cpp:96:15: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+  char *msg2 = "Thread 2";
+               ^
+../Semaphores.cpp:105:14: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+  char* nv4 = "this is bullshit";
+              ^
+../Semaphores.cpp:106:19: error: expected primary-expression before ')' token
+  enumTest(&nv1,INT);
+                   ^
+../Semaphores.cpp:107:21: error: expected primary-expression before ')' token
+  enumTest(&nv2,FLOAT);
+                     ^
+../Semaphores.cpp:108:22: error: expected primary-expression before ')' token
+  enumTest(&nv3,DOUBLE);
+                      ^
+make: *** [Semaphores.o] Error 1
+subdir.mk:21: recipe for target 'Semaphores.o' failed
+22:15:03 **** Incremental Build of configuration Debug for project Concurrency ****
+make all 
+Building file: ../Semaphores.cpp
+Invoking: Cygwin C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -DWINDOWS -MMD -MP -MF"Semaphores.d" -MT"Semaphores.o" -o "Semaphores.o" "../Semaphores.cpp"
+../Semaphores.cpp:13:2: error: 'INT' redeclared as different kind of symbol
+  INT,
+  ^
+In file included from /usr/include/w32api/minwindef.h:163:0,
+                 from /usr/include/w32api/windef.h:8,
+                 from /usr/include/w32api/windows.h:69,
+                 from ../Incls.h:33,
+                 from ../Semaphores.h:10,
+                 from ../Semaphores.cpp:8:
+/usr/include/w32api/winnt.h:282:15: note: previous declaration 'typedef int INT'
+   typedef int INT;
+               ^
+../Semaphores.cpp:14:2: error: 'FLOAT' redeclared as different kind of symbol
+  FLOAT,
+  ^
+In file included from /usr/include/w32api/windef.h:8:0,
+                 from /usr/include/w32api/windows.h:69,
+                 from ../Incls.h:33,
+                 from ../Semaphores.h:10,
+                 from ../Semaphores.cpp:8:
+/usr/include/w32api/minwindef.h:142:17: note: previous declaration 'typedef float FLOAT'
+   typedef float FLOAT;
+                 ^
+../Semaphores.cpp:15:2: error: 'DOUBLE' redeclared as different kind of symbol
+  DOUBLE,
+  ^
+In file included from /usr/include/w32api/combaseapi.h:153:0,
+                 from /usr/include/w32api/objbase.h:14,
+                 from /usr/include/w32api/ole2.h:17,
+                 from /usr/include/w32api/wtypes.h:12,
+                 from /usr/include/w32api/winscard.h:10,
+                 from /usr/include/w32api/windows.h:97,
+                 from ../Incls.h:33,
+                 from ../Semaphores.h:10,
+                 from ../Semaphores.cpp:8:
+/usr/include/w32api/wtypesbase.h:93:16: note: previous declaration 'typedef double DOUBLE'
+ typedef double DOUBLE;
+                ^
+../Semaphores.cpp: In function 'void* myfunc1(void*)':
+../Semaphores.cpp:27:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+../Semaphores.cpp: In function 'void* myfunc2(void*)':
+../Semaphores.cpp:37:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+../Semaphores.cpp: In function 'void enumTest(void*, TType)':
+../Semaphores.cpp:74:10: error: expected primary-expression before ':' token
+  case INT:
+          ^
+../Semaphores.cpp:77:12: error: expected primary-expression before ':' token
+  case FLOAT:
+            ^
+../Semaphores.cpp:80:13: error: expected primary-expression before ':' token
+  case DOUBLE:
+             ^
+../Semaphores.cpp:73:8: warning: enumeration value 'INT' not handled in switch [-Wswitch]
+  switch(type) {
+        ^
+../Semaphores.cpp:73:8: warning: enumeration value 'FLOAT' not handled in switch [-Wswitch]
+../Semaphores.cpp:73:8: warning: enumeration value 'DOUBLE' not handled in switch [-Wswitch]
+../Semaphores.cpp: In function 'int main()':
+../Semaphores.cpp:95:15: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+  char *msg1 = "Thread 1";
+               ^
+../Semaphores.cpp:96:15: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+  char *msg2 = "Thread 2";
+               ^
+../Semaphores.cpp:105:14: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+  char* nv4 = "this is bullshit";
+              ^
+../Semaphores.cpp:106:19: error: expected primary-expression before ')' token
+  enumTest(&nv1,INT);
+                   ^
+../Semaphores.cpp:107:21: error: expected primary-expression before ')' token
+  enumTest(&nv2,FLOAT);
+                     ^
+../Semaphores.cpp:108:22: error: expected primary-expression before ')' token
+  enumTest(&nv3,DOUBLE);
+                      ^
+subdir.mk:21: recipe for target 'Semaphores.o' failed
+make: *** [Semaphores.o] Error 1
+22:15:54 **** Incremental Build of configuration Debug for project Concurrency ****
+make all 
+Building file: ../Semaphores.cpp
+Invoking: Cygwin C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -DWINDOWS -MMD -MP -MF"Semaphores.d" -MT"Semaphores.o" -o "Semaphores.o" "../Semaphores.cpp"
+../Semaphores.cpp:13:2: error: 'INT' redeclared as different kind of symbol
+  INT,
+  ^
+In file included from /usr/include/w32api/minwindef.h:163:0,
+                 from /usr/include/w32api/windef.h:8,
+                 from /usr/include/w32api/windows.h:69,
+                 from ../Incls.h:33,
+                 from ../Semaphores.h:10,
+                 from ../Semaphores.cpp:8:
+/usr/include/w32api/winnt.h:282:15: note: previous declaration 'typedef int INT'
+   typedef int INT;
+               ^
+../Semaphores.cpp:14:2: error: 'FLOAT' redeclared as different kind of symbol
+  FLOAT,
+  ^
+In file included from /usr/include/w32api/windef.h:8:0,
+                 from /usr/include/w32api/windows.h:69,
+                 from ../Incls.h:33,
+                 from ../Semaphores.h:10,
+                 from ../Semaphores.cpp:8:
+/usr/include/w32api/minwindef.h:142:17: note: previous declaration 'typedef float FLOAT'
+   typedef float FLOAT;
+                 ^
+../Semaphores.cpp:15:2: error: 'DOUBLE' redeclared as different kind of symbol
+  DOUBLE,
+  ^
+In file included from /usr/include/w32api/combaseapi.h:153:0,
+                 from /usr/include/w32api/objbase.h:14,
+                 from /usr/include/w32api/ole2.h:17,
+                 from /usr/include/w32api/wtypes.h:12,
+                 from /usr/include/w32api/winscard.h:10,
+                 from /usr/include/w32api/windows.h:97,
+                 from ../Incls.h:33,
+                 from ../Semaphores.h:10,
+                 from ../Semaphores.cpp:8:
+/usr/include/w32api/wtypesbase.h:93:16: note: previous declaration 'typedef double DOUBLE'
+ typedef double DOUBLE;
+                ^
+../Semaphores.cpp: In function 'void* myfunc1(void*)':
+../Semaphores.cpp:27:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+../Semaphores.cpp: In function 'void* myfunc2(void*)':
+../Semaphores.cpp:37:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+../Semaphores.cpp: In function 'int main()':
+../Semaphores.cpp:95:15: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+  char *msg1 = "Thread 1";
+               ^
+../Semaphores.cpp:96:15: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+  char *msg2 = "Thread 2";
+               ^
+../Semaphores.cpp:105:14: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+  char* nv4 = "this is bullshit";
+              ^
+subdir.mk:21: recipe for target 'Semaphores.o' failed
+make: *** [Semaphores.o] Error 1
+22:17:54 **** Incremental Build of configuration Debug for project Concurrency ****
+make all 
+Building file: ../Semaphores.cpp
+Invoking: Cygwin C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -DWINDOWS -MMD -MP -MF"Semaphores.d" -MT"Semaphores.o" -o "Semaphores.o" "../Semaphores.cpp"
+../Semaphores.cpp: In function 'void* myfunc1(void*)':
+../Semaphores.cpp:27:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+../Semaphores.cpp: In function 'void* myfunc2(void*)':
+../Semaphores.cpp:37:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+../Semaphores.cpp: In function 'int main()':
+../Semaphores.cpp:95:15: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+  char *msg1 = "Thread 1";
+               ^
+../Semaphores.cpp:96:15: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+  char *msg2 = "Thread 2";
+               ^
+../Semaphores.cpp:105:14: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+  char* nv4 = "this is bullshit";
+              ^
+Finished building: ../Semaphores.cpp
+ 
+Building target: Concurrency.exe
+Invoking: Cygwin C++ Linker
+g++  -o "Concurrency.exe"  ./Semaphores.o ./pointers.o   -lboost_system -lboost_thread
+Finished building target: Concurrency.exe
+ 
+22:18:39 **** Incremental Build of configuration Debug for project Concurrency ****
+make all 
+Building file: ../Semaphores.cpp
+Invoking: Cygwin C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -DWINDOWS -MMD -MP -MF"Semaphores.d" -MT"Semaphores.o" -o "Semaphores.o" "../Semaphores.cpp"
+../Semaphores.cpp: In function 'void* myfunc1(void*)':
+../Semaphores.cpp:27:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+../Semaphores.cpp: In function 'void* myfunc2(void*)':
+../Semaphores.cpp:37:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+../Semaphores.cpp: In function 'int main()':
+../Semaphores.cpp:95:15: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+  char *msg1 = "Thread 1";
+               ^
+../Semaphores.cpp:96:15: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+  char *msg2 = "Thread 2";
+               ^
+Finished building: ../Semaphores.cpp
+ 
+Building target: Concurrency.exe
+Invoking: Cygwin C++ Linker
+g++  -o "Concurrency.exe"  ./Semaphores.o ./pointers.o   -lboost_system -lboost_thread
+Finished building target: Concurrency.exe
+ 
+22:19:07 **** Incremental Build of configuration Debug for project Concurrency ****
+make all 
+Building file: ../Semaphores.cpp
+Invoking: Cygwin C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -DWINDOWS -MMD -MP -MF"Semaphores.d" -MT"Semaphores.o" -o "Semaphores.o" "../Semaphores.cpp"
+../Semaphores.cpp: In function 'void* myfunc1(void*)':
+../Semaphores.cpp:27:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+../Semaphores.cpp: In function 'void* myfunc2(void*)':
+../Semaphores.cpp:37:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+../Semaphores.cpp: In function 'int main()':
+../Semaphores.cpp:95:15: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+  char *msg1 = "Thread 1";
+               ^
+../Semaphores.cpp:96:15: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+  char *msg2 = "Thread 2";
+               ^
+../Semaphores.cpp:105:14: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+  char* nv4 = "this is bullshit";
+              ^
+Finished building: ../Semaphores.cpp
+ 
+Building target: Concurrency.exe
+Invoking: Cygwin C++ Linker
+g++  -o "Concurrency.exe"  ./Semaphores.o ./pointers.o   -lboost_system -lboost_thread
+Finished building target: Concurrency.exe
+ 
+22:19:33 **** Incremental Build of configuration Debug for project Concurrency ****
+make all 
+Building file: ../Semaphores.cpp
+Invoking: Cygwin C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -DWINDOWS -MMD -MP -MF"Semaphores.d" -MT"Semaphores.o" -o "Semaphores.o" "../Semaphores.cpp"
+../Semaphores.cpp: In function 'void* myfunc1(void*)':
+../Semaphores.cpp:27:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+../Semaphores.cpp: In function 'void* myfunc2(void*)':
+../Semaphores.cpp:37:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+../Semaphores.cpp: In function 'int main()':
+../Semaphores.cpp:95:15: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+  char *msg1 = "Thread 1";
+               ^
+../Semaphores.cpp:96:15: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+  char *msg2 = "Thread 2";
+               ^
+../Semaphores.cpp:105:14: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+  char* nv4 = "this is bullshit";
+              ^
+Finished building: ../Semaphores.cpp
+ 
+Building target: Concurrency.exe
+Invoking: Cygwin C++ Linker
+g++  -o "Concurrency.exe"  ./Semaphores.o ./pointers.o   -lboost_system -lboost_thread
+Finished building target: Concurrency.exe
+ 
+10:17:36 **** Build of configuration Debug for project DoSomethingII ****
+make all 
+Building file: ../Casting.cpp
+Invoking: Cygwin C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"Casting.d" -MT"Casting.o" -o "Casting.o" "../Casting.cpp"
+../Casting.cpp: In function 'int main_func3()':
+../Casting.cpp:45:18: warning: unused variable 'dd' [-Wunused-variable]
+  VirtConst::Dog* dd = reinterpret_cast<VirtConst::Dog*>(p);
+                  ^
+../Casting.cpp:54:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+In file included from ../Casting.h:10:0,
+                 from ../Casting.cpp:8:
+../Incls.h: At global scope:
+../Incls.h:24:13: warning: 'void sleepcp(int)' defined but not used [-Wunused-function]
+ static void sleepcp(int milliseconds) // cross-platform sleep function
+             ^
+Finished building: ../Casting.cpp
+ 
+Building file: ../Inherited.cpp
+Invoking: Cygwin C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"Inherited.d" -MT"Inherited.o" -o "Inherited.o" "../Inherited.cpp"
+In file included from ../Inherited.cpp:7:0:
+../Inherited.h:209:1: warning: multi-line comment [-Wcomment]
+ //              /   \
+ ^
+../Inherited.h: In constructor 'InheritedII::InputFile::InputFile(std::string)':
+../Inherited.h:233:14: warning: 'InheritedII::InputFile::name' will be initialized after [-Wreorder]
+  std::string name;
+              ^
+../Inherited.h:235:56: warning:   base 'InheritedII::File' [-Wreorder]
+  InputFile(std::string fname) : name(fname), File(fname) {
+                                                        ^
+../Inherited.h:235:2: warning:   when initialized here [-Wreorder]
+  InputFile(std::string fname) : name(fname), File(fname) {
+  ^
+../Inherited.h: In constructor 'InheritedII::OutputFile::OutputFile(std::string)':
+../Inherited.h:241:14: warning: 'InheritedII::OutputFile::name' will be initialized after [-Wreorder]
+  std::string name;
+              ^
+../Inherited.h:243:57: warning:   base 'InheritedII::File' [-Wreorder]
+  OutputFile(std::string fname) : name(fname), File(fname) {
+                                                         ^
+../Inherited.h:243:2: warning:   when initialized here [-Wreorder]
+  OutputFile(std::string fname) : name(fname), File(fname) {
+  ^
+../Inherited.h: In constructor 'InheritedII::IOFile::IOFile(std::string)':
+../Inherited.h:251:77: warning: base 'InheritedII::OutputFile' will be initialized after [-Wreorder]
+  IOFile(std::string fname) : OutputFile(fname), InputFile(fname), File(fname) {
+                                                                             ^
+../Inherited.h:251:77: warning:   base 'InheritedII::InputFile' [-Wreorder]
+../Inherited.h:251:2: warning:   when initialized here [-Wreorder]
+  IOFile(std::string fname) : OutputFile(fname), InputFile(fname), File(fname) {
+  ^
+../Inherited.h:251:77: warning: base 'InheritedII::InputFile' will be initialized after [-Wreorder]
+  IOFile(std::string fname) : OutputFile(fname), InputFile(fname), File(fname) {
+                                                                             ^
+../Inherited.h:251:77: warning:   base 'InheritedII::File' [-Wreorder]
+../Inherited.h:251:2: warning:   when initialized here [-Wreorder]
+  IOFile(std::string fname) : OutputFile(fname), InputFile(fname), File(fname) {
+  ^
+../Inherited.cpp: In function 'int main_func()':
+../Inherited.cpp:146:4: error: request for member 'doSomething' is ambiguous
+  c.doSomething();
+    ^
+In file included from ../Inherited.cpp:7:0:
+../Inherited.h:155:7: note: candidates are: void Inherited::A2::doSomething()
+  void doSomething() {
+       ^
+../Inherited.h:148:15: note:                 virtual void Inherited::A1::doSomething()
+  virtual void doSomething() {
+               ^
+In file included from ../Inherited.h:10:0,
+                 from ../Inherited.cpp:7:
+../Incls.h: At global scope:
+../Incls.h:24:13: warning: 'void sleepcp(int)' defined but not used [-Wunused-function]
+ static void sleepcp(int milliseconds) // cross-platform sleep function
+             ^
+subdir.mk:36: recipe for target 'Inherited.o' failed
+make: *** [Inherited.o] Error 1
+10:17:57 **** Incremental Build of configuration Debug for project DoSomethingII ****
+make all 
+Building file: ../Inherited.cpp
+Invoking: Cygwin C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"Inherited.d" -MT"Inherited.o" -o "Inherited.o" "../Inherited.cpp"
+In file included from ../Inherited.cpp:7:0:
+../Inherited.h:209:1: warning: multi-line comment [-Wcomment]
+ //              /   \
+ ^
+../Inherited.h: In constructor 'InheritedII::InputFile::InputFile(std::string)':
+../Inherited.h:233:14: warning: 'InheritedII::InputFile::name' will be initialized after [-Wreorder]
+  std::string name;
+              ^
+../Inherited.h:235:56: warning:   base 'InheritedII::File' [-Wreorder]
+  InputFile(std::string fname) : name(fname), File(fname) {
+                                                        ^
+../Inherited.h:235:2: warning:   when initialized here [-Wreorder]
+  InputFile(std::string fname) : name(fname), File(fname) {
+  ^
+../Inherited.h: In constructor 'InheritedII::OutputFile::OutputFile(std::string)':
+../Inherited.h:241:14: warning: 'InheritedII::OutputFile::name' will be initialized after [-Wreorder]
+  std::string name;
+              ^
+../Inherited.h:243:57: warning:   base 'InheritedII::File' [-Wreorder]
+  OutputFile(std::string fname) : name(fname), File(fname) {
+                                                         ^
+../Inherited.h:243:2: warning:   when initialized here [-Wreorder]
+  OutputFile(std::string fname) : name(fname), File(fname) {
+  ^
+../Inherited.h: In constructor 'InheritedII::IOFile::IOFile(std::string)':
+../Inherited.h:251:77: warning: base 'InheritedII::OutputFile' will be initialized after [-Wreorder]
+  IOFile(std::string fname) : OutputFile(fname), InputFile(fname), File(fname) {
+                                                                             ^
+../Inherited.h:251:77: warning:   base 'InheritedII::InputFile' [-Wreorder]
+../Inherited.h:251:2: warning:   when initialized here [-Wreorder]
+  IOFile(std::string fname) : OutputFile(fname), InputFile(fname), File(fname) {
+  ^
+../Inherited.h:251:77: warning: base 'InheritedII::InputFile' will be initialized after [-Wreorder]
+  IOFile(std::string fname) : OutputFile(fname), InputFile(fname), File(fname) {
+                                                                             ^
+../Inherited.h:251:77: warning:   base 'InheritedII::File' [-Wreorder]
+../Inherited.h:251:2: warning:   when initialized here [-Wreorder]
+  IOFile(std::string fname) : OutputFile(fname), InputFile(fname), File(fname) {
+  ^
+In file included from ../Inherited.h:10:0,
+                 from ../Inherited.cpp:7:
+../Incls.h: At global scope:
+../Incls.h:24:13: warning: 'void sleepcp(int)' defined but not used [-Wunused-function]
+ static void sleepcp(int milliseconds) // cross-platform sleep function
+             ^
+Finished building: ../Inherited.cpp
+ 
+Building file: ../Singleton.cpp
+Invoking: Cygwin C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"Singleton.d" -MT"Singleton.o" -o "Singleton.o" "../Singleton.cpp"
+../Singleton.cpp: In static member function 'static dog* Singleton::getDog()':
+../Singleton.cpp:15:24: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+   pd = new dog("Gunner");
+                        ^
+../Singleton.cpp: In static member function 'static cat* Singleton::getCat()':
+../Singleton.cpp:23:24: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+   pc = new cat("Smokey");
+                        ^
+../Singleton.cpp: In member function 'Person& Person::cloneByRef()':
+../Singleton.cpp:101:10: warning: reference to local variable 'p' returned [-Wreturn-local-addr]
+   Person p(*pName_);
+          ^
+../Singleton.cpp: In function 'int main_func()':
+../Singleton.cpp:175:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+In file included from ../Singleton.h:11:0,
+                 from ../Singleton.cpp:7:
+../Incls.h: At global scope:
+../Incls.h:24:13: warning: 'void sleepcp(int)' defined but not used [-Wunused-function]
+ static void sleepcp(int milliseconds) // cross-platform sleep function
+             ^
+Finished building: ../Singleton.cpp
+ 
+Building file: ../VirtConst.cpp
+Invoking: Cygwin C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"VirtConst.d" -MT"VirtConst.o" -o "VirtConst.o" "../VirtConst.cpp"
+../VirtConst.cpp: In function 'int main_func2()':
+../VirtConst.cpp:110:13: warning: unused variable 'm' [-Wunused-variable]
+  const int& m = 5; // constant lvalue reference can be assigned a rvalue
+             ^
+../VirtConst.cpp:120:6: warning: unused variable 'x' [-Wunused-variable]
+  int x = i + 2;
+      ^
+../VirtConst.cpp:130:12: warning: unused variable 'ii' [-Wunused-variable]
+  const int ii = 1;
+            ^
+../VirtConst.cpp:135:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+In file included from ../VirtConst.h:10:0,
+                 from ../VirtConst.cpp:8:
+../Incls.h: At global scope:
+../Incls.h:24:13: warning: 'void sleepcp(int)' defined but not used [-Wunused-function]
+ static void sleepcp(int milliseconds) // cross-platform sleep function
+             ^
+Finished building: ../VirtConst.cpp
+ 
+Building file: ../cat.cpp
+Invoking: Cygwin C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"cat.d" -MT"cat.o" -o "cat.o" "../cat.cpp"
+In file included from ../cat.h:10:0,
+                 from ../cat.cpp:8:
+../Incls.h:24:13: warning: 'void sleepcp(int)' defined but not used [-Wunused-function]
+ static void sleepcp(int milliseconds) // cross-platform sleep function
+             ^
+Finished building: ../cat.cpp
+ 
+Building file: ../dog.cpp
+Invoking: Cygwin C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"dog.d" -MT"dog.o" -o "dog.o" "../dog.cpp"
+In file included from ../dog.h:10:0,
+                 from ../dog.cpp:8:
+../Incls.h:24:13: warning: 'void sleepcp(int)' defined but not used [-Wunused-function]
+ static void sleepcp(int milliseconds) // cross-platform sleep function
+             ^
+Finished building: ../dog.cpp
+ 
+Building file: ../friends.cpp
+Invoking: Cygwin C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"friends.d" -MT"friends.o" -o "friends.o" "../friends.cpp"
+../friends.cpp: In function 'Rectangle duplicate(const Rectangle&)':
+../friends.cpp:28:31: error: passing 'const Rectangle' as 'this' argument of 'int Rectangle::getWidth()' discards qualifiers [-fpermissive]
+  Rectangle res(param.getWidth(), param.getHeight());
+                               ^
+../friends.cpp:28:50: error: passing 'const Rectangle' as 'this' argument of 'int Rectangle::getHeight()' discards qualifiers [-fpermissive]
+  Rectangle res(param.getWidth(), param.getHeight());
+                                                  ^
+In file included from ../friends.h:11:0,
+                 from ../friends.cpp:8:
+../Incls.h: At global scope:
+../Incls.h:24:13: warning: 'void sleepcp(int)' defined but not used [-Wunused-function]
+ static void sleepcp(int milliseconds) // cross-platform sleep function
+             ^
+subdir.mk:36: recipe for target 'friends.o' failed
+make: *** [friends.o] Error 1
+10:18:55 **** Incremental Build of configuration Debug for project DoSomethingII ****
+make all 
+Building file: ../friends.cpp
+Invoking: Cygwin C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"friends.d" -MT"friends.o" -o "friends.o" "../friends.cpp"
+../friends.cpp: In function 'Rectangle duplicate(const Rectangle&)':
+../friends.cpp:28:31: error: passing 'const Rectangle' as 'this' argument of 'int Rectangle::getWidth()' discards qualifiers [-fpermissive]
+  Rectangle res(param.getWidth(), param.getHeight());
+                               ^
+../friends.cpp:28:50: error: passing 'const Rectangle' as 'this' argument of 'int Rectangle::getHeight()' discards qualifiers [-fpermissive]
+  Rectangle res(param.getWidth(), param.getHeight());
+                                                  ^
+In file included from ../friends.h:11:0,
+                 from ../friends.cpp:8:
+../Incls.h: At global scope:
+../Incls.h:24:13: warning: 'void sleepcp(int)' defined but not used [-Wunused-function]
+ static void sleepcp(int milliseconds) // cross-platform sleep function
+             ^
+make: *** [friends.o] Error 1
+subdir.mk:36: recipe for target 'friends.o' failed
+10:20:10 **** Incremental Build of configuration Debug for project DoSomethingII ****
+make all 
+Building file: ../friends.cpp
+Invoking: Cygwin C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"friends.d" -MT"friends.o" -o "friends.o" "../friends.cpp"
+In file included from ../friends.h:11:0,
+                 from ../friends.cpp:8:
+../Incls.h:24:13: warning: 'void sleepcp(int)' defined but not used [-Wunused-function]
+ static void sleepcp(int milliseconds) // cross-platform sleep function
+             ^
+Finished building: ../friends.cpp
+ 
+Building target: DoSomethingII.exe
+Invoking: Cygwin C++ Linker
+g++  -o "DoSomethingII.exe"  ./Casting.o ./Inherited.o ./Singleton.o ./VirtConst.o ./cat.o ./dog.o ./friends.o   
+./Singleton.o: In function `main_func()':
+/cygdrive/d/novicecoder/workspace_c++/DoSomethingII/Debug/../Singleton.cpp:120: multiple definition of `main_func()'
+./Inherited.o:/cygdrive/d/novicecoder/workspace_c++/DoSomethingII/Debug/../Inherited.cpp:144: first defined here
+makefile:44: recipe for target 'DoSomethingII.exe' failed
+collect2: error: ld returned 1 exit status
+make: *** [DoSomethingII.exe] Error 1
+10:20:38 **** Incremental Build of configuration Debug for project DoSomethingII ****
+make all 
+Building file: ../Inherited.cpp
+Invoking: Cygwin C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"Inherited.d" -MT"Inherited.o" -o "Inherited.o" "../Inherited.cpp"
+In file included from ../Inherited.cpp:7:0:
+../Inherited.h:209:1: warning: multi-line comment [-Wcomment]
+ //              /   \
+ ^
+../Inherited.h: In constructor 'InheritedII::InputFile::InputFile(std::string)':
+../Inherited.h:233:14: warning: 'InheritedII::InputFile::name' will be initialized after [-Wreorder]
+  std::string name;
+              ^
+../Inherited.h:235:56: warning:   base 'InheritedII::File' [-Wreorder]
+  InputFile(std::string fname) : name(fname), File(fname) {
+                                                        ^
+../Inherited.h:235:2: warning:   when initialized here [-Wreorder]
+  InputFile(std::string fname) : name(fname), File(fname) {
+  ^
+../Inherited.h: In constructor 'InheritedII::OutputFile::OutputFile(std::string)':
+../Inherited.h:241:14: warning: 'InheritedII::OutputFile::name' will be initialized after [-Wreorder]
+  std::string name;
+              ^
+../Inherited.h:243:57: warning:   base 'InheritedII::File' [-Wreorder]
+  OutputFile(std::string fname) : name(fname), File(fname) {
+                                                         ^
+../Inherited.h:243:2: warning:   when initialized here [-Wreorder]
+  OutputFile(std::string fname) : name(fname), File(fname) {
+  ^
+../Inherited.h: In constructor 'InheritedII::IOFile::IOFile(std::string)':
+../Inherited.h:251:77: warning: base 'InheritedII::OutputFile' will be initialized after [-Wreorder]
+  IOFile(std::string fname) : OutputFile(fname), InputFile(fname), File(fname) {
+                                                                             ^
+../Inherited.h:251:77: warning:   base 'InheritedII::InputFile' [-Wreorder]
+../Inherited.h:251:2: warning:   when initialized here [-Wreorder]
+  IOFile(std::string fname) : OutputFile(fname), InputFile(fname), File(fname) {
+  ^
+../Inherited.h:251:77: warning: base 'InheritedII::InputFile' will be initialized after [-Wreorder]
+  IOFile(std::string fname) : OutputFile(fname), InputFile(fname), File(fname) {
+                                                                             ^
+../Inherited.h:251:77: warning:   base 'InheritedII::File' [-Wreorder]
+../Inherited.h:251:2: warning:   when initialized here [-Wreorder]
+  IOFile(std::string fname) : OutputFile(fname), InputFile(fname), File(fname) {
+  ^
+In file included from ../Inherited.h:10:0,
+                 from ../Inherited.cpp:7:
+../Incls.h: At global scope:
+../Incls.h:24:13: warning: 'void sleepcp(int)' defined but not used [-Wunused-function]
+ static void sleepcp(int milliseconds) // cross-platform sleep function
+             ^
+Finished building: ../Inherited.cpp
+ 
+Building target: DoSomethingII.exe
+Invoking: Cygwin C++ Linker
+g++  -o "DoSomethingII.exe"  ./Casting.o ./Inherited.o ./Singleton.o ./VirtConst.o ./cat.o ./dog.o ./friends.o   
+./VirtConst.o: In function `main_func2()':
+/cygdrive/d/novicecoder/workspace_c++/DoSomethingII/Debug/../VirtConst.cpp:73: multiple definition of `main_func2()'
+makefile:44: recipe for target 'DoSomethingII.exe' failed
+./Inherited.o:/cygdrive/d/novicecoder/workspace_c++/DoSomethingII/Debug/../Inherited.cpp:144: first defined here
+collect2: error: ld returned 1 exit status
+make: *** [DoSomethingII.exe] Error 1
+10:20:49 **** Incremental Build of configuration Debug for project DoSomethingII ****
+make all 
+Building file: ../Inherited.cpp
+Invoking: Cygwin C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"Inherited.d" -MT"Inherited.o" -o "Inherited.o" "../Inherited.cpp"
+In file included from ../Inherited.cpp:7:0:
+../Inherited.h:209:1: warning: multi-line comment [-Wcomment]
+ //              /   \
+ ^
+../Inherited.h: In constructor 'InheritedII::InputFile::InputFile(std::string)':
+../Inherited.h:233:14: warning: 'InheritedII::InputFile::name' will be initialized after [-Wreorder]
+  std::string name;
+              ^
+../Inherited.h:235:56: warning:   base 'InheritedII::File' [-Wreorder]
+  InputFile(std::string fname) : name(fname), File(fname) {
+                                                        ^
+../Inherited.h:235:2: warning:   when initialized here [-Wreorder]
+  InputFile(std::string fname) : name(fname), File(fname) {
+  ^
+../Inherited.h: In constructor 'InheritedII::OutputFile::OutputFile(std::string)':
+../Inherited.h:241:14: warning: 'InheritedII::OutputFile::name' will be initialized after [-Wreorder]
+  std::string name;
+              ^
+../Inherited.h:243:57: warning:   base 'InheritedII::File' [-Wreorder]
+  OutputFile(std::string fname) : name(fname), File(fname) {
+                                                         ^
+../Inherited.h:243:2: warning:   when initialized here [-Wreorder]
+  OutputFile(std::string fname) : name(fname), File(fname) {
+  ^
+../Inherited.h: In constructor 'InheritedII::IOFile::IOFile(std::string)':
+../Inherited.h:251:77: warning: base 'InheritedII::OutputFile' will be initialized after [-Wreorder]
+  IOFile(std::string fname) : OutputFile(fname), InputFile(fname), File(fname) {
+                                                                             ^
+../Inherited.h:251:77: warning:   base 'InheritedII::InputFile' [-Wreorder]
+../Inherited.h:251:2: warning:   when initialized here [-Wreorder]
+  IOFile(std::string fname) : OutputFile(fname), InputFile(fname), File(fname) {
+  ^
+../Inherited.h:251:77: warning: base 'InheritedII::InputFile' will be initialized after [-Wreorder]
+  IOFile(std::string fname) : OutputFile(fname), InputFile(fname), File(fname) {
+                                                                             ^
+../Inherited.h:251:77: warning:   base 'InheritedII::File' [-Wreorder]
+../Inherited.h:251:2: warning:   when initialized here [-Wreorder]
+  IOFile(std::string fname) : OutputFile(fname), InputFile(fname), File(fname) {
+  ^
+In file included from ../Inherited.h:10:0,
+                 from ../Inherited.cpp:7:
+../Incls.h: At global scope:
+../Incls.h:24:13: warning: 'void sleepcp(int)' defined but not used [-Wunused-function]
+ static void sleepcp(int milliseconds) // cross-platform sleep function
+             ^
+Finished building: ../Inherited.cpp
+ 
+Building target: DoSomethingII.exe
+Invoking: Cygwin C++ Linker
+g++  -o "DoSomethingII.exe"  ./Casting.o ./Inherited.o ./Singleton.o ./VirtConst.o ./cat.o ./dog.o ./friends.o   
+Finished building target: DoSomethingII.exe
+ 
+10:21:10 **** Incremental Build of configuration Debug for project DoSomethingII ****
+make all 
+Building file: ../friends.cpp
+Invoking: Cygwin C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"friends.d" -MT"friends.o" -o "friends.o" "../friends.cpp"
+In file included from ../friends.h:11:0,
+                 from ../friends.cpp:8:
+../Incls.h:24:13: warning: 'void sleepcp(int)' defined but not used [-Wunused-function]
+ static void sleepcp(int milliseconds) // cross-platform sleep function
+             ^
+Finished building: ../friends.cpp
+ 
+Building target: DoSomethingII.exe
+Invoking: Cygwin C++ Linker
+g++  -o "DoSomethingII.exe"  ./Casting.o ./Inherited.o ./Singleton.o ./VirtConst.o ./cat.o ./dog.o ./friends.o   
+Finished building target: DoSomethingII.exe
+ 
+10:21:45 **** Incremental Build of configuration Debug for project DoSomethingII ****
+make all 
+Building file: ../friends.cpp
+Invoking: Cygwin C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"friends.d" -MT"friends.o" -o "friends.o" "../friends.cpp"
+In file included from ../friends.h:11:0,
+                 from ../friends.cpp:8:
+../Incls.h:24:13: warning: 'void sleepcp(int)' defined but not used [-Wunused-function]
+ static void sleepcp(int milliseconds) // cross-platform sleep function
+             ^
+Finished building: ../friends.cpp
+ 
+Building target: DoSomethingII.exe
+Invoking: Cygwin C++ Linker
+g++  -o "DoSomethingII.exe"  ./Casting.o ./Inherited.o ./Singleton.o ./VirtConst.o ./cat.o ./dog.o ./friends.o   
+Finished building target: DoSomethingII.exe
+ 
+10:22:06 **** Incremental Build of configuration Debug for project DoSomethingII ****
+make all 
+Building file: ../friends.cpp
+Invoking: Cygwin C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"friends.d" -MT"friends.o" -o "friends.o" "../friends.cpp"
+In file included from ../friends.h:11:0,
+                 from ../friends.cpp:8:
+../Incls.h:24:13: warning: 'void sleepcp(int)' defined but not used [-Wunused-function]
+ static void sleepcp(int milliseconds) // cross-platform sleep function
+             ^
+Finished building: ../friends.cpp
+ 
+Building target: DoSomethingII.exe
+Invoking: Cygwin C++ Linker
+g++  -o "DoSomethingII.exe"  ./Casting.o ./Inherited.o ./Singleton.o ./VirtConst.o ./cat.o ./dog.o ./friends.o   
+Finished building target: DoSomethingII.exe
+ 
+10:22:58 **** Incremental Build of configuration Debug for project DoSomethingII ****
+make all 
+Building file: ../friends.cpp
+Invoking: Cygwin C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"friends.d" -MT"friends.o" -o "friends.o" "../friends.cpp"
+In file included from ../friends.h:11:0,
+                 from ../friends.cpp:8:
+../Incls.h:24:13: warning: 'void sleepcp(int)' defined but not used [-Wunused-function]
+ static void sleepcp(int milliseconds) // cross-platform sleep function
+             ^
+Finished building: ../friends.cpp
+ 
+Building target: DoSomethingII.exe
+Invoking: Cygwin C++ Linker
+g++  -o "DoSomethingII.exe"  ./Casting.o ./Inherited.o ./Singleton.o ./VirtConst.o ./cat.o ./dog.o ./friends.o   
+Finished building target: DoSomethingII.exe
+ 
+10:23:11 **** Incremental Build of configuration Debug for project DoSomethingII ****
+make all 
+Building file: ../friends.cpp
+Invoking: Cygwin C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"friends.d" -MT"friends.o" -o "friends.o" "../friends.cpp"
+In file included from ../friends.h:11:0,
+                 from ../friends.cpp:8:
+../Incls.h:24:13: warning: 'void sleepcp(int)' defined but not used [-Wunused-function]
+ static void sleepcp(int milliseconds) // cross-platform sleep function
+             ^
+Finished building: ../friends.cpp
+ 
+Building target: DoSomethingII.exe
+Invoking: Cygwin C++ Linker
+g++  -o "DoSomethingII.exe"  ./Casting.o ./Inherited.o ./Singleton.o ./VirtConst.o ./cat.o ./dog.o ./friends.o   
+Finished building target: DoSomethingII.exe
+ 
+10:24:36 **** Incremental Build of configuration Debug for project DoSomethingII ****
+make all 
+make: Nothing to be done for 'all'.
+10:28:11 **** Incremental Build of configuration Debug for project DoSomethingII ****
+make all 
+Building file: ../friends.cpp
+Invoking: Cygwin C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"friends.d" -MT"friends.o" -o "friends.o" "../friends.cpp"
+../friends.cpp:42:1: error: expected '}' at end of input
+ }
+ ^
+../friends.cpp: In function 'Rectangle duplicate(const Rectangle&)':
+../friends.cpp:26:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ };
+ ^
+../friends.cpp: In member function 'int Rectangle::main()':
+../friends.cpp:42:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+../friends.cpp: At global scope:
+../friends.cpp:42:1: error: expected unqualified-id at end of input
+In file included from ../friends.h:11:0,
+                 from ../friends.cpp:8:
+../Incls.h:24:13: warning: 'void sleepcp(int)' defined but not used [-Wunused-function]
+ static void sleepcp(int milliseconds) // cross-platform sleep function
+             ^
+subdir.mk:36: recipe for target 'friends.o' failed
+make: *** [friends.o] Error 1
+10:28:22 **** Incremental Build of configuration Debug for project DoSomethingII ****
+make all 
+Building file: ../friends.cpp
+Invoking: Cygwin C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"friends.d" -MT"friends.o" -o "friends.o" "../friends.cpp"
+In file included from ../friends.h:11:0,
+                 from ../friends.cpp:8:
+../Incls.h:24:13: warning: 'void sleepcp(int)' defined but not used [-Wunused-function]
+ static void sleepcp(int milliseconds) // cross-platform sleep function
+             ^
+Finished building: ../friends.cpp
+ 
+Building target: DoSomethingII.exe
+Invoking: Cygwin C++ Linker
+g++  -o "DoSomethingII.exe"  ./Casting.o ./Inherited.o ./Singleton.o ./VirtConst.o ./cat.o ./dog.o ./friends.o   
+Finished building target: DoSomethingII.exe
+ 
+11:50:14 **** Incremental Build of configuration Debug for project DoSomethingII ****
+make all 
+Building file: ../Inherited.cpp
+Invoking: Cygwin C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"Inherited.d" -MT"Inherited.o" -o "Inherited.o" "../Inherited.cpp"
+In file included from ../Inherited.cpp:7:0:
+../Inherited.h:209:1: warning: multi-line comment [-Wcomment]
+ //              /   \
+ ^
+../Inherited.h: In constructor 'InheritedII::InputFile::InputFile(std::string)':
+../Inherited.h:233:14: warning: 'InheritedII::InputFile::name' will be initialized after [-Wreorder]
+  std::string name;
+              ^
+../Inherited.h:235:56: warning:   base 'InheritedII::File' [-Wreorder]
+  InputFile(std::string fname) : name(fname), File(fname) {
+                                                        ^
+../Inherited.h:235:2: warning:   when initialized here [-Wreorder]
+  InputFile(std::string fname) : name(fname), File(fname) {
+  ^
+../Inherited.h: In constructor 'InheritedII::OutputFile::OutputFile(std::string)':
+../Inherited.h:241:14: warning: 'InheritedII::OutputFile::name' will be initialized after [-Wreorder]
+  std::string name;
+              ^
+../Inherited.h:243:57: warning:   base 'InheritedII::File' [-Wreorder]
+  OutputFile(std::string fname) : name(fname), File(fname) {
+                                                         ^
+../Inherited.h:243:2: warning:   when initialized here [-Wreorder]
+  OutputFile(std::string fname) : name(fname), File(fname) {
+  ^
+../Inherited.h: In constructor 'InheritedII::IOFile::IOFile(std::string)':
+../Inherited.h:251:77: warning: base 'InheritedII::OutputFile' will be initialized after [-Wreorder]
+  IOFile(std::string fname) : OutputFile(fname), InputFile(fname), File(fname) {
+                                                                             ^
+../Inherited.h:251:77: warning:   base 'InheritedII::InputFile' [-Wreorder]
+../Inherited.h:251:2: warning:   when initialized here [-Wreorder]
+  IOFile(std::string fname) : OutputFile(fname), InputFile(fname), File(fname) {
+  ^
+../Inherited.h:251:77: warning: base 'InheritedII::InputFile' will be initialized after [-Wreorder]
+  IOFile(std::string fname) : OutputFile(fname), InputFile(fname), File(fname) {
+                                                                             ^
+../Inherited.h:251:77: warning:   base 'InheritedII::File' [-Wreorder]
+../Inherited.h:251:2: warning:   when initialized here [-Wreorder]
+  IOFile(std::string fname) : OutputFile(fname), InputFile(fname), File(fname) {
+  ^
+In file included from ../Inherited.h:10:0,
+                 from ../Inherited.cpp:7:
+../Incls.h: At global scope:
+../Incls.h:24:13: warning: 'void sleepcp(int)' defined but not used [-Wunused-function]
+ static void sleepcp(int milliseconds) // cross-platform sleep function
+             ^
+Finished building: ../Inherited.cpp
+ 
+Building file: ../friends.cpp
+Invoking: Cygwin C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"friends.d" -MT"friends.o" -o "friends.o" "../friends.cpp"
+../friends.cpp: In function 'int main_func4()':
+../friends.cpp:42:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+In file included from ../friends.h:11:0,
+                 from ../friends.cpp:8:
+../Incls.h: At global scope:
+../Incls.h:24:13: warning: 'void sleepcp(int)' defined but not used [-Wunused-function]
+ static void sleepcp(int milliseconds) // cross-platform sleep function
+             ^
+Finished building: ../friends.cpp
+ 
+Building target: DoSomethingII.exe
+Invoking: Cygwin C++ Linker
+g++  -o "DoSomethingII.exe"  ./Casting.o ./Inherited.o ./Singleton.o ./VirtConst.o ./cat.o ./dog.o ./friends.o   
+Finished building target: DoSomethingII.exe
+ 
+11:50:28 **** Incremental Build of configuration Debug for project DoSomethingII ****
+make all 
+Building file: ../Inherited.cpp
+Invoking: Cygwin C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"Inherited.d" -MT"Inherited.o" -o "Inherited.o" "../Inherited.cpp"
+In file included from ../Inherited.cpp:7:0:
+../Inherited.h:209:1: warning: multi-line comment [-Wcomment]
+ //              /   \
+ ^
+../Inherited.h: In constructor 'InheritedII::InputFile::InputFile(std::string)':
+../Inherited.h:233:14: warning: 'InheritedII::InputFile::name' will be initialized after [-Wreorder]
+  std::string name;
+              ^
+../Inherited.h:235:56: warning:   base 'InheritedII::File' [-Wreorder]
+  InputFile(std::string fname) : name(fname), File(fname) {
+                                                        ^
+../Inherited.h:235:2: warning:   when initialized here [-Wreorder]
+  InputFile(std::string fname) : name(fname), File(fname) {
+  ^
+../Inherited.h: In constructor 'InheritedII::OutputFile::OutputFile(std::string)':
+../Inherited.h:241:14: warning: 'InheritedII::OutputFile::name' will be initialized after [-Wreorder]
+  std::string name;
+              ^
+../Inherited.h:243:57: warning:   base 'InheritedII::File' [-Wreorder]
+  OutputFile(std::string fname) : name(fname), File(fname) {
+                                                         ^
+../Inherited.h:243:2: warning:   when initialized here [-Wreorder]
+  OutputFile(std::string fname) : name(fname), File(fname) {
+  ^
+../Inherited.h: In constructor 'InheritedII::IOFile::IOFile(std::string)':
+../Inherited.h:251:77: warning: base 'InheritedII::OutputFile' will be initialized after [-Wreorder]
+  IOFile(std::string fname) : OutputFile(fname), InputFile(fname), File(fname) {
+                                                                             ^
+../Inherited.h:251:77: warning:   base 'InheritedII::InputFile' [-Wreorder]
+../Inherited.h:251:2: warning:   when initialized here [-Wreorder]
+  IOFile(std::string fname) : OutputFile(fname), InputFile(fname), File(fname) {
+  ^
+../Inherited.h:251:77: warning: base 'InheritedII::InputFile' will be initialized after [-Wreorder]
+  IOFile(std::string fname) : OutputFile(fname), InputFile(fname), File(fname) {
+                                                                             ^
+../Inherited.h:251:77: warning:   base 'InheritedII::File' [-Wreorder]
+../Inherited.h:251:2: warning:   when initialized here [-Wreorder]
+  IOFile(std::string fname) : OutputFile(fname), InputFile(fname), File(fname) {
+  ^
+In file included from ../Inherited.h:10:0,
+                 from ../Inherited.cpp:7:
+../Incls.h: At global scope:
+../Incls.h:24:13: warning: 'void sleepcp(int)' defined but not used [-Wunused-function]
+ static void sleepcp(int milliseconds) // cross-platform sleep function
+             ^
+Finished building: ../Inherited.cpp
+ 
+Building target: DoSomethingII.exe
+Invoking: Cygwin C++ Linker
+g++  -o "DoSomethingII.exe"  ./Casting.o ./Inherited.o ./Singleton.o ./VirtConst.o ./cat.o ./dog.o ./friends.o   
+Finished building target: DoSomethingII.exe
+ 
+11:51:08 **** Incremental Build of configuration Debug for project DoSomethingII ****
+make all 
+Building file: ../Inherited.cpp
+Invoking: Cygwin C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"Inherited.d" -MT"Inherited.o" -o "Inherited.o" "../Inherited.cpp"
+In file included from ../Inherited.cpp:7:0:
+../Inherited.h:209:1: warning: multi-line comment [-Wcomment]
+ //              /   \
+ ^
+../Inherited.h: In constructor 'InheritedII::InputFile::InputFile(std::string)':
+../Inherited.h:233:14: warning: 'InheritedII::InputFile::name' will be initialized after [-Wreorder]
+  std::string name;
+              ^
+../Inherited.h:235:56: warning:   base 'InheritedII::File' [-Wreorder]
+  InputFile(std::string fname) : name(fname), File(fname) {
+                                                        ^
+../Inherited.h:235:2: warning:   when initialized here [-Wreorder]
+  InputFile(std::string fname) : name(fname), File(fname) {
+  ^
+../Inherited.h: In constructor 'InheritedII::OutputFile::OutputFile(std::string)':
+../Inherited.h:241:14: warning: 'InheritedII::OutputFile::name' will be initialized after [-Wreorder]
+  std::string name;
+              ^
+../Inherited.h:243:57: warning:   base 'InheritedII::File' [-Wreorder]
+  OutputFile(std::string fname) : name(fname), File(fname) {
+                                                         ^
+../Inherited.h:243:2: warning:   when initialized here [-Wreorder]
+  OutputFile(std::string fname) : name(fname), File(fname) {
+  ^
+../Inherited.h: In constructor 'InheritedII::IOFile::IOFile(std::string)':
+../Inherited.h:251:77: warning: base 'InheritedII::OutputFile' will be initialized after [-Wreorder]
+  IOFile(std::string fname) : OutputFile(fname), InputFile(fname), File(fname) {
+                                                                             ^
+../Inherited.h:251:77: warning:   base 'InheritedII::InputFile' [-Wreorder]
+../Inherited.h:251:2: warning:   when initialized here [-Wreorder]
+  IOFile(std::string fname) : OutputFile(fname), InputFile(fname), File(fname) {
+  ^
+../Inherited.h:251:77: warning: base 'InheritedII::InputFile' will be initialized after [-Wreorder]
+  IOFile(std::string fname) : OutputFile(fname), InputFile(fname), File(fname) {
+                                                                             ^
+../Inherited.h:251:77: warning:   base 'InheritedII::File' [-Wreorder]
+../Inherited.h:251:2: warning:   when initialized here [-Wreorder]
+  IOFile(std::string fname) : OutputFile(fname), InputFile(fname), File(fname) {
+  ^
+../Inherited.cpp: In function 'int main()':
+../Inherited.cpp:158:6: error: call of overloaded 'g(A::X&)' is ambiguous
+  g(x1);
+      ^
+../Inherited.cpp:158:6: note: candidates are:
+../Inherited.cpp:150:6: note: void g(A::X)
+ void g(A::X x) {
+      ^
+../Inherited.cpp:148:7: note: void A::g(A::X)
+  void g(X x) { std::cout << "Struct X: " << x.j << "," << x.i << std::endl; }
+       ^
+In file included from ../Inherited.h:10:0,
+                 from ../Inherited.cpp:7:
+../Incls.h: At global scope:
+../Incls.h:24:13: warning: 'void sleepcp(int)' defined but not used [-Wunused-function]
+ static void sleepcp(int milliseconds) // cross-platform sleep function
+             ^
+subdir.mk:36: recipe for target 'Inherited.o' failed
+make: *** [Inherited.o] Error 1
+11:51:16 **** Incremental Build of configuration Debug for project DoSomethingII ****
+make all 
+Building file: ../Inherited.cpp
+Invoking: Cygwin C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"Inherited.d" -MT"Inherited.o" -o "Inherited.o" "../Inherited.cpp"
+In file included from ../Inherited.cpp:7:0:
+../Inherited.h:209:1: warning: multi-line comment [-Wcomment]
+ //              /   \
+ ^
+../Inherited.h: In constructor 'InheritedII::InputFile::InputFile(std::string)':
+../Inherited.h:233:14: warning: 'InheritedII::InputFile::name' will be initialized after [-Wreorder]
+  std::string name;
+              ^
+../Inherited.h:235:56: warning:   base 'InheritedII::File' [-Wreorder]
+  InputFile(std::string fname) : name(fname), File(fname) {
+                                                        ^
+../Inherited.h:235:2: warning:   when initialized here [-Wreorder]
+  InputFile(std::string fname) : name(fname), File(fname) {
+  ^
+../Inherited.h: In constructor 'InheritedII::OutputFile::OutputFile(std::string)':
+../Inherited.h:241:14: warning: 'InheritedII::OutputFile::name' will be initialized after [-Wreorder]
+  std::string name;
+              ^
+../Inherited.h:243:57: warning:   base 'InheritedII::File' [-Wreorder]
+  OutputFile(std::string fname) : name(fname), File(fname) {
+                                                         ^
+../Inherited.h:243:2: warning:   when initialized here [-Wreorder]
+  OutputFile(std::string fname) : name(fname), File(fname) {
+  ^
+../Inherited.h: In constructor 'InheritedII::IOFile::IOFile(std::string)':
+../Inherited.h:251:77: warning: base 'InheritedII::OutputFile' will be initialized after [-Wreorder]
+  IOFile(std::string fname) : OutputFile(fname), InputFile(fname), File(fname) {
+                                                                             ^
+../Inherited.h:251:77: warning:   base 'InheritedII::InputFile' [-Wreorder]
+../Inherited.h:251:2: warning:   when initialized here [-Wreorder]
+  IOFile(std::string fname) : OutputFile(fname), InputFile(fname), File(fname) {
+  ^
+../Inherited.h:251:77: warning: base 'InheritedII::InputFile' will be initialized after [-Wreorder]
+  IOFile(std::string fname) : OutputFile(fname), InputFile(fname), File(fname) {
+                                                                             ^
+../Inherited.h:251:77: warning:   base 'InheritedII::File' [-Wreorder]
+../Inherited.h:251:2: warning:   when initialized here [-Wreorder]
+  IOFile(std::string fname) : OutputFile(fname), InputFile(fname), File(fname) {
+  ^
+In file included from ../Inherited.h:10:0,
+                 from ../Inherited.cpp:7:
+../Incls.h: At global scope:
+../Incls.h:24:13: warning: 'void sleepcp(int)' defined but not used [-Wunused-function]
+ static void sleepcp(int milliseconds) // cross-platform sleep function
+             ^
+Finished building: ../Inherited.cpp
+ 
+Building target: DoSomethingII.exe
+Invoking: Cygwin C++ Linker
+g++  -o "DoSomethingII.exe"  ./Casting.o ./Inherited.o ./Singleton.o ./VirtConst.o ./cat.o ./dog.o ./friends.o   
+Finished building target: DoSomethingII.exe
+ 
+11:51:22 **** Incremental Build of configuration Debug for project DoSomethingII ****
+make all 
+Building file: ../Inherited.cpp
+Invoking: Cygwin C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"Inherited.d" -MT"Inherited.o" -o "Inherited.o" "../Inherited.cpp"
+In file included from ../Inherited.cpp:7:0:
+../Inherited.h:209:1: warning: multi-line comment [-Wcomment]
+ //              /   \
+ ^
+../Inherited.h: In constructor 'InheritedII::InputFile::InputFile(std::string)':
+../Inherited.h:233:14: warning: 'InheritedII::InputFile::name' will be initialized after [-Wreorder]
+  std::string name;
+              ^
+../Inherited.h:235:56: warning:   base 'InheritedII::File' [-Wreorder]
+  InputFile(std::string fname) : name(fname), File(fname) {
+                                                        ^
+../Inherited.h:235:2: warning:   when initialized here [-Wreorder]
+  InputFile(std::string fname) : name(fname), File(fname) {
+  ^
+../Inherited.h: In constructor 'InheritedII::OutputFile::OutputFile(std::string)':
+../Inherited.h:241:14: warning: 'InheritedII::OutputFile::name' will be initialized after [-Wreorder]
+  std::string name;
+              ^
+../Inherited.h:243:57: warning:   base 'InheritedII::File' [-Wreorder]
+  OutputFile(std::string fname) : name(fname), File(fname) {
+                                                         ^
+../Inherited.h:243:2: warning:   when initialized here [-Wreorder]
+  OutputFile(std::string fname) : name(fname), File(fname) {
+  ^
+../Inherited.h: In constructor 'InheritedII::IOFile::IOFile(std::string)':
+../Inherited.h:251:77: warning: base 'InheritedII::OutputFile' will be initialized after [-Wreorder]
+  IOFile(std::string fname) : OutputFile(fname), InputFile(fname), File(fname) {
+                                                                             ^
+../Inherited.h:251:77: warning:   base 'InheritedII::InputFile' [-Wreorder]
+../Inherited.h:251:2: warning:   when initialized here [-Wreorder]
+  IOFile(std::string fname) : OutputFile(fname), InputFile(fname), File(fname) {
+  ^
+../Inherited.h:251:77: warning: base 'InheritedII::InputFile' will be initialized after [-Wreorder]
+  IOFile(std::string fname) : OutputFile(fname), InputFile(fname), File(fname) {
+                                                                             ^
+../Inherited.h:251:77: warning:   base 'InheritedII::File' [-Wreorder]
+../Inherited.h:251:2: warning:   when initialized here [-Wreorder]
+  IOFile(std::string fname) : OutputFile(fname), InputFile(fname), File(fname) {
+  ^
+In file included from ../Inherited.h:10:0,
+                 from ../Inherited.cpp:7:
+../Incls.h: At global scope:
+../Incls.h:24:13: warning: 'void sleepcp(int)' defined but not used [-Wunused-function]
+ static void sleepcp(int milliseconds) // cross-platform sleep function
+             ^
+Finished building: ../Inherited.cpp
+ 
+Building target: DoSomethingII.exe
+Invoking: Cygwin C++ Linker
+g++  -o "DoSomethingII.exe"  ./Casting.o ./Inherited.o ./Singleton.o ./VirtConst.o ./cat.o ./dog.o ./friends.o   
+Finished building target: DoSomethingII.exe
+ 
+11:51:49 **** Incremental Build of configuration Debug for project DoSomethingII ****
+make all 
+Building file: ../Inherited.cpp
+Invoking: Cygwin C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"Inherited.d" -MT"Inherited.o" -o "Inherited.o" "../Inherited.cpp"
+In file included from ../Inherited.cpp:7:0:
+../Inherited.h:209:1: warning: multi-line comment [-Wcomment]
+ //              /   \
+ ^
+../Inherited.h: In constructor 'InheritedII::InputFile::InputFile(std::string)':
+../Inherited.h:233:14: warning: 'InheritedII::InputFile::name' will be initialized after [-Wreorder]
+  std::string name;
+              ^
+../Inherited.h:235:56: warning:   base 'InheritedII::File' [-Wreorder]
+  InputFile(std::string fname) : name(fname), File(fname) {
+                                                        ^
+../Inherited.h:235:2: warning:   when initialized here [-Wreorder]
+  InputFile(std::string fname) : name(fname), File(fname) {
+  ^
+../Inherited.h: In constructor 'InheritedII::OutputFile::OutputFile(std::string)':
+../Inherited.h:241:14: warning: 'InheritedII::OutputFile::name' will be initialized after [-Wreorder]
+  std::string name;
+              ^
+../Inherited.h:243:57: warning:   base 'InheritedII::File' [-Wreorder]
+  OutputFile(std::string fname) : name(fname), File(fname) {
+                                                         ^
+../Inherited.h:243:2: warning:   when initialized here [-Wreorder]
+  OutputFile(std::string fname) : name(fname), File(fname) {
+  ^
+../Inherited.h: In constructor 'InheritedII::IOFile::IOFile(std::string)':
+../Inherited.h:251:77: warning: base 'InheritedII::OutputFile' will be initialized after [-Wreorder]
+  IOFile(std::string fname) : OutputFile(fname), InputFile(fname), File(fname) {
+                                                                             ^
+../Inherited.h:251:77: warning:   base 'InheritedII::InputFile' [-Wreorder]
+../Inherited.h:251:2: warning:   when initialized here [-Wreorder]
+  IOFile(std::string fname) : OutputFile(fname), InputFile(fname), File(fname) {
+  ^
+../Inherited.h:251:77: warning: base 'InheritedII::InputFile' will be initialized after [-Wreorder]
+  IOFile(std::string fname) : OutputFile(fname), InputFile(fname), File(fname) {
+                                                                             ^
+../Inherited.h:251:77: warning:   base 'InheritedII::File' [-Wreorder]
+../Inherited.h:251:2: warning:   when initialized here [-Wreorder]
+  IOFile(std::string fname) : OutputFile(fname), InputFile(fname), File(fname) {
+  ^
+../Inherited.cpp: In function 'int main()':
+../Inherited.cpp:159:6: error: call of overloaded 'g(A::X&)' is ambiguous
+  g(x1);
+      ^
+../Inherited.cpp:159:6: note: candidates are:
+../Inherited.cpp:151:6: note: void g(A::X)
+ void g(A::X x) {
+      ^
+../Inherited.cpp:148:7: note: void A::g(A::X)
+  void g(X x) { std::cout << "Struct X: " << x.j << "," << x.i << std::endl; }
+       ^
+In file included from ../Inherited.h:10:0,
+                 from ../Inherited.cpp:7:
+../Incls.h: At global scope:
+../Incls.h:24:13: warning: 'void sleepcp(int)' defined but not used [-Wunused-function]
+ static void sleepcp(int milliseconds) // cross-platform sleep function
+             ^
+subdir.mk:36: recipe for target 'Inherited.o' failed
+make: *** [Inherited.o] Error 1
+11:52:02 **** Incremental Build of configuration Debug for project DoSomethingII ****
+make all 
+Building file: ../Inherited.cpp
+Invoking: Cygwin C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"Inherited.d" -MT"Inherited.o" -o "Inherited.o" "../Inherited.cpp"
+In file included from ../Inherited.cpp:7:0:
+../Inherited.h:209:1: warning: multi-line comment [-Wcomment]
+ //              /   \
+ ^
+../Inherited.h: In constructor 'InheritedII::InputFile::InputFile(std::string)':
+../Inherited.h:233:14: warning: 'InheritedII::InputFile::name' will be initialized after [-Wreorder]
+  std::string name;
+              ^
+../Inherited.h:235:56: warning:   base 'InheritedII::File' [-Wreorder]
+  InputFile(std::string fname) : name(fname), File(fname) {
+                                                        ^
+../Inherited.h:235:2: warning:   when initialized here [-Wreorder]
+  InputFile(std::string fname) : name(fname), File(fname) {
+  ^
+../Inherited.h: In constructor 'InheritedII::OutputFile::OutputFile(std::string)':
+../Inherited.h:241:14: warning: 'InheritedII::OutputFile::name' will be initialized after [-Wreorder]
+  std::string name;
+              ^
+../Inherited.h:243:57: warning:   base 'InheritedII::File' [-Wreorder]
+  OutputFile(std::string fname) : name(fname), File(fname) {
+                                                         ^
+../Inherited.h:243:2: warning:   when initialized here [-Wreorder]
+  OutputFile(std::string fname) : name(fname), File(fname) {
+  ^
+../Inherited.h: In constructor 'InheritedII::IOFile::IOFile(std::string)':
+../Inherited.h:251:77: warning: base 'InheritedII::OutputFile' will be initialized after [-Wreorder]
+  IOFile(std::string fname) : OutputFile(fname), InputFile(fname), File(fname) {
+                                                                             ^
+../Inherited.h:251:77: warning:   base 'InheritedII::InputFile' [-Wreorder]
+../Inherited.h:251:2: warning:   when initialized here [-Wreorder]
+  IOFile(std::string fname) : OutputFile(fname), InputFile(fname), File(fname) {
+  ^
+../Inherited.h:251:77: warning: base 'InheritedII::InputFile' will be initialized after [-Wreorder]
+  IOFile(std::string fname) : OutputFile(fname), InputFile(fname), File(fname) {
+                                                                             ^
+../Inherited.h:251:77: warning:   base 'InheritedII::File' [-Wreorder]
+../Inherited.h:251:2: warning:   when initialized here [-Wreorder]
+  IOFile(std::string fname) : OutputFile(fname), InputFile(fname), File(fname) {
+  ^
+In file included from ../Inherited.h:10:0,
+                 from ../Inherited.cpp:7:
+../Incls.h: At global scope:
+../Incls.h:24:13: warning: 'void sleepcp(int)' defined but not used [-Wunused-function]
+ static void sleepcp(int milliseconds) // cross-platform sleep function
+             ^
+Finished building: ../Inherited.cpp
+ 
+Building target: DoSomethingII.exe
+Invoking: Cygwin C++ Linker
+g++  -o "DoSomethingII.exe"  ./Casting.o ./Inherited.o ./Singleton.o ./VirtConst.o ./cat.o ./dog.o ./friends.o   
+Finished building target: DoSomethingII.exe
+ 
+11:55:43 **** Incremental Build of configuration Debug for project DoSomethingII ****
+make all 
+Building file: ../Inherited.cpp
+Invoking: Cygwin C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"Inherited.d" -MT"Inherited.o" -o "Inherited.o" "../Inherited.cpp"
+In file included from ../Inherited.cpp:7:0:
+../Inherited.h:209:1: warning: multi-line comment [-Wcomment]
+ //              /   \
+ ^
+../Inherited.h: In constructor 'InheritedII::InputFile::InputFile(std::string)':
+../Inherited.h:233:14: warning: 'InheritedII::InputFile::name' will be initialized after [-Wreorder]
+  std::string name;
+              ^
+../Inherited.h:235:56: warning:   base 'InheritedII::File' [-Wreorder]
+  InputFile(std::string fname) : name(fname), File(fname) {
+                                                        ^
+../Inherited.h:235:2: warning:   when initialized here [-Wreorder]
+  InputFile(std::string fname) : name(fname), File(fname) {
+  ^
+../Inherited.h: In constructor 'InheritedII::OutputFile::OutputFile(std::string)':
+../Inherited.h:241:14: warning: 'InheritedII::OutputFile::name' will be initialized after [-Wreorder]
+  std::string name;
+              ^
+../Inherited.h:243:57: warning:   base 'InheritedII::File' [-Wreorder]
+  OutputFile(std::string fname) : name(fname), File(fname) {
+                                                         ^
+../Inherited.h:243:2: warning:   when initialized here [-Wreorder]
+  OutputFile(std::string fname) : name(fname), File(fname) {
+  ^
+../Inherited.h: In constructor 'InheritedII::IOFile::IOFile(std::string)':
+../Inherited.h:251:77: warning: base 'InheritedII::OutputFile' will be initialized after [-Wreorder]
+  IOFile(std::string fname) : OutputFile(fname), InputFile(fname), File(fname) {
+                                                                             ^
+../Inherited.h:251:77: warning:   base 'InheritedII::InputFile' [-Wreorder]
+../Inherited.h:251:2: warning:   when initialized here [-Wreorder]
+  IOFile(std::string fname) : OutputFile(fname), InputFile(fname), File(fname) {
+  ^
+../Inherited.h:251:77: warning: base 'InheritedII::InputFile' will be initialized after [-Wreorder]
+  IOFile(std::string fname) : OutputFile(fname), InputFile(fname), File(fname) {
+                                                                             ^
+../Inherited.h:251:77: warning:   base 'InheritedII::File' [-Wreorder]
+../Inherited.h:251:2: warning:   when initialized here [-Wreorder]
+  IOFile(std::string fname) : OutputFile(fname), InputFile(fname), File(fname) {
+  ^
+In file included from ../Inherited.h:10:0,
+                 from ../Inherited.cpp:7:
+../Incls.h: At global scope:
+../Incls.h:24:13: warning: 'void sleepcp(int)' defined but not used [-Wunused-function]
+ static void sleepcp(int milliseconds) // cross-platform sleep function
+             ^
+Finished building: ../Inherited.cpp
+ 
+Building target: DoSomethingII.exe
+Invoking: Cygwin C++ Linker
+g++  -o "DoSomethingII.exe"  ./Casting.o ./Inherited.o ./Singleton.o ./VirtConst.o ./cat.o ./dog.o ./friends.o   
+Finished building target: DoSomethingII.exe
+ 
+11:56:07 **** Incremental Build of configuration Debug for project DoSomethingII ****
+make all 
+Building file: ../Inherited.cpp
+Invoking: Cygwin C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"Inherited.d" -MT"Inherited.o" -o "Inherited.o" "../Inherited.cpp"
+In file included from ../Inherited.cpp:7:0:
+../Inherited.h:209:1: warning: multi-line comment [-Wcomment]
+ //              /   \
+ ^
+../Inherited.h: In constructor 'InheritedII::InputFile::InputFile(std::string)':
+../Inherited.h:233:14: warning: 'InheritedII::InputFile::name' will be initialized after [-Wreorder]
+  std::string name;
+              ^
+../Inherited.h:235:56: warning:   base 'InheritedII::File' [-Wreorder]
+  InputFile(std::string fname) : name(fname), File(fname) {
+                                                        ^
+../Inherited.h:235:2: warning:   when initialized here [-Wreorder]
+  InputFile(std::string fname) : name(fname), File(fname) {
+  ^
+../Inherited.h: In constructor 'InheritedII::OutputFile::OutputFile(std::string)':
+../Inherited.h:241:14: warning: 'InheritedII::OutputFile::name' will be initialized after [-Wreorder]
+  std::string name;
+              ^
+../Inherited.h:243:57: warning:   base 'InheritedII::File' [-Wreorder]
+  OutputFile(std::string fname) : name(fname), File(fname) {
+                                                         ^
+../Inherited.h:243:2: warning:   when initialized here [-Wreorder]
+  OutputFile(std::string fname) : name(fname), File(fname) {
+  ^
+../Inherited.h: In constructor 'InheritedII::IOFile::IOFile(std::string)':
+../Inherited.h:251:77: warning: base 'InheritedII::OutputFile' will be initialized after [-Wreorder]
+  IOFile(std::string fname) : OutputFile(fname), InputFile(fname), File(fname) {
+                                                                             ^
+../Inherited.h:251:77: warning:   base 'InheritedII::InputFile' [-Wreorder]
+../Inherited.h:251:2: warning:   when initialized here [-Wreorder]
+  IOFile(std::string fname) : OutputFile(fname), InputFile(fname), File(fname) {
+  ^
+../Inherited.h:251:77: warning: base 'InheritedII::InputFile' will be initialized after [-Wreorder]
+  IOFile(std::string fname) : OutputFile(fname), InputFile(fname), File(fname) {
+                                                                             ^
+../Inherited.h:251:77: warning:   base 'InheritedII::File' [-Wreorder]
+../Inherited.h:251:2: warning:   when initialized here [-Wreorder]
+  IOFile(std::string fname) : OutputFile(fname), InputFile(fname), File(fname) {
+  ^
+../Inherited.cpp: In function 'int main()':
+../Inherited.cpp:169:5: error: 'h' was not declared in this scope
+  h(y);
+     ^
+In file included from ../Inherited.h:10:0,
+                 from ../Inherited.cpp:7:
+../Incls.h: At global scope:
+../Incls.h:24:13: warning: 'void sleepcp(int)' defined but not used [-Wunused-function]
+ static void sleepcp(int milliseconds) // cross-platform sleep function
+             ^
+subdir.mk:36: recipe for target 'Inherited.o' failed
+make: *** [Inherited.o] Error 1
+11:59:14 **** Incremental Build of configuration Debug for project DoSomethingII ****
+make all 
+Building file: ../Inherited.cpp
+Invoking: Cygwin C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"Inherited.d" -MT"Inherited.o" -o "Inherited.o" "../Inherited.cpp"
+In file included from ../Inherited.cpp:7:0:
+../Inherited.h:209:1: warning: multi-line comment [-Wcomment]
+ //              /   \
+ ^
+../Inherited.h: In constructor 'InheritedII::InputFile::InputFile(std::string)':
+../Inherited.h:233:14: warning: 'InheritedII::InputFile::name' will be initialized after [-Wreorder]
+  std::string name;
+              ^
+../Inherited.h:235:56: warning:   base 'InheritedII::File' [-Wreorder]
+  InputFile(std::string fname) : name(fname), File(fname) {
+                                                        ^
+../Inherited.h:235:2: warning:   when initialized here [-Wreorder]
+  InputFile(std::string fname) : name(fname), File(fname) {
+  ^
+../Inherited.h: In constructor 'InheritedII::OutputFile::OutputFile(std::string)':
+../Inherited.h:241:14: warning: 'InheritedII::OutputFile::name' will be initialized after [-Wreorder]
+  std::string name;
+              ^
+../Inherited.h:243:57: warning:   base 'InheritedII::File' [-Wreorder]
+  OutputFile(std::string fname) : name(fname), File(fname) {
+                                                         ^
+../Inherited.h:243:2: warning:   when initialized here [-Wreorder]
+  OutputFile(std::string fname) : name(fname), File(fname) {
+  ^
+../Inherited.h: In constructor 'InheritedII::IOFile::IOFile(std::string)':
+../Inherited.h:251:77: warning: base 'InheritedII::OutputFile' will be initialized after [-Wreorder]
+  IOFile(std::string fname) : OutputFile(fname), InputFile(fname), File(fname) {
+                                                                             ^
+../Inherited.h:251:77: warning:   base 'InheritedII::InputFile' [-Wreorder]
+../Inherited.h:251:2: warning:   when initialized here [-Wreorder]
+  IOFile(std::string fname) : OutputFile(fname), InputFile(fname), File(fname) {
+  ^
+../Inherited.h:251:77: warning: base 'InheritedII::InputFile' will be initialized after [-Wreorder]
+  IOFile(std::string fname) : OutputFile(fname), InputFile(fname), File(fname) {
+                                                                             ^
+../Inherited.h:251:77: warning:   base 'InheritedII::File' [-Wreorder]
+../Inherited.h:251:2: warning:   when initialized here [-Wreorder]
+  IOFile(std::string fname) : OutputFile(fname), InputFile(fname), File(fname) {
+  ^
+../Inherited.cpp: In function 'int main()':
+../Inherited.cpp:175:4: error: 'struct C::Y' has no member named 'j'
+  y.j();
+    ^
+In file included from ../Inherited.h:10:0,
+                 from ../Inherited.cpp:7:
+../Incls.h: At global scope:
+../Incls.h:24:13: warning: 'void sleepcp(int)' defined but not used [-Wunused-function]
+ static void sleepcp(int milliseconds) // cross-platform sleep function
+             ^
+subdir.mk:36: recipe for target 'Inherited.o' failed
+make: *** [Inherited.o] Error 1
+11:59:37 **** Incremental Build of configuration Debug for project DoSomethingII ****
+make all 
+Building file: ../Inherited.cpp
+Invoking: Cygwin C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"Inherited.d" -MT"Inherited.o" -o "Inherited.o" "../Inherited.cpp"
+In file included from ../Inherited.cpp:7:0:
+../Inherited.h:209:1: warning: multi-line comment [-Wcomment]
+ //              /   \
+ ^
+../Inherited.h: In constructor 'InheritedII::InputFile::InputFile(std::string)':
+../Inherited.h:233:14: warning: 'InheritedII::InputFile::name' will be initialized after [-Wreorder]
+  std::string name;
+              ^
+../Inherited.h:235:56: warning:   base 'InheritedII::File' [-Wreorder]
+  InputFile(std::string fname) : name(fname), File(fname) {
+                                                        ^
+../Inherited.h:235:2: warning:   when initialized here [-Wreorder]
+  InputFile(std::string fname) : name(fname), File(fname) {
+  ^
+../Inherited.h: In constructor 'InheritedII::OutputFile::OutputFile(std::string)':
+../Inherited.h:241:14: warning: 'InheritedII::OutputFile::name' will be initialized after [-Wreorder]
+  std::string name;
+              ^
+../Inherited.h:243:57: warning:   base 'InheritedII::File' [-Wreorder]
+  OutputFile(std::string fname) : name(fname), File(fname) {
+                                                         ^
+../Inherited.h:243:2: warning:   when initialized here [-Wreorder]
+  OutputFile(std::string fname) : name(fname), File(fname) {
+  ^
+../Inherited.h: In constructor 'InheritedII::IOFile::IOFile(std::string)':
+../Inherited.h:251:77: warning: base 'InheritedII::OutputFile' will be initialized after [-Wreorder]
+  IOFile(std::string fname) : OutputFile(fname), InputFile(fname), File(fname) {
+                                                                             ^
+../Inherited.h:251:77: warning:   base 'InheritedII::InputFile' [-Wreorder]
+../Inherited.h:251:2: warning:   when initialized here [-Wreorder]
+  IOFile(std::string fname) : OutputFile(fname), InputFile(fname), File(fname) {
+  ^
+../Inherited.h:251:77: warning: base 'InheritedII::InputFile' will be initialized after [-Wreorder]
+  IOFile(std::string fname) : OutputFile(fname), InputFile(fname), File(fname) {
+                                                                             ^
+../Inherited.h:251:77: warning:   base 'InheritedII::File' [-Wreorder]
+../Inherited.h:251:2: warning:   when initialized here [-Wreorder]
+  IOFile(std::string fname) : OutputFile(fname), InputFile(fname), File(fname) {
+  ^
+In file included from ../Inherited.h:10:0,
+                 from ../Inherited.cpp:7:
+../Incls.h: At global scope:
+../Incls.h:24:13: warning: 'void sleepcp(int)' defined but not used [-Wunused-function]
+ static void sleepcp(int milliseconds) // cross-platform sleep function
+             ^
+Finished building: ../Inherited.cpp
+ 
+Building target: DoSomethingII.exe
+Invoking: Cygwin C++ Linker
+g++  -o "DoSomethingII.exe"  ./Casting.o ./Inherited.o ./Singleton.o ./VirtConst.o ./cat.o ./dog.o ./friends.o   
+Finished building target: DoSomethingII.exe
+ 
+11:59:48 **** Incremental Build of configuration Debug for project DoSomethingII ****
+make all 
+Building file: ../Inherited.cpp
+Invoking: Cygwin C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"Inherited.d" -MT"Inherited.o" -o "Inherited.o" "../Inherited.cpp"
+In file included from ../Inherited.cpp:7:0:
+../Inherited.h:209:1: warning: multi-line comment [-Wcomment]
+ //              /   \
+ ^
+../Inherited.h: In constructor 'InheritedII::InputFile::InputFile(std::string)':
+../Inherited.h:233:14: warning: 'InheritedII::InputFile::name' will be initialized after [-Wreorder]
+  std::string name;
+              ^
+../Inherited.h:235:56: warning:   base 'InheritedII::File' [-Wreorder]
+  InputFile(std::string fname) : name(fname), File(fname) {
+                                                        ^
+../Inherited.h:235:2: warning:   when initialized here [-Wreorder]
+  InputFile(std::string fname) : name(fname), File(fname) {
+  ^
+../Inherited.h: In constructor 'InheritedII::OutputFile::OutputFile(std::string)':
+../Inherited.h:241:14: warning: 'InheritedII::OutputFile::name' will be initialized after [-Wreorder]
+  std::string name;
+              ^
+../Inherited.h:243:57: warning:   base 'InheritedII::File' [-Wreorder]
+  OutputFile(std::string fname) : name(fname), File(fname) {
+                                                         ^
+../Inherited.h:243:2: warning:   when initialized here [-Wreorder]
+  OutputFile(std::string fname) : name(fname), File(fname) {
+  ^
+../Inherited.h: In constructor 'InheritedII::IOFile::IOFile(std::string)':
+../Inherited.h:251:77: warning: base 'InheritedII::OutputFile' will be initialized after [-Wreorder]
+  IOFile(std::string fname) : OutputFile(fname), InputFile(fname), File(fname) {
+                                                                             ^
+../Inherited.h:251:77: warning:   base 'InheritedII::InputFile' [-Wreorder]
+../Inherited.h:251:2: warning:   when initialized here [-Wreorder]
+  IOFile(std::string fname) : OutputFile(fname), InputFile(fname), File(fname) {
+  ^
+../Inherited.h:251:77: warning: base 'InheritedII::InputFile' will be initialized after [-Wreorder]
+  IOFile(std::string fname) : OutputFile(fname), InputFile(fname), File(fname) {
+                                                                             ^
+../Inherited.h:251:77: warning:   base 'InheritedII::File' [-Wreorder]
+../Inherited.h:251:2: warning:   when initialized here [-Wreorder]
+  IOFile(std::string fname) : OutputFile(fname), InputFile(fname), File(fname) {
+  ^
+In file included from ../Inherited.h:10:0,
+                 from ../Inherited.cpp:7:
+../Incls.h: At global scope:
+../Incls.h:24:13: warning: 'void sleepcp(int)' defined but not used [-Wunused-function]
+ static void sleepcp(int milliseconds) // cross-platform sleep function
+             ^
+Finished building: ../Inherited.cpp
+ 
+Building target: DoSomethingII.exe
+Invoking: Cygwin C++ Linker
+g++  -o "DoSomethingII.exe"  ./Casting.o ./Inherited.o ./Singleton.o ./VirtConst.o ./cat.o ./dog.o ./friends.o   
+Finished building target: DoSomethingII.exe
+ 
+12:02:42 **** Incremental Build of configuration Debug for project DoSomethingII ****
+make all 
+Building file: ../Inherited.cpp
+Invoking: Cygwin C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"Inherited.d" -MT"Inherited.o" -o "Inherited.o" "../Inherited.cpp"
+In file included from ../Inherited.cpp:7:0:
+../Inherited.h:209:1: warning: multi-line comment [-Wcomment]
+ //              /   \
+ ^
+../Inherited.h: In constructor 'InheritedII::InputFile::InputFile(std::string)':
+../Inherited.h:233:14: warning: 'InheritedII::InputFile::name' will be initialized after [-Wreorder]
+  std::string name;
+              ^
+../Inherited.h:235:56: warning:   base 'InheritedII::File' [-Wreorder]
+  InputFile(std::string fname) : name(fname), File(fname) {
+                                                        ^
+../Inherited.h:235:2: warning:   when initialized here [-Wreorder]
+  InputFile(std::string fname) : name(fname), File(fname) {
+  ^
+../Inherited.h: In constructor 'InheritedII::OutputFile::OutputFile(std::string)':
+../Inherited.h:241:14: warning: 'InheritedII::OutputFile::name' will be initialized after [-Wreorder]
+  std::string name;
+              ^
+../Inherited.h:243:57: warning:   base 'InheritedII::File' [-Wreorder]
+  OutputFile(std::string fname) : name(fname), File(fname) {
+                                                         ^
+../Inherited.h:243:2: warning:   when initialized here [-Wreorder]
+  OutputFile(std::string fname) : name(fname), File(fname) {
+  ^
+../Inherited.h: In constructor 'InheritedII::IOFile::IOFile(std::string)':
+../Inherited.h:251:77: warning: base 'InheritedII::OutputFile' will be initialized after [-Wreorder]
+  IOFile(std::string fname) : OutputFile(fname), InputFile(fname), File(fname) {
+                                                                             ^
+../Inherited.h:251:77: warning:   base 'InheritedII::InputFile' [-Wreorder]
+../Inherited.h:251:2: warning:   when initialized here [-Wreorder]
+  IOFile(std::string fname) : OutputFile(fname), InputFile(fname), File(fname) {
+  ^
+../Inherited.h:251:77: warning: base 'InheritedII::InputFile' will be initialized after [-Wreorder]
+  IOFile(std::string fname) : OutputFile(fname), InputFile(fname), File(fname) {
+                                                                             ^
+../Inherited.h:251:77: warning:   base 'InheritedII::File' [-Wreorder]
+../Inherited.h:251:2: warning:   when initialized here [-Wreorder]
+  IOFile(std::string fname) : OutputFile(fname), InputFile(fname), File(fname) {
+  ^
+In file included from ../Inherited.h:10:0,
+                 from ../Inherited.cpp:7:
+../Incls.h: At global scope:
+../Incls.h:24:13: warning: 'void sleepcp(int)' defined but not used [-Wunused-function]
+ static void sleepcp(int milliseconds) // cross-platform sleep function
+             ^
+Finished building: ../Inherited.cpp
+ 
+Building target: DoSomethingII.exe
+Invoking: Cygwin C++ Linker
+g++  -o "DoSomethingII.exe"  ./Casting.o ./Inherited.o ./Singleton.o ./VirtConst.o ./cat.o ./dog.o ./friends.o   
+Finished building target: DoSomethingII.exe
+ 
+12:06:34 **** Incremental Build of configuration Debug for project DoSomethingII ****
+make all 
+Building file: ../Inherited.cpp
+Invoking: Cygwin C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"Inherited.d" -MT"Inherited.o" -o "Inherited.o" "../Inherited.cpp"
+In file included from ../Inherited.cpp:7:0:
+../Inherited.h:209:1: warning: multi-line comment [-Wcomment]
+ //              /   \
+ ^
+../Inherited.h: In constructor 'InheritedII::InputFile::InputFile(std::string)':
+../Inherited.h:233:14: warning: 'InheritedII::InputFile::name' will be initialized after [-Wreorder]
+  std::string name;
+              ^
+../Inherited.h:235:56: warning:   base 'InheritedII::File' [-Wreorder]
+  InputFile(std::string fname) : name(fname), File(fname) {
+                                                        ^
+../Inherited.h:235:2: warning:   when initialized here [-Wreorder]
+  InputFile(std::string fname) : name(fname), File(fname) {
+  ^
+../Inherited.h: In constructor 'InheritedII::OutputFile::OutputFile(std::string)':
+../Inherited.h:241:14: warning: 'InheritedII::OutputFile::name' will be initialized after [-Wreorder]
+  std::string name;
+              ^
+../Inherited.h:243:57: warning:   base 'InheritedII::File' [-Wreorder]
+  OutputFile(std::string fname) : name(fname), File(fname) {
+                                                         ^
+../Inherited.h:243:2: warning:   when initialized here [-Wreorder]
+  OutputFile(std::string fname) : name(fname), File(fname) {
+  ^
+../Inherited.h: In constructor 'InheritedII::IOFile::IOFile(std::string)':
+../Inherited.h:251:77: warning: base 'InheritedII::OutputFile' will be initialized after [-Wreorder]
+  IOFile(std::string fname) : OutputFile(fname), InputFile(fname), File(fname) {
+                                                                             ^
+../Inherited.h:251:77: warning:   base 'InheritedII::InputFile' [-Wreorder]
+../Inherited.h:251:2: warning:   when initialized here [-Wreorder]
+  IOFile(std::string fname) : OutputFile(fname), InputFile(fname), File(fname) {
+  ^
+../Inherited.h:251:77: warning: base 'InheritedII::InputFile' will be initialized after [-Wreorder]
+  IOFile(std::string fname) : OutputFile(fname), InputFile(fname), File(fname) {
+                                                                             ^
+../Inherited.h:251:77: warning:   base 'InheritedII::File' [-Wreorder]
+../Inherited.h:251:2: warning:   when initialized here [-Wreorder]
+  IOFile(std::string fname) : OutputFile(fname), InputFile(fname), File(fname) {
+  ^
+../Inherited.cpp: In function 'void A::C::j()':
+../Inherited.cpp:153:7: error: too many arguments to function 'void A::C::h()'
+    h(7);
+       ^
+../Inherited.cpp:151:8: note: declared here
+   void h() { std::cout << "Calling A::h()\n"; } // it hid A::h()
+        ^
+In file included from ../Inherited.h:10:0,
+                 from ../Inherited.cpp:7:
+../Incls.h: At global scope:
+../Incls.h:24:13: warning: 'void sleepcp(int)' defined but not used [-Wunused-function]
+ static void sleepcp(int milliseconds) // cross-platform sleep function
+             ^
+subdir.mk:36: recipe for target 'Inherited.o' failed
+make: *** [Inherited.o] Error 1
+12:06:51 **** Incremental Build of configuration Debug for project DoSomethingII ****
+make all 
+Building file: ../Inherited.cpp
+Invoking: Cygwin C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"Inherited.d" -MT"Inherited.o" -o "Inherited.o" "../Inherited.cpp"
+In file included from ../Inherited.cpp:7:0:
+../Inherited.h:209:1: warning: multi-line comment [-Wcomment]
+ //              /   \
+ ^
+../Inherited.h: In constructor 'InheritedII::InputFile::InputFile(std::string)':
+../Inherited.h:233:14: warning: 'InheritedII::InputFile::name' will be initialized after [-Wreorder]
+  std::string name;
+              ^
+../Inherited.h:235:56: warning:   base 'InheritedII::File' [-Wreorder]
+  InputFile(std::string fname) : name(fname), File(fname) {
+                                                        ^
+../Inherited.h:235:2: warning:   when initialized here [-Wreorder]
+  InputFile(std::string fname) : name(fname), File(fname) {
+  ^
+../Inherited.h: In constructor 'InheritedII::OutputFile::OutputFile(std::string)':
+../Inherited.h:241:14: warning: 'InheritedII::OutputFile::name' will be initialized after [-Wreorder]
+  std::string name;
+              ^
+../Inherited.h:243:57: warning:   base 'InheritedII::File' [-Wreorder]
+  OutputFile(std::string fname) : name(fname), File(fname) {
+                                                         ^
+../Inherited.h:243:2: warning:   when initialized here [-Wreorder]
+  OutputFile(std::string fname) : name(fname), File(fname) {
+  ^
+../Inherited.h: In constructor 'InheritedII::IOFile::IOFile(std::string)':
+../Inherited.h:251:77: warning: base 'InheritedII::OutputFile' will be initialized after [-Wreorder]
+  IOFile(std::string fname) : OutputFile(fname), InputFile(fname), File(fname) {
+                                                                             ^
+../Inherited.h:251:77: warning:   base 'InheritedII::InputFile' [-Wreorder]
+../Inherited.h:251:2: warning:   when initialized here [-Wreorder]
+  IOFile(std::string fname) : OutputFile(fname), InputFile(fname), File(fname) {
+  ^
+../Inherited.h:251:77: warning: base 'InheritedII::InputFile' will be initialized after [-Wreorder]
+  IOFile(std::string fname) : OutputFile(fname), InputFile(fname), File(fname) {
+                                                                             ^
+../Inherited.h:251:77: warning:   base 'InheritedII::File' [-Wreorder]
+../Inherited.h:251:2: warning:   when initialized here [-Wreorder]
+  IOFile(std::string fname) : OutputFile(fname), InputFile(fname), File(fname) {
+  ^
+In file included from ../Inherited.h:10:0,
+                 from ../Inherited.cpp:7:
+../Incls.h: At global scope:
+../Incls.h:24:13: warning: 'void sleepcp(int)' defined but not used [-Wunused-function]
+ static void sleepcp(int milliseconds) // cross-platform sleep function
+             ^
+Finished building: ../Inherited.cpp
+ 
+Building target: DoSomethingII.exe
+Invoking: Cygwin C++ Linker
+g++  -o "DoSomethingII.exe"  ./Casting.o ./Inherited.o ./Singleton.o ./VirtConst.o ./cat.o ./dog.o ./friends.o   
+Finished building target: DoSomethingII.exe
+ 
+12:07:00 **** Incremental Build of configuration Debug for project DoSomethingII ****
+make all 
+Building file: ../Inherited.cpp
+Invoking: Cygwin C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"Inherited.d" -MT"Inherited.o" -o "Inherited.o" "../Inherited.cpp"
+In file included from ../Inherited.cpp:7:0:
+../Inherited.h:209:1: warning: multi-line comment [-Wcomment]
+ //              /   \
+ ^
+../Inherited.h: In constructor 'InheritedII::InputFile::InputFile(std::string)':
+../Inherited.h:233:14: warning: 'InheritedII::InputFile::name' will be initialized after [-Wreorder]
+  std::string name;
+              ^
+../Inherited.h:235:56: warning:   base 'InheritedII::File' [-Wreorder]
+  InputFile(std::string fname) : name(fname), File(fname) {
+                                                        ^
+../Inherited.h:235:2: warning:   when initialized here [-Wreorder]
+  InputFile(std::string fname) : name(fname), File(fname) {
+  ^
+../Inherited.h: In constructor 'InheritedII::OutputFile::OutputFile(std::string)':
+../Inherited.h:241:14: warning: 'InheritedII::OutputFile::name' will be initialized after [-Wreorder]
+  std::string name;
+              ^
+../Inherited.h:243:57: warning:   base 'InheritedII::File' [-Wreorder]
+  OutputFile(std::string fname) : name(fname), File(fname) {
+                                                         ^
+../Inherited.h:243:2: warning:   when initialized here [-Wreorder]
+  OutputFile(std::string fname) : name(fname), File(fname) {
+  ^
+../Inherited.h: In constructor 'InheritedII::IOFile::IOFile(std::string)':
+../Inherited.h:251:77: warning: base 'InheritedII::OutputFile' will be initialized after [-Wreorder]
+  IOFile(std::string fname) : OutputFile(fname), InputFile(fname), File(fname) {
+                                                                             ^
+../Inherited.h:251:77: warning:   base 'InheritedII::InputFile' [-Wreorder]
+../Inherited.h:251:2: warning:   when initialized here [-Wreorder]
+  IOFile(std::string fname) : OutputFile(fname), InputFile(fname), File(fname) {
+  ^
+../Inherited.h:251:77: warning: base 'InheritedII::InputFile' will be initialized after [-Wreorder]
+  IOFile(std::string fname) : OutputFile(fname), InputFile(fname), File(fname) {
+                                                                             ^
+../Inherited.h:251:77: warning:   base 'InheritedII::File' [-Wreorder]
+../Inherited.h:251:2: warning:   when initialized here [-Wreorder]
+  IOFile(std::string fname) : OutputFile(fname), InputFile(fname), File(fname) {
+  ^
+In file included from ../Inherited.h:10:0,
+                 from ../Inherited.cpp:7:
+../Incls.h: At global scope:
+../Incls.h:24:13: warning: 'void sleepcp(int)' defined but not used [-Wunused-function]
+ static void sleepcp(int milliseconds) // cross-platform sleep function
+             ^
+Finished building: ../Inherited.cpp
+ 
+Building target: DoSomethingII.exe
+Invoking: Cygwin C++ Linker
+g++  -o "DoSomethingII.exe"  ./Casting.o ./Inherited.o ./Singleton.o ./VirtConst.o ./cat.o ./dog.o ./friends.o   
+Finished building target: DoSomethingII.exe
+ 
+12:07:37 **** Incremental Build of configuration Debug for project DoSomethingII ****
+make all 
+Building file: ../Inherited.cpp
+Invoking: Cygwin C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"Inherited.d" -MT"Inherited.o" -o "Inherited.o" "../Inherited.cpp"
+In file included from ../Inherited.cpp:7:0:
+../Inherited.h:209:1: warning: multi-line comment [-Wcomment]
+ //              /   \
+ ^
+../Inherited.h: In constructor 'InheritedII::InputFile::InputFile(std::string)':
+../Inherited.h:233:14: warning: 'InheritedII::InputFile::name' will be initialized after [-Wreorder]
+  std::string name;
+              ^
+../Inherited.h:235:56: warning:   base 'InheritedII::File' [-Wreorder]
+  InputFile(std::string fname) : name(fname), File(fname) {
+                                                        ^
+../Inherited.h:235:2: warning:   when initialized here [-Wreorder]
+  InputFile(std::string fname) : name(fname), File(fname) {
+  ^
+../Inherited.h: In constructor 'InheritedII::OutputFile::OutputFile(std::string)':
+../Inherited.h:241:14: warning: 'InheritedII::OutputFile::name' will be initialized after [-Wreorder]
+  std::string name;
+              ^
+../Inherited.h:243:57: warning:   base 'InheritedII::File' [-Wreorder]
+  OutputFile(std::string fname) : name(fname), File(fname) {
+                                                         ^
+../Inherited.h:243:2: warning:   when initialized here [-Wreorder]
+  OutputFile(std::string fname) : name(fname), File(fname) {
+  ^
+../Inherited.h: In constructor 'InheritedII::IOFile::IOFile(std::string)':
+../Inherited.h:251:77: warning: base 'InheritedII::OutputFile' will be initialized after [-Wreorder]
+  IOFile(std::string fname) : OutputFile(fname), InputFile(fname), File(fname) {
+                                                                             ^
+../Inherited.h:251:77: warning:   base 'InheritedII::InputFile' [-Wreorder]
+../Inherited.h:251:2: warning:   when initialized here [-Wreorder]
+  IOFile(std::string fname) : OutputFile(fname), InputFile(fname), File(fname) {
+  ^
+../Inherited.h:251:77: warning: base 'InheritedII::InputFile' will be initialized after [-Wreorder]
+  IOFile(std::string fname) : OutputFile(fname), InputFile(fname), File(fname) {
+                                                                             ^
+../Inherited.h:251:77: warning:   base 'InheritedII::File' [-Wreorder]
+../Inherited.h:251:2: warning:   when initialized here [-Wreorder]
+  IOFile(std::string fname) : OutputFile(fname), InputFile(fname), File(fname) {
+  ^
+In file included from ../Inherited.h:10:0,
+                 from ../Inherited.cpp:7:
+../Incls.h: At global scope:
+../Incls.h:24:13: warning: 'void sleepcp(int)' defined but not used [-Wunused-function]
+ static void sleepcp(int milliseconds) // cross-platform sleep function
+             ^
+Finished building: ../Inherited.cpp
+ 
+Building target: DoSomethingII.exe
+Invoking: Cygwin C++ Linker
+g++  -o "DoSomethingII.exe"  ./Casting.o ./Inherited.o ./Singleton.o ./VirtConst.o ./cat.o ./dog.o ./friends.o   
+Finished building target: DoSomethingII.exe
+ 
+17:02:32 **** Incremental Build of configuration Debug for project DoSomethingII ****
+make all 
+Building file: ../Inherited.cpp
+Invoking: Cygwin C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"Inherited.d" -MT"Inherited.o" -o "Inherited.o" "../Inherited.cpp"
+In file included from ../Inherited.cpp:7:0:
+../Inherited.h:209:1: warning: multi-line comment [-Wcomment]
+ //              /   \
+ ^
+../Inherited.h: In constructor 'InheritedII::InputFile::InputFile(std::string)':
+../Inherited.h:233:14: warning: 'InheritedII::InputFile::name' will be initialized after [-Wreorder]
+  std::string name;
+              ^
+../Inherited.h:235:56: warning:   base 'InheritedII::File' [-Wreorder]
+  InputFile(std::string fname) : name(fname), File(fname) {
+                                                        ^
+../Inherited.h:235:2: warning:   when initialized here [-Wreorder]
+  InputFile(std::string fname) : name(fname), File(fname) {
+  ^
+../Inherited.h: In constructor 'InheritedII::OutputFile::OutputFile(std::string)':
+../Inherited.h:241:14: warning: 'InheritedII::OutputFile::name' will be initialized after [-Wreorder]
+  std::string name;
+              ^
+../Inherited.h:243:57: warning:   base 'InheritedII::File' [-Wreorder]
+  OutputFile(std::string fname) : name(fname), File(fname) {
+                                                         ^
+../Inherited.h:243:2: warning:   when initialized here [-Wreorder]
+  OutputFile(std::string fname) : name(fname), File(fname) {
+  ^
+../Inherited.h: In constructor 'InheritedII::IOFile::IOFile(std::string)':
+../Inherited.h:251:77: warning: base 'InheritedII::OutputFile' will be initialized after [-Wreorder]
+  IOFile(std::string fname) : OutputFile(fname), InputFile(fname), File(fname) {
+                                                                             ^
+../Inherited.h:251:77: warning:   base 'InheritedII::InputFile' [-Wreorder]
+../Inherited.h:251:2: warning:   when initialized here [-Wreorder]
+  IOFile(std::string fname) : OutputFile(fname), InputFile(fname), File(fname) {
+  ^
+../Inherited.h:251:77: warning: base 'InheritedII::InputFile' will be initialized after [-Wreorder]
+  IOFile(std::string fname) : OutputFile(fname), InputFile(fname), File(fname) {
+                                                                             ^
+../Inherited.h:251:77: warning:   base 'InheritedII::File' [-Wreorder]
+../Inherited.h:251:2: warning:   when initialized here [-Wreorder]
+  IOFile(std::string fname) : OutputFile(fname), InputFile(fname), File(fname) {
+  ^
+In file included from ../Inherited.h:10:0,
+                 from ../Inherited.cpp:7:
+../Incls.h: At global scope:
+../Incls.h:24:13: warning: 'void sleepcp(int)' defined but not used [-Wunused-function]
+ static void sleepcp(int milliseconds) // cross-platform sleep function
+             ^
+Finished building: ../Inherited.cpp
+ 
+Building file: ../friends.cpp
+Invoking: Cygwin C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"friends.d" -MT"friends.o" -o "friends.o" "../friends.cpp"
+../friends.cpp: In function 'Rectangle duplicate(Rectangle&)':
+../friends.cpp:11:6: error: 'int Rectangle::width' is private
+  int width, height;
+      ^
+../friends.cpp:29:8: error: within this context
+  param.width = 91;
+        ^
+../friends.cpp:11:13: error: 'int Rectangle::height' is private
+  int width, height;
+             ^
+../friends.cpp:30:8: error: within this context
+  param.height = 19;
+        ^
+../friends.cpp:11:6: error: 'int Rectangle::width' is private
+  int width, height;
+      ^
+../friends.cpp:31:22: error: within this context
+  Rectangle res(param.width, param.height);
+                      ^
+../friends.cpp:11:13: error: 'int Rectangle::height' is private
+  int width, height;
+             ^
+../friends.cpp:31:35: error: within this context
+  Rectangle res(param.width, param.height);
+                                   ^
+In file included from ../friends.h:11:0,
+                 from ../friends.cpp:8:
+../Incls.h: At global scope:
+../Incls.h:24:13: warning: 'void sleepcp(int)' defined but not used [-Wunused-function]
+ static void sleepcp(int milliseconds) // cross-platform sleep function
+             ^
+make: *** [friends.o] Error 1
+subdir.mk:36: recipe for target 'friends.o' failed
+17:03:08 **** Incremental Build of configuration Debug for project DoSomethingII ****
+make all 
+Building file: ../friends.cpp
+Invoking: Cygwin C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"friends.d" -MT"friends.o" -o "friends.o" "../friends.cpp"
+../friends.cpp: In function 'Rectangle duplicate(Rectangle&)':
+../friends.cpp:11:6: error: 'int Rectangle::width' is private
+  int width, height;
+      ^
+../friends.cpp:31:22: error: within this context
+  Rectangle res(param.width, param.height);
+                      ^
+../friends.cpp:11:13: error: 'int Rectangle::height' is private
+  int width, height;
+             ^
+../friends.cpp:31:35: error: within this context
+  Rectangle res(param.width, param.height);
+                                   ^
+In file included from ../friends.h:11:0,
+                 from ../friends.cpp:8:
+../Incls.h: At global scope:
+../Incls.h:24:13: warning: 'void sleepcp(int)' defined but not used [-Wunused-function]
+ static void sleepcp(int milliseconds) // cross-platform sleep function
+             ^
+subdir.mk:36: recipe for target 'friends.o' failed
+make: *** [friends.o] Error 1
+17:03:32 **** Incremental Build of configuration Debug for project DoSomethingII ****
+make all 
+Building file: ../friends.cpp
+Invoking: Cygwin C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"friends.d" -MT"friends.o" -o "friends.o" "../friends.cpp"
+In file included from ../friends.h:11:0,
+                 from ../friends.cpp:8:
+../Incls.h:24:13: warning: 'void sleepcp(int)' defined but not used [-Wunused-function]
+ static void sleepcp(int milliseconds) // cross-platform sleep function
+             ^
+Finished building: ../friends.cpp
+ 
+Building target: DoSomethingII.exe
+Invoking: Cygwin C++ Linker
+g++  -o "DoSomethingII.exe"  ./Casting.o ./Inherited.o ./Singleton.o ./VirtConst.o ./cat.o ./dog.o ./friends.o   
+Finished building target: DoSomethingII.exe
+ 
+17:03:40 **** Incremental Build of configuration Debug for project DoSomethingII ****
+make all 
+Building file: ../friends.cpp
+Invoking: Cygwin C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"friends.d" -MT"friends.o" -o "friends.o" "../friends.cpp"
+In file included from ../friends.h:11:0,
+                 from ../friends.cpp:8:
+../Incls.h:24:13: warning: 'void sleepcp(int)' defined but not used [-Wunused-function]
+ static void sleepcp(int milliseconds) // cross-platform sleep function
+             ^
+Finished building: ../friends.cpp
+ 
+Building target: DoSomethingII.exe
+Invoking: Cygwin C++ Linker
+g++  -o "DoSomethingII.exe"  ./Casting.o ./Inherited.o ./Singleton.o ./VirtConst.o ./cat.o ./dog.o ./friends.o   
+Finished building target: DoSomethingII.exe
+ 
+17:04:01 **** Incremental Build of configuration Debug for project DoSomethingII ****
+make all 
+Building file: ../friends.cpp
+Invoking: Cygwin C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"friends.d" -MT"friends.o" -o "friends.o" "../friends.cpp"
+In file included from ../friends.h:11:0,
+                 from ../friends.cpp:8:
+../Incls.h:24:13: warning: 'void sleepcp(int)' defined but not used [-Wunused-function]
+ static void sleepcp(int milliseconds) // cross-platform sleep function
+             ^
+Finished building: ../friends.cpp
+ 
+Building target: DoSomethingII.exe
+Invoking: Cygwin C++ Linker
+g++  -o "DoSomethingII.exe"  ./Casting.o ./Inherited.o ./Singleton.o ./VirtConst.o ./cat.o ./dog.o ./friends.o   
+Finished building target: DoSomethingII.exe
+ 
+21:57:24 **** Incremental Build of configuration Debug for project DoSomethingII ****
+make all 
+Building file: ../Inherited.cpp
+Invoking: Cygwin C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"Inherited.d" -MT"Inherited.o" -o "Inherited.o" "../Inherited.cpp"
+In file included from ../Inherited.cpp:7:0:
+../Inherited.h:209:1: warning: multi-line comment [-Wcomment]
+ //              /   \
+ ^
+../Inherited.h: In constructor 'InheritedII::InputFile::InputFile(std::string)':
+../Inherited.h:233:14: warning: 'InheritedII::InputFile::name' will be initialized after [-Wreorder]
+  std::string name;
+              ^
+../Inherited.h:235:56: warning:   base 'InheritedII::File' [-Wreorder]
+  InputFile(std::string fname) : name(fname), File(fname) {
+                                                        ^
+../Inherited.h:235:2: warning:   when initialized here [-Wreorder]
+  InputFile(std::string fname) : name(fname), File(fname) {
+  ^
+../Inherited.h: In constructor 'InheritedII::OutputFile::OutputFile(std::string)':
+../Inherited.h:241:14: warning: 'InheritedII::OutputFile::name' will be initialized after [-Wreorder]
+  std::string name;
+              ^
+../Inherited.h:243:57: warning:   base 'InheritedII::File' [-Wreorder]
+  OutputFile(std::string fname) : name(fname), File(fname) {
+                                                         ^
+../Inherited.h:243:2: warning:   when initialized here [-Wreorder]
+  OutputFile(std::string fname) : name(fname), File(fname) {
+  ^
+../Inherited.h: In constructor 'InheritedII::IOFile::IOFile(std::string)':
+../Inherited.h:251:77: warning: base 'InheritedII::OutputFile' will be initialized after [-Wreorder]
+  IOFile(std::string fname) : OutputFile(fname), InputFile(fname), File(fname) {
+                                                                             ^
+../Inherited.h:251:77: warning:   base 'InheritedII::InputFile' [-Wreorder]
+../Inherited.h:251:2: warning:   when initialized here [-Wreorder]
+  IOFile(std::string fname) : OutputFile(fname), InputFile(fname), File(fname) {
+  ^
+../Inherited.h:251:77: warning: base 'InheritedII::InputFile' will be initialized after [-Wreorder]
+  IOFile(std::string fname) : OutputFile(fname), InputFile(fname), File(fname) {
+                                                                             ^
+../Inherited.h:251:77: warning:   base 'InheritedII::File' [-Wreorder]
+../Inherited.h:251:2: warning:   when initialized here [-Wreorder]
+  IOFile(std::string fname) : OutputFile(fname), InputFile(fname), File(fname) {
+  ^
+In file included from ../Inherited.h:10:0,
+                 from ../Inherited.cpp:7:
+../Incls.h: At global scope:
+../Incls.h:24:13: warning: 'void sleepcp(int)' defined but not used [-Wunused-function]
+ static void sleepcp(int milliseconds) // cross-platform sleep function
+             ^
+Finished building: ../Inherited.cpp
+ 
+Building file: ../friends.cpp
+Invoking: Cygwin C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"friends.d" -MT"friends.o" -o "friends.o" "../friends.cpp"
+../friends.cpp: In function 'int main_func5()':
+../friends.cpp:42:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+In file included from ../friends.h:11:0,
+                 from ../friends.cpp:8:
+../Incls.h: At global scope:
+../Incls.h:24:13: warning: 'void sleepcp(int)' defined but not used [-Wunused-function]
+ static void sleepcp(int milliseconds) // cross-platform sleep function
+             ^
+Finished building: ../friends.cpp
+ 
+Building target: DoSomethingII.exe
+Invoking: Cygwin C++ Linker
+g++  -o "DoSomethingII.exe"  ./Casting.o ./Inherited.o ./Singleton.o ./VirtConst.o ./cat.o ./dog.o ./friends.o   
+Finished building target: DoSomethingII.exe
+ 
+22:33:43 **** Incremental Build of configuration Debug for project DoSomethingII ****
+make all 
+Building file: ../Inherited.cpp
+Invoking: Cygwin C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"Inherited.d" -MT"Inherited.o" -o "Inherited.o" "../Inherited.cpp"
+In file included from ../Inherited.cpp:7:0:
+../Inherited.h:209:1: warning: multi-line comment [-Wcomment]
+ //              /   \
+ ^
+../Inherited.h: In constructor 'InheritedII::InputFile::InputFile(std::string)':
+../Inherited.h:233:14: warning: 'InheritedII::InputFile::name' will be initialized after [-Wreorder]
+  std::string name;
+              ^
+../Inherited.h:235:56: warning:   base 'InheritedII::File' [-Wreorder]
+  InputFile(std::string fname) : name(fname), File(fname) {
+                                                        ^
+../Inherited.h:235:2: warning:   when initialized here [-Wreorder]
+  InputFile(std::string fname) : name(fname), File(fname) {
+  ^
+../Inherited.h: In constructor 'InheritedII::OutputFile::OutputFile(std::string)':
+../Inherited.h:241:14: warning: 'InheritedII::OutputFile::name' will be initialized after [-Wreorder]
+  std::string name;
+              ^
+../Inherited.h:243:57: warning:   base 'InheritedII::File' [-Wreorder]
+  OutputFile(std::string fname) : name(fname), File(fname) {
+                                                         ^
+../Inherited.h:243:2: warning:   when initialized here [-Wreorder]
+  OutputFile(std::string fname) : name(fname), File(fname) {
+  ^
+../Inherited.h: In constructor 'InheritedII::IOFile::IOFile(std::string)':
+../Inherited.h:251:77: warning: base 'InheritedII::OutputFile' will be initialized after [-Wreorder]
+  IOFile(std::string fname) : OutputFile(fname), InputFile(fname), File(fname) {
+                                                                             ^
+../Inherited.h:251:77: warning:   base 'InheritedII::InputFile' [-Wreorder]
+../Inherited.h:251:2: warning:   when initialized here [-Wreorder]
+  IOFile(std::string fname) : OutputFile(fname), InputFile(fname), File(fname) {
+  ^
+../Inherited.h:251:77: warning: base 'InheritedII::InputFile' will be initialized after [-Wreorder]
+  IOFile(std::string fname) : OutputFile(fname), InputFile(fname), File(fname) {
+                                                                             ^
+../Inherited.h:251:77: warning:   base 'InheritedII::File' [-Wreorder]
+../Inherited.h:251:2: warning:   when initialized here [-Wreorder]
+  IOFile(std::string fname) : OutputFile(fname), InputFile(fname), File(fname) {
+  ^
+In file included from ../Inherited.h:10:0,
+                 from ../Inherited.cpp:7:
+../Incls.h: At global scope:
+../Incls.h:24:13: warning: 'void sleepcp(int)' defined but not used [-Wunused-function]
+ static void sleepcp(int milliseconds) // cross-platform sleep function
+             ^
+Finished building: ../Inherited.cpp
+ 
+Building target: DoSomethingII.exe
+Invoking: Cygwin C++ Linker
+g++  -o "DoSomethingII.exe"  ./Casting.o ./Inherited.o ./Singleton.o ./VirtConst.o ./cat.o ./dog.o ./friends.o   
+Finished building target: DoSomethingII.exe
+ 
+22:34:06 **** Incremental Build of configuration Debug for project DoSomethingII ****
+make all 
+Building file: ../Inherited.cpp
+Invoking: Cygwin C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"Inherited.d" -MT"Inherited.o" -o "Inherited.o" "../Inherited.cpp"
+In file included from ../Inherited.cpp:7:0:
+../Inherited.h:209:1: warning: multi-line comment [-Wcomment]
+ //              /   \
+ ^
+../Inherited.h: In constructor 'InheritedII::InputFile::InputFile(std::string)':
+../Inherited.h:233:14: warning: 'InheritedII::InputFile::name' will be initialized after [-Wreorder]
+  std::string name;
+              ^
+../Inherited.h:235:56: warning:   base 'InheritedII::File' [-Wreorder]
+  InputFile(std::string fname) : name(fname), File(fname) {
+                                                        ^
+../Inherited.h:235:2: warning:   when initialized here [-Wreorder]
+  InputFile(std::string fname) : name(fname), File(fname) {
+  ^
+../Inherited.h: In constructor 'InheritedII::OutputFile::OutputFile(std::string)':
+../Inherited.h:241:14: warning: 'InheritedII::OutputFile::name' will be initialized after [-Wreorder]
+  std::string name;
+              ^
+../Inherited.h:243:57: warning:   base 'InheritedII::File' [-Wreorder]
+  OutputFile(std::string fname) : name(fname), File(fname) {
+                                                         ^
+../Inherited.h:243:2: warning:   when initialized here [-Wreorder]
+  OutputFile(std::string fname) : name(fname), File(fname) {
+  ^
+../Inherited.h: In constructor 'InheritedII::IOFile::IOFile(std::string)':
+../Inherited.h:251:77: warning: base 'InheritedII::OutputFile' will be initialized after [-Wreorder]
+  IOFile(std::string fname) : OutputFile(fname), InputFile(fname), File(fname) {
+                                                                             ^
+../Inherited.h:251:77: warning:   base 'InheritedII::InputFile' [-Wreorder]
+../Inherited.h:251:2: warning:   when initialized here [-Wreorder]
+  IOFile(std::string fname) : OutputFile(fname), InputFile(fname), File(fname) {
+  ^
+../Inherited.h:251:77: warning: base 'InheritedII::InputFile' will be initialized after [-Wreorder]
+  IOFile(std::string fname) : OutputFile(fname), InputFile(fname), File(fname) {
+                                                                             ^
+../Inherited.h:251:77: warning:   base 'InheritedII::File' [-Wreorder]
+../Inherited.h:251:2: warning:   when initialized here [-Wreorder]
+  IOFile(std::string fname) : OutputFile(fname), InputFile(fname), File(fname) {
+  ^
+In file included from ../Inherited.h:10:0,
+                 from ../Inherited.cpp:7:
+../Incls.h: At global scope:
+../Incls.h:24:13: warning: 'void sleepcp(int)' defined but not used [-Wunused-function]
+ static void sleepcp(int milliseconds) // cross-platform sleep function
+             ^
+Finished building: ../Inherited.cpp
+ 
+Building target: DoSomethingII.exe
+Invoking: Cygwin C++ Linker
+g++  -o "DoSomethingII.exe"  ./Casting.o ./Inherited.o ./Singleton.o ./VirtConst.o ./cat.o ./dog.o ./friends.o   
+Finished building target: DoSomethingII.exe
+ 

@@ -27,6 +27,7 @@
 #include <boost/thread.hpp>
 #include <boost/date_time.hpp>
 #include <boost/bind.hpp>
+#include <boost/scoped_ptr.hpp>
 #include <time.h>
 #ifdef WINDOWS
 #include <windows.h>

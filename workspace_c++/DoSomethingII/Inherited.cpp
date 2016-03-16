@@ -5,59 +5,59 @@
  *      Author: bill
  */
 #include "Inherited.h"
-//#include <iostream>
-//#include <stdio.h>
-//#include <stdlib.h>
-//#include <string.h>
-//
-//
-//void revStr(char* src) {
-//    char tmp, *end_ptr, *origin_start, *end_point;
-//    origin_start = src;
-//    end_ptr = src + strlen(src) - 1;
-//    while(end_ptr > src) {
-//        tmp = *src;
-//        *src = *end_ptr;
-//        *end_ptr = tmp;
-//        src++;
-//        end_ptr--;
-//    }
-//    src = origin_start; // start of the string
-//    printf("%s\n",src);
-//    end_ptr = src + strlen(src) - 1;
-//    end_point = end_ptr;
-//    while(end_ptr > src) {
-//        if(std::isalnum(*src)) { // find the pointer at space
-//            end_ptr = src + 1;
-//            while(std::isalnum(*end_ptr))
-//                end_ptr++;
-//            if(end_ptr - src > 1) {
-//                char *word_start, *word_end;
-//                word_start = src;
-//                word_end = end_ptr;
-//                while(word_end > word_start) {
-//                    tmp = *word_start;
-//                    *word_start = *word_end;
-//                    *word_end = tmp;
-//                    word_start++;
-//                    word_end--;
-//                }
-//            }
-//            src = end_ptr;
-//            end_ptr = end_point;
-//        } else {
-//            src++;
-//        }
-//
-//    }
-//}
-//
-//int main() {
-//    std::string str("  this is good   ");
-//    std::cout << str << std::endl;
-//    revStr(const_cast<char*>(str.c_str()));
-//    std::cout << str << std::endl;
-//}
+#include <iostream>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+
+void revStr(char* src) {
+    char tmp, *end_ptr, *origin_start, *end_point;
+    origin_start = src;
+    end_ptr = src + strlen(src) - 1;
+    while(end_ptr > src) {
+        tmp = *src;
+        *src = *end_ptr;
+        *end_ptr = tmp;
+        src++;
+        end_ptr--;
+    }
+    src = origin_start; // start of the string
+    printf("%s\n",src);
+    end_ptr = src + strlen(src) - 1;
+    end_point = end_ptr;
+    while(end_ptr > src) {
+        if(std::isalnum(*src)) { // find the pointer at space
+            end_ptr = src + 1;
+            while(std::isalnum(*end_ptr))
+                end_ptr++;
+            if(end_ptr - src > 1) {
+                char *word_start, *word_end;
+                word_start = src;
+                word_end = end_ptr - 1;
+                while(word_end > word_start) {
+                    tmp = *word_start;
+                    *word_start = *word_end;
+                    *word_end = tmp;
+                    word_start++;
+                    word_end--;
+                }
+            }
+            src = end_ptr;
+            end_ptr = end_point;
+        } else {
+            src++;
+        }
+
+    }
+}
+
+int main() {
+    std::string str("  this is good   ");
+    std::cout << str << "||" << std::endl;
+    revStr(const_cast<char*>(str.c_str()));
+    std::cout << str << "||" << std::endl;
+}
 
 //#include <stdio.h>
 //#include <stdlib.h>
@@ -141,9 +141,59 @@
 //	return true;
 //}
 //
-int main() {
-	Inherited::C c;
-	c.doSomething();
+
+// argument dependent lookup(ADL) only for namespace lookup
+namespace A {
+	struct X { int i, j; };
+	void g(X x) { std::cout << "Struct X: " << x.j << "," << x.i << std::endl; }
+	void h(int i) { std::cout << "Calling A::h()\n"; }
+	namespace C {
+		void h() { std::cout << "Calling A::C::h()\n"; } // it hid A::h()
+		void g() { std::cout << "Calling A::C::g()\n"; } // it hid A::h()
+		void j() {
+			using A::h;
+			h(7);
+			A::X x;
+			g(x);
+		}
+	}
+}
+// can't do the below as compiler will err out with ambiguous complaint
+//void g(A::X x) {
+//	{ std::cout << "Struct X: " << x.j << "," << x.i << std::endl; }
+//}
+
+// member functions have higher lookup priority
+class B {
+public:
+	void g(A::X x) { std::cout << "B::g() called\n"; }
+};
+
+class C : public B {
+public:
+	struct Y {};
+	//void g(A::X x) { std::cout << "C::g() called\n"; }
+	static void h(Y) { std::cout << "Calling C::h()\n"; }
+	void j() {
+		A::X x;
+		g(x);
+	}
+};
+
+
+int main_func4() {
+	A::X x1;
+	x1.i = 99;
+	x1.j = -99;
+	g(x1);
+
+	C::Y y;
+	C::h(y);
+	C c;
+	c.j();
+	//h(y); // error
+	A::C::j();
+	return 0;
 //	std::string s1 ("There are two needles in this haystack with needles.");
 //	std::string s2 ("needle");
 //

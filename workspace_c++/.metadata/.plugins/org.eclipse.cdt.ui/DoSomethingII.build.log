@@ -1,7 +1,60 @@
-18:18:51 **** Clean-only build of configuration Debug for project DoSomethingII ****
-make clean 
-rm -rf  ./Casting.o ./Inherited.o ./Singleton.o ./VirtConst.o ./cat.o ./dog.o  ./Casting.d ./Inherited.d ./Singleton.d ./VirtConst.d ./cat.d ./dog.d  DoSomethingII.exe
+22:34:06 **** Incremental Build of configuration Debug for project DoSomethingII ****
+make all 
+Building file: ../Inherited.cpp
+Invoking: Cygwin C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"Inherited.d" -MT"Inherited.o" -o "Inherited.o" "../Inherited.cpp"
+In file included from ../Inherited.cpp:7:0:
+../Inherited.h:209:1: warning: multi-line comment [-Wcomment]
+ //              /   \
+ ^
+../Inherited.h: In constructor 'InheritedII::InputFile::InputFile(std::string)':
+../Inherited.h:233:14: warning: 'InheritedII::InputFile::name' will be initialized after [-Wreorder]
+  std::string name;
+              ^
+../Inherited.h:235:56: warning:   base 'InheritedII::File' [-Wreorder]
+  InputFile(std::string fname) : name(fname), File(fname) {
+                                                        ^
+../Inherited.h:235:2: warning:   when initialized here [-Wreorder]
+  InputFile(std::string fname) : name(fname), File(fname) {
+  ^
+../Inherited.h: In constructor 'InheritedII::OutputFile::OutputFile(std::string)':
+../Inherited.h:241:14: warning: 'InheritedII::OutputFile::name' will be initialized after [-Wreorder]
+  std::string name;
+              ^
+../Inherited.h:243:57: warning:   base 'InheritedII::File' [-Wreorder]
+  OutputFile(std::string fname) : name(fname), File(fname) {
+                                                         ^
+../Inherited.h:243:2: warning:   when initialized here [-Wreorder]
+  OutputFile(std::string fname) : name(fname), File(fname) {
+  ^
+../Inherited.h: In constructor 'InheritedII::IOFile::IOFile(std::string)':
+../Inherited.h:251:77: warning: base 'InheritedII::OutputFile' will be initialized after [-Wreorder]
+  IOFile(std::string fname) : OutputFile(fname), InputFile(fname), File(fname) {
+                                                                             ^
+../Inherited.h:251:77: warning:   base 'InheritedII::InputFile' [-Wreorder]
+../Inherited.h:251:2: warning:   when initialized here [-Wreorder]
+  IOFile(std::string fname) : OutputFile(fname), InputFile(fname), File(fname) {
+  ^
+../Inherited.h:251:77: warning: base 'InheritedII::InputFile' will be initialized after [-Wreorder]
+  IOFile(std::string fname) : OutputFile(fname), InputFile(fname), File(fname) {
+                                                                             ^
+../Inherited.h:251:77: warning:   base 'InheritedII::File' [-Wreorder]
+../Inherited.h:251:2: warning:   when initialized here [-Wreorder]
+  IOFile(std::string fname) : OutputFile(fname), InputFile(fname), File(fname) {
+  ^
+In file included from ../Inherited.h:10:0,
+                 from ../Inherited.cpp:7:
+../Incls.h: At global scope:
+../Incls.h:24:13: warning: 'void sleepcp(int)' defined but not used [-Wunused-function]
+ static void sleepcp(int milliseconds) // cross-platform sleep function
+             ^
+Finished building: ../Inherited.cpp
+ 
+Building target: DoSomethingII.exe
+Invoking: Cygwin C++ Linker
+g++  -o "DoSomethingII.exe"  ./Casting.o ./Inherited.o ./Singleton.o ./VirtConst.o ./cat.o ./dog.o ./friends.o   
+Finished building target: DoSomethingII.exe
  
 
-18:18:51 Build Finished (took 120ms)
+22:34:07 Build Finished (took 883ms)
 
