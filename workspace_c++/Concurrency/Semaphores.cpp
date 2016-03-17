@@ -88,7 +88,7 @@ void enumTest(void *ptr, TType type) {
 	}
 }
 
-int main() {
+int main_func() {
 	setvbuf (stdout, NULL, _IONBF, BUFSIZ);
 	sem_init(&s, 0, 5); // max 2 thread can work
 	pthread_t t1,t2;

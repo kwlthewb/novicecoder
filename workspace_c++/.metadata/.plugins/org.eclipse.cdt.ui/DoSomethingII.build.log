@@ -1,10 +1,15 @@
-17:28:12 **** Incremental Build of configuration Debug for project DoSomethingII ****
+15:06:41 **** Incremental Build of configuration Debug for project DoSomethingII ****
 make all 
 Building file: ../Sorting.cpp
 Invoking: Cygwin C++ Compiler
 g++ -I"D:\cygwin64\usr\include" -O0 -g3 -Wall -c -fmessage-length=0 -DWINDOWS -std=c++11 -Wl,--stack,8388608 -MMD -MP -MF"Sorting.d" -MT"Sorting.o" -o "Sorting.o" "../Sorting.cpp"
+../Sorting.cpp: In function 'int main_func7()':
+../Sorting.cpp:182:6: warning: unused variable 'numbers' [-Wunused-variable]
+  int numbers[] = {5,10,1,6,2,9,3,8,7,4,6,11,5,2};
+      ^
 In file included from ../Sorting.h:10:0,
                  from ../Sorting.cpp:8:
+../Incls.h: At global scope:
 ../Incls.h:52:13: warning: 'void sleepcp(int)' defined but not used [-Wunused-function]
  static void sleepcp(int milliseconds) // cross-platform sleep function
              ^
@@ -12,9 +17,9 @@ Finished building: ../Sorting.cpp
  
 Building target: DoSomethingII.exe
 Invoking: Cygwin C++ Linker
-g++ -L"D:\cygwin64\lib" -L"D:\cygwin64\usr\local\lib" -Wl,--stack,8388608 -o "DoSomethingII.exe"  ./Casting.o ./Inherited.o ./Maps.o ./Singleton.o ./Sorting.o ./VirtConst.o ./cat.o ./dog.o ./friends.o   -lboost_system -lboost_thread
+g++ -L"D:\cygwin64\lib" -L"D:\cygwin64\usr\local\lib" -Wl,--stack,8388608 -o "DoSomethingII.exe"  ./Casting.o ./InheritII.o ./Inherited.o ./Maps.o ./Singleton.o ./Sorting.o ./VirtConst.o ./cat.o ./dog.o ./friends.o   -lboost_system -lboost_thread
 Finished building target: DoSomethingII.exe
  
 
-17:28:21 Build Finished (took 9s.900ms)
+15:06:51 Build Finished (took 10s.309ms)
 

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project>
+	<configuration id="cdt.managedbuild.config.gnu.cygwin.exe.debug.2055844027" name="Debug">
+		<extension point="org.eclipse.cdt.core.LanguageSettingsProvider">
+			<provider id="org.eclipse.cdt.ui.UserLanguageSettingsProvider">
+				<language id="org.eclipse.cdt.core.g++">
+					<resource project-relative-path="">
+						<entry kind="macro" name="__cplusplus" value="201103L"/>
+					</resource>
+				</language>
+				<language id="org.eclipse.cdt.core.assembly">
+					<resource project-relative-path="">
+						<entry kind="macro" name="__cplusplus" value="201103L"/>
+					</resource>
+				</language>
+			</provider>
+		</extension>
+	</configuration>
+	<configuration id="cdt.managedbuild.config.gnu.cygwin.exe.release.72872859" name="Release">
+		<extension point="org.eclipse.cdt.core.LanguageSettingsProvider">
+			<provider id="org.eclipse.cdt.ui.UserLanguageSettingsProvider">
+				<language id="org.eclipse.cdt.core.g++">
+					<resource project-relative-path="">
+						<entry kind="macro" name="__cplusplus" value="201103L"/>
+					</resource>
+				</language>
+				<language id="org.eclipse.cdt.core.assembly">
+					<resource project-relative-path="">
+						<entry kind="macro" name="__cplusplus" value="201103L"/>
+					</resource>
+				</language>
+			</provider>
+		</extension>
+	</configuration>
+</project>

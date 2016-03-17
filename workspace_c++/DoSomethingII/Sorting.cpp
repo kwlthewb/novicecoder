@@ -98,6 +98,34 @@ void insertionSort(int arr[], int size) {
 	}
 }
 
+// Average: O(log n)
+// Best: O(1)
+// Worst: O(log n)
+int binary_search(int A[], int key, int imin, int imax)
+{
+  // test if array is empty
+  if (imax < imin)
+    // set is empty, so return value showing not found
+    return 0;
+  else
+    {
+      // calculate midpoint to cut set in half
+      int imid = A[(imin + imax) / 2];
+
+      // three-way comparison
+      if (A[imid] > key)
+        // key is in lower subset
+        return binary_search(A, key, imin, imid - 1);
+      else if (A[imid] < key)
+        // key is in upper subset
+        return binary_search(A, key, imid + 1, imax);
+      else
+        // key has been found
+        return imid;
+    }
+}
+
+
 void genAry(int arr[], int arr2[], int size) {
 	int j = 0;
 	for(int i = 0; i < size; i++) {
@@ -107,13 +135,55 @@ void genAry(int arr[], int arr2[], int size) {
 	}
 }
 
-int main() {
+void printMoreFrequent(const char *p) {
+	int startChar = 'A';
+	int endChar = 'Z';
+	int pos = 0;
+	std::vector<char> charV;
+	std::vector<int> countV;
+	std::vector<char>::iterator itr;
+	while(*p != '\0') {
+		if(*p >= startChar && *p <= endChar) {
+			itr = std::find(charV.begin(), charV.end(), *p);
+			if(itr != charV.end()) {
+				pos = std::distance(charV.begin(),itr);
+				std::cout << *p << "," << pos << "," << countV[pos] << std::endl;
+				countV[pos] += 1;
+			} else {
+				charV.push_back(*p);
+				countV.push_back(1);
+			}
+		}
+		p++;
+	}
+	int high = 0;
+	char cc = 0;
+	for(uint i = 0; i < charV.size(); i++) {
+		std::cout << charV[i] << "," << countV[i] << std::endl;
+		if(countV[i] > high) {
+			high = countV[i];
+			cc = charV[i];
+		}
+	}
+	std::cout << "Char: " << cc << " Count: " << high << std::endl;
+}
+
+int main_func7() {
+	char p[] = "AAGGDXIDGHNNND";
+	printMoreFrequent(p);
+	return 0;
 	const int size = 50000;
 	int delta = size / 100;
 	srand(time(0));
 	int *nums1 = new int[size];
 	int *nums2 = new int[size];
 	genAry(nums1, nums2, size);
+
+	int numbers[] = {5,10,1,6,2,9,3,8,7,4,6,11,5,2};
+
+	//	int mid = (0 + 14) / 2;
+//	std::cout << mid << "," << numbers[mid] << std::endl;
+//	return 0;
 
 //	int numbers[] = {5,10,1,6,2,9,3,8,7,4,6,11,5,7};
 //	//quickSort(numbers,0,13);
