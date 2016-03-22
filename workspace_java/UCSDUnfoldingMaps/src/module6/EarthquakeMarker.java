@@ -1,6 +1,7 @@
 package module6;
 
 import de.fhpotsdam.unfolding.data.PointFeature;
+import de.fhpotsdam.unfolding.geo.Location;
 import processing.core.PConstants;
 import processing.core.PGraphics;
 
@@ -10,12 +11,12 @@ import processing.core.PGraphics;
  *
  */
 // TODO: Implement the comparable interface
-public abstract class EarthquakeMarker extends CommonMarker
+public abstract class EarthquakeMarker extends CommonMarker implements Comparable<EarthquakeMarker>
 {
 	
 	// Did the earthquake occur on land?  This will be set by the subclasses.
 	protected boolean isOnLand;
-
+	
 	// The radius of the Earthquake marker
 	// You will want to set this in the constructor, either
 	// using the thresholds below, or a continuous function
@@ -57,6 +58,15 @@ public abstract class EarthquakeMarker extends CommonMarker
 	
 	// TODO: Add the method:
 	// public int compareTo(EarthquakeMarker marker)
+	public int compareTo(EarthquakeMarker marker) {
+		if(getMagnitude() > marker.getMagnitude()) { 
+			return -1;
+		} else if(getMagnitude() < marker.getMagnitude()) {
+			return 1;
+		} else {
+			return 0;
+		}
+	}
 	
 	
 	// calls abstract method drawEarthquake and then checks age and draws X if needed
@@ -64,13 +74,14 @@ public abstract class EarthquakeMarker extends CommonMarker
 	public void drawMarker(PGraphics pg, float x, float y) {
 		// save previous styling
 		pg.pushStyle();
-			
+		markerX = x;
+		markerY = y;
 		// determine color of marker from depth
 		colorDetermine(pg);
 		
 		// call abstract method implemented in child class to draw marker shape
 		drawEarthquake(pg, x, y);
-		
+		drawImpactRing(pg, x, y);
 		// IMPLEMENT: add X over marker if within past day		
 		String age = getStringProperty("age");
 		if ("Past Hour".equals(age) || "Past Day".equals(age)) {
@@ -90,15 +101,30 @@ public abstract class EarthquakeMarker extends CommonMarker
 		
 		// reset to previous styling
 		pg.popStyle();
-		
+	}
+	
+	// draw a three rings impact zone, most inner ring has color red, middle ring yellow, outer ring black
+	public void drawImpactRing(PGraphics pg, float x, float y) {
+		if(super.getClicked()) {
+			pg.noFill();
+			// find edge of threatzone measured by pixels
+			int edgePixel = (int)((threatCircle()*1000) / getMeterPerPixel())/2;
+			//System.out.println("EdgePixel: " + edgePixel + "," + (edgePixel * 2 / 3 ) + "," + edgePixel/3 );
+			pg.stroke(0,0,0);
+			pg.ellipse(x, y, edgePixel, edgePixel);
+			pg.stroke(255,255,0);
+			pg.ellipse(x, y, (edgePixel * 2 /3), (edgePixel * 2 / 3 ));
+			pg.stroke(255,0,0);
+			pg.ellipse(x, y, edgePixel / 3, edgePixel / 3);
+		}
 	}
 
 	/** Show the title of the earthquake if this marker is selected */
 	public void showTitle(PGraphics pg, float x, float y)
 	{
-		String title = getTitle();
+		//String title = getTitle() + " Lat: " + getLocation().getLat() + " Lon: " + getLocation().getLon();
+		String title = getMagnitude() + " " + getMeterPerPixel() + " " + threatCircle();
 		pg.pushStyle();
-		
 		pg.rectMode(PConstants.CORNER);
 		
 		pg.stroke(110);
@@ -178,8 +204,4 @@ public abstract class EarthquakeMarker extends CommonMarker
 	{
 		return isOnLand;
 	}
-	
-
-	
-	
 }

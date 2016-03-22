@@ -2,6 +2,7 @@ package module6;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 
 import de.fhpotsdam.unfolding.UnfoldingMap;
@@ -117,13 +118,24 @@ public class EarthquakeCityMap extends PApplet {
 
 	    // could be used for debugging
 	    printQuakes();
-	 		
+	 	sortAndPrint(12);
+//	 	double lat1 = 38.898556;
+//	 	double lon1 = -77.037582;
+//	 	double lat2 = 38.897147;
+//	 	double lon2 = -77.043934;
+//	 	double dlat = lat2 - lat1;
+//	 	double dlon = lon2 - lon1;
+//	 	double a = Math.pow(Math.sin((dlat / 2)), 2) + (Math.cos(lat1) * Math.cos(lat2) * Math.pow(Math.sin((dlon / 2)), 2));
+//	 	//double c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+//	 	double c = 2 * Math.atan2(Math.sqrt(a),Math.sqrt(1 - a));
+//	 	double d = 6371 * c;
+//	 	System.out.println("Distance is: " + d);
+	 	//meters_per_pixel = 156543.03392 * Math.cos(latLng.lat() * Math.PI / 180) / Math.pow(2, zoom)
 	    // (3) Add markers to map
 	    //     NOTE: Country markers are not added to the map.  They are used
 	    //           for their geometric properties
 	    map.addMarkers(quakeMarkers);
 	    map.addMarkers(cityMarkers);
-	    
 	    
 	}  // End setup
 	
@@ -131,10 +143,10 @@ public class EarthquakeCityMap extends PApplet {
 	public void draw() {
 		background(0);
 		map.draw();
+		setZoomLevel();
 		addKey();
-		
+		//System.out.println("Zoom level: " + map.getZoom() + "," + map.getZoomLevel());
 	}
-	
 	
 	// TODO: Add the method:
 	//   private void sortAndPrint(int numToPrint)
@@ -150,13 +162,20 @@ public class EarthquakeCityMap extends PApplet {
 		if (lastSelected != null) {
 			lastSelected.setSelected(false);
 			lastSelected = null;
-		
 		}
 		selectMarkerIfHover(quakeMarkers);
 		selectMarkerIfHover(cityMarkers);
 		//loop();
 	}
-	
+	// set current zoom level for meter per pixel calculation
+	private void setZoomLevel() {
+		for(Marker m: quakeMarkers) {
+			((CommonMarker)m).setZoom(map.getZoomLevel());
+		}
+		for(Marker m: cityMarkers) {
+			((CommonMarker)m).setZoom(map.getZoomLevel());
+		}
+	}
 	// If there is a marker selected 
 	private void selectMarkerIfHover(List<Marker> markers)
 	{
@@ -234,6 +253,7 @@ public class EarthquakeCityMap extends PApplet {
 			EarthquakeMarker marker = (EarthquakeMarker)m;
 			if (!marker.isHidden() && marker.isInside(map, mouseX, mouseY)) {
 				lastClicked = marker;
+				marker.setClicked(true);
 				// Hide all the other earthquakes and hide
 				for (Marker mhide : quakeMarkers) {
 					if (mhide != lastClicked) {
@@ -255,10 +275,12 @@ public class EarthquakeCityMap extends PApplet {
 	private void unhideMarkers() {
 		for(Marker marker : quakeMarkers) {
 			marker.setHidden(false);
+			((CommonMarker) marker).setClicked(false);
 		}
 			
 		for(Marker marker : cityMarkers) {
 			marker.setHidden(false);
+			((CommonMarker) marker).setClicked(false);
 		}
 	}
 	
@@ -326,6 +348,19 @@ public class EarthquakeCityMap extends PApplet {
 		
 	}
 
+	void sortAndPrint(int numToPrint) {
+		List<EarthquakeMarker> em = new ArrayList<EarthquakeMarker>();
+		for(Marker a : quakeMarkers) {
+			em.add((EarthquakeMarker)a);
+		}
+		Collections.sort(em);
+		for(EarthquakeMarker a: em) {
+			if(numToPrint <= 0) 
+				return;
+			System.out.println(numToPrint + "," + a.getTitle() + "," + a.isOnLand);
+			numToPrint--;
+		}
+	}
 	
 	
 	// Checks whether this quake occurred on land.  If it did, it sets the 
@@ -358,7 +393,7 @@ public class EarthquakeCityMap extends PApplet {
 			String countryName = country.getStringProperty("name");
 			int numQuakes = 0;
 			for (Marker marker : quakeMarkers)
-			{
+			{ 
 				EarthquakeMarker eqMarker = (EarthquakeMarker)marker;
 				if (eqMarker.isOnLand()) {
 					if (countryName.equals(eqMarker.getStringProperty("country"))) {
@@ -373,8 +408,6 @@ public class EarthquakeCityMap extends PApplet {
 		}
 		System.out.println("OCEAN QUAKES: " + totalWaterQuakes);
 	}
-	
-	
 	
 	// helper method to test whether a given earthquake is in a given country
 	// This will also add the country property to the properties of the earthquake feature if 

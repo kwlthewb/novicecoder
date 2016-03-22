@@ -14,4 +14,7 @@
 <fullyQualifiedTypeName name="module5.EarthquakeMarker"/>
 <fullyQualifiedTypeName name="de.fhpotsdam.unfolding.utils.ScreenPosition"/>
 <fullyQualifiedTypeName name="java.util.Random"/>
+<fullyQualifiedTypeName name="java.util.Collections"/>
+<fullyQualifiedTypeName name="de.fhpotsdam.unfolding.geo.Location"/>
+<fullyQualifiedTypeName name="java.util.HashMap"/>
 </qualifiedTypeNameHistroy>

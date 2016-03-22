@@ -11079,3 +11079,2164 @@ Invoking: Cygwin C++ Linker
 g++ -L"D:\cygwin64\lib" -L"D:\cygwin64\usr\local\lib" -Wl,--stack,8388608 -o "DoSomethingII.exe"  ./Casting.o ./InheritII.o ./Inherited.o ./Maps.o ./Singleton.o ./Sorting.o ./VirtConst.o ./cat.o ./dog.o ./friends.o   -lboost_system -lboost_thread
 Finished building target: DoSomethingII.exe
  
+15:17:02 **** Incremental Build of configuration Debug for project DoSomethingII ****
+make all 
+Building file: ../InheritII.cpp
+Invoking: Cygwin C++ Compiler
+g++ -I"D:\cygwin64\usr\include" -O0 -g3 -Wall -c -fmessage-length=0 -DWINDOWS -std=c++11 -Wl,--stack,8388608 -MMD -MP -MF"InheritII.d" -MT"InheritII.o" -o "InheritII.o" "../InheritII.cpp"
+In file included from ../InheritII.h:10:0,
+                 from ../InheritII.cpp:8:
+../Incls.h:40:26: warning: 'const string currentDateTime()' defined but not used [-Wunused-function]
+ static const std::string currentDateTime() {
+                          ^
+../Incls.h:52:13: warning: 'void sleepcp(int)' defined but not used [-Wunused-function]
+ static void sleepcp(int milliseconds) // cross-platform sleep function
+             ^
+Finished building: ../InheritII.cpp
+ 
+Building target: DoSomethingII.exe
+Invoking: Cygwin C++ Linker
+g++ -L"D:\cygwin64\lib" -L"D:\cygwin64\usr\local\lib" -Wl,--stack,8388608 -o "DoSomethingII.exe"  ./Casting.o ./InheritII.o ./Inherited.o ./Maps.o ./Singleton.o ./Sorting.o ./VirtConst.o ./cat.o ./dog.o ./friends.o   -lboost_system -lboost_thread
+Finished building target: DoSomethingII.exe
+ 
+15:19:41 **** Incremental Build of configuration Debug for project DoSomethingII ****
+make all 
+Building file: ../InheritII.cpp
+Invoking: Cygwin C++ Compiler
+g++ -I"D:\cygwin64\usr\include" -O0 -g3 -Wall -c -fmessage-length=0 -DWINDOWS -std=c++11 -Wl,--stack,8388608 -MMD -MP -MF"InheritII.d" -MT"InheritII.o" -o "InheritII.o" "../InheritII.cpp"
+../InheritII.cpp: In function 'int main()':
+../InheritII.cpp:18:7: error: 'void InhII::Dog::sleep()' is protected
+  void sleep() { std::cout << "I am sleeping.\n"; } // provides only implementation not the interface
+       ^
+../InheritII.cpp:33:10: error: within this context
+  d.sleep();
+          ^
+In file included from ../InheritII.h:10:0,
+                 from ../InheritII.cpp:8:
+../Incls.h: At global scope:
+../Incls.h:40:26: warning: 'const string currentDateTime()' defined but not used [-Wunused-function]
+ static const std::string currentDateTime() {
+                          ^
+../Incls.h:52:13: warning: 'void sleepcp(int)' defined but not used [-Wunused-function]
+ static void sleepcp(int milliseconds) // cross-platform sleep function
+             ^
+subdir.mk:45: recipe for target 'InheritII.o' failed
+make: *** [InheritII.o] Error 1
+15:19:58 **** Incremental Build of configuration Debug for project DoSomethingII ****
+make all 
+Building file: ../InheritII.cpp
+Invoking: Cygwin C++ Compiler
+g++ -I"D:\cygwin64\usr\include" -O0 -g3 -Wall -c -fmessage-length=0 -DWINDOWS -std=c++11 -Wl,--stack,8388608 -MMD -MP -MF"InheritII.d" -MT"InheritII.o" -o "InheritII.o" "../InheritII.cpp"
+In file included from ../InheritII.h:10:0,
+                 from ../InheritII.cpp:8:
+../Incls.h:40:26: warning: 'const string currentDateTime()' defined but not used [-Wunused-function]
+ static const std::string currentDateTime() {
+                          ^
+../Incls.h:52:13: warning: 'void sleepcp(int)' defined but not used [-Wunused-function]
+ static void sleepcp(int milliseconds) // cross-platform sleep function
+             ^
+Finished building: ../InheritII.cpp
+ 
+Building target: DoSomethingII.exe
+Invoking: Cygwin C++ Linker
+g++ -L"D:\cygwin64\lib" -L"D:\cygwin64\usr\local\lib" -Wl,--stack,8388608 -o "DoSomethingII.exe"  ./Casting.o ./InheritII.o ./Inherited.o ./Maps.o ./Singleton.o ./Sorting.o ./VirtConst.o ./cat.o ./dog.o ./friends.o   -lboost_system -lboost_thread
+Finished building target: DoSomethingII.exe
+ 
+10:32:57 **** Build of configuration Debug for project DoSomethingII ****
+make all 
+Building file: ../InheritII.cpp
+Invoking: Cygwin C++ Compiler
+g++ -I"D:\cygwin64\usr\include" -O0 -g3 -Wall -c -fmessage-length=0 -DWINDOWS -std=c++11 -Wl,--stack,8388608 -MMD -MP -MF"InheritII.d" -MT"InheritII.o" -o "InheritII.o" "../InheritII.cpp"
+In file included from ../InheritII.h:10:0,
+                 from ../InheritII.cpp:8:
+../Incls.h:40:26: warning: 'const string currentDateTime()' defined but not used [-Wunused-function]
+ static const std::string currentDateTime() {
+                          ^
+../Incls.h:52:13: warning: 'void sleepcp(int)' defined but not used [-Wunused-function]
+ static void sleepcp(int milliseconds) // cross-platform sleep function
+             ^
+Finished building: ../InheritII.cpp
+ 
+Building target: DoSomethingII.exe
+Invoking: Cygwin C++ Linker
+g++ -L"D:\cygwin64\lib" -L"D:\cygwin64\usr\local\lib" -Wl,--stack,8388608 -o "DoSomethingII.exe"  ./Casting.o ./InheritII.o ./Inherited.o ./Maps.o ./Singleton.o ./Sorting.o ./VirtConst.o ./cat.o ./dog.o ./friends.o   -lboost_system -lboost_thread
+Finished building target: DoSomethingII.exe
+ 
+10:33:41 **** Incremental Build of configuration Debug for project DoSomethingII ****
+make all 
+Building file: ../InheritII.cpp
+Invoking: Cygwin C++ Compiler
+g++ -I"D:\cygwin64\usr\include" -O0 -g3 -Wall -c -fmessage-length=0 -DWINDOWS -std=c++11 -Wl,--stack,8388608 -MMD -MP -MF"InheritII.d" -MT"InheritII.o" -o "InheritII.o" "../InheritII.cpp"
+In file included from ../InheritII.h:10:0,
+                 from ../InheritII.cpp:8:
+../Incls.h:40:26: warning: 'const string currentDateTime()' defined but not used [-Wunused-function]
+ static const std::string currentDateTime() {
+                          ^
+../Incls.h:52:13: warning: 'void sleepcp(int)' defined but not used [-Wunused-function]
+ static void sleepcp(int milliseconds) // cross-platform sleep function
+             ^
+Finished building: ../InheritII.cpp
+ 
+Building target: DoSomethingII.exe
+Invoking: Cygwin C++ Linker
+g++ -L"D:\cygwin64\lib" -L"D:\cygwin64\usr\local\lib" -Wl,--stack,8388608 -o "DoSomethingII.exe"  ./Casting.o ./InheritII.o ./Inherited.o ./Maps.o ./Singleton.o ./Sorting.o ./VirtConst.o ./cat.o ./dog.o ./friends.o   -lboost_system -lboost_thread
+Finished building target: DoSomethingII.exe
+ 
+10:34:35 **** Incremental Build of configuration Debug for project DoSomethingII ****
+make all 
+Building file: ../InheritII.cpp
+Invoking: Cygwin C++ Compiler
+g++ -I"D:\cygwin64\usr\include" -O0 -g3 -Wall -c -fmessage-length=0 -DWINDOWS -std=c++11 -Wl,--stack,8388608 -MMD -MP -MF"InheritII.d" -MT"InheritII.o" -o "InheritII.o" "../InheritII.cpp"
+In file included from ../InheritII.h:10:0,
+                 from ../InheritII.cpp:8:
+../Incls.h:40:26: warning: 'const string currentDateTime()' defined but not used [-Wunused-function]
+ static const std::string currentDateTime() {
+                          ^
+../Incls.h:52:13: warning: 'void sleepcp(int)' defined but not used [-Wunused-function]
+ static void sleepcp(int milliseconds) // cross-platform sleep function
+             ^
+Finished building: ../InheritII.cpp
+ 
+Building target: DoSomethingII.exe
+Invoking: Cygwin C++ Linker
+g++ -L"D:\cygwin64\lib" -L"D:\cygwin64\usr\local\lib" -Wl,--stack,8388608 -o "DoSomethingII.exe"  ./Casting.o ./InheritII.o ./Inherited.o ./Maps.o ./Singleton.o ./Sorting.o ./VirtConst.o ./cat.o ./dog.o ./friends.o   -lboost_system -lboost_thread
+Finished building target: DoSomethingII.exe
+ 
+10:45:17 **** Incremental Build of configuration Debug for project DoSomethingII ****
+make all 
+Building file: ../InheritII.cpp
+Invoking: Cygwin C++ Compiler
+g++ -I"D:\cygwin64\usr\include" -O0 -g3 -Wall -c -fmessage-length=0 -DWINDOWS -std=c++11 -Wl,--stack,8388608 -MMD -MP -MF"InheritII.d" -MT"InheritII.o" -o "InheritII.o" "../InheritII.cpp"
+../InheritII.cpp: In function 'std::string binaryAdd(const char*, int)':
+../InheritII.cpp:37:7: warning: unused variable 'firstNum' [-Wunused-variable]
+  char firstNum[size] = {0};
+       ^
+../InheritII.cpp:38:7: warning: unused variable 'secondNum' [-Wunused-variable]
+  char secondNum[size] = {0};
+       ^
+In file included from ../InheritII.h:10:0,
+                 from ../InheritII.cpp:8:
+../Incls.h: At global scope:
+../Incls.h:40:26: warning: 'const string currentDateTime()' defined but not used [-Wunused-function]
+ static const std::string currentDateTime() {
+                          ^
+../Incls.h:52:13: warning: 'void sleepcp(int)' defined but not used [-Wunused-function]
+ static void sleepcp(int milliseconds) // cross-platform sleep function
+             ^
+Finished building: ../InheritII.cpp
+ 
+Building target: DoSomethingII.exe
+Invoking: Cygwin C++ Linker
+g++ -L"D:\cygwin64\lib" -L"D:\cygwin64\usr\local\lib" -Wl,--stack,8388608 -o "DoSomethingII.exe"  ./Casting.o ./InheritII.o ./Inherited.o ./Maps.o ./Singleton.o ./Sorting.o ./VirtConst.o ./cat.o ./dog.o ./friends.o   -lboost_system -lboost_thread
+Finished building target: DoSomethingII.exe
+ 
+10:45:44 **** Incremental Build of configuration Debug for project DoSomethingII ****
+make all 
+Building file: ../InheritII.cpp
+Invoking: Cygwin C++ Compiler
+g++ -I"D:\cygwin64\usr\include" -O0 -g3 -Wall -c -fmessage-length=0 -DWINDOWS -std=c++11 -Wl,--stack,8388608 -MMD -MP -MF"InheritII.d" -MT"InheritII.o" -o "InheritII.o" "../InheritII.cpp"
+../InheritII.cpp: In function 'std::string binaryAdd(const char*, int)':
+../InheritII.cpp:37:7: warning: unused variable 'firstNum' [-Wunused-variable]
+  char firstNum[size] = {0};
+       ^
+../InheritII.cpp:38:7: warning: unused variable 'secondNum' [-Wunused-variable]
+  char secondNum[size] = {0};
+       ^
+In file included from ../InheritII.h:10:0,
+                 from ../InheritII.cpp:8:
+../Incls.h: At global scope:
+../Incls.h:40:26: warning: 'const string currentDateTime()' defined but not used [-Wunused-function]
+ static const std::string currentDateTime() {
+                          ^
+../Incls.h:52:13: warning: 'void sleepcp(int)' defined but not used [-Wunused-function]
+ static void sleepcp(int milliseconds) // cross-platform sleep function
+             ^
+Finished building: ../InheritII.cpp
+ 
+Building target: DoSomethingII.exe
+Invoking: Cygwin C++ Linker
+g++ -L"D:\cygwin64\lib" -L"D:\cygwin64\usr\local\lib" -Wl,--stack,8388608 -o "DoSomethingII.exe"  ./Casting.o ./InheritII.o ./Inherited.o ./Maps.o ./Singleton.o ./Sorting.o ./VirtConst.o ./cat.o ./dog.o ./friends.o   -lboost_system -lboost_thread
+Finished building target: DoSomethingII.exe
+ 
+10:57:11 **** Incremental Build of configuration Debug for project DoSomethingII ****
+make all 
+Building file: ../InheritII.cpp
+Invoking: Cygwin C++ Compiler
+g++ -I"D:\cygwin64\usr\include" -O0 -g3 -Wall -c -fmessage-length=0 -DWINDOWS -std=c++11 -Wl,--stack,8388608 -MMD -MP -MF"InheritII.d" -MT"InheritII.o" -o "InheritII.o" "../InheritII.cpp"
+../InheritII.cpp: In function 'std::string binaryAdd(const char*, int)':
+../InheritII.cpp:60:6: warning: unused variable 'carry' [-Wunused-variable]
+  int carry;
+      ^
+In file included from ../InheritII.h:10:0,
+                 from ../InheritII.cpp:8:
+../Incls.h: At global scope:
+../Incls.h:40:26: warning: 'const string currentDateTime()' defined but not used [-Wunused-function]
+ static const std::string currentDateTime() {
+                          ^
+../Incls.h:52:13: warning: 'void sleepcp(int)' defined but not used [-Wunused-function]
+ static void sleepcp(int milliseconds) // cross-platform sleep function
+             ^
+Finished building: ../InheritII.cpp
+ 
+Building target: DoSomethingII.exe
+Invoking: Cygwin C++ Linker
+g++ -L"D:\cygwin64\lib" -L"D:\cygwin64\usr\local\lib" -Wl,--stack,8388608 -o "DoSomethingII.exe"  ./Casting.o ./InheritII.o ./Inherited.o ./Maps.o ./Singleton.o ./Sorting.o ./VirtConst.o ./cat.o ./dog.o ./friends.o   -lboost_system -lboost_thread
+Finished building target: DoSomethingII.exe
+ 
+10:58:41 **** Incremental Build of configuration Debug for project DoSomethingII ****
+make all 
+Building file: ../InheritII.cpp
+Invoking: Cygwin C++ Compiler
+g++ -I"D:\cygwin64\usr\include" -O0 -g3 -Wall -c -fmessage-length=0 -DWINDOWS -std=c++11 -Wl,--stack,8388608 -MMD -MP -MF"InheritII.d" -MT"InheritII.o" -o "InheritII.o" "../InheritII.cpp"
+../InheritII.cpp: In function 'std::string binaryAdd(const char*, int)':
+../InheritII.cpp:60:6: warning: unused variable 'carry' [-Wunused-variable]
+  int carry;
+      ^
+In file included from ../InheritII.h:10:0,
+                 from ../InheritII.cpp:8:
+../Incls.h: At global scope:
+../Incls.h:40:26: warning: 'const string currentDateTime()' defined but not used [-Wunused-function]
+ static const std::string currentDateTime() {
+                          ^
+../Incls.h:52:13: warning: 'void sleepcp(int)' defined but not used [-Wunused-function]
+ static void sleepcp(int milliseconds) // cross-platform sleep function
+             ^
+Finished building: ../InheritII.cpp
+ 
+Building target: DoSomethingII.exe
+Invoking: Cygwin C++ Linker
+g++ -L"D:\cygwin64\lib" -L"D:\cygwin64\usr\local\lib" -Wl,--stack,8388608 -o "DoSomethingII.exe"  ./Casting.o ./InheritII.o ./Inherited.o ./Maps.o ./Singleton.o ./Sorting.o ./VirtConst.o ./cat.o ./dog.o ./friends.o   -lboost_system -lboost_thread
+Finished building target: DoSomethingII.exe
+ 
+10:59:41 **** Incremental Build of configuration Debug for project DoSomethingII ****
+make all 
+Building file: ../InheritII.cpp
+Invoking: Cygwin C++ Compiler
+g++ -I"D:\cygwin64\usr\include" -O0 -g3 -Wall -c -fmessage-length=0 -DWINDOWS -std=c++11 -Wl,--stack,8388608 -MMD -MP -MF"InheritII.d" -MT"InheritII.o" -o "InheritII.o" "../InheritII.cpp"
+../InheritII.cpp: In function 'std::string binaryAdd(const char*, int)':
+../InheritII.cpp:60:6: warning: unused variable 'carry' [-Wunused-variable]
+  int carry;
+      ^
+In file included from ../InheritII.h:10:0,
+                 from ../InheritII.cpp:8:
+../Incls.h: At global scope:
+../Incls.h:40:26: warning: 'const string currentDateTime()' defined but not used [-Wunused-function]
+ static const std::string currentDateTime() {
+                          ^
+../Incls.h:52:13: warning: 'void sleepcp(int)' defined but not used [-Wunused-function]
+ static void sleepcp(int milliseconds) // cross-platform sleep function
+             ^
+Finished building: ../InheritII.cpp
+ 
+Building target: DoSomethingII.exe
+Invoking: Cygwin C++ Linker
+g++ -L"D:\cygwin64\lib" -L"D:\cygwin64\usr\local\lib" -Wl,--stack,8388608 -o "DoSomethingII.exe"  ./Casting.o ./InheritII.o ./Inherited.o ./Maps.o ./Singleton.o ./Sorting.o ./VirtConst.o ./cat.o ./dog.o ./friends.o   -lboost_system -lboost_thread
+Finished building target: DoSomethingII.exe
+ 
+11:00:50 **** Incremental Build of configuration Debug for project DoSomethingII ****
+make all 
+Building file: ../InheritII.cpp
+Invoking: Cygwin C++ Compiler
+g++ -I"D:\cygwin64\usr\include" -O0 -g3 -Wall -c -fmessage-length=0 -DWINDOWS -std=c++11 -Wl,--stack,8388608 -MMD -MP -MF"InheritII.d" -MT"InheritII.o" -o "InheritII.o" "../InheritII.cpp"
+../InheritII.cpp: In function 'std::string binaryAdd(const char*, int)':
+../InheritII.cpp:94:27: error: invalid type argument of unary '*' (have 'int')
+   std::cout << *firstNum[i] << std::endl;
+                           ^
+../InheritII.cpp:95:28: error: invalid type argument of unary '*' (have 'int')
+   std::cout << *secondNum[i] << std::endl;
+                            ^
+../InheritII.cpp:60:6: warning: unused variable 'carry' [-Wunused-variable]
+  int carry;
+      ^
+In file included from ../InheritII.h:10:0,
+                 from ../InheritII.cpp:8:
+../Incls.h: At global scope:
+../Incls.h:40:26: warning: 'const string currentDateTime()' defined but not used [-Wunused-function]
+ static const std::string currentDateTime() {
+                          ^
+../Incls.h:52:13: warning: 'void sleepcp(int)' defined but not used [-Wunused-function]
+ static void sleepcp(int milliseconds) // cross-platform sleep function
+             ^
+make: *** [InheritII.o] Error 1
+subdir.mk:45: recipe for target 'InheritII.o' failed
+11:01:19 **** Incremental Build of configuration Debug for project DoSomethingII ****
+make all 
+Building file: ../InheritII.cpp
+Invoking: Cygwin C++ Compiler
+g++ -I"D:\cygwin64\usr\include" -O0 -g3 -Wall -c -fmessage-length=0 -DWINDOWS -std=c++11 -Wl,--stack,8388608 -MMD -MP -MF"InheritII.d" -MT"InheritII.o" -o "InheritII.o" "../InheritII.cpp"
+../InheritII.cpp: In function 'std::string binaryAdd(const char*, int)':
+../InheritII.cpp:60:6: warning: unused variable 'carry' [-Wunused-variable]
+  int carry;
+      ^
+In file included from ../InheritII.h:10:0,
+                 from ../InheritII.cpp:8:
+../Incls.h: At global scope:
+../Incls.h:40:26: warning: 'const string currentDateTime()' defined but not used [-Wunused-function]
+ static const std::string currentDateTime() {
+                          ^
+../Incls.h:52:13: warning: 'void sleepcp(int)' defined but not used [-Wunused-function]
+ static void sleepcp(int milliseconds) // cross-platform sleep function
+             ^
+Finished building: ../InheritII.cpp
+ 
+Building target: DoSomethingII.exe
+Invoking: Cygwin C++ Linker
+g++ -L"D:\cygwin64\lib" -L"D:\cygwin64\usr\local\lib" -Wl,--stack,8388608 -o "DoSomethingII.exe"  ./Casting.o ./InheritII.o ./Inherited.o ./Maps.o ./Singleton.o ./Sorting.o ./VirtConst.o ./cat.o ./dog.o ./friends.o   -lboost_system -lboost_thread
+Finished building target: DoSomethingII.exe
+ 
+11:01:59 **** Incremental Build of configuration Debug for project DoSomethingII ****
+make all 
+Building file: ../InheritII.cpp
+Invoking: Cygwin C++ Compiler
+g++ -I"D:\cygwin64\usr\include" -O0 -g3 -Wall -c -fmessage-length=0 -DWINDOWS -std=c++11 -Wl,--stack,8388608 -MMD -MP -MF"InheritII.d" -MT"InheritII.o" -o "InheritII.o" "../InheritII.cpp"
+../InheritII.cpp: In function 'std::string binaryAdd(const char*, int)':
+../InheritII.cpp:60:6: warning: unused variable 'carry' [-Wunused-variable]
+  int carry;
+      ^
+In file included from ../InheritII.h:10:0,
+                 from ../InheritII.cpp:8:
+../Incls.h: At global scope:
+../Incls.h:40:26: warning: 'const string currentDateTime()' defined but not used [-Wunused-function]
+ static const std::string currentDateTime() {
+                          ^
+../Incls.h:52:13: warning: 'void sleepcp(int)' defined but not used [-Wunused-function]
+ static void sleepcp(int milliseconds) // cross-platform sleep function
+             ^
+Finished building: ../InheritII.cpp
+ 
+Building target: DoSomethingII.exe
+Invoking: Cygwin C++ Linker
+g++ -L"D:\cygwin64\lib" -L"D:\cygwin64\usr\local\lib" -Wl,--stack,8388608 -o "DoSomethingII.exe"  ./Casting.o ./InheritII.o ./Inherited.o ./Maps.o ./Singleton.o ./Sorting.o ./VirtConst.o ./cat.o ./dog.o ./friends.o   -lboost_system -lboost_thread
+Finished building target: DoSomethingII.exe
+ 
+11:02:46 **** Incremental Build of configuration Debug for project DoSomethingII ****
+make all 
+Building file: ../InheritII.cpp
+Invoking: Cygwin C++ Compiler
+g++ -I"D:\cygwin64\usr\include" -O0 -g3 -Wall -c -fmessage-length=0 -DWINDOWS -std=c++11 -Wl,--stack,8388608 -MMD -MP -MF"InheritII.d" -MT"InheritII.o" -o "InheritII.o" "../InheritII.cpp"
+../InheritII.cpp: In function 'std::string binaryAdd(const char*, int)':
+../InheritII.cpp:60:6: warning: unused variable 'carry' [-Wunused-variable]
+  int carry;
+      ^
+In file included from ../InheritII.h:10:0,
+                 from ../InheritII.cpp:8:
+../Incls.h: At global scope:
+../Incls.h:40:26: warning: 'const string currentDateTime()' defined but not used [-Wunused-function]
+ static const std::string currentDateTime() {
+                          ^
+../Incls.h:52:13: warning: 'void sleepcp(int)' defined but not used [-Wunused-function]
+ static void sleepcp(int milliseconds) // cross-platform sleep function
+             ^
+Finished building: ../InheritII.cpp
+ 
+Building target: DoSomethingII.exe
+Invoking: Cygwin C++ Linker
+g++ -L"D:\cygwin64\lib" -L"D:\cygwin64\usr\local\lib" -Wl,--stack,8388608 -o "DoSomethingII.exe"  ./Casting.o ./InheritII.o ./Inherited.o ./Maps.o ./Singleton.o ./Sorting.o ./VirtConst.o ./cat.o ./dog.o ./friends.o   -lboost_system -lboost_thread
+Finished building target: DoSomethingII.exe
+ 
+11:03:08 **** Incremental Build of configuration Debug for project DoSomethingII ****
+make all 
+make: Nothing to be done for 'all'.
+11:04:20 **** Incremental Build of configuration Debug for project DoSomethingII ****
+make all 
+Building file: ../InheritII.cpp
+Invoking: Cygwin C++ Compiler
+g++ -I"D:\cygwin64\usr\include" -O0 -g3 -Wall -c -fmessage-length=0 -DWINDOWS -std=c++11 -Wl,--stack,8388608 -MMD -MP -MF"InheritII.d" -MT"InheritII.o" -o "InheritII.o" "../InheritII.cpp"
+../InheritII.cpp: In function 'std::string binaryAdd(const char*, int)':
+../InheritII.cpp:60:6: warning: unused variable 'carry' [-Wunused-variable]
+  int carry;
+      ^
+In file included from ../InheritII.h:10:0,
+                 from ../InheritII.cpp:8:
+../Incls.h: At global scope:
+../Incls.h:40:26: warning: 'const string currentDateTime()' defined but not used [-Wunused-function]
+ static const std::string currentDateTime() {
+                          ^
+../Incls.h:52:13: warning: 'void sleepcp(int)' defined but not used [-Wunused-function]
+ static void sleepcp(int milliseconds) // cross-platform sleep function
+             ^
+Finished building: ../InheritII.cpp
+ 
+Building target: DoSomethingII.exe
+Invoking: Cygwin C++ Linker
+g++ -L"D:\cygwin64\lib" -L"D:\cygwin64\usr\local\lib" -Wl,--stack,8388608 -o "DoSomethingII.exe"  ./Casting.o ./InheritII.o ./Inherited.o ./Maps.o ./Singleton.o ./Sorting.o ./VirtConst.o ./cat.o ./dog.o ./friends.o   -lboost_system -lboost_thread
+Finished building target: DoSomethingII.exe
+ 
+11:05:31 **** Incremental Build of configuration Debug for project DoSomethingII ****
+make all 
+Building file: ../InheritII.cpp
+Invoking: Cygwin C++ Compiler
+g++ -I"D:\cygwin64\usr\include" -O0 -g3 -Wall -c -fmessage-length=0 -DWINDOWS -std=c++11 -Wl,--stack,8388608 -MMD -MP -MF"InheritII.d" -MT"InheritII.o" -o "InheritII.o" "../InheritII.cpp"
+../InheritII.cpp: In function 'std::string binaryAdd(const char*, int)':
+../InheritII.cpp:60:6: warning: unused variable 'carry' [-Wunused-variable]
+  int carry;
+      ^
+In file included from ../InheritII.h:10:0,
+                 from ../InheritII.cpp:8:
+../Incls.h: At global scope:
+../Incls.h:40:26: warning: 'const string currentDateTime()' defined but not used [-Wunused-function]
+ static const std::string currentDateTime() {
+                          ^
+../Incls.h:52:13: warning: 'void sleepcp(int)' defined but not used [-Wunused-function]
+ static void sleepcp(int milliseconds) // cross-platform sleep function
+             ^
+Finished building: ../InheritII.cpp
+ 
+Building target: DoSomethingII.exe
+Invoking: Cygwin C++ Linker
+g++ -L"D:\cygwin64\lib" -L"D:\cygwin64\usr\local\lib" -Wl,--stack,8388608 -o "DoSomethingII.exe"  ./Casting.o ./InheritII.o ./Inherited.o ./Maps.o ./Singleton.o ./Sorting.o ./VirtConst.o ./cat.o ./dog.o ./friends.o   -lboost_system -lboost_thread
+Finished building target: DoSomethingII.exe
+ 
+11:06:00 **** Incremental Build of configuration Debug for project DoSomethingII ****
+make all 
+Building file: ../InheritII.cpp
+Invoking: Cygwin C++ Compiler
+g++ -I"D:\cygwin64\usr\include" -O0 -g3 -Wall -c -fmessage-length=0 -DWINDOWS -std=c++11 -Wl,--stack,8388608 -MMD -MP -MF"InheritII.d" -MT"InheritII.o" -o "InheritII.o" "../InheritII.cpp"
+../InheritII.cpp: In function 'std::string binaryAdd(const char*, int)':
+../InheritII.cpp:60:6: warning: unused variable 'carry' [-Wunused-variable]
+  int carry;
+      ^
+In file included from ../InheritII.h:10:0,
+                 from ../InheritII.cpp:8:
+../Incls.h: At global scope:
+../Incls.h:40:26: warning: 'const string currentDateTime()' defined but not used [-Wunused-function]
+ static const std::string currentDateTime() {
+                          ^
+../Incls.h:52:13: warning: 'void sleepcp(int)' defined but not used [-Wunused-function]
+ static void sleepcp(int milliseconds) // cross-platform sleep function
+             ^
+Finished building: ../InheritII.cpp
+ 
+Building target: DoSomethingII.exe
+Invoking: Cygwin C++ Linker
+g++ -L"D:\cygwin64\lib" -L"D:\cygwin64\usr\local\lib" -Wl,--stack,8388608 -o "DoSomethingII.exe"  ./Casting.o ./InheritII.o ./Inherited.o ./Maps.o ./Singleton.o ./Sorting.o ./VirtConst.o ./cat.o ./dog.o ./friends.o   -lboost_system -lboost_thread
+Finished building target: DoSomethingII.exe
+ 
+11:06:43 **** Incremental Build of configuration Debug for project DoSomethingII ****
+make all 
+Building file: ../InheritII.cpp
+Invoking: Cygwin C++ Compiler
+g++ -I"D:\cygwin64\usr\include" -O0 -g3 -Wall -c -fmessage-length=0 -DWINDOWS -std=c++11 -Wl,--stack,8388608 -MMD -MP -MF"InheritII.d" -MT"InheritII.o" -o "InheritII.o" "../InheritII.cpp"
+../InheritII.cpp: In function 'std::string binaryAdd(const char*, int)':
+../InheritII.cpp:60:6: warning: unused variable 'carry' [-Wunused-variable]
+  int carry;
+      ^
+In file included from ../InheritII.h:10:0,
+                 from ../InheritII.cpp:8:
+../Incls.h: At global scope:
+../Incls.h:40:26: warning: 'const string currentDateTime()' defined but not used [-Wunused-function]
+ static const std::string currentDateTime() {
+                          ^
+../Incls.h:52:13: warning: 'void sleepcp(int)' defined but not used [-Wunused-function]
+ static void sleepcp(int milliseconds) // cross-platform sleep function
+             ^
+Finished building: ../InheritII.cpp
+ 
+Building target: DoSomethingII.exe
+Invoking: Cygwin C++ Linker
+g++ -L"D:\cygwin64\lib" -L"D:\cygwin64\usr\local\lib" -Wl,--stack,8388608 -o "DoSomethingII.exe"  ./Casting.o ./InheritII.o ./Inherited.o ./Maps.o ./Singleton.o ./Sorting.o ./VirtConst.o ./cat.o ./dog.o ./friends.o   -lboost_system -lboost_thread
+Finished building target: DoSomethingII.exe
+ 
+11:07:09 **** Incremental Build of configuration Debug for project DoSomethingII ****
+make all 
+Building file: ../InheritII.cpp
+Invoking: Cygwin C++ Compiler
+g++ -I"D:\cygwin64\usr\include" -O0 -g3 -Wall -c -fmessage-length=0 -DWINDOWS -std=c++11 -Wl,--stack,8388608 -MMD -MP -MF"InheritII.d" -MT"InheritII.o" -o "InheritII.o" "../InheritII.cpp"
+../InheritII.cpp: In function 'std::string binaryAdd(const char*, int)':
+../InheritII.cpp:60:6: warning: unused variable 'carry' [-Wunused-variable]
+  int carry;
+      ^
+In file included from ../InheritII.h:10:0,
+                 from ../InheritII.cpp:8:
+../Incls.h: At global scope:
+../Incls.h:40:26: warning: 'const string currentDateTime()' defined but not used [-Wunused-function]
+ static const std::string currentDateTime() {
+                          ^
+../Incls.h:52:13: warning: 'void sleepcp(int)' defined but not used [-Wunused-function]
+ static void sleepcp(int milliseconds) // cross-platform sleep function
+             ^
+Finished building: ../InheritII.cpp
+ 
+Building target: DoSomethingII.exe
+Invoking: Cygwin C++ Linker
+g++ -L"D:\cygwin64\lib" -L"D:\cygwin64\usr\local\lib" -Wl,--stack,8388608 -o "DoSomethingII.exe"  ./Casting.o ./InheritII.o ./Inherited.o ./Maps.o ./Singleton.o ./Sorting.o ./VirtConst.o ./cat.o ./dog.o ./friends.o   -lboost_system -lboost_thread
+Finished building target: DoSomethingII.exe
+ 
+11:07:56 **** Incremental Build of configuration Debug for project DoSomethingII ****
+make all 
+Building file: ../InheritII.cpp
+Invoking: Cygwin C++ Compiler
+g++ -I"D:\cygwin64\usr\include" -O0 -g3 -Wall -c -fmessage-length=0 -DWINDOWS -std=c++11 -Wl,--stack,8388608 -MMD -MP -MF"InheritII.d" -MT"InheritII.o" -o "InheritII.o" "../InheritII.cpp"
+../InheritII.cpp: In function 'std::string binaryAdd(const char*, int)':
+../InheritII.cpp:60:6: warning: unused variable 'carry' [-Wunused-variable]
+  int carry;
+      ^
+In file included from ../InheritII.h:10:0,
+                 from ../InheritII.cpp:8:
+../Incls.h: At global scope:
+../Incls.h:40:26: warning: 'const string currentDateTime()' defined but not used [-Wunused-function]
+ static const std::string currentDateTime() {
+                          ^
+../Incls.h:52:13: warning: 'void sleepcp(int)' defined but not used [-Wunused-function]
+ static void sleepcp(int milliseconds) // cross-platform sleep function
+             ^
+Finished building: ../InheritII.cpp
+ 
+Building target: DoSomethingII.exe
+Invoking: Cygwin C++ Linker
+g++ -L"D:\cygwin64\lib" -L"D:\cygwin64\usr\local\lib" -Wl,--stack,8388608 -o "DoSomethingII.exe"  ./Casting.o ./InheritII.o ./Inherited.o ./Maps.o ./Singleton.o ./Sorting.o ./VirtConst.o ./cat.o ./dog.o ./friends.o   -lboost_system -lboost_thread
+Finished building target: DoSomethingII.exe
+ 
+11:09:31 **** Incremental Build of configuration Debug for project DoSomethingII ****
+make all 
+Building file: ../InheritII.cpp
+Invoking: Cygwin C++ Compiler
+g++ -I"D:\cygwin64\usr\include" -O0 -g3 -Wall -c -fmessage-length=0 -DWINDOWS -std=c++11 -Wl,--stack,8388608 -MMD -MP -MF"InheritII.d" -MT"InheritII.o" -o "InheritII.o" "../InheritII.cpp"
+../InheritII.cpp: In function 'std::string binaryAdd(const char*, int)':
+../InheritII.cpp:60:6: warning: unused variable 'carry' [-Wunused-variable]
+  int carry;
+      ^
+In file included from ../InheritII.h:10:0,
+                 from ../InheritII.cpp:8:
+../Incls.h: At global scope:
+../Incls.h:40:26: warning: 'const string currentDateTime()' defined but not used [-Wunused-function]
+ static const std::string currentDateTime() {
+                          ^
+../Incls.h:52:13: warning: 'void sleepcp(int)' defined but not used [-Wunused-function]
+ static void sleepcp(int milliseconds) // cross-platform sleep function
+             ^
+Finished building: ../InheritII.cpp
+ 
+Building target: DoSomethingII.exe
+Invoking: Cygwin C++ Linker
+g++ -L"D:\cygwin64\lib" -L"D:\cygwin64\usr\local\lib" -Wl,--stack,8388608 -o "DoSomethingII.exe"  ./Casting.o ./InheritII.o ./Inherited.o ./Maps.o ./Singleton.o ./Sorting.o ./VirtConst.o ./cat.o ./dog.o ./friends.o   -lboost_system -lboost_thread
+Finished building target: DoSomethingII.exe
+ 
+11:12:31 **** Incremental Build of configuration Debug for project DoSomethingII ****
+make all 
+Building file: ../InheritII.cpp
+Invoking: Cygwin C++ Compiler
+g++ -I"D:\cygwin64\usr\include" -O0 -g3 -Wall -c -fmessage-length=0 -DWINDOWS -std=c++11 -Wl,--stack,8388608 -MMD -MP -MF"InheritII.d" -MT"InheritII.o" -o "InheritII.o" "../InheritII.cpp"
+../InheritII.cpp: In function 'std::string binaryAdd(const char*, int)':
+../InheritII.cpp:60:6: warning: unused variable 'carry' [-Wunused-variable]
+  int carry;
+      ^
+In file included from ../InheritII.h:10:0,
+                 from ../InheritII.cpp:8:
+../Incls.h: At global scope:
+../Incls.h:40:26: warning: 'const string currentDateTime()' defined but not used [-Wunused-function]
+ static const std::string currentDateTime() {
+                          ^
+../Incls.h:52:13: warning: 'void sleepcp(int)' defined but not used [-Wunused-function]
+ static void sleepcp(int milliseconds) // cross-platform sleep function
+             ^
+Finished building: ../InheritII.cpp
+ 
+Building target: DoSomethingII.exe
+Invoking: Cygwin C++ Linker
+g++ -L"D:\cygwin64\lib" -L"D:\cygwin64\usr\local\lib" -Wl,--stack,8388608 -o "DoSomethingII.exe"  ./Casting.o ./InheritII.o ./Inherited.o ./Maps.o ./Singleton.o ./Sorting.o ./VirtConst.o ./cat.o ./dog.o ./friends.o   -lboost_system -lboost_thread
+Finished building target: DoSomethingII.exe
+ 
+11:13:11 **** Incremental Build of configuration Debug for project DoSomethingII ****
+make all 
+Building file: ../InheritII.cpp
+Invoking: Cygwin C++ Compiler
+g++ -I"D:\cygwin64\usr\include" -O0 -g3 -Wall -c -fmessage-length=0 -DWINDOWS -std=c++11 -Wl,--stack,8388608 -MMD -MP -MF"InheritII.d" -MT"InheritII.o" -o "InheritII.o" "../InheritII.cpp"
+../InheritII.cpp: In function 'std::string binaryAdd(const char*, int)':
+../InheritII.cpp:60:6: warning: unused variable 'carry' [-Wunused-variable]
+  int carry;
+      ^
+In file included from ../InheritII.h:10:0,
+                 from ../InheritII.cpp:8:
+../Incls.h: At global scope:
+../Incls.h:40:26: warning: 'const string currentDateTime()' defined but not used [-Wunused-function]
+ static const std::string currentDateTime() {
+                          ^
+../Incls.h:52:13: warning: 'void sleepcp(int)' defined but not used [-Wunused-function]
+ static void sleepcp(int milliseconds) // cross-platform sleep function
+             ^
+Finished building: ../InheritII.cpp
+ 
+Building target: DoSomethingII.exe
+Invoking: Cygwin C++ Linker
+g++ -L"D:\cygwin64\lib" -L"D:\cygwin64\usr\local\lib" -Wl,--stack,8388608 -o "DoSomethingII.exe"  ./Casting.o ./InheritII.o ./Inherited.o ./Maps.o ./Singleton.o ./Sorting.o ./VirtConst.o ./cat.o ./dog.o ./friends.o   -lboost_system -lboost_thread
+Finished building target: DoSomethingII.exe
+ 
+11:14:13 **** Incremental Build of configuration Debug for project DoSomethingII ****
+make all 
+Building file: ../InheritII.cpp
+Invoking: Cygwin C++ Compiler
+g++ -I"D:\cygwin64\usr\include" -O0 -g3 -Wall -c -fmessage-length=0 -DWINDOWS -std=c++11 -Wl,--stack,8388608 -MMD -MP -MF"InheritII.d" -MT"InheritII.o" -o "InheritII.o" "../InheritII.cpp"
+../InheritII.cpp: In function 'std::string binaryAdd(const char*, int)':
+../InheritII.cpp:60:6: warning: unused variable 'carry' [-Wunused-variable]
+  int carry;
+      ^
+In file included from ../InheritII.h:10:0,
+                 from ../InheritII.cpp:8:
+../Incls.h: At global scope:
+../Incls.h:40:26: warning: 'const string currentDateTime()' defined but not used [-Wunused-function]
+ static const std::string currentDateTime() {
+                          ^
+../Incls.h:52:13: warning: 'void sleepcp(int)' defined but not used [-Wunused-function]
+ static void sleepcp(int milliseconds) // cross-platform sleep function
+             ^
+Finished building: ../InheritII.cpp
+ 
+Building target: DoSomethingII.exe
+Invoking: Cygwin C++ Linker
+g++ -L"D:\cygwin64\lib" -L"D:\cygwin64\usr\local\lib" -Wl,--stack,8388608 -o "DoSomethingII.exe"  ./Casting.o ./InheritII.o ./Inherited.o ./Maps.o ./Singleton.o ./Sorting.o ./VirtConst.o ./cat.o ./dog.o ./friends.o   -lboost_system -lboost_thread
+Finished building target: DoSomethingII.exe
+ 
+11:14:46 **** Incremental Build of configuration Debug for project DoSomethingII ****
+make all 
+Building file: ../InheritII.cpp
+Invoking: Cygwin C++ Compiler
+g++ -I"D:\cygwin64\usr\include" -O0 -g3 -Wall -c -fmessage-length=0 -DWINDOWS -std=c++11 -Wl,--stack,8388608 -MMD -MP -MF"InheritII.d" -MT"InheritII.o" -o "InheritII.o" "../InheritII.cpp"
+../InheritII.cpp: In function 'std::string binaryAdd(const char*, int)':
+../InheritII.cpp:60:6: warning: unused variable 'carry' [-Wunused-variable]
+  int carry;
+      ^
+In file included from ../InheritII.h:10:0,
+                 from ../InheritII.cpp:8:
+../Incls.h: At global scope:
+../Incls.h:40:26: warning: 'const string currentDateTime()' defined but not used [-Wunused-function]
+ static const std::string currentDateTime() {
+                          ^
+../Incls.h:52:13: warning: 'void sleepcp(int)' defined but not used [-Wunused-function]
+ static void sleepcp(int milliseconds) // cross-platform sleep function
+             ^
+Finished building: ../InheritII.cpp
+ 
+Building target: DoSomethingII.exe
+Invoking: Cygwin C++ Linker
+g++ -L"D:\cygwin64\lib" -L"D:\cygwin64\usr\local\lib" -Wl,--stack,8388608 -o "DoSomethingII.exe"  ./Casting.o ./InheritII.o ./Inherited.o ./Maps.o ./Singleton.o ./Sorting.o ./VirtConst.o ./cat.o ./dog.o ./friends.o   -lboost_system -lboost_thread
+Finished building target: DoSomethingII.exe
+ 
+11:15:53 **** Incremental Build of configuration Debug for project DoSomethingII ****
+make all 
+Building file: ../InheritII.cpp
+Invoking: Cygwin C++ Compiler
+g++ -I"D:\cygwin64\usr\include" -O0 -g3 -Wall -c -fmessage-length=0 -DWINDOWS -std=c++11 -Wl,--stack,8388608 -MMD -MP -MF"InheritII.d" -MT"InheritII.o" -o "InheritII.o" "../InheritII.cpp"
+../InheritII.cpp: In function 'std::string binaryAdd(const char*, int)':
+../InheritII.cpp:60:6: warning: unused variable 'carry' [-Wunused-variable]
+  int carry;
+      ^
+In file included from ../InheritII.h:10:0,
+                 from ../InheritII.cpp:8:
+../Incls.h: At global scope:
+../Incls.h:40:26: warning: 'const string currentDateTime()' defined but not used [-Wunused-function]
+ static const std::string currentDateTime() {
+                          ^
+../Incls.h:52:13: warning: 'void sleepcp(int)' defined but not used [-Wunused-function]
+ static void sleepcp(int milliseconds) // cross-platform sleep function
+             ^
+Finished building: ../InheritII.cpp
+ 
+Building target: DoSomethingII.exe
+Invoking: Cygwin C++ Linker
+g++ -L"D:\cygwin64\lib" -L"D:\cygwin64\usr\local\lib" -Wl,--stack,8388608 -o "DoSomethingII.exe"  ./Casting.o ./InheritII.o ./Inherited.o ./Maps.o ./Singleton.o ./Sorting.o ./VirtConst.o ./cat.o ./dog.o ./friends.o   -lboost_system -lboost_thread
+Finished building target: DoSomethingII.exe
+ 
+11:17:47 **** Incremental Build of configuration Debug for project DoSomethingII ****
+make all 
+Building file: ../InheritII.cpp
+Invoking: Cygwin C++ Compiler
+g++ -I"D:\cygwin64\usr\include" -O0 -g3 -Wall -c -fmessage-length=0 -DWINDOWS -std=c++11 -Wl,--stack,8388608 -MMD -MP -MF"InheritII.d" -MT"InheritII.o" -o "InheritII.o" "../InheritII.cpp"
+../InheritII.cpp: In function 'std::string binaryAdd(const char*, int)':
+../InheritII.cpp:60:6: warning: unused variable 'carry' [-Wunused-variable]
+  int carry;
+      ^
+In file included from ../InheritII.h:10:0,
+                 from ../InheritII.cpp:8:
+../Incls.h: At global scope:
+../Incls.h:40:26: warning: 'const string currentDateTime()' defined but not used [-Wunused-function]
+ static const std::string currentDateTime() {
+                          ^
+../Incls.h:52:13: warning: 'void sleepcp(int)' defined but not used [-Wunused-function]
+ static void sleepcp(int milliseconds) // cross-platform sleep function
+             ^
+Finished building: ../InheritII.cpp
+ 
+Building target: DoSomethingII.exe
+Invoking: Cygwin C++ Linker
+g++ -L"D:\cygwin64\lib" -L"D:\cygwin64\usr\local\lib" -Wl,--stack,8388608 -o "DoSomethingII.exe"  ./Casting.o ./InheritII.o ./Inherited.o ./Maps.o ./Singleton.o ./Sorting.o ./VirtConst.o ./cat.o ./dog.o ./friends.o   -lboost_system -lboost_thread
+Finished building target: DoSomethingII.exe
+ 
+11:19:05 **** Incremental Build of configuration Debug for project DoSomethingII ****
+make all 
+Building file: ../InheritII.cpp
+Invoking: Cygwin C++ Compiler
+g++ -I"D:\cygwin64\usr\include" -O0 -g3 -Wall -c -fmessage-length=0 -DWINDOWS -std=c++11 -Wl,--stack,8388608 -MMD -MP -MF"InheritII.d" -MT"InheritII.o" -o "InheritII.o" "../InheritII.cpp"
+../InheritII.cpp: In function 'std::string binaryAdd(const char*, int)':
+../InheritII.cpp:60:6: warning: unused variable 'carry' [-Wunused-variable]
+  int carry;
+      ^
+In file included from ../InheritII.h:10:0,
+                 from ../InheritII.cpp:8:
+../Incls.h: At global scope:
+../Incls.h:40:26: warning: 'const string currentDateTime()' defined but not used [-Wunused-function]
+ static const std::string currentDateTime() {
+                          ^
+../Incls.h:52:13: warning: 'void sleepcp(int)' defined but not used [-Wunused-function]
+ static void sleepcp(int milliseconds) // cross-platform sleep function
+             ^
+Finished building: ../InheritII.cpp
+ 
+Building target: DoSomethingII.exe
+Invoking: Cygwin C++ Linker
+g++ -L"D:\cygwin64\lib" -L"D:\cygwin64\usr\local\lib" -Wl,--stack,8388608 -o "DoSomethingII.exe"  ./Casting.o ./InheritII.o ./Inherited.o ./Maps.o ./Singleton.o ./Sorting.o ./VirtConst.o ./cat.o ./dog.o ./friends.o   -lboost_system -lboost_thread
+Finished building target: DoSomethingII.exe
+ 
+11:20:46 **** Incremental Build of configuration Debug for project DoSomethingII ****
+make all 
+Building file: ../InheritII.cpp
+Invoking: Cygwin C++ Compiler
+g++ -I"D:\cygwin64\usr\include" -O0 -g3 -Wall -c -fmessage-length=0 -DWINDOWS -std=c++11 -Wl,--stack,8388608 -MMD -MP -MF"InheritII.d" -MT"InheritII.o" -o "InheritII.o" "../InheritII.cpp"
+../InheritII.cpp: In function 'std::string binaryAdd(const char*, int)':
+../InheritII.cpp:60:6: warning: unused variable 'carry' [-Wunused-variable]
+  int carry;
+      ^
+In file included from ../InheritII.h:10:0,
+                 from ../InheritII.cpp:8:
+../Incls.h: At global scope:
+../Incls.h:40:26: warning: 'const string currentDateTime()' defined but not used [-Wunused-function]
+ static const std::string currentDateTime() {
+                          ^
+../Incls.h:52:13: warning: 'void sleepcp(int)' defined but not used [-Wunused-function]
+ static void sleepcp(int milliseconds) // cross-platform sleep function
+             ^
+Finished building: ../InheritII.cpp
+ 
+Building target: DoSomethingII.exe
+Invoking: Cygwin C++ Linker
+g++ -L"D:\cygwin64\lib" -L"D:\cygwin64\usr\local\lib" -Wl,--stack,8388608 -o "DoSomethingII.exe"  ./Casting.o ./InheritII.o ./Inherited.o ./Maps.o ./Singleton.o ./Sorting.o ./VirtConst.o ./cat.o ./dog.o ./friends.o   -lboost_system -lboost_thread
+Finished building target: DoSomethingII.exe
+ 
+11:23:23 **** Incremental Build of configuration Debug for project DoSomethingII ****
+make all 
+Building file: ../InheritII.cpp
+Invoking: Cygwin C++ Compiler
+g++ -I"D:\cygwin64\usr\include" -O0 -g3 -Wall -c -fmessage-length=0 -DWINDOWS -std=c++11 -Wl,--stack,8388608 -MMD -MP -MF"InheritII.d" -MT"InheritII.o" -o "InheritII.o" "../InheritII.cpp"
+In file included from ../InheritII.h:10:0,
+                 from ../InheritII.cpp:8:
+../Incls.h:40:26: warning: 'const string currentDateTime()' defined but not used [-Wunused-function]
+ static const std::string currentDateTime() {
+                          ^
+../Incls.h:52:13: warning: 'void sleepcp(int)' defined but not used [-Wunused-function]
+ static void sleepcp(int milliseconds) // cross-platform sleep function
+             ^
+Finished building: ../InheritII.cpp
+ 
+Building target: DoSomethingII.exe
+Invoking: Cygwin C++ Linker
+g++ -L"D:\cygwin64\lib" -L"D:\cygwin64\usr\local\lib" -Wl,--stack,8388608 -o "DoSomethingII.exe"  ./Casting.o ./InheritII.o ./Inherited.o ./Maps.o ./Singleton.o ./Sorting.o ./VirtConst.o ./cat.o ./dog.o ./friends.o   -lboost_system -lboost_thread
+Finished building target: DoSomethingII.exe
+ 
+11:31:04 **** Incremental Build of configuration Debug for project DoSomethingII ****
+make all 
+Building file: ../InheritII.cpp
+Invoking: Cygwin C++ Compiler
+g++ -I"D:\cygwin64\usr\include" -O0 -g3 -Wall -c -fmessage-length=0 -DWINDOWS -std=c++11 -Wl,--stack,8388608 -MMD -MP -MF"InheritII.d" -MT"InheritII.o" -o "InheritII.o" "../InheritII.cpp"
+In file included from ../InheritII.h:10:0,
+                 from ../InheritII.cpp:8:
+../Incls.h:40:26: warning: 'const string currentDateTime()' defined but not used [-Wunused-function]
+ static const std::string currentDateTime() {
+                          ^
+../Incls.h:52:13: warning: 'void sleepcp(int)' defined but not used [-Wunused-function]
+ static void sleepcp(int milliseconds) // cross-platform sleep function
+             ^
+Finished building: ../InheritII.cpp
+ 
+Building target: DoSomethingII.exe
+Invoking: Cygwin C++ Linker
+g++ -L"D:\cygwin64\lib" -L"D:\cygwin64\usr\local\lib" -Wl,--stack,8388608 -o "DoSomethingII.exe"  ./Casting.o ./InheritII.o ./Inherited.o ./Maps.o ./Singleton.o ./Sorting.o ./VirtConst.o ./cat.o ./dog.o ./friends.o   -lboost_system -lboost_thread
+Finished building target: DoSomethingII.exe
+ 
+11:32:23 **** Incremental Build of configuration Debug for project DoSomethingII ****
+make all 
+Building file: ../InheritII.cpp
+Invoking: Cygwin C++ Compiler
+g++ -I"D:\cygwin64\usr\include" -O0 -g3 -Wall -c -fmessage-length=0 -DWINDOWS -std=c++11 -Wl,--stack,8388608 -MMD -MP -MF"InheritII.d" -MT"InheritII.o" -o "InheritII.o" "../InheritII.cpp"
+In file included from ../InheritII.h:10:0,
+                 from ../InheritII.cpp:8:
+../Incls.h:40:26: warning: 'const string currentDateTime()' defined but not used [-Wunused-function]
+ static const std::string currentDateTime() {
+                          ^
+../Incls.h:52:13: warning: 'void sleepcp(int)' defined but not used [-Wunused-function]
+ static void sleepcp(int milliseconds) // cross-platform sleep function
+             ^
+Finished building: ../InheritII.cpp
+ 
+Building target: DoSomethingII.exe
+Invoking: Cygwin C++ Linker
+g++ -L"D:\cygwin64\lib" -L"D:\cygwin64\usr\local\lib" -Wl,--stack,8388608 -o "DoSomethingII.exe"  ./Casting.o ./InheritII.o ./Inherited.o ./Maps.o ./Singleton.o ./Sorting.o ./VirtConst.o ./cat.o ./dog.o ./friends.o   -lboost_system -lboost_thread
+Finished building target: DoSomethingII.exe
+ 
+11:33:06 **** Incremental Build of configuration Debug for project DoSomethingII ****
+make all 
+Building file: ../InheritII.cpp
+Invoking: Cygwin C++ Compiler
+g++ -I"D:\cygwin64\usr\include" -O0 -g3 -Wall -c -fmessage-length=0 -DWINDOWS -std=c++11 -Wl,--stack,8388608 -MMD -MP -MF"InheritII.d" -MT"InheritII.o" -o "InheritII.o" "../InheritII.cpp"
+In file included from ../InheritII.h:10:0,
+                 from ../InheritII.cpp:8:
+../Incls.h:40:26: warning: 'const string currentDateTime()' defined but not used [-Wunused-function]
+ static const std::string currentDateTime() {
+                          ^
+../Incls.h:52:13: warning: 'void sleepcp(int)' defined but not used [-Wunused-function]
+ static void sleepcp(int milliseconds) // cross-platform sleep function
+             ^
+Finished building: ../InheritII.cpp
+ 
+Building target: DoSomethingII.exe
+Invoking: Cygwin C++ Linker
+g++ -L"D:\cygwin64\lib" -L"D:\cygwin64\usr\local\lib" -Wl,--stack,8388608 -o "DoSomethingII.exe"  ./Casting.o ./InheritII.o ./Inherited.o ./Maps.o ./Singleton.o ./Sorting.o ./VirtConst.o ./cat.o ./dog.o ./friends.o   -lboost_system -lboost_thread
+Finished building target: DoSomethingII.exe
+ 
+11:35:34 **** Incremental Build of configuration Debug for project DoSomethingII ****
+make all 
+Building file: ../InheritII.cpp
+Invoking: Cygwin C++ Compiler
+g++ -I"D:\cygwin64\usr\include" -O0 -g3 -Wall -c -fmessage-length=0 -DWINDOWS -std=c++11 -Wl,--stack,8388608 -MMD -MP -MF"InheritII.d" -MT"InheritII.o" -o "InheritII.o" "../InheritII.cpp"
+In file included from ../InheritII.h:10:0,
+                 from ../InheritII.cpp:8:
+../Incls.h:40:26: warning: 'const string currentDateTime()' defined but not used [-Wunused-function]
+ static const std::string currentDateTime() {
+                          ^
+../Incls.h:52:13: warning: 'void sleepcp(int)' defined but not used [-Wunused-function]
+ static void sleepcp(int milliseconds) // cross-platform sleep function
+             ^
+Finished building: ../InheritII.cpp
+ 
+Building target: DoSomethingII.exe
+Invoking: Cygwin C++ Linker
+g++ -L"D:\cygwin64\lib" -L"D:\cygwin64\usr\local\lib" -Wl,--stack,8388608 -o "DoSomethingII.exe"  ./Casting.o ./InheritII.o ./Inherited.o ./Maps.o ./Singleton.o ./Sorting.o ./VirtConst.o ./cat.o ./dog.o ./friends.o   -lboost_system -lboost_thread
+Finished building target: DoSomethingII.exe
+ 
+11:36:23 **** Incremental Build of configuration Debug for project DoSomethingII ****
+make all 
+Building file: ../InheritII.cpp
+Invoking: Cygwin C++ Compiler
+g++ -I"D:\cygwin64\usr\include" -O0 -g3 -Wall -c -fmessage-length=0 -DWINDOWS -std=c++11 -Wl,--stack,8388608 -MMD -MP -MF"InheritII.d" -MT"InheritII.o" -o "InheritII.o" "../InheritII.cpp"
+In file included from ../InheritII.h:10:0,
+                 from ../InheritII.cpp:8:
+../Incls.h:40:26: warning: 'const string currentDateTime()' defined but not used [-Wunused-function]
+ static const std::string currentDateTime() {
+                          ^
+../Incls.h:52:13: warning: 'void sleepcp(int)' defined but not used [-Wunused-function]
+ static void sleepcp(int milliseconds) // cross-platform sleep function
+             ^
+Finished building: ../InheritII.cpp
+ 
+Building target: DoSomethingII.exe
+Invoking: Cygwin C++ Linker
+g++ -L"D:\cygwin64\lib" -L"D:\cygwin64\usr\local\lib" -Wl,--stack,8388608 -o "DoSomethingII.exe"  ./Casting.o ./InheritII.o ./Inherited.o ./Maps.o ./Singleton.o ./Sorting.o ./VirtConst.o ./cat.o ./dog.o ./friends.o   -lboost_system -lboost_thread
+Finished building target: DoSomethingII.exe
+ 
+11:37:33 **** Incremental Build of configuration Debug for project DoSomethingII ****
+make all 
+Building file: ../InheritII.cpp
+Invoking: Cygwin C++ Compiler
+g++ -I"D:\cygwin64\usr\include" -O0 -g3 -Wall -c -fmessage-length=0 -DWINDOWS -std=c++11 -Wl,--stack,8388608 -MMD -MP -MF"InheritII.d" -MT"InheritII.o" -o "InheritII.o" "../InheritII.cpp"
+../InheritII.cpp: In function 'std::string binaryAdd(const char*, int)':
+../InheritII.cpp:129:22: error: redeclaration of 'std::stringstream ss'
+  std::stringstream ss("");
+                      ^
+../InheritII.cpp:42:20: note: 'std::stringstream ss' previously declared here
+  std::stringstream ss("");
+                    ^
+In file included from ../InheritII.h:10:0,
+                 from ../InheritII.cpp:8:
+../Incls.h: At global scope:
+../Incls.h:40:26: warning: 'const string currentDateTime()' defined but not used [-Wunused-function]
+ static const std::string currentDateTime() {
+                          ^
+../Incls.h:52:13: warning: 'void sleepcp(int)' defined but not used [-Wunused-function]
+ static void sleepcp(int milliseconds) // cross-platform sleep function
+             ^
+subdir.mk:45: recipe for target 'InheritII.o' failed
+make: *** [InheritII.o] Error 1
+11:37:53 **** Incremental Build of configuration Debug for project DoSomethingII ****
+make all 
+Building file: ../InheritII.cpp
+Invoking: Cygwin C++ Compiler
+g++ -I"D:\cygwin64\usr\include" -O0 -g3 -Wall -c -fmessage-length=0 -DWINDOWS -std=c++11 -Wl,--stack,8388608 -MMD -MP -MF"InheritII.d" -MT"InheritII.o" -o "InheritII.o" "../InheritII.cpp"
+In file included from ../InheritII.h:10:0,
+                 from ../InheritII.cpp:8:
+../Incls.h:40:26: warning: 'const string currentDateTime()' defined but not used [-Wunused-function]
+ static const std::string currentDateTime() {
+                          ^
+../Incls.h:52:13: warning: 'void sleepcp(int)' defined but not used [-Wunused-function]
+ static void sleepcp(int milliseconds) // cross-platform sleep function
+             ^
+Finished building: ../InheritII.cpp
+ 
+Building target: DoSomethingII.exe
+Invoking: Cygwin C++ Linker
+g++ -L"D:\cygwin64\lib" -L"D:\cygwin64\usr\local\lib" -Wl,--stack,8388608 -o "DoSomethingII.exe"  ./Casting.o ./InheritII.o ./Inherited.o ./Maps.o ./Singleton.o ./Sorting.o ./VirtConst.o ./cat.o ./dog.o ./friends.o   -lboost_system -lboost_thread
+Finished building target: DoSomethingII.exe
+ 
+11:38:44 **** Incremental Build of configuration Debug for project DoSomethingII ****
+make all 
+Building file: ../InheritII.cpp
+Invoking: Cygwin C++ Compiler
+g++ -I"D:\cygwin64\usr\include" -O0 -g3 -Wall -c -fmessage-length=0 -DWINDOWS -std=c++11 -Wl,--stack,8388608 -MMD -MP -MF"InheritII.d" -MT"InheritII.o" -o "InheritII.o" "../InheritII.cpp"
+In file included from ../InheritII.h:10:0,
+                 from ../InheritII.cpp:8:
+../Incls.h:40:26: warning: 'const string currentDateTime()' defined but not used [-Wunused-function]
+ static const std::string currentDateTime() {
+                          ^
+../Incls.h:52:13: warning: 'void sleepcp(int)' defined but not used [-Wunused-function]
+ static void sleepcp(int milliseconds) // cross-platform sleep function
+             ^
+Finished building: ../InheritII.cpp
+ 
+Building target: DoSomethingII.exe
+Invoking: Cygwin C++ Linker
+g++ -L"D:\cygwin64\lib" -L"D:\cygwin64\usr\local\lib" -Wl,--stack,8388608 -o "DoSomethingII.exe"  ./Casting.o ./InheritII.o ./Inherited.o ./Maps.o ./Singleton.o ./Sorting.o ./VirtConst.o ./cat.o ./dog.o ./friends.o   -lboost_system -lboost_thread
+Finished building target: DoSomethingII.exe
+ 
+11:39:19 **** Incremental Build of configuration Debug for project DoSomethingII ****
+make all 
+Building file: ../InheritII.cpp
+Invoking: Cygwin C++ Compiler
+g++ -I"D:\cygwin64\usr\include" -O0 -g3 -Wall -c -fmessage-length=0 -DWINDOWS -std=c++11 -Wl,--stack,8388608 -MMD -MP -MF"InheritII.d" -MT"InheritII.o" -o "InheritII.o" "../InheritII.cpp"
+In file included from ../InheritII.h:10:0,
+                 from ../InheritII.cpp:8:
+../Incls.h:40:26: warning: 'const string currentDateTime()' defined but not used [-Wunused-function]
+ static const std::string currentDateTime() {
+                          ^
+../Incls.h:52:13: warning: 'void sleepcp(int)' defined but not used [-Wunused-function]
+ static void sleepcp(int milliseconds) // cross-platform sleep function
+             ^
+Finished building: ../InheritII.cpp
+ 
+Building target: DoSomethingII.exe
+Invoking: Cygwin C++ Linker
+g++ -L"D:\cygwin64\lib" -L"D:\cygwin64\usr\local\lib" -Wl,--stack,8388608 -o "DoSomethingII.exe"  ./Casting.o ./InheritII.o ./Inherited.o ./Maps.o ./Singleton.o ./Sorting.o ./VirtConst.o ./cat.o ./dog.o ./friends.o   -lboost_system -lboost_thread
+Finished building target: DoSomethingII.exe
+ 
+11:40:57 **** Incremental Build of configuration Debug for project DoSomethingII ****
+make all 
+Building file: ../InheritII.cpp
+Invoking: Cygwin C++ Compiler
+g++ -I"D:\cygwin64\usr\include" -O0 -g3 -Wall -c -fmessage-length=0 -DWINDOWS -std=c++11 -Wl,--stack,8388608 -MMD -MP -MF"InheritII.d" -MT"InheritII.o" -o "InheritII.o" "../InheritII.cpp"
+In file included from ../InheritII.h:10:0,
+                 from ../InheritII.cpp:8:
+../Incls.h:40:26: warning: 'const string currentDateTime()' defined but not used [-Wunused-function]
+ static const std::string currentDateTime() {
+                          ^
+../Incls.h:52:13: warning: 'void sleepcp(int)' defined but not used [-Wunused-function]
+ static void sleepcp(int milliseconds) // cross-platform sleep function
+             ^
+Finished building: ../InheritII.cpp
+ 
+Building target: DoSomethingII.exe
+Invoking: Cygwin C++ Linker
+g++ -L"D:\cygwin64\lib" -L"D:\cygwin64\usr\local\lib" -Wl,--stack,8388608 -o "DoSomethingII.exe"  ./Casting.o ./InheritII.o ./Inherited.o ./Maps.o ./Singleton.o ./Sorting.o ./VirtConst.o ./cat.o ./dog.o ./friends.o   -lboost_system -lboost_thread
+Finished building target: DoSomethingII.exe
+ 
+11:42:25 **** Incremental Build of configuration Debug for project DoSomethingII ****
+make all 
+Building file: ../InheritII.cpp
+Invoking: Cygwin C++ Compiler
+g++ -I"D:\cygwin64\usr\include" -O0 -g3 -Wall -c -fmessage-length=0 -DWINDOWS -std=c++11 -Wl,--stack,8388608 -MMD -MP -MF"InheritII.d" -MT"InheritII.o" -o "InheritII.o" "../InheritII.cpp"
+In file included from ../InheritII.h:10:0,
+                 from ../InheritII.cpp:8:
+../Incls.h:40:26: warning: 'const string currentDateTime()' defined but not used [-Wunused-function]
+ static const std::string currentDateTime() {
+                          ^
+../Incls.h:52:13: warning: 'void sleepcp(int)' defined but not used [-Wunused-function]
+ static void sleepcp(int milliseconds) // cross-platform sleep function
+             ^
+Finished building: ../InheritII.cpp
+ 
+Building target: DoSomethingII.exe
+Invoking: Cygwin C++ Linker
+g++ -L"D:\cygwin64\lib" -L"D:\cygwin64\usr\local\lib" -Wl,--stack,8388608 -o "DoSomethingII.exe"  ./Casting.o ./InheritII.o ./Inherited.o ./Maps.o ./Singleton.o ./Sorting.o ./VirtConst.o ./cat.o ./dog.o ./friends.o   -lboost_system -lboost_thread
+Finished building target: DoSomethingII.exe
+ 
+11:42:53 **** Incremental Build of configuration Debug for project DoSomethingII ****
+make all 
+Building file: ../InheritII.cpp
+Invoking: Cygwin C++ Compiler
+g++ -I"D:\cygwin64\usr\include" -O0 -g3 -Wall -c -fmessage-length=0 -DWINDOWS -std=c++11 -Wl,--stack,8388608 -MMD -MP -MF"InheritII.d" -MT"InheritII.o" -o "InheritII.o" "../InheritII.cpp"
+In file included from ../InheritII.h:10:0,
+                 from ../InheritII.cpp:8:
+../Incls.h:40:26: warning: 'const string currentDateTime()' defined but not used [-Wunused-function]
+ static const std::string currentDateTime() {
+                          ^
+../Incls.h:52:13: warning: 'void sleepcp(int)' defined but not used [-Wunused-function]
+ static void sleepcp(int milliseconds) // cross-platform sleep function
+             ^
+Finished building: ../InheritII.cpp
+ 
+Building target: DoSomethingII.exe
+Invoking: Cygwin C++ Linker
+g++ -L"D:\cygwin64\lib" -L"D:\cygwin64\usr\local\lib" -Wl,--stack,8388608 -o "DoSomethingII.exe"  ./Casting.o ./InheritII.o ./Inherited.o ./Maps.o ./Singleton.o ./Sorting.o ./VirtConst.o ./cat.o ./dog.o ./friends.o   -lboost_system -lboost_thread
+Finished building target: DoSomethingII.exe
+ 
+11:43:21 **** Incremental Build of configuration Debug for project DoSomethingII ****
+make all 
+Building file: ../InheritII.cpp
+Invoking: Cygwin C++ Compiler
+g++ -I"D:\cygwin64\usr\include" -O0 -g3 -Wall -c -fmessage-length=0 -DWINDOWS -std=c++11 -Wl,--stack,8388608 -MMD -MP -MF"InheritII.d" -MT"InheritII.o" -o "InheritII.o" "../InheritII.cpp"
+In file included from ../InheritII.h:10:0,
+                 from ../InheritII.cpp:8:
+../Incls.h:40:26: warning: 'const string currentDateTime()' defined but not used [-Wunused-function]
+ static const std::string currentDateTime() {
+                          ^
+../Incls.h:52:13: warning: 'void sleepcp(int)' defined but not used [-Wunused-function]
+ static void sleepcp(int milliseconds) // cross-platform sleep function
+             ^
+Finished building: ../InheritII.cpp
+ 
+Building target: DoSomethingII.exe
+Invoking: Cygwin C++ Linker
+g++ -L"D:\cygwin64\lib" -L"D:\cygwin64\usr\local\lib" -Wl,--stack,8388608 -o "DoSomethingII.exe"  ./Casting.o ./InheritII.o ./Inherited.o ./Maps.o ./Singleton.o ./Sorting.o ./VirtConst.o ./cat.o ./dog.o ./friends.o   -lboost_system -lboost_thread
+Finished building target: DoSomethingII.exe
+ 
+11:45:12 **** Incremental Build of configuration Debug for project DoSomethingII ****
+make all 
+Building file: ../InheritII.cpp
+Invoking: Cygwin C++ Compiler
+g++ -I"D:\cygwin64\usr\include" -O0 -g3 -Wall -c -fmessage-length=0 -DWINDOWS -std=c++11 -Wl,--stack,8388608 -MMD -MP -MF"InheritII.d" -MT"InheritII.o" -o "InheritII.o" "../InheritII.cpp"
+In file included from ../InheritII.h:10:0,
+                 from ../InheritII.cpp:8:
+../Incls.h:40:26: warning: 'const string currentDateTime()' defined but not used [-Wunused-function]
+ static const std::string currentDateTime() {
+                          ^
+../Incls.h:52:13: warning: 'void sleepcp(int)' defined but not used [-Wunused-function]
+ static void sleepcp(int milliseconds) // cross-platform sleep function
+             ^
+Finished building: ../InheritII.cpp
+ 
+Building target: DoSomethingII.exe
+Invoking: Cygwin C++ Linker
+g++ -L"D:\cygwin64\lib" -L"D:\cygwin64\usr\local\lib" -Wl,--stack,8388608 -o "DoSomethingII.exe"  ./Casting.o ./InheritII.o ./Inherited.o ./Maps.o ./Singleton.o ./Sorting.o ./VirtConst.o ./cat.o ./dog.o ./friends.o   -lboost_system -lboost_thread
+Finished building target: DoSomethingII.exe
+ 
+11:47:01 **** Incremental Build of configuration Debug for project DoSomethingII ****
+make all 
+Building file: ../InheritII.cpp
+Invoking: Cygwin C++ Compiler
+g++ -I"D:\cygwin64\usr\include" -O0 -g3 -Wall -c -fmessage-length=0 -DWINDOWS -std=c++11 -Wl,--stack,8388608 -MMD -MP -MF"InheritII.d" -MT"InheritII.o" -o "InheritII.o" "../InheritII.cpp"
+In file included from ../InheritII.h:10:0,
+                 from ../InheritII.cpp:8:
+../Incls.h:40:26: warning: 'const string currentDateTime()' defined but not used [-Wunused-function]
+ static const std::string currentDateTime() {
+                          ^
+../Incls.h:52:13: warning: 'void sleepcp(int)' defined but not used [-Wunused-function]
+ static void sleepcp(int milliseconds) // cross-platform sleep function
+             ^
+Finished building: ../InheritII.cpp
+ 
+Building target: DoSomethingII.exe
+Invoking: Cygwin C++ Linker
+g++ -L"D:\cygwin64\lib" -L"D:\cygwin64\usr\local\lib" -Wl,--stack,8388608 -o "DoSomethingII.exe"  ./Casting.o ./InheritII.o ./Inherited.o ./Maps.o ./Singleton.o ./Sorting.o ./VirtConst.o ./cat.o ./dog.o ./friends.o   -lboost_system -lboost_thread
+Finished building target: DoSomethingII.exe
+ 
+12:00:15 **** Incremental Build of configuration Debug for project DoSomethingII ****
+make all 
+Building file: ../InheritII.cpp
+Invoking: Cygwin C++ Compiler
+g++ -I"D:\cygwin64\usr\include" -O0 -g3 -Wall -c -fmessage-length=0 -DWINDOWS -std=c++11 -Wl,--stack,8388608 -MMD -MP -MF"InheritII.d" -MT"InheritII.o" -o "InheritII.o" "../InheritII.cpp"
+In file included from ../InheritII.h:10:0,
+                 from ../InheritII.cpp:8:
+../Incls.h:40:26: warning: 'const string currentDateTime()' defined but not used [-Wunused-function]
+ static const std::string currentDateTime() {
+                          ^
+../Incls.h:52:13: warning: 'void sleepcp(int)' defined but not used [-Wunused-function]
+ static void sleepcp(int milliseconds) // cross-platform sleep function
+             ^
+Finished building: ../InheritII.cpp
+ 
+Building target: DoSomethingII.exe
+Invoking: Cygwin C++ Linker
+g++ -L"D:\cygwin64\lib" -L"D:\cygwin64\usr\local\lib" -Wl,--stack,8388608 -o "DoSomethingII.exe"  ./Casting.o ./InheritII.o ./Inherited.o ./Maps.o ./Singleton.o ./Sorting.o ./VirtConst.o ./cat.o ./dog.o ./friends.o   -lboost_system -lboost_thread
+Finished building target: DoSomethingII.exe
+ 
+12:01:49 **** Incremental Build of configuration Debug for project DoSomethingII ****
+make all 
+Building file: ../InheritII.cpp
+Invoking: Cygwin C++ Compiler
+g++ -I"D:\cygwin64\usr\include" -O0 -g3 -Wall -c -fmessage-length=0 -DWINDOWS -std=c++11 -Wl,--stack,8388608 -MMD -MP -MF"InheritII.d" -MT"InheritII.o" -o "InheritII.o" "../InheritII.cpp"
+In file included from ../InheritII.h:10:0,
+                 from ../InheritII.cpp:8:
+../Incls.h:40:26: warning: 'const string currentDateTime()' defined but not used [-Wunused-function]
+ static const std::string currentDateTime() {
+                          ^
+../Incls.h:52:13: warning: 'void sleepcp(int)' defined but not used [-Wunused-function]
+ static void sleepcp(int milliseconds) // cross-platform sleep function
+             ^
+Finished building: ../InheritII.cpp
+ 
+Building target: DoSomethingII.exe
+Invoking: Cygwin C++ Linker
+g++ -L"D:\cygwin64\lib" -L"D:\cygwin64\usr\local\lib" -Wl,--stack,8388608 -o "DoSomethingII.exe"  ./Casting.o ./InheritII.o ./Inherited.o ./Maps.o ./Singleton.o ./Sorting.o ./VirtConst.o ./cat.o ./dog.o ./friends.o   -lboost_system -lboost_thread
+Finished building target: DoSomethingII.exe
+ 
+12:03:00 **** Incremental Build of configuration Debug for project DoSomethingII ****
+make all 
+Building file: ../InheritII.cpp
+Invoking: Cygwin C++ Compiler
+g++ -I"D:\cygwin64\usr\include" -O0 -g3 -Wall -c -fmessage-length=0 -DWINDOWS -std=c++11 -Wl,--stack,8388608 -MMD -MP -MF"InheritII.d" -MT"InheritII.o" -o "InheritII.o" "../InheritII.cpp"
+In file included from ../InheritII.h:10:0,
+                 from ../InheritII.cpp:8:
+../Incls.h:40:26: warning: 'const string currentDateTime()' defined but not used [-Wunused-function]
+ static const std::string currentDateTime() {
+                          ^
+../Incls.h:52:13: warning: 'void sleepcp(int)' defined but not used [-Wunused-function]
+ static void sleepcp(int milliseconds) // cross-platform sleep function
+             ^
+Finished building: ../InheritII.cpp
+ 
+Building target: DoSomethingII.exe
+Invoking: Cygwin C++ Linker
+g++ -L"D:\cygwin64\lib" -L"D:\cygwin64\usr\local\lib" -Wl,--stack,8388608 -o "DoSomethingII.exe"  ./Casting.o ./InheritII.o ./Inherited.o ./Maps.o ./Singleton.o ./Sorting.o ./VirtConst.o ./cat.o ./dog.o ./friends.o   -lboost_system -lboost_thread
+Finished building target: DoSomethingII.exe
+ 
+12:04:03 **** Incremental Build of configuration Debug for project DoSomethingII ****
+make all 
+Building file: ../InheritII.cpp
+Invoking: Cygwin C++ Compiler
+g++ -I"D:\cygwin64\usr\include" -O0 -g3 -Wall -c -fmessage-length=0 -DWINDOWS -std=c++11 -Wl,--stack,8388608 -MMD -MP -MF"InheritII.d" -MT"InheritII.o" -o "InheritII.o" "../InheritII.cpp"
+In file included from ../InheritII.h:10:0,
+                 from ../InheritII.cpp:8:
+../Incls.h:40:26: warning: 'const string currentDateTime()' defined but not used [-Wunused-function]
+ static const std::string currentDateTime() {
+                          ^
+../Incls.h:52:13: warning: 'void sleepcp(int)' defined but not used [-Wunused-function]
+ static void sleepcp(int milliseconds) // cross-platform sleep function
+             ^
+Finished building: ../InheritII.cpp
+ 
+Building target: DoSomethingII.exe
+Invoking: Cygwin C++ Linker
+g++ -L"D:\cygwin64\lib" -L"D:\cygwin64\usr\local\lib" -Wl,--stack,8388608 -o "DoSomethingII.exe"  ./Casting.o ./InheritII.o ./Inherited.o ./Maps.o ./Singleton.o ./Sorting.o ./VirtConst.o ./cat.o ./dog.o ./friends.o   -lboost_system -lboost_thread
+Finished building target: DoSomethingII.exe
+ 
+12:07:48 **** Incremental Build of configuration Debug for project DoSomethingII ****
+make all 
+Building file: ../InheritII.cpp
+Invoking: Cygwin C++ Compiler
+g++ -I"D:\cygwin64\usr\include" -O0 -g3 -Wall -c -fmessage-length=0 -DWINDOWS -std=c++11 -Wl,--stack,8388608 -MMD -MP -MF"InheritII.d" -MT"InheritII.o" -o "InheritII.o" "../InheritII.cpp"
+../InheritII.cpp: In function 'int main_func7()':
+../InheritII.cpp:146:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+In file included from ../InheritII.h:10:0,
+                 from ../InheritII.cpp:8:
+../Incls.h: At global scope:
+../Incls.h:40:26: warning: 'const string currentDateTime()' defined but not used [-Wunused-function]
+ static const std::string currentDateTime() {
+                          ^
+../Incls.h:52:13: warning: 'void sleepcp(int)' defined but not used [-Wunused-function]
+ static void sleepcp(int milliseconds) // cross-platform sleep function
+             ^
+Finished building: ../InheritII.cpp
+ 
+Building file: ../QuestionTwo.cpp
+Invoking: Cygwin C++ Compiler
+g++ -I"D:\cygwin64\usr\include" -O0 -g3 -Wall -c -fmessage-length=0 -DWINDOWS -std=c++11 -Wl,--stack,8388608 -MMD -MP -MF"QuestionTwo.d" -MT"QuestionTwo.o" -o "QuestionTwo.o" "../QuestionTwo.cpp"
+../QuestionTwo.cpp: In function 'int main()':
+../QuestionTwo.cpp:14:22: error: variable 'std::stringstream ss' has initializer but incomplete type
+  std::stringstream ss("");
+                      ^
+subdir.mk:48: recipe for target 'QuestionTwo.o' failed
+make: *** [QuestionTwo.o] Error 1
+12:08:29 **** Incremental Build of configuration Debug for project DoSomethingII ****
+make all 
+Building file: ../QuestionTwo.cpp
+Invoking: Cygwin C++ Compiler
+g++ -I"D:\cygwin64\usr\include" -O0 -g3 -Wall -c -fmessage-length=0 -DWINDOWS -std=c++11 -Wl,--stack,8388608 -MMD -MP -MF"QuestionTwo.d" -MT"QuestionTwo.o" -o "QuestionTwo.o" "../QuestionTwo.cpp"
+../QuestionTwo.cpp: In function 'int main()':
+../QuestionTwo.cpp:15:22: error: variable 'std::stringstream ss' has initializer but incomplete type
+  std::stringstream ss("");
+                      ^
+subdir.mk:48: recipe for target 'QuestionTwo.o' failed
+make: *** [QuestionTwo.o] Error 1
+12:08:45 **** Incremental Build of configuration Debug for project DoSomethingII ****
+make all 
+Building file: ../QuestionTwo.cpp
+Invoking: Cygwin C++ Compiler
+g++ -I"D:\cygwin64\usr\include" -O0 -g3 -Wall -c -fmessage-length=0 -DWINDOWS -std=c++11 -Wl,--stack,8388608 -MMD -MP -MF"QuestionTwo.d" -MT"QuestionTwo.o" -o "QuestionTwo.o" "../QuestionTwo.cpp"
+../QuestionTwo.cpp: In function 'int main()':
+../QuestionTwo.cpp:15:22: error: variable 'std::stringstream ss' has initializer but incomplete type
+  std::stringstream ss("");
+                      ^
+../QuestionTwo.cpp:16:25: error: variable 'std::stringstream ssres' has initializer but incomplete type
+  std::stringstream ssres("");
+                         ^
+subdir.mk:48: recipe for target 'QuestionTwo.o' failed
+make: *** [QuestionTwo.o] Error 1
+12:09:35 **** Incremental Build of configuration Debug for project DoSomethingII ****
+make all 
+Building file: ../QuestionTwo.cpp
+Invoking: Cygwin C++ Compiler
+g++ -I"D:\cygwin64\usr\include" -O0 -g3 -Wall -c -fmessage-length=0 -DWINDOWS -std=c++11 -Wl,--stack,8388608 -MMD -MP -MF"QuestionTwo.d" -MT"QuestionTwo.o" -o "QuestionTwo.o" "../QuestionTwo.cpp"
+Finished building: ../QuestionTwo.cpp
+ 
+Building target: DoSomethingII.exe
+Invoking: Cygwin C++ Linker
+g++ -L"D:\cygwin64\lib" -L"D:\cygwin64\usr\local\lib" -Wl,--stack,8388608 -o "DoSomethingII.exe"  ./Casting.o ./InheritII.o ./Inherited.o ./Maps.o ./QuestionTwo.o ./Singleton.o ./Sorting.o ./VirtConst.o ./cat.o ./dog.o ./friends.o   -lboost_system -lboost_thread
+./Sorting.o: In function `main_func7()':
+/cygdrive/d/novicecoder/workspace_c++/DoSomethingII/Debug/../Sorting.cpp:171: multiple definition of `main_func7()'
+./InheritII.o:/cygdrive/d/novicecoder/workspace_c++/DoSomethingII/Debug/../InheritII.cpp:137: first defined here
+collect2: error: ld returned 1 exit status
+makefile:44: recipe for target 'DoSomethingII.exe' failed
+make: *** [DoSomethingII.exe] Error 1
+12:09:50 **** Incremental Build of configuration Debug for project DoSomethingII ****
+make all 
+Building file: ../InheritII.cpp
+Invoking: Cygwin C++ Compiler
+g++ -I"D:\cygwin64\usr\include" -O0 -g3 -Wall -c -fmessage-length=0 -DWINDOWS -std=c++11 -Wl,--stack,8388608 -MMD -MP -MF"InheritII.d" -MT"InheritII.o" -o "InheritII.o" "../InheritII.cpp"
+../InheritII.cpp: In function 'int main_func8()':
+../InheritII.cpp:146:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+In file included from ../InheritII.h:10:0,
+                 from ../InheritII.cpp:8:
+../Incls.h: At global scope:
+../Incls.h:40:26: warning: 'const string currentDateTime()' defined but not used [-Wunused-function]
+ static const std::string currentDateTime() {
+                          ^
+../Incls.h:52:13: warning: 'void sleepcp(int)' defined but not used [-Wunused-function]
+ static void sleepcp(int milliseconds) // cross-platform sleep function
+             ^
+Finished building: ../InheritII.cpp
+ 
+Building target: DoSomethingII.exe
+Invoking: Cygwin C++ Linker
+g++ -L"D:\cygwin64\lib" -L"D:\cygwin64\usr\local\lib" -Wl,--stack,8388608 -o "DoSomethingII.exe"  ./Casting.o ./InheritII.o ./Inherited.o ./Maps.o ./QuestionTwo.o ./Singleton.o ./Sorting.o ./VirtConst.o ./cat.o ./dog.o ./friends.o   -lboost_system -lboost_thread
+Finished building target: DoSomethingII.exe
+ 
+12:18:23 **** Incremental Build of configuration Debug for project DoSomethingII ****
+make all 
+Building file: ../QuestionTwo.cpp
+Invoking: Cygwin C++ Compiler
+g++ -I"D:\cygwin64\usr\include" -O0 -g3 -Wall -c -fmessage-length=0 -DWINDOWS -std=c++11 -Wl,--stack,8388608 -MMD -MP -MF"QuestionTwo.d" -MT"QuestionTwo.o" -o "QuestionTwo.o" "../QuestionTwo.cpp"
+../QuestionTwo.cpp: In function 'bool overlapRect(const char*)':
+../QuestionTwo.cpp:15:2: error: 'vector' is not a member of 'std'
+  std::vector<int> coords;
+  ^
+../QuestionTwo.cpp:15:14: error: expected primary-expression before 'int'
+  std::vector<int> coords;
+              ^
+../QuestionTwo.cpp:18:4: error: 'coords' was not declared in this scope
+    coords.push_back(*p - '0');
+    ^
+../QuestionTwo.cpp:21:24: error: 'coords' was not declared in this scope
+  std::cout << "x1," << coords[0];
+                        ^
+make: *** [QuestionTwo.o] Error 1
+subdir.mk:48: recipe for target 'QuestionTwo.o' failed
+12:18:37 **** Incremental Build of configuration Debug for project DoSomethingII ****
+make all 
+Building file: ../QuestionTwo.cpp
+Invoking: Cygwin C++ Compiler
+g++ -I"D:\cygwin64\usr\include" -O0 -g3 -Wall -c -fmessage-length=0 -DWINDOWS -std=c++11 -Wl,--stack,8388608 -MMD -MP -MF"QuestionTwo.d" -MT"QuestionTwo.o" -o "QuestionTwo.o" "../QuestionTwo.cpp"
+Finished building: ../QuestionTwo.cpp
+ 
+Building target: DoSomethingII.exe
+Invoking: Cygwin C++ Linker
+g++ -L"D:\cygwin64\lib" -L"D:\cygwin64\usr\local\lib" -Wl,--stack,8388608 -o "DoSomethingII.exe"  ./Casting.o ./InheritII.o ./Inherited.o ./Maps.o ./QuestionTwo.o ./Singleton.o ./Sorting.o ./VirtConst.o ./cat.o ./dog.o ./friends.o   -lboost_system -lboost_thread
+Finished building target: DoSomethingII.exe
+ 
+12:19:01 **** Incremental Build of configuration Debug for project DoSomethingII ****
+make all 
+Building file: ../QuestionTwo.cpp
+Invoking: Cygwin C++ Compiler
+g++ -I"D:\cygwin64\usr\include" -O0 -g3 -Wall -c -fmessage-length=0 -DWINDOWS -std=c++11 -Wl,--stack,8388608 -MMD -MP -MF"QuestionTwo.d" -MT"QuestionTwo.o" -o "QuestionTwo.o" "../QuestionTwo.cpp"
+Finished building: ../QuestionTwo.cpp
+ 
+Building target: DoSomethingII.exe
+Invoking: Cygwin C++ Linker
+g++ -L"D:\cygwin64\lib" -L"D:\cygwin64\usr\local\lib" -Wl,--stack,8388608 -o "DoSomethingII.exe"  ./Casting.o ./InheritII.o ./Inherited.o ./Maps.o ./QuestionTwo.o ./Singleton.o ./Sorting.o ./VirtConst.o ./cat.o ./dog.o ./friends.o   -lboost_system -lboost_thread
+Finished building target: DoSomethingII.exe
+ 
+12:20:04 **** Incremental Build of configuration Debug for project DoSomethingII ****
+make all 
+Building file: ../QuestionTwo.cpp
+Invoking: Cygwin C++ Compiler
+g++ -I"D:\cygwin64\usr\include" -O0 -g3 -Wall -c -fmessage-length=0 -DWINDOWS -std=c++11 -Wl,--stack,8388608 -MMD -MP -MF"QuestionTwo.d" -MT"QuestionTwo.o" -o "QuestionTwo.o" "../QuestionTwo.cpp"
+Finished building: ../QuestionTwo.cpp
+ 
+Building target: DoSomethingII.exe
+Invoking: Cygwin C++ Linker
+g++ -L"D:\cygwin64\lib" -L"D:\cygwin64\usr\local\lib" -Wl,--stack,8388608 -o "DoSomethingII.exe"  ./Casting.o ./InheritII.o ./Inherited.o ./Maps.o ./QuestionTwo.o ./Singleton.o ./Sorting.o ./VirtConst.o ./cat.o ./dog.o ./friends.o   -lboost_system -lboost_thread
+Finished building target: DoSomethingII.exe
+ 
+12:20:35 **** Incremental Build of configuration Debug for project DoSomethingII ****
+make all 
+Building file: ../QuestionTwo.cpp
+Invoking: Cygwin C++ Compiler
+g++ -I"D:\cygwin64\usr\include" -O0 -g3 -Wall -c -fmessage-length=0 -DWINDOWS -std=c++11 -Wl,--stack,8388608 -MMD -MP -MF"QuestionTwo.d" -MT"QuestionTwo.o" -o "QuestionTwo.o" "../QuestionTwo.cpp"
+Finished building: ../QuestionTwo.cpp
+ 
+Building target: DoSomethingII.exe
+Invoking: Cygwin C++ Linker
+g++ -L"D:\cygwin64\lib" -L"D:\cygwin64\usr\local\lib" -Wl,--stack,8388608 -o "DoSomethingII.exe"  ./Casting.o ./InheritII.o ./Inherited.o ./Maps.o ./QuestionTwo.o ./Singleton.o ./Sorting.o ./VirtConst.o ./cat.o ./dog.o ./friends.o   -lboost_system -lboost_thread
+Finished building target: DoSomethingII.exe
+ 
+12:21:24 **** Incremental Build of configuration Debug for project DoSomethingII ****
+make all 
+Building file: ../QuestionTwo.cpp
+Invoking: Cygwin C++ Compiler
+g++ -I"D:\cygwin64\usr\include" -O0 -g3 -Wall -c -fmessage-length=0 -DWINDOWS -std=c++11 -Wl,--stack,8388608 -MMD -MP -MF"QuestionTwo.d" -MT"QuestionTwo.o" -o "QuestionTwo.o" "../QuestionTwo.cpp"
+../QuestionTwo.cpp: In function 'bool overlapRect(const char*)':
+../QuestionTwo.cpp:19:35: error: invalid conversion from 'char' to 'const char*' [-fpermissive]
+    coords.push_back(std::string(*p));
+                                   ^
+In file included from /usr/lib/gcc/x86_64-pc-cygwin/4.9.3/include/c++/string:52:0,
+                 from /usr/lib/gcc/x86_64-pc-cygwin/4.9.3/include/c++/bits/locale_classes.h:40,
+                 from /usr/lib/gcc/x86_64-pc-cygwin/4.9.3/include/c++/bits/ios_base.h:41,
+                 from /usr/lib/gcc/x86_64-pc-cygwin/4.9.3/include/c++/ios:42,
+                 from /usr/lib/gcc/x86_64-pc-cygwin/4.9.3/include/c++/ostream:38,
+                 from /usr/lib/gcc/x86_64-pc-cygwin/4.9.3/include/c++/iostream:39,
+                 from ../QuestionTwo.cpp:9:
+/usr/lib/gcc/x86_64-pc-cygwin/4.9.3/include/c++/bits/basic_string.h:495:7: note: initializing argument 1 of 'std::basic_string<_CharT, _Traits, _Alloc>::basic_string(const _CharT*, const _Alloc&) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]'
+       basic_string(const _CharT* __s, const _Alloc& __a = _Alloc());
+       ^
+subdir.mk:48: recipe for target 'QuestionTwo.o' failed
+make: *** [QuestionTwo.o] Error 1
+12:22:50 **** Incremental Build of configuration Debug for project DoSomethingII ****
+make all 
+Building file: ../QuestionTwo.cpp
+Invoking: Cygwin C++ Compiler
+g++ -I"D:\cygwin64\usr\include" -O0 -g3 -Wall -c -fmessage-length=0 -DWINDOWS -std=c++11 -Wl,--stack,8388608 -MMD -MP -MF"QuestionTwo.d" -MT"QuestionTwo.o" -o "QuestionTwo.o" "../QuestionTwo.cpp"
+../QuestionTwo.cpp: In function 'bool overlapRect(const char*)':
+../QuestionTwo.cpp:19:35: error: invalid conversion from 'char' to 'const char*' [-fpermissive]
+    coords.push_back(std::string(*p));
+                                   ^
+In file included from /usr/lib/gcc/x86_64-pc-cygwin/4.9.3/include/c++/string:52:0,
+                 from /usr/lib/gcc/x86_64-pc-cygwin/4.9.3/include/c++/bits/locale_classes.h:40,
+                 from /usr/lib/gcc/x86_64-pc-cygwin/4.9.3/include/c++/bits/ios_base.h:41,
+                 from /usr/lib/gcc/x86_64-pc-cygwin/4.9.3/include/c++/ios:42,
+                 from /usr/lib/gcc/x86_64-pc-cygwin/4.9.3/include/c++/ostream:38,
+                 from /usr/lib/gcc/x86_64-pc-cygwin/4.9.3/include/c++/iostream:39,
+                 from ../QuestionTwo.cpp:9:
+/usr/lib/gcc/x86_64-pc-cygwin/4.9.3/include/c++/bits/basic_string.h:495:7: note: initializing argument 1 of 'std::basic_string<_CharT, _Traits, _Alloc>::basic_string(const _CharT*, const _Alloc&) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]'
+       basic_string(const _CharT* __s, const _Alloc& __a = _Alloc());
+       ^
+make: *** [QuestionTwo.o] Error 1
+subdir.mk:48: recipe for target 'QuestionTwo.o' failed
+12:27:18 **** Incremental Build of configuration Debug for project DoSomethingII ****
+make all 
+Building file: ../QuestionTwo.cpp
+Invoking: Cygwin C++ Compiler
+g++ -I"D:\cygwin64\usr\include" -O0 -g3 -Wall -c -fmessage-length=0 -DWINDOWS -std=c++11 -Wl,--stack,8388608 -MMD -MP -MF"QuestionTwo.d" -MT"QuestionTwo.o" -o "QuestionTwo.o" "../QuestionTwo.cpp"
+Finished building: ../QuestionTwo.cpp
+ 
+Building target: DoSomethingII.exe
+Invoking: Cygwin C++ Linker
+g++ -L"D:\cygwin64\lib" -L"D:\cygwin64\usr\local\lib" -Wl,--stack,8388608 -o "DoSomethingII.exe"  ./Casting.o ./InheritII.o ./Inherited.o ./Maps.o ./QuestionTwo.o ./Singleton.o ./Sorting.o ./VirtConst.o ./cat.o ./dog.o ./friends.o   -lboost_system -lboost_thread
+Finished building target: DoSomethingII.exe
+ 
+12:28:54 **** Incremental Build of configuration Debug for project DoSomethingII ****
+make all 
+Building file: ../QuestionTwo.cpp
+Invoking: Cygwin C++ Compiler
+g++ -I"D:\cygwin64\usr\include" -O0 -g3 -Wall -c -fmessage-length=0 -DWINDOWS -std=c++11 -Wl,--stack,8388608 -MMD -MP -MF"QuestionTwo.d" -MT"QuestionTwo.o" -o "QuestionTwo.o" "../QuestionTwo.cpp"
+../QuestionTwo.cpp: In function 'bool overlapRect(const string&)':
+../QuestionTwo.cpp:20:53: error: 'atoi' was not declared in this scope
+   if (temp != "") coords.push_back(atoi(temp.c_str()));
+                                                     ^
+../QuestionTwo.cpp:24:52: error: 'atoi' was not declared in this scope
+  if (temp != "") coords.push_back(atoi(temp.c_str()));
+                                                    ^
+subdir.mk:48: recipe for target 'QuestionTwo.o' failed
+make: *** [QuestionTwo.o] Error 1
+12:29:09 **** Incremental Build of configuration Debug for project DoSomethingII ****
+make all 
+Building file: ../QuestionTwo.cpp
+Invoking: Cygwin C++ Compiler
+g++ -I"D:\cygwin64\usr\include" -O0 -g3 -Wall -c -fmessage-length=0 -DWINDOWS -std=c++11 -Wl,--stack,8388608 -MMD -MP -MF"QuestionTwo.d" -MT"QuestionTwo.o" -o "QuestionTwo.o" "../QuestionTwo.cpp"
+../QuestionTwo.cpp: In function 'bool overlapRect(const string&)':
+../QuestionTwo.cpp:20:36: error: 'atoi' is not a member of 'std'
+   if (temp != "") coords.push_back(std::atoi(temp.c_str()));
+                                    ^
+../QuestionTwo.cpp:24:35: error: 'atoi' is not a member of 'std'
+  if (temp != "") coords.push_back(std::atoi(temp.c_str()));
+                                   ^
+subdir.mk:48: recipe for target 'QuestionTwo.o' failed
+make: *** [QuestionTwo.o] Error 1
+12:30:53 **** Incremental Build of configuration Debug for project DoSomethingII ****
+make all 
+Building file: ../QuestionTwo.cpp
+Invoking: Cygwin C++ Compiler
+g++ -I"D:\cygwin64\usr\include" -O0 -g3 -Wall -c -fmessage-length=0 -DWINDOWS -std=c++11 -Wl,--stack,8388608 -MMD -MP -MF"QuestionTwo.d" -MT"QuestionTwo.o" -o "QuestionTwo.o" "../QuestionTwo.cpp"
+../QuestionTwo.cpp: In function 'bool overlapRect(const string&)':
+../QuestionTwo.cpp:20:36: error: 'stoi' is not a member of 'std'
+   if (temp != "") coords.push_back(std::stoi(temp));
+                                    ^
+../QuestionTwo.cpp:24:35: error: 'stoi' is not a member of 'std'
+  if (temp != "") coords.push_back(std::stoi(temp));
+                                   ^
+subdir.mk:48: recipe for target 'QuestionTwo.o' failed
+make: *** [QuestionTwo.o] Error 1
+12:32:04 **** Incremental Build of configuration Debug for project DoSomethingII ****
+make all 
+Building file: ../QuestionTwo.cpp
+Invoking: Cygwin C++ Compiler
+g++ -I"D:\cygwin64\usr\include" -O0 -g3 -Wall -c -fmessage-length=0 -DWINDOWS -std=c++11 -Wl,--stack,8388608 -MMD -MP -MF"QuestionTwo.d" -MT"QuestionTwo.o" -o "QuestionTwo.o" "../QuestionTwo.cpp"
+../QuestionTwo.cpp: In function 'bool overlapRect(const string&)':
+../QuestionTwo.cpp:20:53: error: 'atoi' was not declared in this scope
+   if (temp != "") coords.push_back(atoi(temp.c_str()));
+                                                     ^
+../QuestionTwo.cpp:24:52: error: 'atoi' was not declared in this scope
+  if (temp != "") coords.push_back(atoi(temp.c_str()));
+                                                    ^
+subdir.mk:48: recipe for target 'QuestionTwo.o' failed
+make: *** [QuestionTwo.o] Error 1
+12:33:04 **** Incremental Build of configuration Debug for project DoSomethingII ****
+make all 
+Building file: ../QuestionTwo.cpp
+Invoking: Cygwin C++ Compiler
+g++ -I"D:\cygwin64\usr\include" -O0 -g3 -Wall -c -fmessage-length=0 -DWINDOWS -std=c++11 -Wl,--stack,8388608 -MMD -MP -MF"QuestionTwo.d" -MT"QuestionTwo.o" -o "QuestionTwo.o" "../QuestionTwo.cpp"
+../QuestionTwo.cpp: In function 'bool overlapRect(const string&)':
+../QuestionTwo.cpp:21:36: error: 'atoi' is not a member of 'std'
+   if (temp != "") coords.push_back(std::atoi(temp.c_str()));
+                                    ^
+../QuestionTwo.cpp:25:35: error: 'atoi' is not a member of 'std'
+  if (temp != "") coords.push_back(std::atoi(temp.c_str()));
+                                   ^
+make: *** [QuestionTwo.o] Error 1
+subdir.mk:48: recipe for target 'QuestionTwo.o' failed
+12:33:53 **** Incremental Build of configuration Debug for project DoSomethingII ****
+make all 
+Building file: ../QuestionTwo.cpp
+Invoking: Cygwin C++ Compiler
+g++ -I"D:\cygwin64\usr\include" -O0 -g3 -Wall -c -fmessage-length=0 -DWINDOWS -std=c++11 -Wl,--stack,8388608 -MMD -MP -MF"QuestionTwo.d" -MT"QuestionTwo.o" -o "QuestionTwo.o" "../QuestionTwo.cpp"
+../QuestionTwo.cpp: In function 'bool overlapRect(const string&)':
+../QuestionTwo.cpp:21:36: error: 'stoi' is not a member of 'std'
+   if (temp != "") coords.push_back(std::stoi(temp));
+                                    ^
+../QuestionTwo.cpp:25:35: error: 'stoi' is not a member of 'std'
+  if (temp != "") coords.push_back(std::stoi(temp));
+                                   ^
+subdir.mk:48: recipe for target 'QuestionTwo.o' failed
+make: *** [QuestionTwo.o] Error 1
+12:36:15 **** Incremental Build of configuration Debug for project DoSomethingII ****
+make all 
+Building file: ../QuestionTwo.cpp
+Invoking: Cygwin C++ Compiler
+g++ -I"D:\cygwin64\usr\include" -O0 -g3 -Wall -c -fmessage-length=0 -DWINDOWS -std=c++11 -Wl,--stack,8388608 -MMD -MP -MF"QuestionTwo.d" -MT"QuestionTwo.o" -o "QuestionTwo.o" "../QuestionTwo.cpp"
+Finished building: ../QuestionTwo.cpp
+ 
+Building target: DoSomethingII.exe
+Invoking: Cygwin C++ Linker
+g++ -L"D:\cygwin64\lib" -L"D:\cygwin64\usr\local\lib" -Wl,--stack,8388608 -o "DoSomethingII.exe"  ./Casting.o ./InheritII.o ./Inherited.o ./Maps.o ./QuestionTwo.o ./Singleton.o ./Sorting.o ./VirtConst.o ./cat.o ./dog.o ./friends.o   -lboost_system -lboost_thread
+Finished building target: DoSomethingII.exe
+ 
+12:37:40 **** Incremental Build of configuration Debug for project DoSomethingII ****
+make all 
+Building file: ../QuestionTwo.cpp
+Invoking: Cygwin C++ Compiler
+g++ -I"D:\cygwin64\usr\include" -O0 -g3 -Wall -c -fmessage-length=0 -DWINDOWS -std=c++11 -Wl,--stack,8388608 -MMD -MP -MF"QuestionTwo.d" -MT"QuestionTwo.o" -o "QuestionTwo.o" "../QuestionTwo.cpp"
+../QuestionTwo.cpp: In function 'bool overlapRect(const string&)':
+../QuestionTwo.cpp:29:38: error: cannot convert '__gnu_cxx::__alloc_traits<std::allocator<std::basic_string<char> > >::value_type {aka std::basic_string<char>}' to 'const char*' for argument '1' to 'int atoi(const char*)'
+  std::cout << "x1," << atoi(coords[0]) << std::endl;
+                                      ^
+make: *** [QuestionTwo.o] Error 1
+subdir.mk:48: recipe for target 'QuestionTwo.o' failed
+12:37:51 **** Incremental Build of configuration Debug for project DoSomethingII ****
+make all 
+Building file: ../QuestionTwo.cpp
+Invoking: Cygwin C++ Compiler
+g++ -I"D:\cygwin64\usr\include" -O0 -g3 -Wall -c -fmessage-length=0 -DWINDOWS -std=c++11 -Wl,--stack,8388608 -MMD -MP -MF"QuestionTwo.d" -MT"QuestionTwo.o" -o "QuestionTwo.o" "../QuestionTwo.cpp"
+Finished building: ../QuestionTwo.cpp
+ 
+Building target: DoSomethingII.exe
+Invoking: Cygwin C++ Linker
+g++ -L"D:\cygwin64\lib" -L"D:\cygwin64\usr\local\lib" -Wl,--stack,8388608 -o "DoSomethingII.exe"  ./Casting.o ./InheritII.o ./Inherited.o ./Maps.o ./QuestionTwo.o ./Singleton.o ./Sorting.o ./VirtConst.o ./cat.o ./dog.o ./friends.o   -lboost_system -lboost_thread
+Finished building target: DoSomethingII.exe
+ 
+12:38:40 **** Incremental Build of configuration Debug for project DoSomethingII ****
+make all 
+Building file: ../QuestionTwo.cpp
+Invoking: Cygwin C++ Compiler
+g++ -I"D:\cygwin64\usr\include" -O0 -g3 -Wall -c -fmessage-length=0 -DWINDOWS -std=c++11 -Wl,--stack,8388608 -MMD -MP -MF"QuestionTwo.d" -MT"QuestionTwo.o" -o "QuestionTwo.o" "../QuestionTwo.cpp"
+Finished building: ../QuestionTwo.cpp
+ 
+Building target: DoSomethingII.exe
+Invoking: Cygwin C++ Linker
+g++ -L"D:\cygwin64\lib" -L"D:\cygwin64\usr\local\lib" -Wl,--stack,8388608 -o "DoSomethingII.exe"  ./Casting.o ./InheritII.o ./Inherited.o ./Maps.o ./QuestionTwo.o ./Singleton.o ./Sorting.o ./VirtConst.o ./cat.o ./dog.o ./friends.o   -lboost_system -lboost_thread
+Finished building target: DoSomethingII.exe
+ 
+12:48:47 **** Incremental Build of configuration Debug for project DoSomethingII ****
+make all 
+Building file: ../QuestionTwo.cpp
+Invoking: Cygwin C++ Compiler
+g++ -I"D:\cygwin64\usr\include" -O0 -g3 -Wall -c -fmessage-length=0 -DWINDOWS -std=c++11 -Wl,--stack,8388608 -MMD -MP -MF"QuestionTwo.d" -MT"QuestionTwo.o" -o "QuestionTwo.o" "../QuestionTwo.cpp"
+Finished building: ../QuestionTwo.cpp
+ 
+Building target: DoSomethingII.exe
+Invoking: Cygwin C++ Linker
+g++ -L"D:\cygwin64\lib" -L"D:\cygwin64\usr\local\lib" -Wl,--stack,8388608 -o "DoSomethingII.exe"  ./Casting.o ./InheritII.o ./Inherited.o ./Maps.o ./QuestionTwo.o ./Singleton.o ./Sorting.o ./VirtConst.o ./cat.o ./dog.o ./friends.o   -lboost_system -lboost_thread
+Finished building target: DoSomethingII.exe
+ 
+12:50:17 **** Incremental Build of configuration Debug for project DoSomethingII ****
+make all 
+Building file: ../QuestionTwo.cpp
+Invoking: Cygwin C++ Compiler
+g++ -I"D:\cygwin64\usr\include" -O0 -g3 -Wall -c -fmessage-length=0 -DWINDOWS -std=c++11 -Wl,--stack,8388608 -MMD -MP -MF"QuestionTwo.d" -MT"QuestionTwo.o" -o "QuestionTwo.o" "../QuestionTwo.cpp"
+Finished building: ../QuestionTwo.cpp
+ 
+Building target: DoSomethingII.exe
+Invoking: Cygwin C++ Linker
+g++ -L"D:\cygwin64\lib" -L"D:\cygwin64\usr\local\lib" -Wl,--stack,8388608 -o "DoSomethingII.exe"  ./Casting.o ./InheritII.o ./Inherited.o ./Maps.o ./QuestionTwo.o ./Singleton.o ./Sorting.o ./VirtConst.o ./cat.o ./dog.o ./friends.o   -lboost_system -lboost_thread
+Finished building target: DoSomethingII.exe
+ 
+12:51:15 **** Incremental Build of configuration Debug for project DoSomethingII ****
+make all 
+Building file: ../QuestionTwo.cpp
+Invoking: Cygwin C++ Compiler
+g++ -I"D:\cygwin64\usr\include" -O0 -g3 -Wall -c -fmessage-length=0 -DWINDOWS -std=c++11 -Wl,--stack,8388608 -MMD -MP -MF"QuestionTwo.d" -MT"QuestionTwo.o" -o "QuestionTwo.o" "../QuestionTwo.cpp"
+Finished building: ../QuestionTwo.cpp
+ 
+Building target: DoSomethingII.exe
+Invoking: Cygwin C++ Linker
+g++ -L"D:\cygwin64\lib" -L"D:\cygwin64\usr\local\lib" -Wl,--stack,8388608 -o "DoSomethingII.exe"  ./Casting.o ./InheritII.o ./Inherited.o ./Maps.o ./QuestionTwo.o ./Singleton.o ./Sorting.o ./VirtConst.o ./cat.o ./dog.o ./friends.o   -lboost_system -lboost_thread
+Finished building target: DoSomethingII.exe
+ 
+12:54:41 **** Incremental Build of configuration Debug for project DoSomethingII ****
+make all 
+Building file: ../QuestionTwo.cpp
+Invoking: Cygwin C++ Compiler
+g++ -I"D:\cygwin64\usr\include" -O0 -g3 -Wall -c -fmessage-length=0 -DWINDOWS -std=c++11 -Wl,--stack,8388608 -MMD -MP -MF"QuestionTwo.d" -MT"QuestionTwo.o" -o "QuestionTwo.o" "../QuestionTwo.cpp"
+Finished building: ../QuestionTwo.cpp
+ 
+Building target: DoSomethingII.exe
+Invoking: Cygwin C++ Linker
+g++ -L"D:\cygwin64\lib" -L"D:\cygwin64\usr\local\lib" -Wl,--stack,8388608 -o "DoSomethingII.exe"  ./Casting.o ./InheritII.o ./Inherited.o ./Maps.o ./QuestionTwo.o ./Singleton.o ./Sorting.o ./VirtConst.o ./cat.o ./dog.o ./friends.o   -lboost_system -lboost_thread
+Finished building target: DoSomethingII.exe
+ 
+12:56:03 **** Incremental Build of configuration Debug for project DoSomethingII ****
+make all 
+Building file: ../QuestionTwo.cpp
+Invoking: Cygwin C++ Compiler
+g++ -I"D:\cygwin64\usr\include" -O0 -g3 -Wall -c -fmessage-length=0 -DWINDOWS -std=c++11 -Wl,--stack,8388608 -MMD -MP -MF"QuestionTwo.d" -MT"QuestionTwo.o" -o "QuestionTwo.o" "../QuestionTwo.cpp"
+Finished building: ../QuestionTwo.cpp
+ 
+Building target: DoSomethingII.exe
+Invoking: Cygwin C++ Linker
+g++ -L"D:\cygwin64\lib" -L"D:\cygwin64\usr\local\lib" -Wl,--stack,8388608 -o "DoSomethingII.exe"  ./Casting.o ./InheritII.o ./Inherited.o ./Maps.o ./QuestionTwo.o ./Singleton.o ./Sorting.o ./VirtConst.o ./cat.o ./dog.o ./friends.o   -lboost_system -lboost_thread
+Finished building target: DoSomethingII.exe
+ 
+13:01:21 **** Incremental Build of configuration Debug for project DoSomethingII ****
+make all 
+Building file: ../QuestionTwo.cpp
+Invoking: Cygwin C++ Compiler
+g++ -I"D:\cygwin64\usr\include" -O0 -g3 -Wall -c -fmessage-length=0 -DWINDOWS -std=c++11 -Wl,--stack,8388608 -MMD -MP -MF"QuestionTwo.d" -MT"QuestionTwo.o" -o "QuestionTwo.o" "../QuestionTwo.cpp"
+Finished building: ../QuestionTwo.cpp
+ 
+Building target: DoSomethingII.exe
+Invoking: Cygwin C++ Linker
+g++ -L"D:\cygwin64\lib" -L"D:\cygwin64\usr\local\lib" -Wl,--stack,8388608 -o "DoSomethingII.exe"  ./Casting.o ./InheritII.o ./Inherited.o ./Maps.o ./QuestionTwo.o ./Singleton.o ./Sorting.o ./VirtConst.o ./cat.o ./dog.o ./friends.o   -lboost_system -lboost_thread
+Finished building target: DoSomethingII.exe
+ 
+13:01:52 **** Incremental Build of configuration Debug for project DoSomethingII ****
+make all 
+Building file: ../QuestionTwo.cpp
+Invoking: Cygwin C++ Compiler
+g++ -I"D:\cygwin64\usr\include" -O0 -g3 -Wall -c -fmessage-length=0 -DWINDOWS -std=c++11 -Wl,--stack,8388608 -MMD -MP -MF"QuestionTwo.d" -MT"QuestionTwo.o" -o "QuestionTwo.o" "../QuestionTwo.cpp"
+Finished building: ../QuestionTwo.cpp
+ 
+Building target: DoSomethingII.exe
+Invoking: Cygwin C++ Linker
+g++ -L"D:\cygwin64\lib" -L"D:\cygwin64\usr\local\lib" -Wl,--stack,8388608 -o "DoSomethingII.exe"  ./Casting.o ./InheritII.o ./Inherited.o ./Maps.o ./QuestionTwo.o ./Singleton.o ./Sorting.o ./VirtConst.o ./cat.o ./dog.o ./friends.o   -lboost_system -lboost_thread
+Finished building target: DoSomethingII.exe
+ 
+13:05:54 **** Incremental Build of configuration Debug for project DoSomethingII ****
+make all 
+Building file: ../QuestionTwo.cpp
+Invoking: Cygwin C++ Compiler
+g++ -I"D:\cygwin64\usr\include" -O0 -g3 -Wall -c -fmessage-length=0 -DWINDOWS -std=c++11 -Wl,--stack,8388608 -MMD -MP -MF"QuestionTwo.d" -MT"QuestionTwo.o" -o "QuestionTwo.o" "../QuestionTwo.cpp"
+Finished building: ../QuestionTwo.cpp
+ 
+Building target: DoSomethingII.exe
+Invoking: Cygwin C++ Linker
+g++ -L"D:\cygwin64\lib" -L"D:\cygwin64\usr\local\lib" -Wl,--stack,8388608 -o "DoSomethingII.exe"  ./Casting.o ./InheritII.o ./Inherited.o ./Maps.o ./QuestionTwo.o ./Singleton.o ./Sorting.o ./VirtConst.o ./cat.o ./dog.o ./friends.o   -lboost_system -lboost_thread
+Finished building target: DoSomethingII.exe
+ 
+13:09:09 **** Incremental Build of configuration Debug for project DoSomethingII ****
+make all 
+Building file: ../QuestionTwo.cpp
+Invoking: Cygwin C++ Compiler
+g++ -I"D:\cygwin64\usr\include" -O0 -g3 -Wall -c -fmessage-length=0 -DWINDOWS -std=c++11 -Wl,--stack,8388608 -MMD -MP -MF"QuestionTwo.d" -MT"QuestionTwo.o" -o "QuestionTwo.o" "../QuestionTwo.cpp"
+Finished building: ../QuestionTwo.cpp
+ 
+Building target: DoSomethingII.exe
+Invoking: Cygwin C++ Linker
+g++ -L"D:\cygwin64\lib" -L"D:\cygwin64\usr\local\lib" -Wl,--stack,8388608 -o "DoSomethingII.exe"  ./Casting.o ./InheritII.o ./Inherited.o ./Maps.o ./QuestionTwo.o ./Singleton.o ./Sorting.o ./VirtConst.o ./cat.o ./dog.o ./friends.o   -lboost_system -lboost_thread
+Finished building target: DoSomethingII.exe
+ 
+18:01:32 **** Incremental Build of configuration Debug for project DoSomethingII ****
+make all 
+make: Nothing to be done for 'all'.
+18:02:13 **** Incremental Build of configuration Debug for project DoSomethingII ****
+make all 
+Building file: ../QuestionTwo.cpp
+Invoking: Cygwin C++ Compiler
+g++ -I"D:\cygwin64\usr\include" -O0 -g3 -Wall -c -fmessage-length=0 -DWINDOWS -std=c++11 -Wl,--stack,8388608 -MMD -MP -MF"QuestionTwo.d" -MT"QuestionTwo.o" -o "QuestionTwo.o" "../QuestionTwo.cpp"
+Finished building: ../QuestionTwo.cpp
+ 
+Building target: DoSomethingII.exe
+Invoking: Cygwin C++ Linker
+g++ -L"D:\cygwin64\lib" -L"D:\cygwin64\usr\local\lib" -Wl,--stack,8388608 -o "DoSomethingII.exe"  ./Casting.o ./InheritII.o ./Inherited.o ./Maps.o ./QuestionTwo.o ./Singleton.o ./Sorting.o ./VirtConst.o ./cat.o ./dog.o ./friends.o   -lboost_system -lboost_thread
+Finished building target: DoSomethingII.exe
+ 
+14:43:56 **** Incremental Build of configuration Debug for project DoSomethingII ****
+make all 
+Building file: ../Sorting.cpp
+Invoking: Cygwin C++ Compiler
+g++ -I"D:\cygwin64\usr\include" -O0 -g3 -Wall -c -fmessage-length=0 -DWINDOWS -std=c++11 -Wl,--stack,8388608 -MMD -MP -MF"Sorting.d" -MT"Sorting.o" -o "Sorting.o" "../Sorting.cpp"
+../Sorting.cpp: In constructor 'QQ::QQ(int)':
+../Sorting.cpp:177:4: error: invalid type argument of unary '*' (have 'int')
+   *front = *rear;
+    ^
+../Sorting.cpp:178:9: error: invalid conversion from 'int*' to 'int' [-fpermissive]
+   front = new int[SIZE];
+         ^
+../Sorting.cpp:179:8: error: invalid conversion from 'int' to 'int*' [-fpermissive]
+   rear = front;
+        ^
+../Sorting.cpp: In function 'int main()':
+../Sorting.cpp:197:47: error: scalar object 'numbers' requires one element in initializer
+  int *numbers = {5,10,1,6,2,9,3,8,7,4,6,11,5,2};
+                                               ^
+In file included from ../Sorting.h:10:0,
+                 from ../Sorting.cpp:8:
+../Incls.h: At global scope:
+../Incls.h:52:13: warning: 'void sleepcp(int)' defined but not used [-Wunused-function]
+ static void sleepcp(int milliseconds) // cross-platform sleep function
+             ^
+make: *** [Sorting.o] Error 1
+subdir.mk:48: recipe for target 'Sorting.o' failed
+14:44:39 **** Incremental Build of configuration Debug for project DoSomethingII ****
+make all 
+Building file: ../Sorting.cpp
+Invoking: Cygwin C++ Compiler
+g++ -I"D:\cygwin64\usr\include" -O0 -g3 -Wall -c -fmessage-length=0 -DWINDOWS -std=c++11 -Wl,--stack,8388608 -MMD -MP -MF"Sorting.d" -MT"Sorting.o" -o "Sorting.o" "../Sorting.cpp"
+../Sorting.cpp: In constructor 'QQ::QQ(int)':
+../Sorting.cpp:177:9: error: invalid conversion from 'int' to 'int*' [-fpermissive]
+   front = -1;
+         ^
+../Sorting.cpp:178:8: error: invalid conversion from 'int' to 'int*' [-fpermissive]
+   rear = -1;
+        ^
+../Sorting.cpp:179:5: error: incompatible types in assignment of 'int*' to 'int* [0]'
+   Q = new int[SIZE];
+     ^
+../Sorting.cpp: In function 'int main()':
+../Sorting.cpp:197:47: error: scalar object 'numbers' requires one element in initializer
+  int *numbers = {5,10,1,6,2,9,3,8,7,4,6,11,5,2};
+                                               ^
+In file included from ../Sorting.h:10:0,
+                 from ../Sorting.cpp:8:
+../Incls.h: At global scope:
+../Incls.h:52:13: warning: 'void sleepcp(int)' defined but not used [-Wunused-function]
+ static void sleepcp(int milliseconds) // cross-platform sleep function
+             ^
+make: *** [Sorting.o] Error 1
+subdir.mk:48: recipe for target 'Sorting.o' failed
+14:45:05 **** Incremental Build of configuration Debug for project DoSomethingII ****
+make all 
+Building file: ../Sorting.cpp
+Invoking: Cygwin C++ Compiler
+g++ -I"D:\cygwin64\usr\include" -O0 -g3 -Wall -c -fmessage-length=0 -DWINDOWS -std=c++11 -Wl,--stack,8388608 -MMD -MP -MF"Sorting.d" -MT"Sorting.o" -o "Sorting.o" "../Sorting.cpp"
+../Sorting.cpp: In constructor 'QQ::QQ(int)':
+../Sorting.cpp:179:5: error: incompatible types in assignment of 'int*' to 'int* [0]'
+   Q = new int[SIZE];
+     ^
+../Sorting.cpp: In function 'int main()':
+../Sorting.cpp:197:47: error: scalar object 'numbers' requires one element in initializer
+  int *numbers = {5,10,1,6,2,9,3,8,7,4,6,11,5,2};
+                                               ^
+In file included from ../Sorting.h:10:0,
+                 from ../Sorting.cpp:8:
+../Incls.h: At global scope:
+../Incls.h:52:13: warning: 'void sleepcp(int)' defined but not used [-Wunused-function]
+ static void sleepcp(int milliseconds) // cross-platform sleep function
+             ^
+subdir.mk:48: recipe for target 'Sorting.o' failed
+make: *** [Sorting.o] Error 1
+14:45:14 **** Incremental Build of configuration Debug for project DoSomethingII ****
+make all 
+Building file: ../Sorting.cpp
+Invoking: Cygwin C++ Compiler
+g++ -I"D:\cygwin64\usr\include" -O0 -g3 -Wall -c -fmessage-length=0 -DWINDOWS -std=c++11 -Wl,--stack,8388608 -MMD -MP -MF"Sorting.d" -MT"Sorting.o" -o "Sorting.o" "../Sorting.cpp"
+../Sorting.cpp: In function 'int main()':
+../Sorting.cpp:197:47: error: scalar object 'numbers' requires one element in initializer
+  int *numbers = {5,10,1,6,2,9,3,8,7,4,6,11,5,2};
+                                               ^
+In file included from ../Sorting.h:10:0,
+                 from ../Sorting.cpp:8:
+../Incls.h: At global scope:
+../Incls.h:52:13: warning: 'void sleepcp(int)' defined but not used [-Wunused-function]
+ static void sleepcp(int milliseconds) // cross-platform sleep function
+             ^
+make: *** [Sorting.o] Error 1
+subdir.mk:48: recipe for target 'Sorting.o' failed
+14:45:46 **** Incremental Build of configuration Debug for project DoSomethingII ****
+make all 
+Building file: ../Sorting.cpp
+Invoking: Cygwin C++ Compiler
+g++ -I"D:\cygwin64\usr\include" -O0 -g3 -Wall -c -fmessage-length=0 -DWINDOWS -std=c++11 -Wl,--stack,8388608 -MMD -MP -MF"Sorting.d" -MT"Sorting.o" -o "Sorting.o" "../Sorting.cpp"
+../Sorting.cpp: In function 'int main()':
+../Sorting.cpp:197:47: error: scalar object 'numbers' requires one element in initializer
+  int *numbers = {5,10,1,6,2,9,3,8,7,4,6,11,5,2};
+                                               ^
+In file included from ../Sorting.h:10:0,
+                 from ../Sorting.cpp:8:
+../Incls.h: At global scope:
+../Incls.h:52:13: warning: 'void sleepcp(int)' defined but not used [-Wunused-function]
+ static void sleepcp(int milliseconds) // cross-platform sleep function
+             ^
+subdir.mk:48: recipe for target 'Sorting.o' failed
+make: *** [Sorting.o] Error 1
+14:47:02 **** Incremental Build of configuration Debug for project DoSomethingII ****
+make all 
+Building file: ../Sorting.cpp
+Invoking: Cygwin C++ Compiler
+g++ -I"D:\cygwin64\usr\include" -O0 -g3 -Wall -c -fmessage-length=0 -DWINDOWS -std=c++11 -Wl,--stack,8388608 -MMD -MP -MF"Sorting.d" -MT"Sorting.o" -o "Sorting.o" "../Sorting.cpp"
+In file included from ../Sorting.h:10:0,
+                 from ../Sorting.cpp:8:
+../Incls.h:52:13: warning: 'void sleepcp(int)' defined but not used [-Wunused-function]
+ static void sleepcp(int milliseconds) // cross-platform sleep function
+             ^
+Finished building: ../Sorting.cpp
+ 
+Building target: DoSomethingII.exe
+Invoking: Cygwin C++ Linker
+g++ -L"D:\cygwin64\lib" -L"D:\cygwin64\usr\local\lib" -Wl,--stack,8388608 -o "DoSomethingII.exe"  ./Casting.o ./InheritII.o ./Inherited.o ./Maps.o ./QuestionTwo.o ./Singleton.o ./Sorting.o ./VirtConst.o ./cat.o ./dog.o ./friends.o   -lboost_system -lboost_thread
+./Sorting.o: In function `main':
+/cygdrive/d/novicecoder/workspace_c++/DoSomethingII/Debug/../Sorting.cpp:186: multiple definition of `main'
+./QuestionTwo.o:/cygdrive/d/novicecoder/workspace_c++/DoSomethingII/Debug/../QuestionTwo.cpp:83: first defined here
+makefile:44: recipe for target 'DoSomethingII.exe' failed
+collect2: error: ld returned 1 exit status
+make: *** [DoSomethingII.exe] Error 1
+14:47:27 **** Incremental Build of configuration Debug for project DoSomethingII ****
+make all 
+Building file: ../QuestionTwo.cpp
+Invoking: Cygwin C++ Compiler
+g++ -I"D:\cygwin64\usr\include" -O0 -g3 -Wall -c -fmessage-length=0 -DWINDOWS -std=c++11 -Wl,--stack,8388608 -MMD -MP -MF"QuestionTwo.d" -MT"QuestionTwo.o" -o "QuestionTwo.o" "../QuestionTwo.cpp"
+../QuestionTwo.cpp: In function 'int main_func7()':
+../QuestionTwo.cpp:95:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+Finished building: ../QuestionTwo.cpp
+ 
+Building target: DoSomethingII.exe
+Invoking: Cygwin C++ Linker
+g++ -L"D:\cygwin64\lib" -L"D:\cygwin64\usr\local\lib" -Wl,--stack,8388608 -o "DoSomethingII.exe"  ./Casting.o ./InheritII.o ./Inherited.o ./Maps.o ./QuestionTwo.o ./Singleton.o ./Sorting.o ./VirtConst.o ./cat.o ./dog.o ./friends.o   -lboost_system -lboost_thread
+Finished building target: DoSomethingII.exe
+ 
+14:48:13 **** Incremental Build of configuration Debug for project DoSomethingII ****
+make all 
+Building file: ../Sorting.cpp
+Invoking: Cygwin C++ Compiler
+g++ -I"D:\cygwin64\usr\include" -O0 -g3 -Wall -c -fmessage-length=0 -DWINDOWS -std=c++11 -Wl,--stack,8388608 -MMD -MP -MF"Sorting.d" -MT"Sorting.o" -o "Sorting.o" "../Sorting.cpp"
+In file included from ../Sorting.h:10:0,
+                 from ../Sorting.cpp:8:
+../Incls.h:52:13: warning: 'void sleepcp(int)' defined but not used [-Wunused-function]
+ static void sleepcp(int milliseconds) // cross-platform sleep function
+             ^
+Finished building: ../Sorting.cpp
+ 
+Building target: DoSomethingII.exe
+Invoking: Cygwin C++ Linker
+g++ -L"D:\cygwin64\lib" -L"D:\cygwin64\usr\local\lib" -Wl,--stack,8388608 -o "DoSomethingII.exe"  ./Casting.o ./InheritII.o ./Inherited.o ./Maps.o ./QuestionTwo.o ./Singleton.o ./Sorting.o ./VirtConst.o ./cat.o ./dog.o ./friends.o   -lboost_system -lboost_thread
+Finished building target: DoSomethingII.exe
+ 
+14:49:19 **** Incremental Build of configuration Debug for project DoSomethingII ****
+make all 
+Building file: ../Sorting.cpp
+Invoking: Cygwin C++ Compiler
+g++ -I"D:\cygwin64\usr\include" -O0 -g3 -Wall -c -fmessage-length=0 -DWINDOWS -std=c++11 -Wl,--stack,8388608 -MMD -MP -MF"Sorting.d" -MT"Sorting.o" -o "Sorting.o" "../Sorting.cpp"
+In file included from ../Sorting.h:10:0,
+                 from ../Sorting.cpp:8:
+../Incls.h:52:13: warning: 'void sleepcp(int)' defined but not used [-Wunused-function]
+ static void sleepcp(int milliseconds) // cross-platform sleep function
+             ^
+Finished building: ../Sorting.cpp
+ 
+Building target: DoSomethingII.exe
+Invoking: Cygwin C++ Linker
+g++ -L"D:\cygwin64\lib" -L"D:\cygwin64\usr\local\lib" -Wl,--stack,8388608 -o "DoSomethingII.exe"  ./Casting.o ./InheritII.o ./Inherited.o ./Maps.o ./QuestionTwo.o ./Singleton.o ./Sorting.o ./VirtConst.o ./cat.o ./dog.o ./friends.o   -lboost_system -lboost_thread
+Finished building target: DoSomethingII.exe
+ 
+14:50:51 **** Incremental Build of configuration Debug for project DoSomethingII ****
+make all 
+Building file: ../Sorting.cpp
+Invoking: Cygwin C++ Compiler
+g++ -I"D:\cygwin64\usr\include" -O0 -g3 -Wall -c -fmessage-length=0 -DWINDOWS -std=c++11 -Wl,--stack,8388608 -MMD -MP -MF"Sorting.d" -MT"Sorting.o" -o "Sorting.o" "../Sorting.cpp"
+In file included from ../Sorting.h:10:0,
+                 from ../Sorting.cpp:8:
+../Incls.h:52:13: warning: 'void sleepcp(int)' defined but not used [-Wunused-function]
+ static void sleepcp(int milliseconds) // cross-platform sleep function
+             ^
+Finished building: ../Sorting.cpp
+ 
+Building target: DoSomethingII.exe
+Invoking: Cygwin C++ Linker
+g++ -L"D:\cygwin64\lib" -L"D:\cygwin64\usr\local\lib" -Wl,--stack,8388608 -o "DoSomethingII.exe"  ./Casting.o ./InheritII.o ./Inherited.o ./Maps.o ./QuestionTwo.o ./Singleton.o ./Sorting.o ./VirtConst.o ./cat.o ./dog.o ./friends.o   -lboost_system -lboost_thread
+Finished building target: DoSomethingII.exe
+ 
+14:57:16 **** Incremental Build of configuration Debug for project DoSomethingII ****
+make all 
+Building file: ../Sorting.cpp
+Invoking: Cygwin C++ Compiler
+g++ -I"D:\cygwin64\usr\include" -O0 -g3 -Wall -c -fmessage-length=0 -DWINDOWS -std=c++11 -Wl,--stack,8388608 -MMD -MP -MF"Sorting.d" -MT"Sorting.o" -o "Sorting.o" "../Sorting.cpp"
+In file included from ../Sorting.h:10:0,
+                 from ../Sorting.cpp:8:
+../Incls.h:52:13: warning: 'void sleepcp(int)' defined but not used [-Wunused-function]
+ static void sleepcp(int milliseconds) // cross-platform sleep function
+             ^
+Finished building: ../Sorting.cpp
+ 
+Building target: DoSomethingII.exe
+Invoking: Cygwin C++ Linker
+g++ -L"D:\cygwin64\lib" -L"D:\cygwin64\usr\local\lib" -Wl,--stack,8388608 -o "DoSomethingII.exe"  ./Casting.o ./InheritII.o ./Inherited.o ./Maps.o ./QuestionTwo.o ./Singleton.o ./Sorting.o ./VirtConst.o ./cat.o ./dog.o ./friends.o   -lboost_system -lboost_thread
+Finished building target: DoSomethingII.exe
+ 
+14:59:33 **** Incremental Build of configuration Debug for project DoSomethingII ****
+make all 
+Building file: ../Sorting.cpp
+Invoking: Cygwin C++ Compiler
+g++ -I"D:\cygwin64\usr\include" -O0 -g3 -Wall -c -fmessage-length=0 -DWINDOWS -std=c++11 -Wl,--stack,8388608 -MMD -MP -MF"Sorting.d" -MT"Sorting.o" -o "Sorting.o" "../Sorting.cpp"
+In file included from ../Sorting.h:10:0,
+                 from ../Sorting.cpp:8:
+../Incls.h:52:13: warning: 'void sleepcp(int)' defined but not used [-Wunused-function]
+ static void sleepcp(int milliseconds) // cross-platform sleep function
+             ^
+Finished building: ../Sorting.cpp
+ 
+Building target: DoSomethingII.exe
+Invoking: Cygwin C++ Linker
+g++ -L"D:\cygwin64\lib" -L"D:\cygwin64\usr\local\lib" -Wl,--stack,8388608 -o "DoSomethingII.exe"  ./Casting.o ./InheritII.o ./Inherited.o ./Maps.o ./QuestionTwo.o ./Singleton.o ./Sorting.o ./VirtConst.o ./cat.o ./dog.o ./friends.o   -lboost_system -lboost_thread
+Finished building target: DoSomethingII.exe
+ 
+15:00:38 **** Incremental Build of configuration Debug for project DoSomethingII ****
+make all 
+Building file: ../Sorting.cpp
+Invoking: Cygwin C++ Compiler
+g++ -I"D:\cygwin64\usr\include" -O0 -g3 -Wall -c -fmessage-length=0 -DWINDOWS -std=c++11 -Wl,--stack,8388608 -MMD -MP -MF"Sorting.d" -MT"Sorting.o" -o "Sorting.o" "../Sorting.cpp"
+In file included from ../Sorting.h:10:0,
+                 from ../Sorting.cpp:8:
+../Incls.h:52:13: warning: 'void sleepcp(int)' defined but not used [-Wunused-function]
+ static void sleepcp(int milliseconds) // cross-platform sleep function
+             ^
+Finished building: ../Sorting.cpp
+ 
+Building target: DoSomethingII.exe
+Invoking: Cygwin C++ Linker
+g++ -L"D:\cygwin64\lib" -L"D:\cygwin64\usr\local\lib" -Wl,--stack,8388608 -o "DoSomethingII.exe"  ./Casting.o ./InheritII.o ./Inherited.o ./Maps.o ./QuestionTwo.o ./Singleton.o ./Sorting.o ./VirtConst.o ./cat.o ./dog.o ./friends.o   -lboost_system -lboost_thread
+Finished building target: DoSomethingII.exe
+ 
+15:01:01 **** Incremental Build of configuration Debug for project DoSomethingII ****
+make all 
+Building file: ../Sorting.cpp
+Invoking: Cygwin C++ Compiler
+g++ -I"D:\cygwin64\usr\include" -O0 -g3 -Wall -c -fmessage-length=0 -DWINDOWS -std=c++11 -Wl,--stack,8388608 -MMD -MP -MF"Sorting.d" -MT"Sorting.o" -o "Sorting.o" "../Sorting.cpp"
+In file included from ../Sorting.h:10:0,
+                 from ../Sorting.cpp:8:
+../Incls.h:52:13: warning: 'void sleepcp(int)' defined but not used [-Wunused-function]
+ static void sleepcp(int milliseconds) // cross-platform sleep function
+             ^
+Finished building: ../Sorting.cpp
+ 
+Building target: DoSomethingII.exe
+Invoking: Cygwin C++ Linker
+g++ -L"D:\cygwin64\lib" -L"D:\cygwin64\usr\local\lib" -Wl,--stack,8388608 -o "DoSomethingII.exe"  ./Casting.o ./InheritII.o ./Inherited.o ./Maps.o ./QuestionTwo.o ./Singleton.o ./Sorting.o ./VirtConst.o ./cat.o ./dog.o ./friends.o   -lboost_system -lboost_thread
+Finished building target: DoSomethingII.exe
+ 
+15:02:20 **** Incremental Build of configuration Debug for project DoSomethingII ****
+make all 
+Building file: ../Sorting.cpp
+Invoking: Cygwin C++ Compiler
+g++ -I"D:\cygwin64\usr\include" -O0 -g3 -Wall -c -fmessage-length=0 -DWINDOWS -std=c++11 -Wl,--stack,8388608 -MMD -MP -MF"Sorting.d" -MT"Sorting.o" -o "Sorting.o" "../Sorting.cpp"
+In file included from ../Sorting.h:10:0,
+                 from ../Sorting.cpp:8:
+../Incls.h:52:13: warning: 'void sleepcp(int)' defined but not used [-Wunused-function]
+ static void sleepcp(int milliseconds) // cross-platform sleep function
+             ^
+Finished building: ../Sorting.cpp
+ 
+Building target: DoSomethingII.exe
+Invoking: Cygwin C++ Linker
+g++ -L"D:\cygwin64\lib" -L"D:\cygwin64\usr\local\lib" -Wl,--stack,8388608 -o "DoSomethingII.exe"  ./Casting.o ./InheritII.o ./Inherited.o ./Maps.o ./QuestionTwo.o ./Singleton.o ./Sorting.o ./VirtConst.o ./cat.o ./dog.o ./friends.o   -lboost_system -lboost_thread
+Finished building target: DoSomethingII.exe
+ 
+15:02:40 **** Incremental Build of configuration Debug for project DoSomethingII ****
+make all 
+Building file: ../Sorting.cpp
+Invoking: Cygwin C++ Compiler
+g++ -I"D:\cygwin64\usr\include" -O0 -g3 -Wall -c -fmessage-length=0 -DWINDOWS -std=c++11 -Wl,--stack,8388608 -MMD -MP -MF"Sorting.d" -MT"Sorting.o" -o "Sorting.o" "../Sorting.cpp"
+In file included from ../Sorting.h:10:0,
+                 from ../Sorting.cpp:8:
+../Incls.h:52:13: warning: 'void sleepcp(int)' defined but not used [-Wunused-function]
+ static void sleepcp(int milliseconds) // cross-platform sleep function
+             ^
+Finished building: ../Sorting.cpp
+ 
+Building target: DoSomethingII.exe
+Invoking: Cygwin C++ Linker
+g++ -L"D:\cygwin64\lib" -L"D:\cygwin64\usr\local\lib" -Wl,--stack,8388608 -o "DoSomethingII.exe"  ./Casting.o ./InheritII.o ./Inherited.o ./Maps.o ./QuestionTwo.o ./Singleton.o ./Sorting.o ./VirtConst.o ./cat.o ./dog.o ./friends.o   -lboost_system -lboost_thread
+Finished building target: DoSomethingII.exe
+ 
+15:03:26 **** Incremental Build of configuration Debug for project DoSomethingII ****
+make all 
+Building file: ../Sorting.cpp
+Invoking: Cygwin C++ Compiler
+g++ -I"D:\cygwin64\usr\include" -O0 -g3 -Wall -c -fmessage-length=0 -DWINDOWS -std=c++11 -Wl,--stack,8388608 -MMD -MP -MF"Sorting.d" -MT"Sorting.o" -o "Sorting.o" "../Sorting.cpp"
+In file included from ../Sorting.h:10:0,
+                 from ../Sorting.cpp:8:
+../Incls.h:52:13: warning: 'void sleepcp(int)' defined but not used [-Wunused-function]
+ static void sleepcp(int milliseconds) // cross-platform sleep function
+             ^
+Finished building: ../Sorting.cpp
+ 
+Building target: DoSomethingII.exe
+Invoking: Cygwin C++ Linker
+g++ -L"D:\cygwin64\lib" -L"D:\cygwin64\usr\local\lib" -Wl,--stack,8388608 -o "DoSomethingII.exe"  ./Casting.o ./InheritII.o ./Inherited.o ./Maps.o ./QuestionTwo.o ./Singleton.o ./Sorting.o ./VirtConst.o ./cat.o ./dog.o ./friends.o   -lboost_system -lboost_thread
+Finished building target: DoSomethingII.exe
+ 
+16:14:05 **** Incremental Build of configuration Debug for project DoSomethingII ****
+make all 
+Building file: ../Sorting.cpp
+Invoking: Cygwin C++ Compiler
+g++ -I"D:\cygwin64\usr\include" -O0 -g3 -Wall -c -fmessage-length=0 -DWINDOWS -std=c++11 -Wl,--stack,8388608 -MMD -MP -MF"Sorting.d" -MT"Sorting.o" -o "Sorting.o" "../Sorting.cpp"
+In file included from ../Sorting.h:10:0,
+                 from ../Sorting.cpp:8:
+../Incls.h:52:13: warning: 'void sleepcp(int)' defined but not used [-Wunused-function]
+ static void sleepcp(int milliseconds) // cross-platform sleep function
+             ^
+Finished building: ../Sorting.cpp
+ 
+Building target: DoSomethingII.exe
+Invoking: Cygwin C++ Linker
+g++ -L"D:\cygwin64\lib" -L"D:\cygwin64\usr\local\lib" -Wl,--stack,8388608 -o "DoSomethingII.exe"  ./Casting.o ./InheritII.o ./Inherited.o ./Maps.o ./QuestionTwo.o ./Singleton.o ./Sorting.o ./VirtConst.o ./cat.o ./dog.o ./friends.o   -lboost_system -lboost_thread
+Finished building target: DoSomethingII.exe
+ 
+16:14:45 **** Incremental Build of configuration Debug for project DoSomethingII ****
+make all 
+Building file: ../Sorting.cpp
+Invoking: Cygwin C++ Compiler
+g++ -I"D:\cygwin64\usr\include" -O0 -g3 -Wall -c -fmessage-length=0 -DWINDOWS -std=c++11 -Wl,--stack,8388608 -MMD -MP -MF"Sorting.d" -MT"Sorting.o" -o "Sorting.o" "../Sorting.cpp"
+In file included from ../Sorting.h:10:0,
+                 from ../Sorting.cpp:8:
+../Incls.h:52:13: warning: 'void sleepcp(int)' defined but not used [-Wunused-function]
+ static void sleepcp(int milliseconds) // cross-platform sleep function
+             ^
+Finished building: ../Sorting.cpp
+ 
+Building target: DoSomethingII.exe
+Invoking: Cygwin C++ Linker
+g++ -L"D:\cygwin64\lib" -L"D:\cygwin64\usr\local\lib" -Wl,--stack,8388608 -o "DoSomethingII.exe"  ./Casting.o ./InheritII.o ./Inherited.o ./Maps.o ./QuestionTwo.o ./Singleton.o ./Sorting.o ./VirtConst.o ./cat.o ./dog.o ./friends.o   -lboost_system -lboost_thread
+Finished building target: DoSomethingII.exe
+ 
+16:15:29 **** Incremental Build of configuration Debug for project DoSomethingII ****
+make all 
+Building file: ../Sorting.cpp
+Invoking: Cygwin C++ Compiler
+g++ -I"D:\cygwin64\usr\include" -O0 -g3 -Wall -c -fmessage-length=0 -DWINDOWS -std=c++11 -Wl,--stack,8388608 -MMD -MP -MF"Sorting.d" -MT"Sorting.o" -o "Sorting.o" "../Sorting.cpp"
+In file included from ../Sorting.h:10:0,
+                 from ../Sorting.cpp:8:
+../Incls.h:52:13: warning: 'void sleepcp(int)' defined but not used [-Wunused-function]
+ static void sleepcp(int milliseconds) // cross-platform sleep function
+             ^
+Finished building: ../Sorting.cpp
+ 
+Building target: DoSomethingII.exe
+Invoking: Cygwin C++ Linker
+g++ -L"D:\cygwin64\lib" -L"D:\cygwin64\usr\local\lib" -Wl,--stack,8388608 -o "DoSomethingII.exe"  ./Casting.o ./InheritII.o ./Inherited.o ./Maps.o ./QuestionTwo.o ./Singleton.o ./Sorting.o ./VirtConst.o ./cat.o ./dog.o ./friends.o   -lboost_system -lboost_thread
+Finished building target: DoSomethingII.exe
+ 
+16:25:06 **** Incremental Build of configuration Debug for project DoSomethingII ****
+make all 
+Building file: ../Sorting.cpp
+Invoking: Cygwin C++ Compiler
+g++ -I"D:\cygwin64\usr\include" -O0 -g3 -Wall -c -fmessage-length=0 -DWINDOWS -std=c++11 -Wl,--stack,8388608 -MMD -MP -MF"Sorting.d" -MT"Sorting.o" -o "Sorting.o" "../Sorting.cpp"
+In file included from ../Sorting.h:10:0,
+                 from ../Sorting.cpp:8:
+../Incls.h:52:13: warning: 'void sleepcp(int)' defined but not used [-Wunused-function]
+ static void sleepcp(int milliseconds) // cross-platform sleep function
+             ^
+Finished building: ../Sorting.cpp
+ 
+Building target: DoSomethingII.exe
+Invoking: Cygwin C++ Linker
+g++ -L"D:\cygwin64\lib" -L"D:\cygwin64\usr\local\lib" -Wl,--stack,8388608 -o "DoSomethingII.exe"  ./Casting.o ./InheritII.o ./Inherited.o ./Maps.o ./QuestionTwo.o ./Singleton.o ./Sorting.o ./VirtConst.o ./cat.o ./dog.o ./friends.o   -lboost_system -lboost_thread
+Finished building target: DoSomethingII.exe
+ 
+16:25:38 **** Incremental Build of configuration Debug for project DoSomethingII ****
+make all 
+Building file: ../Sorting.cpp
+Invoking: Cygwin C++ Compiler
+g++ -I"D:\cygwin64\usr\include" -O0 -g3 -Wall -c -fmessage-length=0 -DWINDOWS -std=c++11 -Wl,--stack,8388608 -MMD -MP -MF"Sorting.d" -MT"Sorting.o" -o "Sorting.o" "../Sorting.cpp"
+In file included from ../Sorting.h:10:0,
+                 from ../Sorting.cpp:8:
+../Incls.h:52:13: warning: 'void sleepcp(int)' defined but not used [-Wunused-function]
+ static void sleepcp(int milliseconds) // cross-platform sleep function
+             ^
+Finished building: ../Sorting.cpp
+ 
+Building target: DoSomethingII.exe
+Invoking: Cygwin C++ Linker
+g++ -L"D:\cygwin64\lib" -L"D:\cygwin64\usr\local\lib" -Wl,--stack,8388608 -o "DoSomethingII.exe"  ./Casting.o ./InheritII.o ./Inherited.o ./Maps.o ./QuestionTwo.o ./Singleton.o ./Sorting.o ./VirtConst.o ./cat.o ./dog.o ./friends.o   -lboost_system -lboost_thread
+Finished building target: DoSomethingII.exe
+ 
+16:27:13 **** Incremental Build of configuration Debug for project DoSomethingII ****
+make all 
+Building file: ../Sorting.cpp
+Invoking: Cygwin C++ Compiler
+g++ -I"D:\cygwin64\usr\include" -O0 -g3 -Wall -c -fmessage-length=0 -DWINDOWS -std=c++11 -Wl,--stack,8388608 -MMD -MP -MF"Sorting.d" -MT"Sorting.o" -o "Sorting.o" "../Sorting.cpp"
+In file included from ../Sorting.h:10:0,
+                 from ../Sorting.cpp:8:
+../Incls.h:52:13: warning: 'void sleepcp(int)' defined but not used [-Wunused-function]
+ static void sleepcp(int milliseconds) // cross-platform sleep function
+             ^
+Finished building: ../Sorting.cpp
+ 
+Building target: DoSomethingII.exe
+Invoking: Cygwin C++ Linker
+g++ -L"D:\cygwin64\lib" -L"D:\cygwin64\usr\local\lib" -Wl,--stack,8388608 -o "DoSomethingII.exe"  ./Casting.o ./InheritII.o ./Inherited.o ./Maps.o ./QuestionTwo.o ./Singleton.o ./Sorting.o ./VirtConst.o ./cat.o ./dog.o ./friends.o   -lboost_system -lboost_thread
+Finished building target: DoSomethingII.exe
+ 
+16:27:54 **** Incremental Build of configuration Debug for project DoSomethingII ****
+make all 
+Building file: ../Sorting.cpp
+Invoking: Cygwin C++ Compiler
+g++ -I"D:\cygwin64\usr\include" -O0 -g3 -Wall -c -fmessage-length=0 -DWINDOWS -std=c++11 -Wl,--stack,8388608 -MMD -MP -MF"Sorting.d" -MT"Sorting.o" -o "Sorting.o" "../Sorting.cpp"
+In file included from ../Sorting.h:10:0,
+                 from ../Sorting.cpp:8:
+../Incls.h:52:13: warning: 'void sleepcp(int)' defined but not used [-Wunused-function]
+ static void sleepcp(int milliseconds) // cross-platform sleep function
+             ^
+Finished building: ../Sorting.cpp
+ 
+Building target: DoSomethingII.exe
+Invoking: Cygwin C++ Linker
+g++ -L"D:\cygwin64\lib" -L"D:\cygwin64\usr\local\lib" -Wl,--stack,8388608 -o "DoSomethingII.exe"  ./Casting.o ./InheritII.o ./Inherited.o ./Maps.o ./QuestionTwo.o ./Singleton.o ./Sorting.o ./VirtConst.o ./cat.o ./dog.o ./friends.o   -lboost_system -lboost_thread
+Finished building target: DoSomethingII.exe
+ 
+16:30:45 **** Incremental Build of configuration Debug for project DoSomethingII ****
+make all 
+Building file: ../Sorting.cpp
+Invoking: Cygwin C++ Compiler
+g++ -I"D:\cygwin64\usr\include" -O0 -g3 -Wall -c -fmessage-length=0 -DWINDOWS -std=c++11 -Wl,--stack,8388608 -MMD -MP -MF"Sorting.d" -MT"Sorting.o" -o "Sorting.o" "../Sorting.cpp"
+In file included from ../Sorting.h:10:0,
+                 from ../Sorting.cpp:8:
+../Incls.h:52:13: warning: 'void sleepcp(int)' defined but not used [-Wunused-function]
+ static void sleepcp(int milliseconds) // cross-platform sleep function
+             ^
+Finished building: ../Sorting.cpp
+ 
+Building target: DoSomethingII.exe
+Invoking: Cygwin C++ Linker
+g++ -L"D:\cygwin64\lib" -L"D:\cygwin64\usr\local\lib" -Wl,--stack,8388608 -o "DoSomethingII.exe"  ./Casting.o ./InheritII.o ./Inherited.o ./Maps.o ./QuestionTwo.o ./Singleton.o ./Sorting.o ./VirtConst.o ./cat.o ./dog.o ./friends.o   -lboost_system -lboost_thread
+Finished building target: DoSomethingII.exe
+ 
+16:32:53 **** Incremental Build of configuration Debug for project DoSomethingII ****
+make all 
+Building file: ../Sorting.cpp
+Invoking: Cygwin C++ Compiler
+g++ -I"D:\cygwin64\usr\include" -O0 -g3 -Wall -c -fmessage-length=0 -DWINDOWS -std=c++11 -Wl,--stack,8388608 -MMD -MP -MF"Sorting.d" -MT"Sorting.o" -o "Sorting.o" "../Sorting.cpp"
+In file included from ../Sorting.h:10:0,
+                 from ../Sorting.cpp:8:
+../Incls.h:52:13: warning: 'void sleepcp(int)' defined but not used [-Wunused-function]
+ static void sleepcp(int milliseconds) // cross-platform sleep function
+             ^
+Finished building: ../Sorting.cpp
+ 
+Building target: DoSomethingII.exe
+Invoking: Cygwin C++ Linker
+g++ -L"D:\cygwin64\lib" -L"D:\cygwin64\usr\local\lib" -Wl,--stack,8388608 -o "DoSomethingII.exe"  ./Casting.o ./InheritII.o ./Inherited.o ./Maps.o ./QuestionTwo.o ./Singleton.o ./Sorting.o ./VirtConst.o ./cat.o ./dog.o ./friends.o   -lboost_system -lboost_thread
+Finished building target: DoSomethingII.exe
+ 
+16:34:46 **** Incremental Build of configuration Debug for project DoSomethingII ****
+make all 
+Building file: ../Sorting.cpp
+Invoking: Cygwin C++ Compiler
+g++ -I"D:\cygwin64\usr\include" -O0 -g3 -Wall -c -fmessage-length=0 -DWINDOWS -std=c++11 -Wl,--stack,8388608 -MMD -MP -MF"Sorting.d" -MT"Sorting.o" -o "Sorting.o" "../Sorting.cpp"
+In file included from ../Sorting.h:10:0,
+                 from ../Sorting.cpp:8:
+../Incls.h:52:13: warning: 'void sleepcp(int)' defined but not used [-Wunused-function]
+ static void sleepcp(int milliseconds) // cross-platform sleep function
+             ^
+Finished building: ../Sorting.cpp
+ 
+Building target: DoSomethingII.exe
+Invoking: Cygwin C++ Linker
+g++ -L"D:\cygwin64\lib" -L"D:\cygwin64\usr\local\lib" -Wl,--stack,8388608 -o "DoSomethingII.exe"  ./Casting.o ./InheritII.o ./Inherited.o ./Maps.o ./QuestionTwo.o ./Singleton.o ./Sorting.o ./VirtConst.o ./cat.o ./dog.o ./friends.o   -lboost_system -lboost_thread
+Finished building target: DoSomethingII.exe
+ 
+16:35:24 **** Incremental Build of configuration Debug for project DoSomethingII ****
+make all 
+Building file: ../Sorting.cpp
+Invoking: Cygwin C++ Compiler
+g++ -I"D:\cygwin64\usr\include" -O0 -g3 -Wall -c -fmessage-length=0 -DWINDOWS -std=c++11 -Wl,--stack,8388608 -MMD -MP -MF"Sorting.d" -MT"Sorting.o" -o "Sorting.o" "../Sorting.cpp"
+In file included from ../Sorting.h:10:0,
+                 from ../Sorting.cpp:8:
+../Incls.h:52:13: warning: 'void sleepcp(int)' defined but not used [-Wunused-function]
+ static void sleepcp(int milliseconds) // cross-platform sleep function
+             ^
+Finished building: ../Sorting.cpp
+ 
+Building target: DoSomethingII.exe
+Invoking: Cygwin C++ Linker
+g++ -L"D:\cygwin64\lib" -L"D:\cygwin64\usr\local\lib" -Wl,--stack,8388608 -o "DoSomethingII.exe"  ./Casting.o ./InheritII.o ./Inherited.o ./Maps.o ./QuestionTwo.o ./Singleton.o ./Sorting.o ./VirtConst.o ./cat.o ./dog.o ./friends.o   -lboost_system -lboost_thread
+Finished building target: DoSomethingII.exe
+ 
+16:36:45 **** Incremental Build of configuration Debug for project DoSomethingII ****
+make all 
+Building file: ../Sorting.cpp
+Invoking: Cygwin C++ Compiler
+g++ -I"D:\cygwin64\usr\include" -O0 -g3 -Wall -c -fmessage-length=0 -DWINDOWS -std=c++11 -Wl,--stack,8388608 -MMD -MP -MF"Sorting.d" -MT"Sorting.o" -o "Sorting.o" "../Sorting.cpp"
+In file included from ../Sorting.h:10:0,
+                 from ../Sorting.cpp:8:
+../Incls.h:52:13: warning: 'void sleepcp(int)' defined but not used [-Wunused-function]
+ static void sleepcp(int milliseconds) // cross-platform sleep function
+             ^
+Finished building: ../Sorting.cpp
+ 
+Building target: DoSomethingII.exe
+Invoking: Cygwin C++ Linker
+g++ -L"D:\cygwin64\lib" -L"D:\cygwin64\usr\local\lib" -Wl,--stack,8388608 -o "DoSomethingII.exe"  ./Casting.o ./InheritII.o ./Inherited.o ./Maps.o ./QuestionTwo.o ./Singleton.o ./Sorting.o ./VirtConst.o ./cat.o ./dog.o ./friends.o   -lboost_system -lboost_thread
+Finished building target: DoSomethingII.exe
+ 
+16:37:11 **** Incremental Build of configuration Debug for project DoSomethingII ****
+make all 
+Building file: ../Sorting.cpp
+Invoking: Cygwin C++ Compiler
+g++ -I"D:\cygwin64\usr\include" -O0 -g3 -Wall -c -fmessage-length=0 -DWINDOWS -std=c++11 -Wl,--stack,8388608 -MMD -MP -MF"Sorting.d" -MT"Sorting.o" -o "Sorting.o" "../Sorting.cpp"
+In file included from ../Sorting.h:10:0,
+                 from ../Sorting.cpp:8:
+../Incls.h:52:13: warning: 'void sleepcp(int)' defined but not used [-Wunused-function]
+ static void sleepcp(int milliseconds) // cross-platform sleep function
+             ^
+Finished building: ../Sorting.cpp
+ 
+Building target: DoSomethingII.exe
+Invoking: Cygwin C++ Linker
+g++ -L"D:\cygwin64\lib" -L"D:\cygwin64\usr\local\lib" -Wl,--stack,8388608 -o "DoSomethingII.exe"  ./Casting.o ./InheritII.o ./Inherited.o ./Maps.o ./QuestionTwo.o ./Singleton.o ./Sorting.o ./VirtConst.o ./cat.o ./dog.o ./friends.o   -lboost_system -lboost_thread
+Finished building target: DoSomethingII.exe
+ 
+16:37:59 **** Incremental Build of configuration Debug for project DoSomethingII ****
+make all 
+Building file: ../Sorting.cpp
+Invoking: Cygwin C++ Compiler
+g++ -I"D:\cygwin64\usr\include" -O0 -g3 -Wall -c -fmessage-length=0 -DWINDOWS -std=c++11 -Wl,--stack,8388608 -MMD -MP -MF"Sorting.d" -MT"Sorting.o" -o "Sorting.o" "../Sorting.cpp"
+In file included from ../Sorting.h:10:0,
+                 from ../Sorting.cpp:8:
+../Incls.h:52:13: warning: 'void sleepcp(int)' defined but not used [-Wunused-function]
+ static void sleepcp(int milliseconds) // cross-platform sleep function
+             ^
+Finished building: ../Sorting.cpp
+ 
+Building target: DoSomethingII.exe
+Invoking: Cygwin C++ Linker
+g++ -L"D:\cygwin64\lib" -L"D:\cygwin64\usr\local\lib" -Wl,--stack,8388608 -o "DoSomethingII.exe"  ./Casting.o ./InheritII.o ./Inherited.o ./Maps.o ./QuestionTwo.o ./Singleton.o ./Sorting.o ./VirtConst.o ./cat.o ./dog.o ./friends.o   -lboost_system -lboost_thread
+Finished building target: DoSomethingII.exe
+ 

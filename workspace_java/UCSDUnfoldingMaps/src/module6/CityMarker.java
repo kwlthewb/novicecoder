@@ -41,11 +41,13 @@ public class CityMarker extends CommonMarker {
 		//System.out.println("Drawing a city");
 		// Save previous drawing style
 		pg.pushStyle();
-		
+		markerX = x;
+		markerY = y;
 		// IMPLEMENT: drawing triangle for each city
 		pg.fill(150, 30, 30);
 		pg.triangle(x, y-TRI_SIZE, x-TRI_SIZE, y+TRI_SIZE, x+TRI_SIZE, y+TRI_SIZE);
-		
+//		pg.noFill();
+//		pg.ellipse(x, y, (3200/getMeterPerPixel()), (3200/getMeterPerPixel()));
 		// Restore previous drawing style
 		pg.popStyle();
 	}
@@ -53,8 +55,9 @@ public class CityMarker extends CommonMarker {
 	/** Show the title of the city if this marker is selected */
 	public void showTitle(PGraphics pg, float x, float y)
 	{
-		String name = getCity() + " " + getCountry() + " ";
-		String pop = "Pop: " + getPopulation() + " Million";
+		//String name = getCity() + " " + getCountry() + " " + getX() + "," + getY();
+		String name = getCity() + " " + getMeterPerPixel();
+		String pop = "Pop: " + getPopulation() + " Million" + " Lat: " + getLocation().getLat() + " Lon: " + getLocation().getLon();
 		
 		pg.pushStyle();
 		

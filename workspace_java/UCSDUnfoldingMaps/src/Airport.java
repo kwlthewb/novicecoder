@@ -1,6 +1,6 @@
 import java.util.Random;
 
-public class Airport {
+public class Airport implements Comparable<Airport> {
 	private String m_name;
 	private String m_code;
 		
@@ -30,6 +30,9 @@ public class Airport {
 			}
 		}
 		return null;
+	}
+	public int compareTo(Airport other) {
+		return m_name.compareTo(other.getCity());
 	}
 //	public static String findAirportCode(String toFind, Airport[] airports) {
 //		for(int i = 0; i < airports.length; i++) {

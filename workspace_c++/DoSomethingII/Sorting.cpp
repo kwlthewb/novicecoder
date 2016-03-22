@@ -42,7 +42,7 @@ void mergeSort(int arr[], int size, int low, int high) {
     return;
 }
 
-// average O(n log n), worse case O(n^2)
+// average O(n log n), worse case O(n^2), in place
 void quickSort(int arr[], int left, int right) {
 	int i = left;
 	int j = right;
@@ -66,6 +66,7 @@ void quickSort(int arr[], int left, int right) {
 	if(i < right )
 		quickSort(arr,i,right);
 }
+
 
 // O(n^2)
 void selectionSort(int arr[], int size) {
@@ -168,7 +169,141 @@ void printMoreFrequent(const char *p) {
 	std::cout << "Char: " << cc << " Count: " << high << std::endl;
 }
 
-int main_func7() {
+class QQ {
+private:
+	int front, rear;
+	int SIZE;
+	int *Q;
+public:
+	QQ() : SIZE(5) {
+		init(SIZE);
+	}
+	QQ(int s) : SIZE(s) {
+		init(SIZE);
+	}
+	void init(int s) {
+		front = -1;
+		rear = -1;
+		std::cout << "Constructing queue with size: " << SIZE << std::endl;
+		Q = new int[SIZE];
+	}
+
+	bool enqueue(int v) {
+		// first push
+		if((front == 0 && rear == SIZE - 1) || (rear + 1 == front)) {
+			std::cout << "Queue is full..." << std::endl;
+			return false;
+		} else {
+			if(rear == SIZE - 1)
+				rear = 0;
+			else
+				rear++;
+			*(Q + rear) = v;
+		}
+		if(front == -1)
+			front = 0;
+
+		return true;
+	}
+	bool dequeue() {
+		if(front == -1 && rear == -1) {
+			std::cout << "Queue is empty..." << std::endl;
+			return false;
+		}
+		std::cout << "Dequeued: " << front << "," << *(Q + front) << std::endl;
+		*(Q + front) = 0;
+		if(front == rear) {
+			front = -1;
+			rear = -1;
+		} else if(front == SIZE - 1) {
+			front = 0;
+		} else {
+			front++;
+		}
+		return true;
+	}
+	void dumpQ() {
+		int startidx = front;
+		std::cout << "S: " << front << " E: " << rear << std::endl;
+		for(int i = 0; i < SIZE; i++) {
+			std::cout << *(Q + startidx) << ",";
+			if(startidx == SIZE - 1) {
+				startidx = 0;
+			} else {
+				startidx++;
+			}
+		}
+		std::cout << std::endl;
+	}
+};
+
+void runQueue(QQ& q, int action, int v) {
+	if(action == 1) {
+		q.enqueue(v);
+	} else if(action == 0) {
+		q.dequeue();
+	}
+	q.dumpQ();
+}
+
+int main() {
+	srand(time(0));
+	QQ q;
+	runQueue(q,1,1);
+	runQueue(q,1,2);
+	runQueue(q,1,3);
+	runQueue(q,1,4);
+	runQueue(q,1,5);
+	runQueue(q,1,5);
+	runQueue(q,1,5);
+	runQueue(q,0,0);
+	runQueue(q,0,0);
+	runQueue(q,1,6);
+	runQueue(q,1,7);
+	runQueue(q,1,7);
+	runQueue(q,1,7);
+	runQueue(q,0,0);
+	runQueue(q,0,0);
+	runQueue(q,1,6);
+	runQueue(q,1,7);
+	runQueue(q,1,8);
+	runQueue(q,1,9);
+	runQueue(q,0,0);
+	runQueue(q,0,0);
+	runQueue(q,0,0);
+	runQueue(q,0,0);
+	runQueue(q,0,0);
+	runQueue(q,0,0);
+	runQueue(q,1,10);
+	runQueue(q,1,11);
+	runQueue(q,1,12);
+
+
+//	for(int i = 0; i < 10; i++) {
+//		int a = rand() % 2;
+//		int v = rand() % 9 + 1;
+//		std::cout << std::endl << "Rand: " << a << "," << v << std::endl;
+//		runQueue(q,a,v);
+//	}
+
+
+	return 0;
+
+	int n1[14] = {1,2,3,4,5,6,7,8,9,10,11,12,13,14};
+	std::cout << *(n1 + 9) << std::endl;
+	std::cout << n1[3] << "," << sizeof(n1) << std::endl;
+	int *n2 = new int[sizeof(n1)/sizeof(int) + 5];
+	memcpy(n2,n1,sizeof(n1)/sizeof(int) + 5);
+	*(n2+14) = 15;
+	*(n2+15) = 16;
+	*(n2+16) = 17;
+	*(n2+17) = 18;
+	*(n2+18) = 19;
+	std::cout << n2[18] << "," << sizeof(n2) << std::endl;
+
+
+
+	return 0;
 	char p[] = "AAGGDXIDGHNNND";
 	printMoreFrequent(p);
 	return 0;
@@ -179,7 +314,6 @@ int main_func7() {
 	int *nums2 = new int[size];
 	genAry(nums1, nums2, size);
 
-	int numbers[] = {5,10,1,6,2,9,3,8,7,4,6,11,5,2};
 
 	//	int mid = (0 + 14) / 2;
 //	std::cout << mid << "," << numbers[mid] << std::endl;

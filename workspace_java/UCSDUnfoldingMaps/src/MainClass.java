@@ -34,6 +34,9 @@ public class MainClass {
 		OtherClass2 oc2 = new OtherClass2();
 		SubClass1 sc1 = new SubClass1();
 		SubClass2 sc2 = new SubClass2();
+		
+		
+		
 	}
 
 }
