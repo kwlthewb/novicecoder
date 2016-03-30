@@ -1,0 +1,18 @@
+/*
+ * Practice.cpp
+ *
+ *  Created on: Mar 23, 2016
+ *      Author: bill
+ */
+
+#include "Practice.h"
+
+Practice::Practice() {
+	// TODO Auto-generated constructor stub
+
+}
+
+Practice::~Practice() {
+	// TODO Auto-generated destructor stub
+}
+

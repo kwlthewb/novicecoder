@@ -1,0 +1,15 @@
+13:54:34 **** Incremental Build of configuration Debug for project DoSomethingIII ****
+make all 
+Building file: ../QuestionOne.cpp
+Invoking: Cygwin C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"QuestionOne.d" -MT"QuestionOne.o" -o "QuestionOne.o" "../QuestionOne.cpp"
+Finished building: ../QuestionOne.cpp
+ 
+Building target: DoSomethingIII.exe
+Invoking: Cygwin C++ Linker
+g++  -o "DoSomethingIII.exe"  ./MainClass.o ./QuestionOne.o ./temp.o   
+Finished building target: DoSomethingIII.exe
+ 
+
+13:54:35 Build Finished (took 792ms)
+

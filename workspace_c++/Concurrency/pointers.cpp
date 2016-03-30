@@ -77,7 +77,7 @@ void uniqueFoo() {
 //	}
 }
 
-int main() {
+int main_func() {
 	uniqueFoo();
 	//foo();
 	//foo2();

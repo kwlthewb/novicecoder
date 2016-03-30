@@ -16,6 +16,13 @@ def main():
 
 
 if __name__ == "__main__":
+    i = 9;
+    d = 2;
+    print(i % d);
+    print(i / d);
+    for y in range(2, i):
+        print(str(y) + "," + str(i % y));
+    exit()
     # main()
     l = [1,2,3,4.4,5.5,'billy','bob',99,'100..000',-200.29]
     tt = (l) # by reference

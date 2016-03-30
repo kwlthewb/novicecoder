@@ -1,0 +1,17 @@
+/*
+ * Lock.h
+ *
+ *  Created on: Mar 27, 2016
+ *      Author: bill
+ */
+
+#ifndef LOCK_H_
+#define LOCK_H_
+
+class Lock {
+public:
+	Lock();
+	virtual ~Lock();
+};
+
+#endif /* LOCK_H_ */

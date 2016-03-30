@@ -1,0 +1,18 @@
+/*
+ * BigONotation.cpp
+ *
+ *  Created on: Mar 29, 2016
+ *      Author: bill
+ */
+
+#include "BigONotation.h"
+
+BigONotation::BigONotation() {
+	// TODO Auto-generated constructor stub
+
+}
+
+BigONotation::~BigONotation() {
+	// TODO Auto-generated destructor stub
+}
+

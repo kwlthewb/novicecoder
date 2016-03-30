@@ -1,0 +1,18 @@
+/*
+ * Management.cpp
+ *
+ *  Created on: Mar 23, 2016
+ *      Author: bill
+ */
+
+#include "Management.h"
+
+Management::Management() {
+	// TODO Auto-generated constructor stub
+
+}
+
+Management::~Management() {
+	// TODO Auto-generated destructor stub
+}
+

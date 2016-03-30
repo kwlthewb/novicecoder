@@ -19,7 +19,7 @@ enum TType {
 void * myfunc1(void *ptr) {
 	char *msg = (char *) ptr;
 	int count = 0;
-	while(count < 3) {
+	while(count < 30) {
 		printf("%d %s sleeping...\n",count,msg);
 		sleepcp(2000);
 		count++;
@@ -29,7 +29,7 @@ void * myfunc1(void *ptr) {
 void * myfunc2(void *ptr) {
 	char *msg = (char *) ptr;
 	int count = 0;
-	while(count < 3) {
+	while(count < 30) {
 		printf("%d %s sleeping...\n",count,msg);
 		sleepcp(2000);
 		count++;
@@ -88,7 +88,7 @@ void enumTest(void *ptr, TType type) {
 	}
 }
 
-int main_func() {
+int main_func2() {
 	setvbuf (stdout, NULL, _IONBF, BUFSIZ);
 	sem_init(&s, 0, 5); // max 2 thread can work
 	pthread_t t1,t2;
