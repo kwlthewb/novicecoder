@@ -1,20 +1,6 @@
-16:37:59 **** Incremental Build of configuration Debug for project DoSomethingII ****
+09:13:24 **** Incremental Build of configuration Debug for project DoSomethingII ****
 make all 
-Building file: ../Sorting.cpp
-Invoking: Cygwin C++ Compiler
-g++ -I"D:\cygwin64\usr\include" -O0 -g3 -Wall -c -fmessage-length=0 -DWINDOWS -std=c++11 -Wl,--stack,8388608 -MMD -MP -MF"Sorting.d" -MT"Sorting.o" -o "Sorting.o" "../Sorting.cpp"
-In file included from ../Sorting.h:10:0,
-                 from ../Sorting.cpp:8:
-../Incls.h:52:13: warning: 'void sleepcp(int)' defined but not used [-Wunused-function]
- static void sleepcp(int milliseconds) // cross-platform sleep function
-             ^
-Finished building: ../Sorting.cpp
- 
-Building target: DoSomethingII.exe
-Invoking: Cygwin C++ Linker
-g++ -L"D:\cygwin64\lib" -L"D:\cygwin64\usr\local\lib" -Wl,--stack,8388608 -o "DoSomethingII.exe"  ./Casting.o ./InheritII.o ./Inherited.o ./Maps.o ./QuestionTwo.o ./Singleton.o ./Sorting.o ./VirtConst.o ./cat.o ./dog.o ./friends.o   -lboost_system -lboost_thread
-Finished building target: DoSomethingII.exe
- 
+make: Nothing to be done for 'all'.
 
-16:38:09 Build Finished (took 10s.374ms)
+09:13:24 Build Finished (took 79ms)
 

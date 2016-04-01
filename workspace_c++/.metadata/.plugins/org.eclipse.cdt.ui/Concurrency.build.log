@@ -1,31 +1,6 @@
-17:46:47 **** Incremental Build of configuration Debug for project Concurrency ****
+09:17:02 **** Incremental Build of configuration Debug for project Concurrency ****
 make all 
-Building file: ../Races.cpp
-Invoking: Cygwin C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -DWINDOWS -MMD -MP -MF"Races.d" -MT"Races.o" -o "Races.o" "../Races.cpp"
-../Races.cpp: In constructor 'UserFile::UserFile(const string&, const string&)':
-../Races.cpp:66:97: warning: base 'MovieFile' will be initialized after [-Wreorder]
-  UserFile(const std::string& n, const std::string& p) : MusicFile(n,p), MovieFile(n,p), File(n,p) {
-                                                                                                 ^
-../Races.cpp:66:97: warning:   base 'File' [-Wreorder]
-../Races.cpp:66:2: warning:   when initialized here [-Wreorder]
-  UserFile(const std::string& n, const std::string& p) : MusicFile(n,p), MovieFile(n,p), File(n,p) {
-  ^
-In file included from ../Races.cpp:10:0:
-../Incls.h: At global scope:
-../Incls.h:40:26: warning: 'const string currentDateTime()' defined but not used [-Wunused-function]
- static const std::string currentDateTime() {
-                          ^
-../Incls.h:52:13: warning: 'void sleepcp(int)' defined but not used [-Wunused-function]
- static void sleepcp(int milliseconds) // cross-platform sleep function
-             ^
-Finished building: ../Races.cpp
- 
-Building target: Concurrency.exe
-Invoking: Cygwin C++ Linker
-g++  -o "Concurrency.exe"  ./Lock.o ./Management.o ./Races.o ./Semaphores.o ./pointers.o   -lboost_system -lboost_thread
-Finished building target: Concurrency.exe
- 
+make: Nothing to be done for 'all'.
 
-17:46:54 Build Finished (took 7s.602ms)
+09:17:02 Build Finished (took 79ms)
 

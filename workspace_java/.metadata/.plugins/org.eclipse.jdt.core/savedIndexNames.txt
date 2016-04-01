@@ -1,0 +1,6 @@
+INDEX VERSION 1.127+D:\novicecoder\workspace_java\.metadata\.plugins\org.eclipse.jdt.core
+1919044117.index
+3609977750.index
+2038407804.index
+3327792001.index
+1778074500.index

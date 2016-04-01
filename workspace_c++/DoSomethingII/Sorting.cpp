@@ -277,6 +277,12 @@ int main() {
 	runQueue(q,1,10);
 	runQueue(q,1,11);
 	runQueue(q,1,12);
+	runQueue(q,1,12);
+	runQueue(q,1,12);
+	runQueue(q,1,12);
+
+	std::chrono::high_resolution_clock::time_point begin1 = std::chrono::high_resolution_clock::now();
+	std::cout << "Start time = " << currentDateTime() << std::endl;
 
 
 //	for(int i = 0; i < 10; i++) {

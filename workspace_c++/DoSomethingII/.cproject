@@ -53,7 +53,7 @@
 									<listOptionValue builtIn="false" value="&quot;D:\cygwin64\lib&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;D:\cygwin64\usr\local\lib&quot;"/>
 								</option>
-								<option id="gnu.cpp.link.option.flags.1887819817" superClass="gnu.cpp.link.option.flags" value="-Wl,--stack,8388608" valueType="string"/>
+								<option id="gnu.cpp.link.option.flags.1887819817" name="Linker flags" superClass="gnu.cpp.link.option.flags" value="-Wl,--stack,8388608" valueType="string"/>
 								<inputType id="cdt.managedbuild.tool.gnu.cpp.linker.input.1138644663" superClass="cdt.managedbuild.tool.gnu.cpp.linker.input">
 									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
 									<additionalInput kind="additionalinput" paths="$(LIBS)"/>

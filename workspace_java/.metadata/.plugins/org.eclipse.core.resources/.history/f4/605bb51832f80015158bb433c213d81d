@@ -1,0 +1,123 @@
+import java.util.Arrays;
+import java.util.List;
+import java.util.Scanner;
+
+public class Timer {
+	public static void main(String[] args) {
+		
+		
+//		String text = new String("Hellow world!");
+//		String text2 = text;
+//		text = "asomse sight";
+//		text2 = text.concat(" great day");
+//		System.out.println(text);
+//		System.out.println(text2);
+//		text = "asdlfjsjadlf" + " asdfkjsadf";
+//		System.out.println(text);
+//		// interned string
+//		String text3 = "Hello world!"; // interned string object whenever new is not used
+//		String text4 = "Hello world!";
+//		text3 = text3.concat(" blah blah");
+//		System.out.println(text3);
+//		System.out.println(text4);
+//		String text5 = "Can you hear me?  Hello, hello?";
+//		String[] words = text5.split(" +"); // + is one or more spaces
+//		int index = text5.indexOf("he");
+//		System.out.println(text5 + " ; " + index);
+//		for(String w : words) {
+//			System.out.println(w);	
+//		}
+//		String text6 = "Wish you a happy bday!!";
+//		System.out.println(replace(text6,'a','i') + "||");
+//		String text7 = "Spliitting a striing, its as easy as it is simple";
+//		words = text7.split("it*"); // * is zero or more
+//		for(String w : words) {
+//			System.out.println(w + "||");	
+//		}
+//		System.out.println("||");
+//		System.out.println("||");
+//		words = text7.split("it|st"); // OR
+//		for(String w : words) {
+//			System.out.println(w + "||");	
+//		}
+//		System.out.println("|||");
+//		System.out.println("|||");
+//		words = text7.split("[ita]"); // OR
+//		for(String w : words) {
+//			System.out.println(w + "||");	
+//		}
+//		System.out.println("||||");
+//		System.out.println("||||");
+//		words = text7.split("[^a-z123]"); // ^ is NOT in character set
+//		for(String w : words) {
+//			System.out.println(w + "||");	
+//		}
+//		String s1 = new String("String 1");
+//		String s2 = new String("String 1");
+//		if (s1 == s2) {
+//		    System.out.println("Equal");
+//		}
+//		else {
+//		    System.out.println("Not equal");
+//		}
+//		String text8 = "Hurray!!#! It's Friday! finally...1 2 3 44 552, 777";
+//		for(String s: getTokens(text8, "[^0-9]+")) {
+//			System.out.println(s);
+//		}
+//		words = text8.split("[^0-9]+");
+//		for(String w : words) {
+//			System.out.println(w + "||");	
+//		}
+//		
+		String text = "This is a test.  How many???  Senteeeeeeeeeences are here... there should be 5!  Right?";
+		String[] words = text.split("((?=<([a-zA-Z0-9]))\\. )|(\\?+ )|(\\! +)");
+		for(String w : words) {
+			System.out.println(w + "||");
+		}
+		System.exit(1);
+		System.out.println("Hellow world!!");
+		Scanner scan = new Scanner(System.in);
+		int something;
+		something = scan.nextInt();
+		System.out.println(something);
+		scan.close();
+		int a = 5, b = 7;
+		swap(a,b);
+		System.out.println(a + "," + b);
+	}
+	
+	public static String replace(String word, char gone, char here) {
+		char[] cArray = word.toCharArray();
+		for(int i = 0; i < word.length(); i++) {
+			if(cArray[i] == gone)
+				cArray[i] = here;
+		}
+		return new String(cArray);
+	}
+	
+	public static void swap(int a, int b) {
+		int temp = a;
+		b = a;
+		a = temp;
+	}
+	
+	public static boolean hasLetter(String word, char letter) {
+		for(char c: word.toCharArray()) {
+			if(c == letter)
+				return true;
+		}
+		return false;
+	}
+	public static int hasLetterAt(String word, char letter) {
+		for(int i = 0; i < word.length(); i++) {
+			if(word.charAt(i) == letter)
+				return i;
+		}
+		return -1;
+	}
+	public static List<String> getTokens(String src, String regex) {
+		String[] words = src.split(regex);
+		return Arrays.asList(words);
+	}
+}
+
